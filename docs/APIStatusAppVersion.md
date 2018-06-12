@@ -1,4 +1,4 @@
-# IO.Swagger.Model.APIStatusAppVersion
+# com.tweirtx.TBAV3.Model.APIStatusAppVersion
 ## Properties
 
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# IO.Swagger.Model.TeamSimple
+# com.tweirtx.TBAV3.Model.TeamSimple
 ## Properties
 
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# IO.Swagger.Model.Match
+# com.tweirtx.TBAV3.Model.Match
 ## Properties
 
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# IO.Swagger.Model.DistrictRankingEventPoints
+# com.tweirtx.TBAV3.Model.DistrictRankingEventPoints
 ## Properties
 
 Name | Type | Description | Notes

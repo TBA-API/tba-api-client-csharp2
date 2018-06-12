@@ -1,4 +1,4 @@
-# IO.Swagger.Model.MatchScoreBreakdown2016Alliance
+# com.tweirtx.TBAV3.Model.MatchScoreBreakdown2016Alliance
 ## Properties
 
 Name | Type | Description | Notes

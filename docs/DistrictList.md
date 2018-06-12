@@ -1,4 +1,4 @@
-# IO.Swagger.Model.DistrictList
+# com.tweirtx.TBAV3.Model.DistrictList
 ## Properties
 
 Name | Type | Description | Notes

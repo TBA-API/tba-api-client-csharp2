@@ -1,4 +1,4 @@
-# IO.Swagger.Model.AwardRecipient
+# com.tweirtx.TBAV3.Model.AwardRecipient
 ## Properties
 
 Name | Type | Description | Notes

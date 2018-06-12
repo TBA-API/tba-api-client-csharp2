@@ -1,4 +1,4 @@
-# IO.Swagger.Model.MatchTimeseries2018
+# com.tweirtx.TBAV3.Model.MatchTimeseries2018
 ## Properties
 
 Name | Type | Description | Notes

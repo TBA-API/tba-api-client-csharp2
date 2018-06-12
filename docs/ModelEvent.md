@@ -1,4 +1,4 @@
-# IO.Swagger.Model.ModelEvent
+# com.tweirtx.TBAV3.Model.ModelEvent
 ## Properties
 
 Name | Type | Description | Notes

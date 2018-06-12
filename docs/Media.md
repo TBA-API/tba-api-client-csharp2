@@ -1,4 +1,4 @@
-# IO.Swagger.Model.Media
+# com.tweirtx.TBAV3.Model.Media
 ## Properties
 
 Name | Type | Description | Notes

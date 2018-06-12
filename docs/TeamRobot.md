@@ -1,4 +1,4 @@
-# IO.Swagger.Model.TeamRobot
+# com.tweirtx.TBAV3.Model.TeamRobot
 ## Properties
 
 Name | Type | Description | Notes

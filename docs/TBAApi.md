@@ -1,4 +1,4 @@
-# IO.Swagger.Api.TBAApi
+# com.tweirtx.TBAV3.Api.TBAApi
 
 All URIs are relative to *https://www.thebluealliance.com/api/v3*
 
@@ -19,9 +19,9 @@ Returns API status, and TBA status information.
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using com.tweirtx.TBAV3.Api;
+using com.tweirtx.TBAV3.Client;
+using com.tweirtx.TBAV3.Model;
 
 namespace Example
 {

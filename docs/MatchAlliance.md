@@ -1,4 +1,4 @@
-# IO.Swagger.Model.MatchAlliance
+# com.tweirtx.TBAV3.Model.MatchAlliance
 ## Properties
 
 Name | Type | Description | Notes

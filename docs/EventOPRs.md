@@ -1,4 +1,4 @@
-# IO.Swagger.Model.EventOPRs
+# com.tweirtx.TBAV3.Model.EventOPRs
 ## Properties
 
 Name | Type | Description | Notes

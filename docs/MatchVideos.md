@@ -1,4 +1,4 @@
-# IO.Swagger.Model.MatchVideos
+# com.tweirtx.TBAV3.Model.MatchVideos
 ## Properties
 
 Name | Type | Description | Notes
