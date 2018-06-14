@@ -81,7 +81,7 @@ OpenAPI spec version: 3.03.1
   <Import Project="$(MsBuildToolsPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
       <ProjectReference Include="..\com.tweirtx.TBAAPIv3client\com.tweirtx.TBAAPIv3client.csproj">
-          <Project>{910B7BA0-342E-4AD2-A3B8-4E7F0F41634C}</Project>
+          <Project>{B2CAABAF-24C3-4DC1-AB1D-5873EBFDC18C}</Project>
           <Name>com.tweirtx.TBAAPIv3client</Name>
       </ProjectReference>
   </ItemGroup>
