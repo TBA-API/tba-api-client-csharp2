@@ -1,4 +1,4 @@
-before_deploy: nuget pack "src/com.tweirtx.TBAAPIv3client/com.tweirtx.TBAAPIv3client.nuspec"
+before_deploy: del src\com.tweirtx.TBAAPIv3client\com.tweirtx.TBAAPIv3client.nuspec | rename src\com.tweirtx.TBAAPIv3client\com.tweirtx.TBAAPIv3client.nuspec.backup com.tweirtx.TBAAPIv3client.nuspec | nuget pack src\com.tweirtx.TBAAPIv3client\com.tweirtx.TBAAPIv3client.nuspec
 deploy:
   provider: NuGet
   api_key: 
