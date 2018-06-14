@@ -2,24 +2,24 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
     <metadata>
         <!-- The identifier that must be unique within the hosting gallery -->
-        <id>TBAAPIv3client</id>
-        <title>TBA API v3 Client</title>
+        <id>$id$</id>
+        <title>Swagger Library</title>
 
         <!-- The package version number that is used when resolving dependencies -->
-        <version>3.0.11</version>
+        <version>$version$</version>
 
         <!-- Authors contain text that appears directly on the gallery -->
-        <authors>tweirtx, thefletcher</authors>
+        <authors>$author$</authors>
 
         <!-- Owners are typically nuget.org identities that allow gallery
              users to earily find other packages by the same owners.  -->
-        <owners>tweirtx</owners>
+        <owners>$author$</owners>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <developmentDependency>false</developmentDependency>
 
         <!-- The description can be used in package manager UI. Note that the
              nuget.org gallery uses information you add in the portal. -->
-        <description>A library to use The Blue Alliance API.</description>
+        <description>A library generated from a Swagger doc</description>
 
         <!-- Dependencies are automatically installed when the package is installed -->
         <dependencies>

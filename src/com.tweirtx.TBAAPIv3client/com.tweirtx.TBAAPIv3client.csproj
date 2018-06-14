@@ -12,7 +12,7 @@ OpenAPI spec version: 3.03.1
     
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B2CAABAF-24C3-4DC1-AB1D-5873EBFDC18C}</ProjectGuid>
+    <ProjectGuid>{D4E2B80D-CAFC-4E6A-AAF0-3A15C5659018}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>com.tweirtx.TBAAPIv3client</RootNamespace>
