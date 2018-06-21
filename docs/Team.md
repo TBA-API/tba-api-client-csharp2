@@ -1,4 +1,4 @@
-# IO.Swagger.Model.Team
+# com.tweirtx.TBAAPIv3client.Model.Team
 ## Properties
 
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# IO.Swagger.Model.MatchSimpleAlliances
+# com.tweirtx.TBAAPIv3client.Model.MatchSimpleAlliances
 ## Properties
 
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# IO.Swagger.Model.DistrictList
+# com.tweirtx.TBAAPIv3client.Model.DistrictList
 ## Properties
 
 Name | Type | Description | Notes

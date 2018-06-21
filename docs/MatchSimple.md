@@ -1,4 +1,4 @@
-# IO.Swagger.Model.MatchSimple
+# com.tweirtx.TBAAPIv3client.Model.MatchSimple
 ## Properties
 
 Name | Type | Description | Notes

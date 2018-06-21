@@ -1,4 +1,4 @@
-# IO.Swagger.Model.EventInsights2017
+# com.tweirtx.TBAAPIv3client.Model.EventInsights2017
 ## Properties
 
 Name | Type | Description | Notes

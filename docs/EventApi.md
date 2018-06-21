@@ -1,4 +1,4 @@
-# IO.Swagger.Api.EventApi
+# com.tweirtx.TBAAPIv3client.Api.EventApi
 
 All URIs are relative to *https://www.thebluealliance.com/api/v3*
 
@@ -53,9 +53,9 @@ Gets a list of events in the given district.
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using com.tweirtx.TBAAPIv3client.Api;
+using com.tweirtx.TBAAPIv3client.Client;
+using com.tweirtx.TBAAPIv3client.Model;
 
 namespace Example
 {
@@ -120,9 +120,9 @@ Gets a list of event keys for events in the given district.
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using com.tweirtx.TBAAPIv3client.Api;
+using com.tweirtx.TBAAPIv3client.Client;
+using com.tweirtx.TBAAPIv3client.Model;
 
 namespace Example
 {
@@ -187,9 +187,9 @@ Gets a short-form list of events in the given district.
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using com.tweirtx.TBAAPIv3client.Api;
+using com.tweirtx.TBAAPIv3client.Client;
+using com.tweirtx.TBAAPIv3client.Model;
 
 namespace Example
 {
@@ -254,9 +254,9 @@ Gets an Event.
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using com.tweirtx.TBAAPIv3client.Api;
+using com.tweirtx.TBAAPIv3client.Client;
+using com.tweirtx.TBAAPIv3client.Model;
 
 namespace Example
 {
@@ -321,9 +321,9 @@ Gets a list of Elimination Alliances for the given Event.
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using com.tweirtx.TBAAPIv3client.Api;
+using com.tweirtx.TBAAPIv3client.Client;
+using com.tweirtx.TBAAPIv3client.Model;
 
 namespace Example
 {
@@ -388,9 +388,9 @@ Gets a list of awards from the given event.
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using com.tweirtx.TBAAPIv3client.Api;
+using com.tweirtx.TBAAPIv3client.Client;
+using com.tweirtx.TBAAPIv3client.Model;
 
 namespace Example
 {
@@ -455,9 +455,9 @@ Gets a list of team rankings for the Event.
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using com.tweirtx.TBAAPIv3client.Api;
+using com.tweirtx.TBAAPIv3client.Client;
+using com.tweirtx.TBAAPIv3client.Model;
 
 namespace Example
 {
@@ -522,9 +522,9 @@ Gets a set of Event-specific insights for the given Event.
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using com.tweirtx.TBAAPIv3client.Api;
+using com.tweirtx.TBAAPIv3client.Client;
+using com.tweirtx.TBAAPIv3client.Model;
 
 namespace Example
 {
@@ -589,9 +589,9 @@ Gets an array of Match Keys for the given event key that have timeseries data. R
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using com.tweirtx.TBAAPIv3client.Api;
+using com.tweirtx.TBAAPIv3client.Client;
+using com.tweirtx.TBAAPIv3client.Model;
 
 namespace Example
 {
@@ -656,9 +656,9 @@ Gets a list of matches for the given event.
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using com.tweirtx.TBAAPIv3client.Api;
+using com.tweirtx.TBAAPIv3client.Client;
+using com.tweirtx.TBAAPIv3client.Model;
 
 namespace Example
 {
@@ -723,9 +723,9 @@ Gets a list of match keys for the given event.
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using com.tweirtx.TBAAPIv3client.Api;
+using com.tweirtx.TBAAPIv3client.Client;
+using com.tweirtx.TBAAPIv3client.Model;
 
 namespace Example
 {
@@ -790,9 +790,9 @@ Gets a short-form list of matches for the given event.
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using com.tweirtx.TBAAPIv3client.Api;
+using com.tweirtx.TBAAPIv3client.Client;
+using com.tweirtx.TBAAPIv3client.Model;
 
 namespace Example
 {
@@ -857,9 +857,9 @@ Gets a set of Event OPRs (including OPR, DPR, and CCWM) for the given Event.
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using com.tweirtx.TBAAPIv3client.Api;
+using com.tweirtx.TBAAPIv3client.Client;
+using com.tweirtx.TBAAPIv3client.Model;
 
 namespace Example
 {
@@ -924,9 +924,9 @@ Gets information on TBA-generated predictions for the given Event. Contains year
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using com.tweirtx.TBAAPIv3client.Api;
+using com.tweirtx.TBAAPIv3client.Client;
+using com.tweirtx.TBAAPIv3client.Model;
 
 namespace Example
 {
@@ -991,9 +991,9 @@ Gets a list of team rankings for the Event.
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using com.tweirtx.TBAAPIv3client.Api;
+using com.tweirtx.TBAAPIv3client.Client;
+using com.tweirtx.TBAAPIv3client.Model;
 
 namespace Example
 {
@@ -1058,9 +1058,9 @@ Gets a short-form Event.
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using com.tweirtx.TBAAPIv3client.Api;
+using com.tweirtx.TBAAPIv3client.Client;
+using com.tweirtx.TBAAPIv3client.Model;
 
 namespace Example
 {
@@ -1125,9 +1125,9 @@ Gets a list of `Team` objects that competed in the given event.
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using com.tweirtx.TBAAPIv3client.Api;
+using com.tweirtx.TBAAPIv3client.Client;
+using com.tweirtx.TBAAPIv3client.Model;
 
 namespace Example
 {
@@ -1192,9 +1192,9 @@ Gets a list of `Team` keys that competed in the given event.
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using com.tweirtx.TBAAPIv3client.Api;
+using com.tweirtx.TBAAPIv3client.Client;
+using com.tweirtx.TBAAPIv3client.Model;
 
 namespace Example
 {
@@ -1259,9 +1259,9 @@ Gets a short-form list of `Team` objects that competed in the given event.
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using com.tweirtx.TBAAPIv3client.Api;
+using com.tweirtx.TBAAPIv3client.Client;
+using com.tweirtx.TBAAPIv3client.Model;
 
 namespace Example
 {
@@ -1326,9 +1326,9 @@ Gets a key-value list of the event statuses for teams competing at the given eve
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using com.tweirtx.TBAAPIv3client.Api;
+using com.tweirtx.TBAAPIv3client.Client;
+using com.tweirtx.TBAAPIv3client.Model;
 
 namespace Example
 {
@@ -1393,9 +1393,9 @@ Gets a list of events in the given year.
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using com.tweirtx.TBAAPIv3client.Api;
+using com.tweirtx.TBAAPIv3client.Client;
+using com.tweirtx.TBAAPIv3client.Model;
 
 namespace Example
 {
@@ -1460,9 +1460,9 @@ Gets a list of event keys in the given year.
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using com.tweirtx.TBAAPIv3client.Api;
+using com.tweirtx.TBAAPIv3client.Client;
+using com.tweirtx.TBAAPIv3client.Model;
 
 namespace Example
 {
@@ -1527,9 +1527,9 @@ Gets a short-form list of events in the given year.
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using com.tweirtx.TBAAPIv3client.Api;
+using com.tweirtx.TBAAPIv3client.Client;
+using com.tweirtx.TBAAPIv3client.Model;
 
 namespace Example
 {
@@ -1594,9 +1594,9 @@ Gets a list of awards the given team won at the given event.
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using com.tweirtx.TBAAPIv3client.Api;
+using com.tweirtx.TBAAPIv3client.Client;
+using com.tweirtx.TBAAPIv3client.Model;
 
 namespace Example
 {
@@ -1663,9 +1663,9 @@ Gets a list of matches for the given team and event.
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using com.tweirtx.TBAAPIv3client.Api;
+using com.tweirtx.TBAAPIv3client.Client;
+using com.tweirtx.TBAAPIv3client.Model;
 
 namespace Example
 {
@@ -1732,9 +1732,9 @@ Gets a list of match keys for matches for the given team and event.
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using com.tweirtx.TBAAPIv3client.Api;
+using com.tweirtx.TBAAPIv3client.Client;
+using com.tweirtx.TBAAPIv3client.Model;
 
 namespace Example
 {
@@ -1801,9 +1801,9 @@ Gets a short-form list of matches for the given team and event.
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using com.tweirtx.TBAAPIv3client.Api;
+using com.tweirtx.TBAAPIv3client.Client;
+using com.tweirtx.TBAAPIv3client.Model;
 
 namespace Example
 {
@@ -1870,9 +1870,9 @@ Gets the competition rank and status of the team at the given event.
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using com.tweirtx.TBAAPIv3client.Api;
+using com.tweirtx.TBAAPIv3client.Client;
+using com.tweirtx.TBAAPIv3client.Model;
 
 namespace Example
 {
@@ -1939,9 +1939,9 @@ Gets a list of all events this team has competed at.
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using com.tweirtx.TBAAPIv3client.Api;
+using com.tweirtx.TBAAPIv3client.Client;
+using com.tweirtx.TBAAPIv3client.Model;
 
 namespace Example
 {
@@ -2006,9 +2006,9 @@ Gets a list of events this team has competed at in the given year.
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using com.tweirtx.TBAAPIv3client.Api;
+using com.tweirtx.TBAAPIv3client.Client;
+using com.tweirtx.TBAAPIv3client.Model;
 
 namespace Example
 {
@@ -2075,9 +2075,9 @@ Gets a list of the event keys for events this team has competed at in the given 
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using com.tweirtx.TBAAPIv3client.Api;
+using com.tweirtx.TBAAPIv3client.Client;
+using com.tweirtx.TBAAPIv3client.Model;
 
 namespace Example
 {
@@ -2144,9 +2144,9 @@ Gets a short-form list of events this team has competed at in the given year.
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using com.tweirtx.TBAAPIv3client.Api;
+using com.tweirtx.TBAAPIv3client.Client;
+using com.tweirtx.TBAAPIv3client.Model;
 
 namespace Example
 {
@@ -2213,9 +2213,9 @@ Gets a list of the event keys for all events this team has competed at.
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using com.tweirtx.TBAAPIv3client.Api;
+using com.tweirtx.TBAAPIv3client.Client;
+using com.tweirtx.TBAAPIv3client.Model;
 
 namespace Example
 {
@@ -2280,9 +2280,9 @@ Gets a short-form list of all events this team has competed at.
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using com.tweirtx.TBAAPIv3client.Api;
+using com.tweirtx.TBAAPIv3client.Client;
+using com.tweirtx.TBAAPIv3client.Model;
 
 namespace Example
 {
@@ -2347,9 +2347,9 @@ Gets a key-value list of the event statuses for events this team has competed at
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using com.tweirtx.TBAAPIv3client.Api;
+using com.tweirtx.TBAAPIv3client.Client;
+using com.tweirtx.TBAAPIv3client.Model;
 
 namespace Example
 {

@@ -1,4 +1,4 @@
-# IO.Swagger.Model.Media
+# com.tweirtx.TBAAPIv3client.Model.Media
 ## Properties
 
 Name | Type | Description | Notes

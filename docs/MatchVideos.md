@@ -1,4 +1,4 @@
-# IO.Swagger.Model.MatchVideos
+# com.tweirtx.TBAAPIv3client.Model.MatchVideos
 ## Properties
 
 Name | Type | Description | Notes

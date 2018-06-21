@@ -1,4 +1,4 @@
-# IO.Swagger.Model.TeamEventStatusPlayoff
+# com.tweirtx.TBAAPIv3client.Model.TeamEventStatusPlayoff
 ## Properties
 
 Name | Type | Description | Notes

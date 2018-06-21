@@ -1,4 +1,4 @@
-# IO.Swagger.Model.EliminationAllianceBackup
+# com.tweirtx.TBAAPIv3client.Model.EliminationAllianceBackup
 ## Properties
 
 Name | Type | Description | Notes

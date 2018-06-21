@@ -1,4 +1,4 @@
-# IO.Swagger.Api.DistrictApi
+# com.tweirtx.TBAAPIv3client.Api.DistrictApi
 
 All URIs are relative to *https://www.thebluealliance.com/api/v3*
 
@@ -28,9 +28,9 @@ Gets a list of events in the given district.
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using com.tweirtx.TBAAPIv3client.Api;
+using com.tweirtx.TBAAPIv3client.Client;
+using com.tweirtx.TBAAPIv3client.Model;
 
 namespace Example
 {
@@ -95,9 +95,9 @@ Gets a list of event keys for events in the given district.
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using com.tweirtx.TBAAPIv3client.Api;
+using com.tweirtx.TBAAPIv3client.Client;
+using com.tweirtx.TBAAPIv3client.Model;
 
 namespace Example
 {
@@ -162,9 +162,9 @@ Gets a short-form list of events in the given district.
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using com.tweirtx.TBAAPIv3client.Api;
+using com.tweirtx.TBAAPIv3client.Client;
+using com.tweirtx.TBAAPIv3client.Model;
 
 namespace Example
 {
@@ -229,9 +229,9 @@ Gets a list of team district rankings for the given district.
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using com.tweirtx.TBAAPIv3client.Api;
+using com.tweirtx.TBAAPIv3client.Client;
+using com.tweirtx.TBAAPIv3client.Model;
 
 namespace Example
 {
@@ -296,9 +296,9 @@ Gets a list of `Team` objects that competed in events in the given district.
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using com.tweirtx.TBAAPIv3client.Api;
+using com.tweirtx.TBAAPIv3client.Client;
+using com.tweirtx.TBAAPIv3client.Model;
 
 namespace Example
 {
@@ -363,9 +363,9 @@ Gets a list of `Team` objects that competed in events in the given district.
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using com.tweirtx.TBAAPIv3client.Api;
+using com.tweirtx.TBAAPIv3client.Client;
+using com.tweirtx.TBAAPIv3client.Model;
 
 namespace Example
 {
@@ -430,9 +430,9 @@ Gets a short-form list of `Team` objects that competed in events in the given di
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using com.tweirtx.TBAAPIv3client.Api;
+using com.tweirtx.TBAAPIv3client.Client;
+using com.tweirtx.TBAAPIv3client.Model;
 
 namespace Example
 {
@@ -497,9 +497,9 @@ Gets a list of districts and their corresponding district key, for the given yea
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using com.tweirtx.TBAAPIv3client.Api;
+using com.tweirtx.TBAAPIv3client.Client;
+using com.tweirtx.TBAAPIv3client.Model;
 
 namespace Example
 {
@@ -564,9 +564,9 @@ Gets a list of team rankings for the Event.
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using com.tweirtx.TBAAPIv3client.Api;
+using com.tweirtx.TBAAPIv3client.Client;
+using com.tweirtx.TBAAPIv3client.Model;
 
 namespace Example
 {
@@ -631,9 +631,9 @@ Gets an array of districts representing each year the team was in a district. Wi
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using com.tweirtx.TBAAPIv3client.Api;
+using com.tweirtx.TBAAPIv3client.Client;
+using com.tweirtx.TBAAPIv3client.Model;
 
 namespace Example
 {

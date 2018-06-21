@@ -1,4 +1,4 @@
-# IO.Swagger.Model.EventPredictions
+# com.tweirtx.TBAAPIv3client.Model.EventPredictions
 ## Properties
 
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# IO.Swagger.Model.EventRankingSortOrderInfo
+# com.tweirtx.TBAAPIv3client.Model.EventRankingSortOrderInfo
 ## Properties
 
 Name | Type | Description | Notes
