@@ -1,4 +1,4 @@
-# com.tweirtx.TBAAPIv3client.Model.WLTRecord
+# IO.Swagger.Model.WLTRecord
 ## Properties
 
 Name | Type | Description | Notes

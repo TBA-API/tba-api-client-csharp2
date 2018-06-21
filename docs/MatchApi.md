@@ -1,4 +1,4 @@
-# com.tweirtx.TBAAPIv3client.Api.MatchApi
+# IO.Swagger.Api.MatchApi
 
 All URIs are relative to *https://www.thebluealliance.com/api/v3*
 
@@ -31,9 +31,9 @@ Gets an array of Match Keys for the given event key that have timeseries data. R
 ```csharp
 using System;
 using System.Diagnostics;
-using com.tweirtx.TBAAPIv3client.Api;
-using com.tweirtx.TBAAPIv3client.Client;
-using com.tweirtx.TBAAPIv3client.Model;
+using IO.Swagger.Api;
+using IO.Swagger.Client;
+using IO.Swagger.Model;
 
 namespace Example
 {
@@ -98,9 +98,9 @@ Gets a list of matches for the given event.
 ```csharp
 using System;
 using System.Diagnostics;
-using com.tweirtx.TBAAPIv3client.Api;
-using com.tweirtx.TBAAPIv3client.Client;
-using com.tweirtx.TBAAPIv3client.Model;
+using IO.Swagger.Api;
+using IO.Swagger.Client;
+using IO.Swagger.Model;
 
 namespace Example
 {
@@ -165,9 +165,9 @@ Gets a list of match keys for the given event.
 ```csharp
 using System;
 using System.Diagnostics;
-using com.tweirtx.TBAAPIv3client.Api;
-using com.tweirtx.TBAAPIv3client.Client;
-using com.tweirtx.TBAAPIv3client.Model;
+using IO.Swagger.Api;
+using IO.Swagger.Client;
+using IO.Swagger.Model;
 
 namespace Example
 {
@@ -232,9 +232,9 @@ Gets a short-form list of matches for the given event.
 ```csharp
 using System;
 using System.Diagnostics;
-using com.tweirtx.TBAAPIv3client.Api;
-using com.tweirtx.TBAAPIv3client.Client;
-using com.tweirtx.TBAAPIv3client.Model;
+using IO.Swagger.Api;
+using IO.Swagger.Client;
+using IO.Swagger.Model;
 
 namespace Example
 {
@@ -299,9 +299,9 @@ Gets a `Match` object for the given match key.
 ```csharp
 using System;
 using System.Diagnostics;
-using com.tweirtx.TBAAPIv3client.Api;
-using com.tweirtx.TBAAPIv3client.Client;
-using com.tweirtx.TBAAPIv3client.Model;
+using IO.Swagger.Api;
+using IO.Swagger.Client;
+using IO.Swagger.Model;
 
 namespace Example
 {
@@ -366,9 +366,9 @@ Gets a short-form `Match` object for the given match key.
 ```csharp
 using System;
 using System.Diagnostics;
-using com.tweirtx.TBAAPIv3client.Api;
-using com.tweirtx.TBAAPIv3client.Client;
-using com.tweirtx.TBAAPIv3client.Model;
+using IO.Swagger.Api;
+using IO.Swagger.Client;
+using IO.Swagger.Model;
 
 namespace Example
 {
@@ -433,9 +433,9 @@ Gets an array of game-specific Match Timeseries objects for the given match key 
 ```csharp
 using System;
 using System.Diagnostics;
-using com.tweirtx.TBAAPIv3client.Api;
-using com.tweirtx.TBAAPIv3client.Client;
-using com.tweirtx.TBAAPIv3client.Model;
+using IO.Swagger.Api;
+using IO.Swagger.Client;
+using IO.Swagger.Model;
 
 namespace Example
 {
@@ -500,9 +500,9 @@ Gets a list of matches for the given team and event.
 ```csharp
 using System;
 using System.Diagnostics;
-using com.tweirtx.TBAAPIv3client.Api;
-using com.tweirtx.TBAAPIv3client.Client;
-using com.tweirtx.TBAAPIv3client.Model;
+using IO.Swagger.Api;
+using IO.Swagger.Client;
+using IO.Swagger.Model;
 
 namespace Example
 {
@@ -569,9 +569,9 @@ Gets a list of match keys for matches for the given team and event.
 ```csharp
 using System;
 using System.Diagnostics;
-using com.tweirtx.TBAAPIv3client.Api;
-using com.tweirtx.TBAAPIv3client.Client;
-using com.tweirtx.TBAAPIv3client.Model;
+using IO.Swagger.Api;
+using IO.Swagger.Client;
+using IO.Swagger.Model;
 
 namespace Example
 {
@@ -638,9 +638,9 @@ Gets a short-form list of matches for the given team and event.
 ```csharp
 using System;
 using System.Diagnostics;
-using com.tweirtx.TBAAPIv3client.Api;
-using com.tweirtx.TBAAPIv3client.Client;
-using com.tweirtx.TBAAPIv3client.Model;
+using IO.Swagger.Api;
+using IO.Swagger.Client;
+using IO.Swagger.Model;
 
 namespace Example
 {
@@ -707,9 +707,9 @@ Gets a list of matches for the given team and year.
 ```csharp
 using System;
 using System.Diagnostics;
-using com.tweirtx.TBAAPIv3client.Api;
-using com.tweirtx.TBAAPIv3client.Client;
-using com.tweirtx.TBAAPIv3client.Model;
+using IO.Swagger.Api;
+using IO.Swagger.Client;
+using IO.Swagger.Model;
 
 namespace Example
 {
@@ -776,9 +776,9 @@ Gets a list of match keys for matches for the given team and year.
 ```csharp
 using System;
 using System.Diagnostics;
-using com.tweirtx.TBAAPIv3client.Api;
-using com.tweirtx.TBAAPIv3client.Client;
-using com.tweirtx.TBAAPIv3client.Model;
+using IO.Swagger.Api;
+using IO.Swagger.Client;
+using IO.Swagger.Model;
 
 namespace Example
 {
@@ -845,9 +845,9 @@ Gets a short-form list of matches for the given team and year.
 ```csharp
 using System;
 using System.Diagnostics;
-using com.tweirtx.TBAAPIv3client.Api;
-using com.tweirtx.TBAAPIv3client.Client;
-using com.tweirtx.TBAAPIv3client.Model;
+using IO.Swagger.Api;
+using IO.Swagger.Client;
+using IO.Swagger.Model;
 
 namespace Example
 {

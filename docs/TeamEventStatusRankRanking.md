@@ -1,4 +1,4 @@
-# com.tweirtx.TBAAPIv3client.Model.TeamEventStatusRankRanking
+# IO.Swagger.Model.TeamEventStatusRankRanking
 ## Properties
 
 Name | Type | Description | Notes

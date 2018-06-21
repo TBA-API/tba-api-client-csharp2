@@ -1,4 +1,4 @@
-# com.tweirtx.TBAAPIv3client.Model.EventOPRs
+# IO.Swagger.Model.EventOPRs
 ## Properties
 
 Name | Type | Description | Notes

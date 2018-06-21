@@ -1,4 +1,4 @@
-# com.tweirtx.TBAAPIv3client.Model.Webcast
+# IO.Swagger.Model.Webcast
 ## Properties
 
 Name | Type | Description | Notes

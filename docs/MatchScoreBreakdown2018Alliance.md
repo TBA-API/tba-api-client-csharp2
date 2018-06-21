@@ -1,4 +1,4 @@
-# com.tweirtx.TBAAPIv3client.Model.MatchScoreBreakdown2018Alliance
+# IO.Swagger.Model.MatchScoreBreakdown2018Alliance
 ## Properties
 
 Name | Type | Description | Notes

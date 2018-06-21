@@ -1,4 +1,4 @@
-# com.tweirtx.TBAAPIv3client.Model.TeamRobot
+# IO.Swagger.Model.TeamRobot
 ## Properties
 
 Name | Type | Description | Notes

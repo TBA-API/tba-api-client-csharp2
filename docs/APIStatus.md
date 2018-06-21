@@ -1,4 +1,4 @@
-# com.tweirtx.TBAAPIv3client.Model.APIStatus
+# IO.Swagger.Model.APIStatus
 ## Properties
 
 Name | Type | Description | Notes

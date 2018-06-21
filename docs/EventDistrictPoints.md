@@ -1,4 +1,4 @@
-# com.tweirtx.TBAAPIv3client.Model.EventDistrictPoints
+# IO.Swagger.Model.EventDistrictPoints
 ## Properties
 
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# com.tweirtx.TBAAPIv3client.Model.DistrictRanking
+# IO.Swagger.Model.DistrictRanking
 ## Properties
 
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# com.tweirtx.TBAAPIv3client.Model.TeamEventStatus
+# IO.Swagger.Model.TeamEventStatus
 ## Properties
 
 Name | Type | Description | Notes
