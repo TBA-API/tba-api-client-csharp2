@@ -260,6 +260,8 @@ Class | Method | HTTP request | Description
  - [Model.MatchScoreBreakdown2017Alliance](docs/MatchScoreBreakdown2017Alliance.md)
  - [Model.MatchScoreBreakdown2018](docs/MatchScoreBreakdown2018.md)
  - [Model.MatchScoreBreakdown2018Alliance](docs/MatchScoreBreakdown2018Alliance.md)
+ - [Model.MatchScoreBreakdown2019](docs/MatchScoreBreakdown2019.md)
+ - [Model.MatchScoreBreakdown2019Alliance](docs/MatchScoreBreakdown2019Alliance.md)
  - [Model.MatchSimple](docs/MatchSimple.md)
  - [Model.MatchSimpleAlliances](docs/MatchSimpleAlliances.md)
  - [Model.MatchTimeseries2018](docs/MatchTimeseries2018.md)
