@@ -41,7 +41,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// <param name="Name">The name of the award as provided by FIRST. May vary for the same award type. (required).</param>
         /// <param name="AwardType">Type of award given. See https://github.com/the-blue-alliance/the-blue-alliance/blob/master/consts/award_type.py#L6 (required).</param>
         /// <param name="EventKey">The event_key of the event the award was won at. (required).</param>
-        /// <param name="RecipientList">A list of recipients of the award at the event. Either team_key and/or awardee for individual awards. (required).</param>
+        /// <param name="RecipientList">A list of recipients of the award at the event. May have either a team_key or an awardee, both, or neither (in the case the award wasn&#39;t awarded at the event). (required).</param>
         /// <param name="Year">The year this award was won. (required).</param>
         public Award(string Name = default(string), int? AwardType = default(int?), string EventKey = default(string), List<AwardRecipient> RecipientList = default(List<AwardRecipient>), int? Year = default(int?))
         {
@@ -114,9 +114,9 @@ namespace com.tweirtx.TBAAPIv3client.Model
         public string EventKey { get; set; }
 
         /// <summary>
-        /// A list of recipients of the award at the event. Either team_key and/or awardee for individual awards.
+        /// A list of recipients of the award at the event. May have either a team_key or an awardee, both, or neither (in the case the award wasn&#39;t awarded at the event).
         /// </summary>
-        /// <value>A list of recipients of the award at the event. Either team_key and/or awardee for individual awards.</value>
+        /// <value>A list of recipients of the award at the event. May have either a team_key or an awardee, both, or neither (in the case the award wasn&#39;t awarded at the event).</value>
         [DataMember(Name="recipient_list", EmitDefaultValue=false)]
         public List<AwardRecipient> RecipientList { get; set; }
 
