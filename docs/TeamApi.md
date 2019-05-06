@@ -1199,7 +1199,7 @@ Name | Type | Description  | Notes
 
 <a name="getteamevents"></a>
 # **GetTeamEvents**
-> List<ModelEvent> GetTeamEvents (string teamKey, string ifModifiedSince = null)
+> List<Event> GetTeamEvents (string teamKey, string ifModifiedSince = null)
 
 
 
@@ -1230,7 +1230,7 @@ namespace Example
 
             try
             {
-                List&lt;ModelEvent&gt; result = apiInstance.GetTeamEvents(teamKey, ifModifiedSince);
+                List&lt;Event&gt; result = apiInstance.GetTeamEvents(teamKey, ifModifiedSince);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1251,7 +1251,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**List<ModelEvent>**](ModelEvent.md)
+[**List<Event>**](Event.md)
 
 ### Authorization
 
@@ -1266,7 +1266,7 @@ Name | Type | Description  | Notes
 
 <a name="getteameventsbyyear"></a>
 # **GetTeamEventsByYear**
-> List<ModelEvent> GetTeamEventsByYear (string teamKey, int? year, string ifModifiedSince = null)
+> List<Event> GetTeamEventsByYear (string teamKey, int? year, string ifModifiedSince = null)
 
 
 
@@ -1298,7 +1298,7 @@ namespace Example
 
             try
             {
-                List&lt;ModelEvent&gt; result = apiInstance.GetTeamEventsByYear(teamKey, year, ifModifiedSince);
+                List&lt;Event&gt; result = apiInstance.GetTeamEventsByYear(teamKey, year, ifModifiedSince);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1320,7 +1320,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**List<ModelEvent>**](ModelEvent.md)
+[**List<Event>**](Event.md)
 
 ### Authorization
 

@@ -29,7 +29,7 @@ Method | HTTP request | Description
 
 <a name="getdistrictevents"></a>
 # **GetDistrictEvents**
-> List<ModelEvent> GetDistrictEvents (string districtKey, string ifModifiedSince = null)
+> List<Event> GetDistrictEvents (string districtKey, string ifModifiedSince = null)
 
 
 
@@ -60,7 +60,7 @@ namespace Example
 
             try
             {
-                List&lt;ModelEvent&gt; result = apiInstance.GetDistrictEvents(districtKey, ifModifiedSince);
+                List&lt;Event&gt; result = apiInstance.GetDistrictEvents(districtKey, ifModifiedSince);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -81,7 +81,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**List<ModelEvent>**](ModelEvent.md)
+[**List<Event>**](Event.md)
 
 ### Authorization
 
@@ -766,7 +766,7 @@ Name | Type | Description  | Notes
 
 <a name="geteventsbyyear"></a>
 # **GetEventsByYear**
-> List<ModelEvent> GetEventsByYear (int? year, string ifModifiedSince = null)
+> List<Event> GetEventsByYear (int? year, string ifModifiedSince = null)
 
 
 
@@ -797,7 +797,7 @@ namespace Example
 
             try
             {
-                List&lt;ModelEvent&gt; result = apiInstance.GetEventsByYear(year, ifModifiedSince);
+                List&lt;Event&gt; result = apiInstance.GetEventsByYear(year, ifModifiedSince);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -818,7 +818,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**List<ModelEvent>**](ModelEvent.md)
+[**List<Event>**](Event.md)
 
 ### Authorization
 

@@ -43,7 +43,7 @@ Method | HTTP request | Description
 
 <a name="getdistrictevents"></a>
 # **GetDistrictEvents**
-> List<ModelEvent> GetDistrictEvents (string districtKey, string ifModifiedSince = null)
+> List<Event> GetDistrictEvents (string districtKey, string ifModifiedSince = null)
 
 
 
@@ -74,7 +74,7 @@ namespace Example
 
             try
             {
-                List&lt;ModelEvent&gt; result = apiInstance.GetDistrictEvents(districtKey, ifModifiedSince);
+                List&lt;Event&gt; result = apiInstance.GetDistrictEvents(districtKey, ifModifiedSince);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -95,7 +95,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**List<ModelEvent>**](ModelEvent.md)
+[**List<Event>**](Event.md)
 
 ### Authorization
 
@@ -244,7 +244,7 @@ Name | Type | Description  | Notes
 
 <a name="getevent"></a>
 # **GetEvent**
-> ModelEvent GetEvent (string eventKey, string ifModifiedSince = null)
+> Event GetEvent (string eventKey, string ifModifiedSince = null)
 
 
 
@@ -275,7 +275,7 @@ namespace Example
 
             try
             {
-                ModelEvent result = apiInstance.GetEvent(eventKey, ifModifiedSince);
+                Event result = apiInstance.GetEvent(eventKey, ifModifiedSince);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -296,7 +296,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**ModelEvent**](ModelEvent.md)
+[**Event**](Event.md)
 
 ### Authorization
 
@@ -914,7 +914,7 @@ Name | Type | Description  | Notes
 
 <a name="geteventpredictions"></a>
 # **GetEventPredictions**
-> EventPredictions GetEventPredictions (string eventKey, string ifModifiedSince = null)
+> Object GetEventPredictions (string eventKey, string ifModifiedSince = null)
 
 
 
@@ -945,7 +945,7 @@ namespace Example
 
             try
             {
-                EventPredictions result = apiInstance.GetEventPredictions(eventKey, ifModifiedSince);
+                Object result = apiInstance.GetEventPredictions(eventKey, ifModifiedSince);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -966,7 +966,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**EventPredictions**](EventPredictions.md)
+**Object**
 
 ### Authorization
 
@@ -1383,7 +1383,7 @@ Name | Type | Description  | Notes
 
 <a name="geteventsbyyear"></a>
 # **GetEventsByYear**
-> List<ModelEvent> GetEventsByYear (int? year, string ifModifiedSince = null)
+> List<Event> GetEventsByYear (int? year, string ifModifiedSince = null)
 
 
 
@@ -1414,7 +1414,7 @@ namespace Example
 
             try
             {
-                List&lt;ModelEvent&gt; result = apiInstance.GetEventsByYear(year, ifModifiedSince);
+                List&lt;Event&gt; result = apiInstance.GetEventsByYear(year, ifModifiedSince);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1435,7 +1435,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**List<ModelEvent>**](ModelEvent.md)
+[**List<Event>**](Event.md)
 
 ### Authorization
 
@@ -1929,7 +1929,7 @@ Name | Type | Description  | Notes
 
 <a name="getteamevents"></a>
 # **GetTeamEvents**
-> List<ModelEvent> GetTeamEvents (string teamKey, string ifModifiedSince = null)
+> List<Event> GetTeamEvents (string teamKey, string ifModifiedSince = null)
 
 
 
@@ -1960,7 +1960,7 @@ namespace Example
 
             try
             {
-                List&lt;ModelEvent&gt; result = apiInstance.GetTeamEvents(teamKey, ifModifiedSince);
+                List&lt;Event&gt; result = apiInstance.GetTeamEvents(teamKey, ifModifiedSince);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1981,7 +1981,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**List<ModelEvent>**](ModelEvent.md)
+[**List<Event>**](Event.md)
 
 ### Authorization
 
@@ -1996,7 +1996,7 @@ Name | Type | Description  | Notes
 
 <a name="getteameventsbyyear"></a>
 # **GetTeamEventsByYear**
-> List<ModelEvent> GetTeamEventsByYear (string teamKey, int? year, string ifModifiedSince = null)
+> List<Event> GetTeamEventsByYear (string teamKey, int? year, string ifModifiedSince = null)
 
 
 
@@ -2028,7 +2028,7 @@ namespace Example
 
             try
             {
-                List&lt;ModelEvent&gt; result = apiInstance.GetTeamEventsByYear(teamKey, year, ifModifiedSince);
+                List&lt;Event&gt; result = apiInstance.GetTeamEventsByYear(teamKey, year, ifModifiedSince);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -2050,7 +2050,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**List<ModelEvent>**](ModelEvent.md)
+[**List<Event>**](Event.md)
 
 ### Authorization
 

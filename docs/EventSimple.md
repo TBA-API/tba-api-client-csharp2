@@ -7,7 +7,7 @@ Name | Type | Description | Notes
 **Name** | **string** | Official name of event on record either provided by FIRST or organizers of offseason event. | 
 **EventCode** | **string** | Event short code, as provided by FIRST. | 
 **EventType** | **int?** | Event Type, as defined here: https://github.com/the-blue-alliance/the-blue-alliance/blob/master/consts/event_type.py#L2 | 
-**District** | [**DistrictList**](DistrictList.md) | The district this event is in, may be null. | [optional] 
+**District** | [**DistrictList**](DistrictList.md) |  | [optional] 
 **City** | **string** | City, town, village, etc. the event is located in. | [optional] 
 **StateProv** | **string** | State or Province the event is located in. | [optional] 
 **Country** | **string** | Country the event is located in. | [optional] 
