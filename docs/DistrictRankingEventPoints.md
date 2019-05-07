@@ -1,4 +1,6 @@
+
 # com.tweirtx.TBAAPIv3client.Model.DistrictRankingEventPoints
+
 ## Properties
 
 Name | Type | Description | Notes
@@ -11,5 +13,7 @@ Name | Type | Description | Notes
 **EventKey** | **string** | TBA Event key for this event. | 
 **QualPoints** | **int?** | Points awarded for qualification match performance. | 
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to README]](../README.md)
 

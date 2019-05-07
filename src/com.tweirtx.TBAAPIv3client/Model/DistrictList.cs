@@ -53,6 +53,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.Abbreviation = abbreviation;
             }
+            
             // to ensure "displayName" is required (not null)
             if (displayName == null)
             {
@@ -62,6 +63,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.DisplayName = displayName;
             }
+            
             // to ensure "key" is required (not null)
             if (key == null)
             {
@@ -71,6 +73,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.Key = key;
             }
+            
             // to ensure "year" is required (not null)
             if (year == null)
             {
@@ -80,6 +83,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.Year = year;
             }
+            
         }
         
         /// <summary>

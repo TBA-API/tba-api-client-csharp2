@@ -56,6 +56,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.Key = key;
             }
+            
             // to ensure "teamNumber" is required (not null)
             if (teamNumber == null)
             {
@@ -65,6 +66,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.TeamNumber = teamNumber;
             }
+            
             // to ensure "name" is required (not null)
             if (name == null)
             {
@@ -74,6 +76,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.Name = name;
             }
+            
             this.Nickname = nickname;
             this.City = city;
             this.StateProv = stateProv;

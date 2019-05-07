@@ -79,6 +79,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.Key = key;
             }
+            
             // to ensure "name" is required (not null)
             if (name == null)
             {
@@ -88,6 +89,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.Name = name;
             }
+            
             // to ensure "eventCode" is required (not null)
             if (eventCode == null)
             {
@@ -97,6 +99,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.EventCode = eventCode;
             }
+            
             // to ensure "eventType" is required (not null)
             if (eventType == null)
             {
@@ -106,6 +109,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.EventType = eventType;
             }
+            
             // to ensure "startDate" is required (not null)
             if (startDate == null)
             {
@@ -115,6 +119,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.StartDate = startDate;
             }
+            
             // to ensure "endDate" is required (not null)
             if (endDate == null)
             {
@@ -124,6 +129,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.EndDate = endDate;
             }
+            
             // to ensure "year" is required (not null)
             if (year == null)
             {
@@ -133,6 +139,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.Year = year;
             }
+            
             // to ensure "eventTypeString" is required (not null)
             if (eventTypeString == null)
             {
@@ -142,6 +149,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.EventTypeString = eventTypeString;
             }
+            
             this.District = district;
             this.City = city;
             this.StateProv = stateProv;

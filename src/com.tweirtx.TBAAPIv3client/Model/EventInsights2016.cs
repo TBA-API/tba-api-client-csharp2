@@ -73,6 +73,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.LowBar = lowBar;
             }
+            
             // to ensure "aChevalDeFrise" is required (not null)
             if (aChevalDeFrise == null)
             {
@@ -82,6 +83,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.AChevalDeFrise = aChevalDeFrise;
             }
+            
             // to ensure "aPortcullis" is required (not null)
             if (aPortcullis == null)
             {
@@ -91,6 +93,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.APortcullis = aPortcullis;
             }
+            
             // to ensure "bRamparts" is required (not null)
             if (bRamparts == null)
             {
@@ -100,6 +103,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.BRamparts = bRamparts;
             }
+            
             // to ensure "bMoat" is required (not null)
             if (bMoat == null)
             {
@@ -109,6 +113,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.BMoat = bMoat;
             }
+            
             // to ensure "cSallyPort" is required (not null)
             if (cSallyPort == null)
             {
@@ -118,6 +123,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.CSallyPort = cSallyPort;
             }
+            
             // to ensure "cDrawbridge" is required (not null)
             if (cDrawbridge == null)
             {
@@ -127,6 +133,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.CDrawbridge = cDrawbridge;
             }
+            
             // to ensure "dRoughTerrain" is required (not null)
             if (dRoughTerrain == null)
             {
@@ -136,6 +143,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.DRoughTerrain = dRoughTerrain;
             }
+            
             // to ensure "dRockWall" is required (not null)
             if (dRockWall == null)
             {
@@ -145,6 +153,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.DRockWall = dRockWall;
             }
+            
             // to ensure "averageHighGoals" is required (not null)
             if (averageHighGoals == null)
             {
@@ -154,6 +163,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.AverageHighGoals = averageHighGoals;
             }
+            
             // to ensure "averageLowGoals" is required (not null)
             if (averageLowGoals == null)
             {
@@ -163,6 +173,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.AverageLowGoals = averageLowGoals;
             }
+            
             // to ensure "breaches" is required (not null)
             if (breaches == null)
             {
@@ -172,6 +183,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.Breaches = breaches;
             }
+            
             // to ensure "scales" is required (not null)
             if (scales == null)
             {
@@ -181,6 +193,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.Scales = scales;
             }
+            
             // to ensure "challenges" is required (not null)
             if (challenges == null)
             {
@@ -190,6 +203,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.Challenges = challenges;
             }
+            
             // to ensure "captures" is required (not null)
             if (captures == null)
             {
@@ -199,6 +213,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.Captures = captures;
             }
+            
             // to ensure "averageWinScore" is required (not null)
             if (averageWinScore == null)
             {
@@ -208,6 +223,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.AverageWinScore = averageWinScore;
             }
+            
             // to ensure "averageWinMargin" is required (not null)
             if (averageWinMargin == null)
             {
@@ -217,6 +233,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.AverageWinMargin = averageWinMargin;
             }
+            
             // to ensure "averageScore" is required (not null)
             if (averageScore == null)
             {
@@ -226,6 +243,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.AverageScore = averageScore;
             }
+            
             // to ensure "averageAutoScore" is required (not null)
             if (averageAutoScore == null)
             {
@@ -235,6 +253,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.AverageAutoScore = averageAutoScore;
             }
+            
             // to ensure "averageCrossingScore" is required (not null)
             if (averageCrossingScore == null)
             {
@@ -244,6 +263,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.AverageCrossingScore = averageCrossingScore;
             }
+            
             // to ensure "averageBoulderScore" is required (not null)
             if (averageBoulderScore == null)
             {
@@ -253,6 +273,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.AverageBoulderScore = averageBoulderScore;
             }
+            
             // to ensure "averageTowerScore" is required (not null)
             if (averageTowerScore == null)
             {
@@ -262,6 +283,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.AverageTowerScore = averageTowerScore;
             }
+            
             // to ensure "averageFoulScore" is required (not null)
             if (averageFoulScore == null)
             {
@@ -271,6 +293,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.AverageFoulScore = averageFoulScore;
             }
+            
             // to ensure "highScore" is required (not null)
             if (highScore == null)
             {
@@ -280,6 +303,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.HighScore = highScore;
             }
+            
         }
         
         /// <summary>

@@ -53,6 +53,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.Score = score;
             }
+            
             // to ensure "teamKeys" is required (not null)
             if (teamKeys == null)
             {
@@ -62,6 +63,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.TeamKeys = teamKeys;
             }
+            
             this.SurrogateTeamKeys = surrogateTeamKeys;
             this.DqTeamKeys = dqTeamKeys;
         }

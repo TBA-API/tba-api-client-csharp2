@@ -51,6 +51,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.MinAppVersion = minAppVersion;
             }
+            
             // to ensure "latestAppVersion" is required (not null)
             if (latestAppVersion == null)
             {
@@ -60,6 +61,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.LatestAppVersion = latestAppVersion;
             }
+            
         }
         
         /// <summary>

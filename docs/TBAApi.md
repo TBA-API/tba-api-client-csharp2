@@ -7,8 +7,9 @@ Method | HTTP request | Description
 [**GetStatus**](TBAApi.md#getstatus) | **GET** /status | 
 
 
-<a name="getstatus"></a>
-# **GetStatus**
+
+## GetStatus
+
 > APIStatus GetStatus (string ifModifiedSince = null)
 
 
@@ -16,6 +17,7 @@ Method | HTTP request | Description
 Returns API status, and TBA status information.
 
 ### Example
+
 ```csharp
 using System;
 using System.Diagnostics;
@@ -53,6 +55,7 @@ namespace Example
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ifModifiedSince** | **string**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
@@ -67,8 +70,11 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
 

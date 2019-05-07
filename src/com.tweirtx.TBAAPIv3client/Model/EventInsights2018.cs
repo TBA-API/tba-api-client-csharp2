@@ -86,6 +86,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.AutoQuestAchieved = autoQuestAchieved;
             }
+            
             // to ensure "averageBoostPlayed" is required (not null)
             if (averageBoostPlayed == null)
             {
@@ -95,6 +96,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.AverageBoostPlayed = averageBoostPlayed;
             }
+            
             // to ensure "averageEndgamePoints" is required (not null)
             if (averageEndgamePoints == null)
             {
@@ -104,6 +106,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.AverageEndgamePoints = averageEndgamePoints;
             }
+            
             // to ensure "averageForcePlayed" is required (not null)
             if (averageForcePlayed == null)
             {
@@ -113,6 +116,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.AverageForcePlayed = averageForcePlayed;
             }
+            
             // to ensure "averageFoulScore" is required (not null)
             if (averageFoulScore == null)
             {
@@ -122,6 +126,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.AverageFoulScore = averageFoulScore;
             }
+            
             // to ensure "averagePointsAuto" is required (not null)
             if (averagePointsAuto == null)
             {
@@ -131,6 +136,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.AveragePointsAuto = averagePointsAuto;
             }
+            
             // to ensure "averagePointsTeleop" is required (not null)
             if (averagePointsTeleop == null)
             {
@@ -140,6 +146,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.AveragePointsTeleop = averagePointsTeleop;
             }
+            
             // to ensure "averageRunPointsAuto" is required (not null)
             if (averageRunPointsAuto == null)
             {
@@ -149,6 +156,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.AverageRunPointsAuto = averageRunPointsAuto;
             }
+            
             // to ensure "averageScaleOwnershipPoints" is required (not null)
             if (averageScaleOwnershipPoints == null)
             {
@@ -158,6 +166,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.AverageScaleOwnershipPoints = averageScaleOwnershipPoints;
             }
+            
             // to ensure "averageScaleOwnershipPointsAuto" is required (not null)
             if (averageScaleOwnershipPointsAuto == null)
             {
@@ -167,6 +176,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.AverageScaleOwnershipPointsAuto = averageScaleOwnershipPointsAuto;
             }
+            
             // to ensure "averageScaleOwnershipPointsTeleop" is required (not null)
             if (averageScaleOwnershipPointsTeleop == null)
             {
@@ -176,6 +186,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.AverageScaleOwnershipPointsTeleop = averageScaleOwnershipPointsTeleop;
             }
+            
             // to ensure "averageScore" is required (not null)
             if (averageScore == null)
             {
@@ -185,6 +196,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.AverageScore = averageScore;
             }
+            
             // to ensure "averageSwitchOwnershipPoints" is required (not null)
             if (averageSwitchOwnershipPoints == null)
             {
@@ -194,6 +206,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.AverageSwitchOwnershipPoints = averageSwitchOwnershipPoints;
             }
+            
             // to ensure "averageSwitchOwnershipPointsAuto" is required (not null)
             if (averageSwitchOwnershipPointsAuto == null)
             {
@@ -203,6 +216,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.AverageSwitchOwnershipPointsAuto = averageSwitchOwnershipPointsAuto;
             }
+            
             // to ensure "averageSwitchOwnershipPointsTeleop" is required (not null)
             if (averageSwitchOwnershipPointsTeleop == null)
             {
@@ -212,6 +226,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.AverageSwitchOwnershipPointsTeleop = averageSwitchOwnershipPointsTeleop;
             }
+            
             // to ensure "averageVaultPoints" is required (not null)
             if (averageVaultPoints == null)
             {
@@ -221,6 +236,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.AverageVaultPoints = averageVaultPoints;
             }
+            
             // to ensure "averageWinMargin" is required (not null)
             if (averageWinMargin == null)
             {
@@ -230,6 +246,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.AverageWinMargin = averageWinMargin;
             }
+            
             // to ensure "averageWinScore" is required (not null)
             if (averageWinScore == null)
             {
@@ -239,6 +256,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.AverageWinScore = averageWinScore;
             }
+            
             // to ensure "boostPlayedCounts" is required (not null)
             if (boostPlayedCounts == null)
             {
@@ -248,6 +266,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.BoostPlayedCounts = boostPlayedCounts;
             }
+            
             // to ensure "climbCounts" is required (not null)
             if (climbCounts == null)
             {
@@ -257,6 +276,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.ClimbCounts = climbCounts;
             }
+            
             // to ensure "faceTheBossAchieved" is required (not null)
             if (faceTheBossAchieved == null)
             {
@@ -266,6 +286,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.FaceTheBossAchieved = faceTheBossAchieved;
             }
+            
             // to ensure "forcePlayedCounts" is required (not null)
             if (forcePlayedCounts == null)
             {
@@ -275,6 +296,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.ForcePlayedCounts = forcePlayedCounts;
             }
+            
             // to ensure "highScore" is required (not null)
             if (highScore == null)
             {
@@ -284,6 +306,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.HighScore = highScore;
             }
+            
             // to ensure "levitatePlayedCounts" is required (not null)
             if (levitatePlayedCounts == null)
             {
@@ -293,6 +316,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.LevitatePlayedCounts = levitatePlayedCounts;
             }
+            
             // to ensure "runCountsAuto" is required (not null)
             if (runCountsAuto == null)
             {
@@ -302,6 +326,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.RunCountsAuto = runCountsAuto;
             }
+            
             // to ensure "scaleNeutralPercentage" is required (not null)
             if (scaleNeutralPercentage == null)
             {
@@ -311,6 +336,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.ScaleNeutralPercentage = scaleNeutralPercentage;
             }
+            
             // to ensure "scaleNeutralPercentageAuto" is required (not null)
             if (scaleNeutralPercentageAuto == null)
             {
@@ -320,6 +346,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.ScaleNeutralPercentageAuto = scaleNeutralPercentageAuto;
             }
+            
             // to ensure "scaleNeutralPercentageTeleop" is required (not null)
             if (scaleNeutralPercentageTeleop == null)
             {
@@ -329,6 +356,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.ScaleNeutralPercentageTeleop = scaleNeutralPercentageTeleop;
             }
+            
             // to ensure "switchOwnedCountsAuto" is required (not null)
             if (switchOwnedCountsAuto == null)
             {
@@ -338,6 +366,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.SwitchOwnedCountsAuto = switchOwnedCountsAuto;
             }
+            
             // to ensure "unicornMatches" is required (not null)
             if (unicornMatches == null)
             {
@@ -347,6 +376,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.UnicornMatches = unicornMatches;
             }
+            
             // to ensure "winningOppSwitchDenialPercentageTeleop" is required (not null)
             if (winningOppSwitchDenialPercentageTeleop == null)
             {
@@ -356,6 +386,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.WinningOppSwitchDenialPercentageTeleop = winningOppSwitchDenialPercentageTeleop;
             }
+            
             // to ensure "winningOwnSwitchOwnershipPercentage" is required (not null)
             if (winningOwnSwitchOwnershipPercentage == null)
             {
@@ -365,6 +396,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.WinningOwnSwitchOwnershipPercentage = winningOwnSwitchOwnershipPercentage;
             }
+            
             // to ensure "winningOwnSwitchOwnershipPercentageAuto" is required (not null)
             if (winningOwnSwitchOwnershipPercentageAuto == null)
             {
@@ -374,6 +406,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.WinningOwnSwitchOwnershipPercentageAuto = winningOwnSwitchOwnershipPercentageAuto;
             }
+            
             // to ensure "winningOwnSwitchOwnershipPercentageTeleop" is required (not null)
             if (winningOwnSwitchOwnershipPercentageTeleop == null)
             {
@@ -383,6 +416,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.WinningOwnSwitchOwnershipPercentageTeleop = winningOwnSwitchOwnershipPercentageTeleop;
             }
+            
             // to ensure "winningScaleOwnershipPercentage" is required (not null)
             if (winningScaleOwnershipPercentage == null)
             {
@@ -392,6 +426,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.WinningScaleOwnershipPercentage = winningScaleOwnershipPercentage;
             }
+            
             // to ensure "winningScaleOwnershipPercentageAuto" is required (not null)
             if (winningScaleOwnershipPercentageAuto == null)
             {
@@ -401,6 +436,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.WinningScaleOwnershipPercentageAuto = winningScaleOwnershipPercentageAuto;
             }
+            
             // to ensure "winningScaleOwnershipPercentageTeleop" is required (not null)
             if (winningScaleOwnershipPercentageTeleop == null)
             {
@@ -410,6 +446,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.WinningScaleOwnershipPercentageTeleop = winningScaleOwnershipPercentageTeleop;
             }
+            
         }
         
         /// <summary>

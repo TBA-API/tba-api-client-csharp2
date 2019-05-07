@@ -55,6 +55,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.CurrentSeason = currentSeason;
             }
+            
             // to ensure "maxSeason" is required (not null)
             if (maxSeason == null)
             {
@@ -64,6 +65,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.MaxSeason = maxSeason;
             }
+            
             // to ensure "isDatafeedDown" is required (not null)
             if (isDatafeedDown == null)
             {
@@ -73,6 +75,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.IsDatafeedDown = isDatafeedDown;
             }
+            
             // to ensure "downEvents" is required (not null)
             if (downEvents == null)
             {
@@ -82,6 +85,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.DownEvents = downEvents;
             }
+            
             // to ensure "ios" is required (not null)
             if (ios == null)
             {
@@ -91,6 +95,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.Ios = ios;
             }
+            
             // to ensure "android" is required (not null)
             if (android == null)
             {
@@ -100,6 +105,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.Android = android;
             }
+            
         }
         
         /// <summary>

@@ -149,6 +149,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.Key = key;
             }
+            
             // to ensure "type" is required (not null)
             if (type == null)
             {
@@ -158,6 +159,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.Type = type;
             }
+            
             this.ForeignKey = foreignKey;
             this.Details = details;
             this.Preferred = preferred;

@@ -131,6 +131,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.Key = key;
             }
+            
             // to ensure "compLevel" is required (not null)
             if (compLevel == null)
             {
@@ -140,6 +141,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.CompLevel = compLevel;
             }
+            
             // to ensure "setNumber" is required (not null)
             if (setNumber == null)
             {
@@ -149,6 +151,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.SetNumber = setNumber;
             }
+            
             // to ensure "matchNumber" is required (not null)
             if (matchNumber == null)
             {
@@ -158,6 +161,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.MatchNumber = matchNumber;
             }
+            
             // to ensure "eventKey" is required (not null)
             if (eventKey == null)
             {
@@ -167,6 +171,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.EventKey = eventKey;
             }
+            
             this.Alliances = alliances;
             this.WinningAlliance = winningAlliance;
             this.Time = time;

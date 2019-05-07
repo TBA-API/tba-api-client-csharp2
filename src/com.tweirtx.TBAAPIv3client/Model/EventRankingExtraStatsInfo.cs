@@ -51,6 +51,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.Precision = precision;
             }
+            
             // to ensure "name" is required (not null)
             if (name == null)
             {
@@ -60,6 +61,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.Name = name;
             }
+            
         }
         
         /// <summary>

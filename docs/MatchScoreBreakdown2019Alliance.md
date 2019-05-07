@@ -1,4 +1,6 @@
+
 # com.tweirtx.TBAAPIv3client.Model.MatchScoreBreakdown2019Alliance
+
 ## Properties
 
 Name | Type | Description | Notes
@@ -55,5 +57,7 @@ Name | Type | Description | Notes
 **TopRightRocketNear** | **string** |  | [optional] 
 **TotalPoints** | **int?** |  | [optional] 
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to README]](../README.md)
 

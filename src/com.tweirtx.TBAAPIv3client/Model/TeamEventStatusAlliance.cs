@@ -53,6 +53,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.Number = number;
             }
+            
             // to ensure "pick" is required (not null)
             if (pick == null)
             {
@@ -62,6 +63,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.Pick = pick;
             }
+            
             this.Name = name;
             this.Backup = backup;
         }

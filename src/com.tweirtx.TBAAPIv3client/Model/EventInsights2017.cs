@@ -81,6 +81,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.AverageFoulScore = averageFoulScore;
             }
+            
             // to ensure "averageFuelPoints" is required (not null)
             if (averageFuelPoints == null)
             {
@@ -90,6 +91,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.AverageFuelPoints = averageFuelPoints;
             }
+            
             // to ensure "averageFuelPointsAuto" is required (not null)
             if (averageFuelPointsAuto == null)
             {
@@ -99,6 +101,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.AverageFuelPointsAuto = averageFuelPointsAuto;
             }
+            
             // to ensure "averageFuelPointsTeleop" is required (not null)
             if (averageFuelPointsTeleop == null)
             {
@@ -108,6 +111,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.AverageFuelPointsTeleop = averageFuelPointsTeleop;
             }
+            
             // to ensure "averageHighGoals" is required (not null)
             if (averageHighGoals == null)
             {
@@ -117,6 +121,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.AverageHighGoals = averageHighGoals;
             }
+            
             // to ensure "averageHighGoalsAuto" is required (not null)
             if (averageHighGoalsAuto == null)
             {
@@ -126,6 +131,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.AverageHighGoalsAuto = averageHighGoalsAuto;
             }
+            
             // to ensure "averageHighGoalsTeleop" is required (not null)
             if (averageHighGoalsTeleop == null)
             {
@@ -135,6 +141,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.AverageHighGoalsTeleop = averageHighGoalsTeleop;
             }
+            
             // to ensure "averageLowGoals" is required (not null)
             if (averageLowGoals == null)
             {
@@ -144,6 +151,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.AverageLowGoals = averageLowGoals;
             }
+            
             // to ensure "averageLowGoalsAuto" is required (not null)
             if (averageLowGoalsAuto == null)
             {
@@ -153,6 +161,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.AverageLowGoalsAuto = averageLowGoalsAuto;
             }
+            
             // to ensure "averageLowGoalsTeleop" is required (not null)
             if (averageLowGoalsTeleop == null)
             {
@@ -162,6 +171,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.AverageLowGoalsTeleop = averageLowGoalsTeleop;
             }
+            
             // to ensure "averageMobilityPointsAuto" is required (not null)
             if (averageMobilityPointsAuto == null)
             {
@@ -171,6 +181,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.AverageMobilityPointsAuto = averageMobilityPointsAuto;
             }
+            
             // to ensure "averagePointsAuto" is required (not null)
             if (averagePointsAuto == null)
             {
@@ -180,6 +191,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.AveragePointsAuto = averagePointsAuto;
             }
+            
             // to ensure "averagePointsTeleop" is required (not null)
             if (averagePointsTeleop == null)
             {
@@ -189,6 +201,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.AveragePointsTeleop = averagePointsTeleop;
             }
+            
             // to ensure "averageRotorPoints" is required (not null)
             if (averageRotorPoints == null)
             {
@@ -198,6 +211,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.AverageRotorPoints = averageRotorPoints;
             }
+            
             // to ensure "averageRotorPointsAuto" is required (not null)
             if (averageRotorPointsAuto == null)
             {
@@ -207,6 +221,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.AverageRotorPointsAuto = averageRotorPointsAuto;
             }
+            
             // to ensure "averageRotorPointsTeleop" is required (not null)
             if (averageRotorPointsTeleop == null)
             {
@@ -216,6 +231,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.AverageRotorPointsTeleop = averageRotorPointsTeleop;
             }
+            
             // to ensure "averageScore" is required (not null)
             if (averageScore == null)
             {
@@ -225,6 +241,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.AverageScore = averageScore;
             }
+            
             // to ensure "averageTakeoffPointsTeleop" is required (not null)
             if (averageTakeoffPointsTeleop == null)
             {
@@ -234,6 +251,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.AverageTakeoffPointsTeleop = averageTakeoffPointsTeleop;
             }
+            
             // to ensure "averageWinMargin" is required (not null)
             if (averageWinMargin == null)
             {
@@ -243,6 +261,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.AverageWinMargin = averageWinMargin;
             }
+            
             // to ensure "averageWinScore" is required (not null)
             if (averageWinScore == null)
             {
@@ -252,6 +271,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.AverageWinScore = averageWinScore;
             }
+            
             // to ensure "highKpa" is required (not null)
             if (highKpa == null)
             {
@@ -261,6 +281,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.HighKpa = highKpa;
             }
+            
             // to ensure "highScore" is required (not null)
             if (highScore == null)
             {
@@ -270,6 +291,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.HighScore = highScore;
             }
+            
             // to ensure "kpaAchieved" is required (not null)
             if (kpaAchieved == null)
             {
@@ -279,6 +301,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.KpaAchieved = kpaAchieved;
             }
+            
             // to ensure "mobilityCounts" is required (not null)
             if (mobilityCounts == null)
             {
@@ -288,6 +311,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.MobilityCounts = mobilityCounts;
             }
+            
             // to ensure "rotor1Engaged" is required (not null)
             if (rotor1Engaged == null)
             {
@@ -297,6 +321,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.Rotor1Engaged = rotor1Engaged;
             }
+            
             // to ensure "rotor1EngagedAuto" is required (not null)
             if (rotor1EngagedAuto == null)
             {
@@ -306,6 +331,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.Rotor1EngagedAuto = rotor1EngagedAuto;
             }
+            
             // to ensure "rotor2Engaged" is required (not null)
             if (rotor2Engaged == null)
             {
@@ -315,6 +341,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.Rotor2Engaged = rotor2Engaged;
             }
+            
             // to ensure "rotor2EngagedAuto" is required (not null)
             if (rotor2EngagedAuto == null)
             {
@@ -324,6 +351,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.Rotor2EngagedAuto = rotor2EngagedAuto;
             }
+            
             // to ensure "rotor3Engaged" is required (not null)
             if (rotor3Engaged == null)
             {
@@ -333,6 +361,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.Rotor3Engaged = rotor3Engaged;
             }
+            
             // to ensure "rotor4Engaged" is required (not null)
             if (rotor4Engaged == null)
             {
@@ -342,6 +371,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.Rotor4Engaged = rotor4Engaged;
             }
+            
             // to ensure "takeoffCounts" is required (not null)
             if (takeoffCounts == null)
             {
@@ -351,6 +381,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.TakeoffCounts = takeoffCounts;
             }
+            
             // to ensure "unicornMatches" is required (not null)
             if (unicornMatches == null)
             {
@@ -360,6 +391,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.UnicornMatches = unicornMatches;
             }
+            
         }
         
         /// <summary>

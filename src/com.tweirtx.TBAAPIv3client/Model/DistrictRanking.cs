@@ -54,6 +54,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.TeamKey = teamKey;
             }
+            
             // to ensure "rank" is required (not null)
             if (rank == null)
             {
@@ -63,6 +64,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.Rank = rank;
             }
+            
             // to ensure "pointTotal" is required (not null)
             if (pointTotal == null)
             {
@@ -72,6 +74,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.PointTotal = pointTotal;
             }
+            
             this.RookieBonus = rookieBonus;
             this.EventPoints = eventPoints;
         }

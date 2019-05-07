@@ -57,6 +57,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.MatchesPlayed = matchesPlayed;
             }
+            
             // to ensure "record" is required (not null)
             if (record == null)
             {
@@ -66,6 +67,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.Record = record;
             }
+            
             // to ensure "rank" is required (not null)
             if (rank == null)
             {
@@ -75,6 +77,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.Rank = rank;
             }
+            
             // to ensure "dq" is required (not null)
             if (dq == null)
             {
@@ -84,6 +87,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.Dq = dq;
             }
+            
             // to ensure "teamKey" is required (not null)
             if (teamKey == null)
             {
@@ -93,6 +97,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.TeamKey = teamKey;
             }
+            
             this.QualAverage = qualAverage;
             this.ExtraStats = extraStats;
             this.SortOrders = sortOrders;

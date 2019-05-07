@@ -1,4 +1,6 @@
+
 # com.tweirtx.TBAAPIv3client.Model.MatchScoreBreakdown2016Alliance
+
 ## Properties
 
 Name | Type | Description | Notes
@@ -42,5 +44,7 @@ Name | Type | Description | Notes
 **Position4crossings** | **int?** |  | [optional] 
 **Position5crossings** | **int?** |  | [optional] 
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to README]](../README.md)
 

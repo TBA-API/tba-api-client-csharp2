@@ -1,4 +1,6 @@
+
 # com.tweirtx.TBAAPIv3client.Model.MatchSimple
+
 ## Properties
 
 Name | Type | Description | Notes
@@ -14,5 +16,7 @@ Name | Type | Description | Notes
 **PredictedTime** | **long?** | UNIX timestamp (seconds since 1-Jan-1970 00:00:00) of the TBA predicted match start time. | [optional] 
 **ActualTime** | **long?** | UNIX timestamp (seconds since 1-Jan-1970 00:00:00) of actual match start time. | [optional] 
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to README]](../README.md)
 

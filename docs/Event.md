@@ -1,4 +1,6 @@
+
 # com.tweirtx.TBAAPIv3client.Model.Event
+
 ## Properties
 
 Name | Type | Description | Notes
@@ -34,5 +36,7 @@ Name | Type | Description | Notes
 **PlayoffType** | **int?** | Playoff Type, as defined here: https://github.com/the-blue-alliance/the-blue-alliance/blob/master/consts/playoff_type.py#L4, or null. | [optional] 
 **PlayoffTypeString** | **string** | String representation of the &#x60;playoff_type&#x60;, or null. | [optional] 
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to README]](../README.md)
 

@@ -109,6 +109,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.Type = type;
             }
+            
             // to ensure "channel" is required (not null)
             if (channel == null)
             {
@@ -118,6 +119,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.Channel = channel;
             }
+            
             this.File = file;
         }
         

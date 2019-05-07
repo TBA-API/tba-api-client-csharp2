@@ -1,4 +1,6 @@
+
 # com.tweirtx.TBAAPIv3client.Model.EventInsights2017
+
 ## Properties
 
 Name | Type | Description | Notes
@@ -36,5 +38,7 @@ Name | Type | Description | Notes
 **TakeoffCounts** | **List&lt;float?&gt;** | An array with three values, number of times takeoff was counted, number of opportunities to takeoff, and percentage. | 
 **UnicornMatches** | **List&lt;float?&gt;** | An array with three values, number of times a unicorn match (Win + kPa &amp; Rotor Bonuses) occured, number of opportunities to have a unicorn match, and percentage. | 
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to README]](../README.md)
 

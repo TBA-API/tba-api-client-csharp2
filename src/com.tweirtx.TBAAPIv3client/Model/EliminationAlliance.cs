@@ -54,6 +54,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.Picks = picks;
             }
+            
             this.Name = name;
             this.Backup = backup;
             this.Declines = declines;

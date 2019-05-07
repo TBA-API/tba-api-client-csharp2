@@ -1,4 +1,6 @@
+
 # com.tweirtx.TBAAPIv3client.Model.TeamEventStatus
+
 ## Properties
 
 Name | Type | Description | Notes
@@ -12,5 +14,7 @@ Name | Type | Description | Notes
 **NextMatchKey** | **string** | TBA match key for the next match the team is scheduled to play in at this event, or null. | [optional] 
 **LastMatchKey** | **string** | TBA match key for the last match the team played in at this event, or null. | [optional] 
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to README]](../README.md)
 

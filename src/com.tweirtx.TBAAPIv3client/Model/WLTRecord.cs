@@ -52,6 +52,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.Losses = losses;
             }
+            
             // to ensure "wins" is required (not null)
             if (wins == null)
             {
@@ -61,6 +62,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.Wins = wins;
             }
+            
             // to ensure "ties" is required (not null)
             if (ties == null)
             {
@@ -70,6 +72,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.Ties = ties;
             }
+            
         }
         
         /// <summary>

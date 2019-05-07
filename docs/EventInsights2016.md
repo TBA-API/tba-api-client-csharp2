@@ -1,4 +1,6 @@
+
 # com.tweirtx.TBAAPIv3client.Model.EventInsights2016
+
 ## Properties
 
 Name | Type | Description | Notes
@@ -28,5 +30,7 @@ Name | Type | Description | Notes
 **AverageFoulScore** | **float?** | Average foul score. | 
 **HighScore** | **List&lt;string&gt;** | An array with three values, high score, match key from the match with the high score, and the name of the match. | 
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to README]](../README.md)
 

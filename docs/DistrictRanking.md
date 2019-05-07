@@ -1,4 +1,6 @@
+
 # com.tweirtx.TBAAPIv3client.Model.DistrictRanking
+
 ## Properties
 
 Name | Type | Description | Notes
@@ -9,5 +11,7 @@ Name | Type | Description | Notes
 **PointTotal** | **int?** | Total district points for the team. | 
 **EventPoints** | [**List&lt;DistrictRankingEventPoints&gt;**](DistrictRankingEventPoints.md) | List of events that contributed to the point total for the team. | [optional] 
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to README]](../README.md)
 

@@ -1,4 +1,6 @@
+
 # com.tweirtx.TBAAPIv3client.Model.MatchTimeseries2018
+
 ## Properties
 
 Name | Type | Description | Notes
@@ -35,5 +37,7 @@ Name | Type | Description | Notes
 **RedScore** | **int?** | Current score for the red alliance. | [optional] 
 **RedSwitchOwned** | **int?** | 1 if the red alliance owns their SWITCH, 0 if not. | [optional] 
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to README]](../README.md)
 

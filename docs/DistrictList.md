@@ -1,4 +1,6 @@
+
 # com.tweirtx.TBAAPIv3client.Model.DistrictList
+
 ## Properties
 
 Name | Type | Description | Notes
@@ -8,5 +10,7 @@ Name | Type | Description | Notes
 **Key** | **string** | Key for this district, e.g. &#x60;2016ne&#x60;. | 
 **Year** | **int?** | Year this district participated. | 
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to README]](../README.md)
 

@@ -52,6 +52,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.Rankings = rankings;
             }
+            
             // to ensure "sortOrderInfo" is required (not null)
             if (sortOrderInfo == null)
             {
@@ -61,6 +62,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.SortOrderInfo = sortOrderInfo;
             }
+            
             this.ExtraStatsInfo = extraStatsInfo;
         }
         

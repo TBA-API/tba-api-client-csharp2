@@ -1,4 +1,6 @@
+
 # com.tweirtx.TBAAPIv3client.Model.Award
+
 ## Properties
 
 Name | Type | Description | Notes
@@ -9,5 +11,7 @@ Name | Type | Description | Notes
 **RecipientList** | [**List&lt;AwardRecipient&gt;**](AwardRecipient.md) | A list of recipients of the award at the event. May have either a team_key or an awardee, both, or neither (in the case the award wasn&#39;t awarded at the event). | 
 **Year** | **int?** | The year this award was won. | 
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to README]](../README.md)
 

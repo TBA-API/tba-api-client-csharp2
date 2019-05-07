@@ -1,4 +1,6 @@
+
 # com.tweirtx.TBAAPIv3client.Model.TeamEventStatusPlayoff
+
 ## Properties
 
 Name | Type | Description | Notes
@@ -9,5 +11,7 @@ Name | Type | Description | Notes
 **Status** | **string** | Current competition status for the playoffs. | [optional] 
 **PlayoffAverage** | **int?** | The average match score during playoffs. Year specific. May be null if not relevant for a given year. | [optional] 
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to README]](../README.md)
 

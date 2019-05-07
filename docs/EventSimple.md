@@ -1,4 +1,6 @@
+
 # com.tweirtx.TBAAPIv3client.Model.EventSimple
+
 ## Properties
 
 Name | Type | Description | Notes
@@ -15,5 +17,7 @@ Name | Type | Description | Notes
 **EndDate** | **DateTime?** | Event end date in &#x60;yyyy-mm-dd&#x60; format. | 
 **Year** | **int?** | Year the event data is for. | 
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to README]](../README.md)
 

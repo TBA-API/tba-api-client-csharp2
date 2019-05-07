@@ -53,6 +53,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.Year = year;
             }
+            
             // to ensure "robotName" is required (not null)
             if (robotName == null)
             {
@@ -62,6 +63,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.RobotName = robotName;
             }
+            
             // to ensure "key" is required (not null)
             if (key == null)
             {
@@ -71,6 +73,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.Key = key;
             }
+            
             // to ensure "teamKey" is required (not null)
             if (teamKey == null)
             {
@@ -80,6 +83,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.TeamKey = teamKey;
             }
+            
         }
         
         /// <summary>

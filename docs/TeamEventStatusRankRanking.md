@@ -1,4 +1,6 @@
+
 # com.tweirtx.TBAAPIv3client.Model.TeamEventStatusRankRanking
+
 ## Properties
 
 Name | Type | Description | Notes
@@ -11,5 +13,7 @@ Name | Type | Description | Notes
 **Dq** | **int?** | Number of matches the team was disqualified for. | [optional] 
 **TeamKey** | **string** | TBA team key for this rank. | [optional] 
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to README]](../README.md)
 

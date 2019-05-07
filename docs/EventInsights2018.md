@@ -1,4 +1,6 @@
+
 # com.tweirtx.TBAAPIv3client.Model.EventInsights2018
+
 ## Properties
 
 Name | Type | Description | Notes
@@ -41,5 +43,7 @@ Name | Type | Description | Notes
 **WinningScaleOwnershipPercentageAuto** | **float?** | Average scale ownership percentage for the winning alliance during auto. | 
 **WinningScaleOwnershipPercentageTeleop** | **float?** | Average scale ownership percentage for the winning alliance during teleop. | 
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to README]](../README.md)
 

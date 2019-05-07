@@ -1,4 +1,6 @@
+
 # com.tweirtx.TBAAPIv3client.Model.Media
+
 ## Properties
 
 Name | Type | Description | Notes
@@ -11,5 +13,7 @@ Name | Type | Description | Notes
 **DirectUrl** | **string** | Direct URL to the media. | [optional] 
 **ViewUrl** | **string** | The URL that leads to the full web page for the media, if one exists. | [optional] 
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to README]](../README.md)
 

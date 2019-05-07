@@ -54,6 +54,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.Total = total;
             }
+            
             // to ensure "alliancePoints" is required (not null)
             if (alliancePoints == null)
             {
@@ -63,6 +64,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.AlliancePoints = alliancePoints;
             }
+            
             // to ensure "elimPoints" is required (not null)
             if (elimPoints == null)
             {
@@ -72,6 +74,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.ElimPoints = elimPoints;
             }
+            
             // to ensure "awardPoints" is required (not null)
             if (awardPoints == null)
             {
@@ -81,6 +84,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.AwardPoints = awardPoints;
             }
+            
             // to ensure "qualPoints" is required (not null)
             if (qualPoints == null)
             {
@@ -90,6 +94,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.QualPoints = qualPoints;
             }
+            
         }
         
         /// <summary>

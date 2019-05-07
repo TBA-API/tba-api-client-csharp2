@@ -19,8 +19,9 @@ Method | HTTP request | Description
 [**GetTeamMatchesByYearSimple**](MatchApi.md#getteammatchesbyyearsimple) | **GET** /team/{team_key}/matches/{year}/simple | 
 
 
-<a name="geteventmatchtimeseries"></a>
-# **GetEventMatchTimeseries**
+
+## GetEventMatchTimeseries
+
 > List<string> GetEventMatchTimeseries (string eventKey, string ifModifiedSince = null)
 
 
@@ -28,6 +29,7 @@ Method | HTTP request | Description
 Gets an array of Match Keys for the given event key that have timeseries data. Returns an empty array if no matches have timeseries data. *WARNING:* This is *not* official data, and is subject to a significant possibility of error, or missing data. Do not rely on this data for any purpose. In fact, pretend we made it up. *WARNING:* This endpoint and corresponding data models are under *active development* and may change at any time, including in breaking ways.
 
 ### Example
+
 ```csharp
 using System;
 using System.Diagnostics;
@@ -66,6 +68,7 @@ namespace Example
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **eventKey** | **string**| TBA Event Key, eg &#x60;2016nytr&#x60; | 
@@ -81,13 +84,17 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
 
-<a name="geteventmatches"></a>
-# **GetEventMatches**
+
+## GetEventMatches
+
 > List<Match> GetEventMatches (string eventKey, string ifModifiedSince = null)
 
 
@@ -95,6 +102,7 @@ Name | Type | Description  | Notes
 Gets a list of matches for the given event.
 
 ### Example
+
 ```csharp
 using System;
 using System.Diagnostics;
@@ -133,6 +141,7 @@ namespace Example
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **eventKey** | **string**| TBA Event Key, eg &#x60;2016nytr&#x60; | 
@@ -148,13 +157,17 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
 
-<a name="geteventmatcheskeys"></a>
-# **GetEventMatchesKeys**
+
+## GetEventMatchesKeys
+
 > List<string> GetEventMatchesKeys (string eventKey, string ifModifiedSince = null)
 
 
@@ -162,6 +175,7 @@ Name | Type | Description  | Notes
 Gets a list of match keys for the given event.
 
 ### Example
+
 ```csharp
 using System;
 using System.Diagnostics;
@@ -200,6 +214,7 @@ namespace Example
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **eventKey** | **string**| TBA Event Key, eg &#x60;2016nytr&#x60; | 
@@ -215,13 +230,17 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
 
-<a name="geteventmatchessimple"></a>
-# **GetEventMatchesSimple**
+
+## GetEventMatchesSimple
+
 > List<MatchSimple> GetEventMatchesSimple (string eventKey, string ifModifiedSince = null)
 
 
@@ -229,6 +248,7 @@ Name | Type | Description  | Notes
 Gets a short-form list of matches for the given event.
 
 ### Example
+
 ```csharp
 using System;
 using System.Diagnostics;
@@ -267,6 +287,7 @@ namespace Example
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **eventKey** | **string**| TBA Event Key, eg &#x60;2016nytr&#x60; | 
@@ -282,13 +303,17 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
 
-<a name="getmatch"></a>
-# **GetMatch**
+
+## GetMatch
+
 > Match GetMatch (string matchKey, string ifModifiedSince = null)
 
 
@@ -296,6 +321,7 @@ Name | Type | Description  | Notes
 Gets a `Match` object for the given match key.
 
 ### Example
+
 ```csharp
 using System;
 using System.Diagnostics;
@@ -334,6 +360,7 @@ namespace Example
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **matchKey** | **string**| TBA Match Key, eg &#x60;2016nytr_qm1&#x60; | 
@@ -349,13 +376,17 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
 
-<a name="getmatchsimple"></a>
-# **GetMatchSimple**
+
+## GetMatchSimple
+
 > MatchSimple GetMatchSimple (string matchKey, string ifModifiedSince = null)
 
 
@@ -363,6 +394,7 @@ Name | Type | Description  | Notes
 Gets a short-form `Match` object for the given match key.
 
 ### Example
+
 ```csharp
 using System;
 using System.Diagnostics;
@@ -401,6 +433,7 @@ namespace Example
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **matchKey** | **string**| TBA Match Key, eg &#x60;2016nytr_qm1&#x60; | 
@@ -416,13 +449,17 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
 
-<a name="getmatchtimeseries"></a>
-# **GetMatchTimeseries**
+
+## GetMatchTimeseries
+
 > List<Object> GetMatchTimeseries (string matchKey, string ifModifiedSince = null)
 
 
@@ -430,6 +467,7 @@ Name | Type | Description  | Notes
 Gets an array of game-specific Match Timeseries objects for the given match key or an empty array if not available. *WARNING:* This is *not* official data, and is subject to a significant possibility of error, or missing data. Do not rely on this data for any purpose. In fact, pretend we made it up. *WARNING:* This endpoint and corresponding data models are under *active development* and may change at any time, including in breaking ways.
 
 ### Example
+
 ```csharp
 using System;
 using System.Diagnostics;
@@ -468,6 +506,7 @@ namespace Example
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **matchKey** | **string**| TBA Match Key, eg &#x60;2016nytr_qm1&#x60; | 
@@ -483,13 +522,17 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
 
-<a name="getteameventmatches"></a>
-# **GetTeamEventMatches**
+
+## GetTeamEventMatches
+
 > List<Match> GetTeamEventMatches (string teamKey, string eventKey, string ifModifiedSince = null)
 
 
@@ -497,6 +540,7 @@ Name | Type | Description  | Notes
 Gets a list of matches for the given team and event.
 
 ### Example
+
 ```csharp
 using System;
 using System.Diagnostics;
@@ -536,6 +580,7 @@ namespace Example
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **teamKey** | **string**| TBA Team Key, eg &#x60;frc254&#x60; | 
@@ -552,13 +597,17 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
 
-<a name="getteameventmatcheskeys"></a>
-# **GetTeamEventMatchesKeys**
+
+## GetTeamEventMatchesKeys
+
 > List<string> GetTeamEventMatchesKeys (string teamKey, string eventKey, string ifModifiedSince = null)
 
 
@@ -566,6 +615,7 @@ Name | Type | Description  | Notes
 Gets a list of match keys for matches for the given team and event.
 
 ### Example
+
 ```csharp
 using System;
 using System.Diagnostics;
@@ -605,6 +655,7 @@ namespace Example
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **teamKey** | **string**| TBA Team Key, eg &#x60;frc254&#x60; | 
@@ -621,13 +672,17 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
 
-<a name="getteameventmatchessimple"></a>
-# **GetTeamEventMatchesSimple**
+
+## GetTeamEventMatchesSimple
+
 > List<Match> GetTeamEventMatchesSimple (string teamKey, string eventKey, string ifModifiedSince = null)
 
 
@@ -635,6 +690,7 @@ Name | Type | Description  | Notes
 Gets a short-form list of matches for the given team and event.
 
 ### Example
+
 ```csharp
 using System;
 using System.Diagnostics;
@@ -674,6 +730,7 @@ namespace Example
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **teamKey** | **string**| TBA Team Key, eg &#x60;frc254&#x60; | 
@@ -690,13 +747,17 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
 
-<a name="getteammatchesbyyear"></a>
-# **GetTeamMatchesByYear**
+
+## GetTeamMatchesByYear
+
 > List<Match> GetTeamMatchesByYear (string teamKey, int? year, string ifModifiedSince = null)
 
 
@@ -704,6 +765,7 @@ Name | Type | Description  | Notes
 Gets a list of matches for the given team and year.
 
 ### Example
+
 ```csharp
 using System;
 using System.Diagnostics;
@@ -743,6 +805,7 @@ namespace Example
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **teamKey** | **string**| TBA Team Key, eg &#x60;frc254&#x60; | 
@@ -759,13 +822,17 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
 
-<a name="getteammatchesbyyearkeys"></a>
-# **GetTeamMatchesByYearKeys**
+
+## GetTeamMatchesByYearKeys
+
 > List<string> GetTeamMatchesByYearKeys (string teamKey, int? year, string ifModifiedSince = null)
 
 
@@ -773,6 +840,7 @@ Name | Type | Description  | Notes
 Gets a list of match keys for matches for the given team and year.
 
 ### Example
+
 ```csharp
 using System;
 using System.Diagnostics;
@@ -812,6 +880,7 @@ namespace Example
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **teamKey** | **string**| TBA Team Key, eg &#x60;frc254&#x60; | 
@@ -828,13 +897,17 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
 
-<a name="getteammatchesbyyearsimple"></a>
-# **GetTeamMatchesByYearSimple**
+
+## GetTeamMatchesByYearSimple
+
 > List<MatchSimple> GetTeamMatchesByYearSimple (string teamKey, int? year, string ifModifiedSince = null)
 
 
@@ -842,6 +915,7 @@ Name | Type | Description  | Notes
 Gets a short-form list of matches for the given team and year.
 
 ### Example
+
 ```csharp
 using System;
 using System.Diagnostics;
@@ -881,6 +955,7 @@ namespace Example
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **teamKey** | **string**| TBA Team Key, eg &#x60;frc254&#x60; | 
@@ -897,8 +972,11 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
 

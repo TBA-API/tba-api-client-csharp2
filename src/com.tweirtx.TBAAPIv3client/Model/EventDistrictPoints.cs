@@ -51,6 +51,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.Points = points;
             }
+            
             this.Tiebreakers = tiebreakers;
         }
         

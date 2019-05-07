@@ -1,4 +1,6 @@
+
 # com.tweirtx.TBAAPIv3client.Model.MatchAlliance
+
 ## Properties
 
 Name | Type | Description | Notes
@@ -8,5 +10,7 @@ Name | Type | Description | Notes
 **SurrogateTeamKeys** | **List&lt;string&gt;** | TBA team keys (eg &#x60;frc254&#x60;) of any teams playing as a surrogate. | [optional] 
 **DqTeamKeys** | **List&lt;string&gt;** | TBA team keys (eg &#x60;frc254&#x60;) of any disqualified teams. | [optional] 
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to README]](../README.md)
 

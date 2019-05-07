@@ -27,8 +27,9 @@ Method | HTTP request | Description
 [**GetTeamsSimple**](ListApi.md#getteamssimple) | **GET** /teams/{page_num}/simple | 
 
 
-<a name="getdistrictevents"></a>
-# **GetDistrictEvents**
+
+## GetDistrictEvents
+
 > List<Event> GetDistrictEvents (string districtKey, string ifModifiedSince = null)
 
 
@@ -36,6 +37,7 @@ Method | HTTP request | Description
 Gets a list of events in the given district.
 
 ### Example
+
 ```csharp
 using System;
 using System.Diagnostics;
@@ -74,6 +76,7 @@ namespace Example
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **districtKey** | **string**| TBA District Key, eg &#x60;2016fim&#x60; | 
@@ -89,13 +92,17 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
 
-<a name="getdistricteventskeys"></a>
-# **GetDistrictEventsKeys**
+
+## GetDistrictEventsKeys
+
 > List<string> GetDistrictEventsKeys (string districtKey, string ifModifiedSince = null)
 
 
@@ -103,6 +110,7 @@ Name | Type | Description  | Notes
 Gets a list of event keys for events in the given district.
 
 ### Example
+
 ```csharp
 using System;
 using System.Diagnostics;
@@ -141,6 +149,7 @@ namespace Example
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **districtKey** | **string**| TBA District Key, eg &#x60;2016fim&#x60; | 
@@ -156,13 +165,17 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
 
-<a name="getdistricteventssimple"></a>
-# **GetDistrictEventsSimple**
+
+## GetDistrictEventsSimple
+
 > List<EventSimple> GetDistrictEventsSimple (string districtKey, string ifModifiedSince = null)
 
 
@@ -170,6 +183,7 @@ Name | Type | Description  | Notes
 Gets a short-form list of events in the given district.
 
 ### Example
+
 ```csharp
 using System;
 using System.Diagnostics;
@@ -208,6 +222,7 @@ namespace Example
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **districtKey** | **string**| TBA District Key, eg &#x60;2016fim&#x60; | 
@@ -223,13 +238,17 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
 
-<a name="getdistrictrankings"></a>
-# **GetDistrictRankings**
+
+## GetDistrictRankings
+
 > List<DistrictRanking> GetDistrictRankings (string districtKey, string ifModifiedSince = null)
 
 
@@ -237,6 +256,7 @@ Name | Type | Description  | Notes
 Gets a list of team district rankings for the given district.
 
 ### Example
+
 ```csharp
 using System;
 using System.Diagnostics;
@@ -275,6 +295,7 @@ namespace Example
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **districtKey** | **string**| TBA District Key, eg &#x60;2016fim&#x60; | 
@@ -290,13 +311,17 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
 
-<a name="getdistrictteams"></a>
-# **GetDistrictTeams**
+
+## GetDistrictTeams
+
 > List<Team> GetDistrictTeams (string districtKey, string ifModifiedSince = null)
 
 
@@ -304,6 +329,7 @@ Name | Type | Description  | Notes
 Gets a list of `Team` objects that competed in events in the given district.
 
 ### Example
+
 ```csharp
 using System;
 using System.Diagnostics;
@@ -342,6 +368,7 @@ namespace Example
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **districtKey** | **string**| TBA District Key, eg &#x60;2016fim&#x60; | 
@@ -357,13 +384,17 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
 
-<a name="getdistrictteamskeys"></a>
-# **GetDistrictTeamsKeys**
+
+## GetDistrictTeamsKeys
+
 > List<string> GetDistrictTeamsKeys (string districtKey, string ifModifiedSince = null)
 
 
@@ -371,6 +402,7 @@ Name | Type | Description  | Notes
 Gets a list of `Team` objects that competed in events in the given district.
 
 ### Example
+
 ```csharp
 using System;
 using System.Diagnostics;
@@ -409,6 +441,7 @@ namespace Example
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **districtKey** | **string**| TBA District Key, eg &#x60;2016fim&#x60; | 
@@ -424,13 +457,17 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
 
-<a name="getdistrictteamssimple"></a>
-# **GetDistrictTeamsSimple**
+
+## GetDistrictTeamsSimple
+
 > List<TeamSimple> GetDistrictTeamsSimple (string districtKey, string ifModifiedSince = null)
 
 
@@ -438,6 +475,7 @@ Name | Type | Description  | Notes
 Gets a short-form list of `Team` objects that competed in events in the given district.
 
 ### Example
+
 ```csharp
 using System;
 using System.Diagnostics;
@@ -476,6 +514,7 @@ namespace Example
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **districtKey** | **string**| TBA District Key, eg &#x60;2016fim&#x60; | 
@@ -491,13 +530,17 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
 
-<a name="geteventteams"></a>
-# **GetEventTeams**
+
+## GetEventTeams
+
 > List<Team> GetEventTeams (string eventKey, string ifModifiedSince = null)
 
 
@@ -505,6 +548,7 @@ Name | Type | Description  | Notes
 Gets a list of `Team` objects that competed in the given event.
 
 ### Example
+
 ```csharp
 using System;
 using System.Diagnostics;
@@ -543,6 +587,7 @@ namespace Example
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **eventKey** | **string**| TBA Event Key, eg &#x60;2016nytr&#x60; | 
@@ -558,13 +603,17 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
 
-<a name="geteventteamskeys"></a>
-# **GetEventTeamsKeys**
+
+## GetEventTeamsKeys
+
 > List<string> GetEventTeamsKeys (string eventKey, string ifModifiedSince = null)
 
 
@@ -572,6 +621,7 @@ Name | Type | Description  | Notes
 Gets a list of `Team` keys that competed in the given event.
 
 ### Example
+
 ```csharp
 using System;
 using System.Diagnostics;
@@ -610,6 +660,7 @@ namespace Example
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **eventKey** | **string**| TBA Event Key, eg &#x60;2016nytr&#x60; | 
@@ -625,13 +676,17 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
 
-<a name="geteventteamssimple"></a>
-# **GetEventTeamsSimple**
+
+## GetEventTeamsSimple
+
 > List<TeamSimple> GetEventTeamsSimple (string eventKey, string ifModifiedSince = null)
 
 
@@ -639,6 +694,7 @@ Name | Type | Description  | Notes
 Gets a short-form list of `Team` objects that competed in the given event.
 
 ### Example
+
 ```csharp
 using System;
 using System.Diagnostics;
@@ -677,6 +733,7 @@ namespace Example
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **eventKey** | **string**| TBA Event Key, eg &#x60;2016nytr&#x60; | 
@@ -692,13 +749,17 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
 
-<a name="geteventteamsstatuses"></a>
-# **GetEventTeamsStatuses**
+
+## GetEventTeamsStatuses
+
 > Dictionary<string, TeamEventStatus> GetEventTeamsStatuses (string eventKey, string ifModifiedSince = null)
 
 
@@ -706,6 +767,7 @@ Name | Type | Description  | Notes
 Gets a key-value list of the event statuses for teams competing at the given event.
 
 ### Example
+
 ```csharp
 using System;
 using System.Diagnostics;
@@ -744,6 +806,7 @@ namespace Example
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **eventKey** | **string**| TBA Event Key, eg &#x60;2016nytr&#x60; | 
@@ -759,13 +822,17 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
 
-<a name="geteventsbyyear"></a>
-# **GetEventsByYear**
+
+## GetEventsByYear
+
 > List<Event> GetEventsByYear (int? year, string ifModifiedSince = null)
 
 
@@ -773,6 +840,7 @@ Name | Type | Description  | Notes
 Gets a list of events in the given year.
 
 ### Example
+
 ```csharp
 using System;
 using System.Diagnostics;
@@ -811,6 +879,7 @@ namespace Example
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **year** | **int?**| Competition Year (or Season). Must be 4 digits. | 
@@ -826,13 +895,17 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
 
-<a name="geteventsbyyearkeys"></a>
-# **GetEventsByYearKeys**
+
+## GetEventsByYearKeys
+
 > List<string> GetEventsByYearKeys (int? year, string ifModifiedSince = null)
 
 
@@ -840,6 +913,7 @@ Name | Type | Description  | Notes
 Gets a list of event keys in the given year.
 
 ### Example
+
 ```csharp
 using System;
 using System.Diagnostics;
@@ -878,6 +952,7 @@ namespace Example
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **year** | **int?**| Competition Year (or Season). Must be 4 digits. | 
@@ -893,13 +968,17 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
 
-<a name="geteventsbyyearsimple"></a>
-# **GetEventsByYearSimple**
+
+## GetEventsByYearSimple
+
 > List<EventSimple> GetEventsByYearSimple (int? year, string ifModifiedSince = null)
 
 
@@ -907,6 +986,7 @@ Name | Type | Description  | Notes
 Gets a short-form list of events in the given year.
 
 ### Example
+
 ```csharp
 using System;
 using System.Diagnostics;
@@ -945,6 +1025,7 @@ namespace Example
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **year** | **int?**| Competition Year (or Season). Must be 4 digits. | 
@@ -960,13 +1041,17 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
 
-<a name="getteameventsstatusesbyyear"></a>
-# **GetTeamEventsStatusesByYear**
+
+## GetTeamEventsStatusesByYear
+
 > Dictionary<string, TeamEventStatus> GetTeamEventsStatusesByYear (string teamKey, int? year, string ifModifiedSince = null)
 
 
@@ -974,6 +1059,7 @@ Name | Type | Description  | Notes
 Gets a key-value list of the event statuses for events this team has competed at in the given year.
 
 ### Example
+
 ```csharp
 using System;
 using System.Diagnostics;
@@ -1013,6 +1099,7 @@ namespace Example
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **teamKey** | **string**| TBA Team Key, eg &#x60;frc254&#x60; | 
@@ -1029,13 +1116,17 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
 
-<a name="getteams"></a>
-# **GetTeams**
+
+## GetTeams
+
 > List<Team> GetTeams (int? pageNum, string ifModifiedSince = null)
 
 
@@ -1043,6 +1134,7 @@ Name | Type | Description  | Notes
 Gets a list of `Team` objects, paginated in groups of 500.
 
 ### Example
+
 ```csharp
 using System;
 using System.Diagnostics;
@@ -1081,6 +1173,7 @@ namespace Example
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **pageNum** | **int?**| Page number of results to return, zero-indexed | 
@@ -1096,13 +1189,17 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
 
-<a name="getteamsbyyear"></a>
-# **GetTeamsByYear**
+
+## GetTeamsByYear
+
 > List<Team> GetTeamsByYear (int? year, int? pageNum, string ifModifiedSince = null)
 
 
@@ -1110,6 +1207,7 @@ Name | Type | Description  | Notes
 Gets a list of `Team` objects that competed in the given year, paginated in groups of 500.
 
 ### Example
+
 ```csharp
 using System;
 using System.Diagnostics;
@@ -1149,6 +1247,7 @@ namespace Example
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **year** | **int?**| Competition Year (or Season). Must be 4 digits. | 
@@ -1165,13 +1264,17 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
 
-<a name="getteamsbyyearkeys"></a>
-# **GetTeamsByYearKeys**
+
+## GetTeamsByYearKeys
+
 > List<string> GetTeamsByYearKeys (int? year, int? pageNum, string ifModifiedSince = null)
 
 
@@ -1179,6 +1282,7 @@ Name | Type | Description  | Notes
 Gets a list Team Keys that competed in the given year, paginated in groups of 500.
 
 ### Example
+
 ```csharp
 using System;
 using System.Diagnostics;
@@ -1218,6 +1322,7 @@ namespace Example
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **year** | **int?**| Competition Year (or Season). Must be 4 digits. | 
@@ -1234,13 +1339,17 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
 
-<a name="getteamsbyyearsimple"></a>
-# **GetTeamsByYearSimple**
+
+## GetTeamsByYearSimple
+
 > List<TeamSimple> GetTeamsByYearSimple (int? year, int? pageNum, string ifModifiedSince = null)
 
 
@@ -1248,6 +1357,7 @@ Name | Type | Description  | Notes
 Gets a list of short form `Team_Simple` objects that competed in the given year, paginated in groups of 500.
 
 ### Example
+
 ```csharp
 using System;
 using System.Diagnostics;
@@ -1287,6 +1397,7 @@ namespace Example
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **year** | **int?**| Competition Year (or Season). Must be 4 digits. | 
@@ -1303,13 +1414,17 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
 
-<a name="getteamskeys"></a>
-# **GetTeamsKeys**
+
+## GetTeamsKeys
+
 > List<string> GetTeamsKeys (int? pageNum, string ifModifiedSince = null)
 
 
@@ -1317,6 +1432,7 @@ Name | Type | Description  | Notes
 Gets a list of Team keys, paginated in groups of 500. (Note, each page will not have 500 teams, but will include the teams within that range of 500.)
 
 ### Example
+
 ```csharp
 using System;
 using System.Diagnostics;
@@ -1355,6 +1471,7 @@ namespace Example
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **pageNum** | **int?**| Page number of results to return, zero-indexed | 
@@ -1370,13 +1487,17 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
 
-<a name="getteamssimple"></a>
-# **GetTeamsSimple**
+
+## GetTeamsSimple
+
 > List<TeamSimple> GetTeamsSimple (int? pageNum, string ifModifiedSince = null)
 
 
@@ -1384,6 +1505,7 @@ Name | Type | Description  | Notes
 Gets a list of short form `Team_Simple` objects, paginated in groups of 500.
 
 ### Example
+
 ```csharp
 using System;
 using System.Diagnostics;
@@ -1422,6 +1544,7 @@ namespace Example
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **pageNum** | **int?**| Page number of results to return, zero-indexed | 
@@ -1437,8 +1560,11 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
 

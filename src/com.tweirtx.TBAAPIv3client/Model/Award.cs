@@ -54,6 +54,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.Name = name;
             }
+            
             // to ensure "awardType" is required (not null)
             if (awardType == null)
             {
@@ -63,6 +64,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.AwardType = awardType;
             }
+            
             // to ensure "eventKey" is required (not null)
             if (eventKey == null)
             {
@@ -72,6 +74,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.EventKey = eventKey;
             }
+            
             // to ensure "recipientList" is required (not null)
             if (recipientList == null)
             {
@@ -81,6 +84,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.RecipientList = recipientList;
             }
+            
             // to ensure "year" is required (not null)
             if (year == null)
             {
@@ -90,6 +94,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             {
                 this.Year = year;
             }
+            
         }
         
         /// <summary>

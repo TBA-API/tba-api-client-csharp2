@@ -1,4 +1,6 @@
+
 # com.tweirtx.TBAAPIv3client.Model.Match
+
 ## Properties
 
 Name | Type | Description | Notes
@@ -17,5 +19,7 @@ Name | Type | Description | Notes
 **ScoreBreakdown** | [**Object**](.md) | Score breakdown for auto, teleop, etc. points. Varies from year to year. May be null. | [optional] 
 **Videos** | [**List&lt;MatchVideos&gt;**](MatchVideos.md) | Array of video objects associated with this match. | [optional] 
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to README]](../README.md)
 

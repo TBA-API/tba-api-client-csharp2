@@ -1,4 +1,6 @@
+
 # com.tweirtx.TBAAPIv3client.Model.EventDistrictPointsPoints
+
 ## Properties
 
 Name | Type | Description | Notes
@@ -9,5 +11,7 @@ Name | Type | Description | Notes
 **AwardPoints** | **int?** | Points awarded for event awards. | 
 **QualPoints** | **int?** | Points awarded for qualification match performance. | 
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to README]](../README.md)
 
