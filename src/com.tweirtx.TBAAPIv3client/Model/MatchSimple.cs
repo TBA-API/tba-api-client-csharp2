@@ -120,7 +120,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// <param name="time">UNIX timestamp (seconds since 1-Jan-1970 00:00:00) of the scheduled match time, as taken from the published schedule..</param>
         /// <param name="predictedTime">UNIX timestamp (seconds since 1-Jan-1970 00:00:00) of the TBA predicted match start time..</param>
         /// <param name="actualTime">UNIX timestamp (seconds since 1-Jan-1970 00:00:00) of actual match start time..</param>
-        public MatchSimple(string key = default(string), CompLevelEnum compLevel = default(CompLevelEnum), int? setNumber = default(int?), int? matchNumber = default(int?), MatchSimpleAlliances alliances = default(MatchSimpleAlliances), WinningAllianceEnum? winningAlliance = default(WinningAllianceEnum?), string eventKey = default(string), long? time = default(long?), long? predictedTime = default(long?), long? actualTime = default(long?))
+        public MatchSimple(string key = default(string), CompLevelEnum compLevel = default(CompLevelEnum), int? setNumber = default(int?), int? matchNumber = default(int?), MatchAlliances alliances = default(MatchAlliances), WinningAllianceEnum? winningAlliance = default(WinningAllianceEnum?), string eventKey = default(string), long? time = default(long?), long? predictedTime = default(long?), long? actualTime = default(long?))
         {
             // to ensure "key" is required (not null)
             if (key == null)
@@ -205,7 +205,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// Gets or Sets Alliances
         /// </summary>
         [DataMember(Name="alliances", EmitDefaultValue=false)]
-        public MatchSimpleAlliances Alliances { get; set; }
+        public MatchAlliances Alliances { get; set; }
 
 
         /// <summary>

@@ -96,7 +96,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// <param name="postResultTime">UNIX timestamp (seconds since 1-Jan-1970 00:00:00) when the match result was posted..</param>
         /// <param name="scoreBreakdown">Score breakdown for auto, teleop, etc. points. Varies from year to year. May be null..</param>
         /// <param name="videos">Array of video objects associated with this match..</param>
-        public Match(string key = default(string), CompLevelEnum compLevel = default(CompLevelEnum), int? setNumber = default(int?), int? matchNumber = default(int?), MatchSimpleAlliances alliances = default(MatchSimpleAlliances), string winningAlliance = default(string), string eventKey = default(string), long? time = default(long?), long? actualTime = default(long?), long? predictedTime = default(long?), long? postResultTime = default(long?), Object scoreBreakdown = default(Object), List<MatchVideos> videos = default(List<MatchVideos>))
+        public Match(string key = default(string), CompLevelEnum compLevel = default(CompLevelEnum), int? setNumber = default(int?), int? matchNumber = default(int?), MatchAlliances alliances = default(MatchAlliances), string winningAlliance = default(string), string eventKey = default(string), long? time = default(long?), long? actualTime = default(long?), long? predictedTime = default(long?), long? postResultTime = default(long?), Object scoreBreakdown = default(Object), List<MatchVideos> videos = default(List<MatchVideos>))
         {
             // to ensure "key" is required (not null)
             if (key == null)
@@ -184,7 +184,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// Gets or Sets Alliances
         /// </summary>
         [DataMember(Name="alliances", EmitDefaultValue=false)]
-        public MatchSimpleAlliances Alliances { get; set; }
+        public MatchAlliances Alliances { get; set; }
 
         /// <summary>
         /// The color (red/blue) of the winning alliance. Will contain an empty string in the event of no winner, or a tie.
