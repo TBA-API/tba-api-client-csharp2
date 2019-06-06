@@ -83,10 +83,12 @@ namespace Example
             // Configuration.Default.ApiKeyPrefix.Add("X-TBA-Auth-Key", "Bearer");
 
             var apiInstance = new DistrictApi();
+            var districtKey = districtKey_example;  // string | TBA District Key, eg `2016fim`
+            var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
             try
             {
-                List<Event> result = apiInstance.GetDistrictEvents();
+                List<Event> result = apiInstance.GetDistrictEvents(districtKey, ifModifiedSince);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -255,7 +257,6 @@ Class | Method | HTTP request | Description
  - [Model.EventSimple](docs/EventSimple.md)
  - [Model.Match](docs/Match.md)
  - [Model.MatchAlliance](docs/MatchAlliance.md)
- - [Model.MatchAlliances](docs/MatchAlliances.md)
  - [Model.MatchScoreBreakdown2015](docs/MatchScoreBreakdown2015.md)
  - [Model.MatchScoreBreakdown2015Alliance](docs/MatchScoreBreakdown2015Alliance.md)
  - [Model.MatchScoreBreakdown2016](docs/MatchScoreBreakdown2016.md)
@@ -267,6 +268,7 @@ Class | Method | HTTP request | Description
  - [Model.MatchScoreBreakdown2019](docs/MatchScoreBreakdown2019.md)
  - [Model.MatchScoreBreakdown2019Alliance](docs/MatchScoreBreakdown2019Alliance.md)
  - [Model.MatchSimple](docs/MatchSimple.md)
+ - [Model.MatchSimpleAlliances](docs/MatchSimpleAlliances.md)
  - [Model.MatchTimeseries2018](docs/MatchTimeseries2018.md)
  - [Model.MatchVideos](docs/MatchVideos.md)
  - [Model.Media](docs/Media.md)

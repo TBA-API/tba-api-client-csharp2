@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 **CompLevel** | **string** | The competition level the match was played at. | 
 **SetNumber** | **int?** | The set number in a series of matches where more than one match is required in the match series. | 
 **MatchNumber** | **int?** | The match number of the match in the competition level. | 
-**Alliances** | [**MatchAlliances**](MatchAlliances.md) |  | [optional] 
+**Alliances** | [**MatchSimpleAlliances**](MatchSimpleAlliances.md) |  | [optional] 
 **WinningAlliance** | **string** | The color (red/blue) of the winning alliance. Will contain an empty string in the event of no winner, or a tie. | [optional] 
 **EventKey** | **string** | Event key of the event the match was played at. | 
 **Time** | **long?** | UNIX timestamp (seconds since 1-Jan-1970 00:00:00) of the scheduled match time, as taken from the published schedule. | [optional] 

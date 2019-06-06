@@ -31,8 +31,10 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// Gets a list of events in the given district.
         /// </remarks>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>List&lt;Event&gt;</returns>
-        List<Event> GetDistrictEvents ();
+        List<Event> GetDistrictEvents (string districtKey, string ifModifiedSince = null);
 
         /// <summary>
         /// 
@@ -41,8 +43,10 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// Gets a list of events in the given district.
         /// </remarks>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>ApiResponse of List&lt;Event&gt;</returns>
-        ApiResponse<List<Event>> GetDistrictEventsWithHttpInfo ();
+        ApiResponse<List<Event>> GetDistrictEventsWithHttpInfo (string districtKey, string ifModifiedSince = null);
         /// <summary>
         /// 
         /// </summary>
@@ -50,8 +54,10 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// Gets a list of event keys for events in the given district.
         /// </remarks>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>List&lt;string&gt;</returns>
-        List<string> GetDistrictEventsKeys ();
+        List<string> GetDistrictEventsKeys (string districtKey, string ifModifiedSince = null);
 
         /// <summary>
         /// 
@@ -60,8 +66,10 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// Gets a list of event keys for events in the given district.
         /// </remarks>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>ApiResponse of List&lt;string&gt;</returns>
-        ApiResponse<List<string>> GetDistrictEventsKeysWithHttpInfo ();
+        ApiResponse<List<string>> GetDistrictEventsKeysWithHttpInfo (string districtKey, string ifModifiedSince = null);
         /// <summary>
         /// 
         /// </summary>
@@ -70,8 +78,9 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// </remarks>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>List&lt;EventSimple&gt;</returns>
-        List<EventSimple> GetDistrictEventsSimple (string districtKey);
+        List<EventSimple> GetDistrictEventsSimple (string districtKey, string ifModifiedSince = null);
 
         /// <summary>
         /// 
@@ -81,8 +90,9 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// </remarks>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>ApiResponse of List&lt;EventSimple&gt;</returns>
-        ApiResponse<List<EventSimple>> GetDistrictEventsSimpleWithHttpInfo (string districtKey);
+        ApiResponse<List<EventSimple>> GetDistrictEventsSimpleWithHttpInfo (string districtKey, string ifModifiedSince = null);
         /// <summary>
         /// 
         /// </summary>
@@ -90,8 +100,10 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// Gets a list of team district rankings for the given district.
         /// </remarks>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>List&lt;DistrictRanking&gt;</returns>
-        List<DistrictRanking> GetDistrictRankings ();
+        List<DistrictRanking> GetDistrictRankings (string districtKey, string ifModifiedSince = null);
 
         /// <summary>
         /// 
@@ -100,8 +112,10 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// Gets a list of team district rankings for the given district.
         /// </remarks>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>ApiResponse of List&lt;DistrictRanking&gt;</returns>
-        ApiResponse<List<DistrictRanking>> GetDistrictRankingsWithHttpInfo ();
+        ApiResponse<List<DistrictRanking>> GetDistrictRankingsWithHttpInfo (string districtKey, string ifModifiedSince = null);
         /// <summary>
         /// 
         /// </summary>
@@ -109,8 +123,10 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// Gets a list of &#x60;Team&#x60; objects that competed in events in the given district.
         /// </remarks>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>List&lt;Team&gt;</returns>
-        List<Team> GetDistrictTeams ();
+        List<Team> GetDistrictTeams (string districtKey, string ifModifiedSince = null);
 
         /// <summary>
         /// 
@@ -119,8 +135,10 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// Gets a list of &#x60;Team&#x60; objects that competed in events in the given district.
         /// </remarks>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>ApiResponse of List&lt;Team&gt;</returns>
-        ApiResponse<List<Team>> GetDistrictTeamsWithHttpInfo ();
+        ApiResponse<List<Team>> GetDistrictTeamsWithHttpInfo (string districtKey, string ifModifiedSince = null);
         /// <summary>
         /// 
         /// </summary>
@@ -128,8 +146,10 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// Gets a list of &#x60;Team&#x60; objects that competed in events in the given district.
         /// </remarks>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>List&lt;string&gt;</returns>
-        List<string> GetDistrictTeamsKeys ();
+        List<string> GetDistrictTeamsKeys (string districtKey, string ifModifiedSince = null);
 
         /// <summary>
         /// 
@@ -138,8 +158,10 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// Gets a list of &#x60;Team&#x60; objects that competed in events in the given district.
         /// </remarks>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>ApiResponse of List&lt;string&gt;</returns>
-        ApiResponse<List<string>> GetDistrictTeamsKeysWithHttpInfo ();
+        ApiResponse<List<string>> GetDistrictTeamsKeysWithHttpInfo (string districtKey, string ifModifiedSince = null);
         /// <summary>
         /// 
         /// </summary>
@@ -147,8 +169,10 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// Gets a short-form list of &#x60;Team&#x60; objects that competed in events in the given district.
         /// </remarks>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>List&lt;TeamSimple&gt;</returns>
-        List<TeamSimple> GetDistrictTeamsSimple ();
+        List<TeamSimple> GetDistrictTeamsSimple (string districtKey, string ifModifiedSince = null);
 
         /// <summary>
         /// 
@@ -157,8 +181,10 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// Gets a short-form list of &#x60;Team&#x60; objects that competed in events in the given district.
         /// </remarks>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>ApiResponse of List&lt;TeamSimple&gt;</returns>
-        ApiResponse<List<TeamSimple>> GetDistrictTeamsSimpleWithHttpInfo ();
+        ApiResponse<List<TeamSimple>> GetDistrictTeamsSimpleWithHttpInfo (string districtKey, string ifModifiedSince = null);
         /// <summary>
         /// 
         /// </summary>
@@ -166,8 +192,10 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// Gets a list of &#x60;Team&#x60; objects that competed in the given event.
         /// </remarks>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="eventKey">TBA Event Key, eg &#x60;2016nytr&#x60;</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>List&lt;Team&gt;</returns>
-        List<Team> GetEventTeams ();
+        List<Team> GetEventTeams (string eventKey, string ifModifiedSince = null);
 
         /// <summary>
         /// 
@@ -176,8 +204,10 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// Gets a list of &#x60;Team&#x60; objects that competed in the given event.
         /// </remarks>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="eventKey">TBA Event Key, eg &#x60;2016nytr&#x60;</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>ApiResponse of List&lt;Team&gt;</returns>
-        ApiResponse<List<Team>> GetEventTeamsWithHttpInfo ();
+        ApiResponse<List<Team>> GetEventTeamsWithHttpInfo (string eventKey, string ifModifiedSince = null);
         /// <summary>
         /// 
         /// </summary>
@@ -185,8 +215,10 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// Gets a list of &#x60;Team&#x60; keys that competed in the given event.
         /// </remarks>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="eventKey">TBA Event Key, eg &#x60;2016nytr&#x60;</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>List&lt;string&gt;</returns>
-        List<string> GetEventTeamsKeys ();
+        List<string> GetEventTeamsKeys (string eventKey, string ifModifiedSince = null);
 
         /// <summary>
         /// 
@@ -195,8 +227,10 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// Gets a list of &#x60;Team&#x60; keys that competed in the given event.
         /// </remarks>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="eventKey">TBA Event Key, eg &#x60;2016nytr&#x60;</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>ApiResponse of List&lt;string&gt;</returns>
-        ApiResponse<List<string>> GetEventTeamsKeysWithHttpInfo ();
+        ApiResponse<List<string>> GetEventTeamsKeysWithHttpInfo (string eventKey, string ifModifiedSince = null);
         /// <summary>
         /// 
         /// </summary>
@@ -204,8 +238,10 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// Gets a short-form list of &#x60;Team&#x60; objects that competed in the given event.
         /// </remarks>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="eventKey">TBA Event Key, eg &#x60;2016nytr&#x60;</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>List&lt;TeamSimple&gt;</returns>
-        List<TeamSimple> GetEventTeamsSimple ();
+        List<TeamSimple> GetEventTeamsSimple (string eventKey, string ifModifiedSince = null);
 
         /// <summary>
         /// 
@@ -214,8 +250,10 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// Gets a short-form list of &#x60;Team&#x60; objects that competed in the given event.
         /// </remarks>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="eventKey">TBA Event Key, eg &#x60;2016nytr&#x60;</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>ApiResponse of List&lt;TeamSimple&gt;</returns>
-        ApiResponse<List<TeamSimple>> GetEventTeamsSimpleWithHttpInfo ();
+        ApiResponse<List<TeamSimple>> GetEventTeamsSimpleWithHttpInfo (string eventKey, string ifModifiedSince = null);
         /// <summary>
         /// 
         /// </summary>
@@ -223,8 +261,10 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// Gets a key-value list of the event statuses for teams competing at the given event.
         /// </remarks>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="eventKey">TBA Event Key, eg &#x60;2016nytr&#x60;</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Dictionary&lt;string, TeamEventStatus&gt;</returns>
-        Dictionary<string, TeamEventStatus> GetEventTeamsStatuses ();
+        Dictionary<string, TeamEventStatus> GetEventTeamsStatuses (string eventKey, string ifModifiedSince = null);
 
         /// <summary>
         /// 
@@ -233,8 +273,10 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// Gets a key-value list of the event statuses for teams competing at the given event.
         /// </remarks>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="eventKey">TBA Event Key, eg &#x60;2016nytr&#x60;</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>ApiResponse of Dictionary&lt;string, TeamEventStatus&gt;</returns>
-        ApiResponse<Dictionary<string, TeamEventStatus>> GetEventTeamsStatusesWithHttpInfo ();
+        ApiResponse<Dictionary<string, TeamEventStatus>> GetEventTeamsStatusesWithHttpInfo (string eventKey, string ifModifiedSince = null);
         /// <summary>
         /// 
         /// </summary>
@@ -242,8 +284,10 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// Gets a list of events in the given year.
         /// </remarks>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="year">Competition Year (or Season). Must be 4 digits.</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>List&lt;Event&gt;</returns>
-        List<Event> GetEventsByYear ();
+        List<Event> GetEventsByYear (int? year, string ifModifiedSince = null);
 
         /// <summary>
         /// 
@@ -252,8 +296,10 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// Gets a list of events in the given year.
         /// </remarks>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="year">Competition Year (or Season). Must be 4 digits.</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>ApiResponse of List&lt;Event&gt;</returns>
-        ApiResponse<List<Event>> GetEventsByYearWithHttpInfo ();
+        ApiResponse<List<Event>> GetEventsByYearWithHttpInfo (int? year, string ifModifiedSince = null);
         /// <summary>
         /// 
         /// </summary>
@@ -261,8 +307,10 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// Gets a list of event keys in the given year.
         /// </remarks>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="year">Competition Year (or Season). Must be 4 digits.</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>List&lt;string&gt;</returns>
-        List<string> GetEventsByYearKeys ();
+        List<string> GetEventsByYearKeys (int? year, string ifModifiedSince = null);
 
         /// <summary>
         /// 
@@ -271,8 +319,10 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// Gets a list of event keys in the given year.
         /// </remarks>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="year">Competition Year (or Season). Must be 4 digits.</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>ApiResponse of List&lt;string&gt;</returns>
-        ApiResponse<List<string>> GetEventsByYearKeysWithHttpInfo ();
+        ApiResponse<List<string>> GetEventsByYearKeysWithHttpInfo (int? year, string ifModifiedSince = null);
         /// <summary>
         /// 
         /// </summary>
@@ -280,8 +330,10 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// Gets a short-form list of events in the given year.
         /// </remarks>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="year">Competition Year (or Season). Must be 4 digits.</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>List&lt;EventSimple&gt;</returns>
-        List<EventSimple> GetEventsByYearSimple ();
+        List<EventSimple> GetEventsByYearSimple (int? year, string ifModifiedSince = null);
 
         /// <summary>
         /// 
@@ -290,8 +342,10 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// Gets a short-form list of events in the given year.
         /// </remarks>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="year">Competition Year (or Season). Must be 4 digits.</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>ApiResponse of List&lt;EventSimple&gt;</returns>
-        ApiResponse<List<EventSimple>> GetEventsByYearSimpleWithHttpInfo ();
+        ApiResponse<List<EventSimple>> GetEventsByYearSimpleWithHttpInfo (int? year, string ifModifiedSince = null);
         /// <summary>
         /// 
         /// </summary>
@@ -299,8 +353,11 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// Gets a key-value list of the event statuses for events this team has competed at in the given year.
         /// </remarks>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="teamKey">TBA Team Key, eg &#x60;frc254&#x60;</param>
+        /// <param name="year">Competition Year (or Season). Must be 4 digits.</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Dictionary&lt;string, TeamEventStatus&gt;</returns>
-        Dictionary<string, TeamEventStatus> GetTeamEventsStatusesByYear ();
+        Dictionary<string, TeamEventStatus> GetTeamEventsStatusesByYear (string teamKey, int? year, string ifModifiedSince = null);
 
         /// <summary>
         /// 
@@ -309,8 +366,11 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// Gets a key-value list of the event statuses for events this team has competed at in the given year.
         /// </remarks>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="teamKey">TBA Team Key, eg &#x60;frc254&#x60;</param>
+        /// <param name="year">Competition Year (or Season). Must be 4 digits.</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>ApiResponse of Dictionary&lt;string, TeamEventStatus&gt;</returns>
-        ApiResponse<Dictionary<string, TeamEventStatus>> GetTeamEventsStatusesByYearWithHttpInfo ();
+        ApiResponse<Dictionary<string, TeamEventStatus>> GetTeamEventsStatusesByYearWithHttpInfo (string teamKey, int? year, string ifModifiedSince = null);
         /// <summary>
         /// 
         /// </summary>
@@ -318,8 +378,10 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// Gets a list of &#x60;Team&#x60; objects, paginated in groups of 500.
         /// </remarks>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="pageNum">Page number of results to return, zero-indexed</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>List&lt;Team&gt;</returns>
-        List<Team> GetTeams ();
+        List<Team> GetTeams (int? pageNum, string ifModifiedSince = null);
 
         /// <summary>
         /// 
@@ -328,8 +390,10 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// Gets a list of &#x60;Team&#x60; objects, paginated in groups of 500.
         /// </remarks>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="pageNum">Page number of results to return, zero-indexed</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>ApiResponse of List&lt;Team&gt;</returns>
-        ApiResponse<List<Team>> GetTeamsWithHttpInfo ();
+        ApiResponse<List<Team>> GetTeamsWithHttpInfo (int? pageNum, string ifModifiedSince = null);
         /// <summary>
         /// 
         /// </summary>
@@ -337,8 +401,11 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// Gets a list of &#x60;Team&#x60; objects that competed in the given year, paginated in groups of 500.
         /// </remarks>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="year">Competition Year (or Season). Must be 4 digits.</param>
+        /// <param name="pageNum">Page number of results to return, zero-indexed</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>List&lt;Team&gt;</returns>
-        List<Team> GetTeamsByYear ();
+        List<Team> GetTeamsByYear (int? year, int? pageNum, string ifModifiedSince = null);
 
         /// <summary>
         /// 
@@ -347,8 +414,11 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// Gets a list of &#x60;Team&#x60; objects that competed in the given year, paginated in groups of 500.
         /// </remarks>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="year">Competition Year (or Season). Must be 4 digits.</param>
+        /// <param name="pageNum">Page number of results to return, zero-indexed</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>ApiResponse of List&lt;Team&gt;</returns>
-        ApiResponse<List<Team>> GetTeamsByYearWithHttpInfo ();
+        ApiResponse<List<Team>> GetTeamsByYearWithHttpInfo (int? year, int? pageNum, string ifModifiedSince = null);
         /// <summary>
         /// 
         /// </summary>
@@ -356,8 +426,11 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// Gets a list Team Keys that competed in the given year, paginated in groups of 500.
         /// </remarks>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="year">Competition Year (or Season). Must be 4 digits.</param>
+        /// <param name="pageNum">Page number of results to return, zero-indexed</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>List&lt;string&gt;</returns>
-        List<string> GetTeamsByYearKeys ();
+        List<string> GetTeamsByYearKeys (int? year, int? pageNum, string ifModifiedSince = null);
 
         /// <summary>
         /// 
@@ -366,8 +439,11 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// Gets a list Team Keys that competed in the given year, paginated in groups of 500.
         /// </remarks>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="year">Competition Year (or Season). Must be 4 digits.</param>
+        /// <param name="pageNum">Page number of results to return, zero-indexed</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>ApiResponse of List&lt;string&gt;</returns>
-        ApiResponse<List<string>> GetTeamsByYearKeysWithHttpInfo ();
+        ApiResponse<List<string>> GetTeamsByYearKeysWithHttpInfo (int? year, int? pageNum, string ifModifiedSince = null);
         /// <summary>
         /// 
         /// </summary>
@@ -375,8 +451,11 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// Gets a list of short form &#x60;Team_Simple&#x60; objects that competed in the given year, paginated in groups of 500.
         /// </remarks>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="year">Competition Year (or Season). Must be 4 digits.</param>
+        /// <param name="pageNum">Page number of results to return, zero-indexed</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>List&lt;TeamSimple&gt;</returns>
-        List<TeamSimple> GetTeamsByYearSimple ();
+        List<TeamSimple> GetTeamsByYearSimple (int? year, int? pageNum, string ifModifiedSince = null);
 
         /// <summary>
         /// 
@@ -385,8 +464,11 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// Gets a list of short form &#x60;Team_Simple&#x60; objects that competed in the given year, paginated in groups of 500.
         /// </remarks>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="year">Competition Year (or Season). Must be 4 digits.</param>
+        /// <param name="pageNum">Page number of results to return, zero-indexed</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>ApiResponse of List&lt;TeamSimple&gt;</returns>
-        ApiResponse<List<TeamSimple>> GetTeamsByYearSimpleWithHttpInfo ();
+        ApiResponse<List<TeamSimple>> GetTeamsByYearSimpleWithHttpInfo (int? year, int? pageNum, string ifModifiedSince = null);
         /// <summary>
         /// 
         /// </summary>
@@ -394,8 +476,10 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// Gets a list of Team keys, paginated in groups of 500. (Note, each page will not have 500 teams, but will include the teams within that range of 500.)
         /// </remarks>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="pageNum">Page number of results to return, zero-indexed</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>List&lt;string&gt;</returns>
-        List<string> GetTeamsKeys ();
+        List<string> GetTeamsKeys (int? pageNum, string ifModifiedSince = null);
 
         /// <summary>
         /// 
@@ -404,8 +488,10 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// Gets a list of Team keys, paginated in groups of 500. (Note, each page will not have 500 teams, but will include the teams within that range of 500.)
         /// </remarks>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="pageNum">Page number of results to return, zero-indexed</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>ApiResponse of List&lt;string&gt;</returns>
-        ApiResponse<List<string>> GetTeamsKeysWithHttpInfo ();
+        ApiResponse<List<string>> GetTeamsKeysWithHttpInfo (int? pageNum, string ifModifiedSince = null);
         /// <summary>
         /// 
         /// </summary>
@@ -413,8 +499,10 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// Gets a list of short form &#x60;Team_Simple&#x60; objects, paginated in groups of 500.
         /// </remarks>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="pageNum">Page number of results to return, zero-indexed</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>List&lt;TeamSimple&gt;</returns>
-        List<TeamSimple> GetTeamsSimple ();
+        List<TeamSimple> GetTeamsSimple (int? pageNum, string ifModifiedSince = null);
 
         /// <summary>
         /// 
@@ -423,8 +511,10 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// Gets a list of short form &#x60;Team_Simple&#x60; objects, paginated in groups of 500.
         /// </remarks>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="pageNum">Page number of results to return, zero-indexed</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>ApiResponse of List&lt;TeamSimple&gt;</returns>
-        ApiResponse<List<TeamSimple>> GetTeamsSimpleWithHttpInfo ();
+        ApiResponse<List<TeamSimple>> GetTeamsSimpleWithHttpInfo (int? pageNum, string ifModifiedSince = null);
         #endregion Synchronous Operations
         #region Asynchronous Operations
         /// <summary>
@@ -434,8 +524,10 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// Gets a list of events in the given district.
         /// </remarks>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of List&lt;Event&gt;</returns>
-        System.Threading.Tasks.Task<List<Event>> GetDistrictEventsAsync ();
+        System.Threading.Tasks.Task<List<Event>> GetDistrictEventsAsync (string districtKey, string ifModifiedSince = null);
 
         /// <summary>
         /// 
@@ -444,8 +536,10 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// Gets a list of events in the given district.
         /// </remarks>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of ApiResponse (List&lt;Event&gt;)</returns>
-        System.Threading.Tasks.Task<ApiResponse<List<Event>>> GetDistrictEventsAsyncWithHttpInfo ();
+        System.Threading.Tasks.Task<ApiResponse<List<Event>>> GetDistrictEventsAsyncWithHttpInfo (string districtKey, string ifModifiedSince = null);
         /// <summary>
         /// 
         /// </summary>
@@ -453,8 +547,10 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// Gets a list of event keys for events in the given district.
         /// </remarks>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of List&lt;string&gt;</returns>
-        System.Threading.Tasks.Task<List<string>> GetDistrictEventsKeysAsync ();
+        System.Threading.Tasks.Task<List<string>> GetDistrictEventsKeysAsync (string districtKey, string ifModifiedSince = null);
 
         /// <summary>
         /// 
@@ -463,8 +559,10 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// Gets a list of event keys for events in the given district.
         /// </remarks>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of ApiResponse (List&lt;string&gt;)</returns>
-        System.Threading.Tasks.Task<ApiResponse<List<string>>> GetDistrictEventsKeysAsyncWithHttpInfo ();
+        System.Threading.Tasks.Task<ApiResponse<List<string>>> GetDistrictEventsKeysAsyncWithHttpInfo (string districtKey, string ifModifiedSince = null);
         /// <summary>
         /// 
         /// </summary>
@@ -473,8 +571,9 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// </remarks>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of List&lt;EventSimple&gt;</returns>
-        System.Threading.Tasks.Task<List<EventSimple>> GetDistrictEventsSimpleAsync (string districtKey);
+        System.Threading.Tasks.Task<List<EventSimple>> GetDistrictEventsSimpleAsync (string districtKey, string ifModifiedSince = null);
 
         /// <summary>
         /// 
@@ -484,8 +583,9 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// </remarks>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of ApiResponse (List&lt;EventSimple&gt;)</returns>
-        System.Threading.Tasks.Task<ApiResponse<List<EventSimple>>> GetDistrictEventsSimpleAsyncWithHttpInfo (string districtKey);
+        System.Threading.Tasks.Task<ApiResponse<List<EventSimple>>> GetDistrictEventsSimpleAsyncWithHttpInfo (string districtKey, string ifModifiedSince = null);
         /// <summary>
         /// 
         /// </summary>
@@ -493,8 +593,10 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// Gets a list of team district rankings for the given district.
         /// </remarks>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of List&lt;DistrictRanking&gt;</returns>
-        System.Threading.Tasks.Task<List<DistrictRanking>> GetDistrictRankingsAsync ();
+        System.Threading.Tasks.Task<List<DistrictRanking>> GetDistrictRankingsAsync (string districtKey, string ifModifiedSince = null);
 
         /// <summary>
         /// 
@@ -503,8 +605,10 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// Gets a list of team district rankings for the given district.
         /// </remarks>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of ApiResponse (List&lt;DistrictRanking&gt;)</returns>
-        System.Threading.Tasks.Task<ApiResponse<List<DistrictRanking>>> GetDistrictRankingsAsyncWithHttpInfo ();
+        System.Threading.Tasks.Task<ApiResponse<List<DistrictRanking>>> GetDistrictRankingsAsyncWithHttpInfo (string districtKey, string ifModifiedSince = null);
         /// <summary>
         /// 
         /// </summary>
@@ -512,8 +616,10 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// Gets a list of &#x60;Team&#x60; objects that competed in events in the given district.
         /// </remarks>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of List&lt;Team&gt;</returns>
-        System.Threading.Tasks.Task<List<Team>> GetDistrictTeamsAsync ();
+        System.Threading.Tasks.Task<List<Team>> GetDistrictTeamsAsync (string districtKey, string ifModifiedSince = null);
 
         /// <summary>
         /// 
@@ -522,8 +628,10 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// Gets a list of &#x60;Team&#x60; objects that competed in events in the given district.
         /// </remarks>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of ApiResponse (List&lt;Team&gt;)</returns>
-        System.Threading.Tasks.Task<ApiResponse<List<Team>>> GetDistrictTeamsAsyncWithHttpInfo ();
+        System.Threading.Tasks.Task<ApiResponse<List<Team>>> GetDistrictTeamsAsyncWithHttpInfo (string districtKey, string ifModifiedSince = null);
         /// <summary>
         /// 
         /// </summary>
@@ -531,8 +639,10 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// Gets a list of &#x60;Team&#x60; objects that competed in events in the given district.
         /// </remarks>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of List&lt;string&gt;</returns>
-        System.Threading.Tasks.Task<List<string>> GetDistrictTeamsKeysAsync ();
+        System.Threading.Tasks.Task<List<string>> GetDistrictTeamsKeysAsync (string districtKey, string ifModifiedSince = null);
 
         /// <summary>
         /// 
@@ -541,8 +651,10 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// Gets a list of &#x60;Team&#x60; objects that competed in events in the given district.
         /// </remarks>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of ApiResponse (List&lt;string&gt;)</returns>
-        System.Threading.Tasks.Task<ApiResponse<List<string>>> GetDistrictTeamsKeysAsyncWithHttpInfo ();
+        System.Threading.Tasks.Task<ApiResponse<List<string>>> GetDistrictTeamsKeysAsyncWithHttpInfo (string districtKey, string ifModifiedSince = null);
         /// <summary>
         /// 
         /// </summary>
@@ -550,8 +662,10 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// Gets a short-form list of &#x60;Team&#x60; objects that competed in events in the given district.
         /// </remarks>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of List&lt;TeamSimple&gt;</returns>
-        System.Threading.Tasks.Task<List<TeamSimple>> GetDistrictTeamsSimpleAsync ();
+        System.Threading.Tasks.Task<List<TeamSimple>> GetDistrictTeamsSimpleAsync (string districtKey, string ifModifiedSince = null);
 
         /// <summary>
         /// 
@@ -560,8 +674,10 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// Gets a short-form list of &#x60;Team&#x60; objects that competed in events in the given district.
         /// </remarks>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of ApiResponse (List&lt;TeamSimple&gt;)</returns>
-        System.Threading.Tasks.Task<ApiResponse<List<TeamSimple>>> GetDistrictTeamsSimpleAsyncWithHttpInfo ();
+        System.Threading.Tasks.Task<ApiResponse<List<TeamSimple>>> GetDistrictTeamsSimpleAsyncWithHttpInfo (string districtKey, string ifModifiedSince = null);
         /// <summary>
         /// 
         /// </summary>
@@ -569,8 +685,10 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// Gets a list of &#x60;Team&#x60; objects that competed in the given event.
         /// </remarks>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="eventKey">TBA Event Key, eg &#x60;2016nytr&#x60;</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of List&lt;Team&gt;</returns>
-        System.Threading.Tasks.Task<List<Team>> GetEventTeamsAsync ();
+        System.Threading.Tasks.Task<List<Team>> GetEventTeamsAsync (string eventKey, string ifModifiedSince = null);
 
         /// <summary>
         /// 
@@ -579,8 +697,10 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// Gets a list of &#x60;Team&#x60; objects that competed in the given event.
         /// </remarks>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="eventKey">TBA Event Key, eg &#x60;2016nytr&#x60;</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of ApiResponse (List&lt;Team&gt;)</returns>
-        System.Threading.Tasks.Task<ApiResponse<List<Team>>> GetEventTeamsAsyncWithHttpInfo ();
+        System.Threading.Tasks.Task<ApiResponse<List<Team>>> GetEventTeamsAsyncWithHttpInfo (string eventKey, string ifModifiedSince = null);
         /// <summary>
         /// 
         /// </summary>
@@ -588,8 +708,10 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// Gets a list of &#x60;Team&#x60; keys that competed in the given event.
         /// </remarks>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="eventKey">TBA Event Key, eg &#x60;2016nytr&#x60;</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of List&lt;string&gt;</returns>
-        System.Threading.Tasks.Task<List<string>> GetEventTeamsKeysAsync ();
+        System.Threading.Tasks.Task<List<string>> GetEventTeamsKeysAsync (string eventKey, string ifModifiedSince = null);
 
         /// <summary>
         /// 
@@ -598,8 +720,10 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// Gets a list of &#x60;Team&#x60; keys that competed in the given event.
         /// </remarks>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="eventKey">TBA Event Key, eg &#x60;2016nytr&#x60;</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of ApiResponse (List&lt;string&gt;)</returns>
-        System.Threading.Tasks.Task<ApiResponse<List<string>>> GetEventTeamsKeysAsyncWithHttpInfo ();
+        System.Threading.Tasks.Task<ApiResponse<List<string>>> GetEventTeamsKeysAsyncWithHttpInfo (string eventKey, string ifModifiedSince = null);
         /// <summary>
         /// 
         /// </summary>
@@ -607,8 +731,10 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// Gets a short-form list of &#x60;Team&#x60; objects that competed in the given event.
         /// </remarks>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="eventKey">TBA Event Key, eg &#x60;2016nytr&#x60;</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of List&lt;TeamSimple&gt;</returns>
-        System.Threading.Tasks.Task<List<TeamSimple>> GetEventTeamsSimpleAsync ();
+        System.Threading.Tasks.Task<List<TeamSimple>> GetEventTeamsSimpleAsync (string eventKey, string ifModifiedSince = null);
 
         /// <summary>
         /// 
@@ -617,8 +743,10 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// Gets a short-form list of &#x60;Team&#x60; objects that competed in the given event.
         /// </remarks>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="eventKey">TBA Event Key, eg &#x60;2016nytr&#x60;</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of ApiResponse (List&lt;TeamSimple&gt;)</returns>
-        System.Threading.Tasks.Task<ApiResponse<List<TeamSimple>>> GetEventTeamsSimpleAsyncWithHttpInfo ();
+        System.Threading.Tasks.Task<ApiResponse<List<TeamSimple>>> GetEventTeamsSimpleAsyncWithHttpInfo (string eventKey, string ifModifiedSince = null);
         /// <summary>
         /// 
         /// </summary>
@@ -626,8 +754,10 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// Gets a key-value list of the event statuses for teams competing at the given event.
         /// </remarks>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="eventKey">TBA Event Key, eg &#x60;2016nytr&#x60;</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of Dictionary&lt;string, TeamEventStatus&gt;</returns>
-        System.Threading.Tasks.Task<Dictionary<string, TeamEventStatus>> GetEventTeamsStatusesAsync ();
+        System.Threading.Tasks.Task<Dictionary<string, TeamEventStatus>> GetEventTeamsStatusesAsync (string eventKey, string ifModifiedSince = null);
 
         /// <summary>
         /// 
@@ -636,8 +766,10 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// Gets a key-value list of the event statuses for teams competing at the given event.
         /// </remarks>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="eventKey">TBA Event Key, eg &#x60;2016nytr&#x60;</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of ApiResponse (Dictionary&lt;string, TeamEventStatus&gt;)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Dictionary<string, TeamEventStatus>>> GetEventTeamsStatusesAsyncWithHttpInfo ();
+        System.Threading.Tasks.Task<ApiResponse<Dictionary<string, TeamEventStatus>>> GetEventTeamsStatusesAsyncWithHttpInfo (string eventKey, string ifModifiedSince = null);
         /// <summary>
         /// 
         /// </summary>
@@ -645,8 +777,10 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// Gets a list of events in the given year.
         /// </remarks>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="year">Competition Year (or Season). Must be 4 digits.</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of List&lt;Event&gt;</returns>
-        System.Threading.Tasks.Task<List<Event>> GetEventsByYearAsync ();
+        System.Threading.Tasks.Task<List<Event>> GetEventsByYearAsync (int? year, string ifModifiedSince = null);
 
         /// <summary>
         /// 
@@ -655,8 +789,10 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// Gets a list of events in the given year.
         /// </remarks>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="year">Competition Year (or Season). Must be 4 digits.</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of ApiResponse (List&lt;Event&gt;)</returns>
-        System.Threading.Tasks.Task<ApiResponse<List<Event>>> GetEventsByYearAsyncWithHttpInfo ();
+        System.Threading.Tasks.Task<ApiResponse<List<Event>>> GetEventsByYearAsyncWithHttpInfo (int? year, string ifModifiedSince = null);
         /// <summary>
         /// 
         /// </summary>
@@ -664,8 +800,10 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// Gets a list of event keys in the given year.
         /// </remarks>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="year">Competition Year (or Season). Must be 4 digits.</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of List&lt;string&gt;</returns>
-        System.Threading.Tasks.Task<List<string>> GetEventsByYearKeysAsync ();
+        System.Threading.Tasks.Task<List<string>> GetEventsByYearKeysAsync (int? year, string ifModifiedSince = null);
 
         /// <summary>
         /// 
@@ -674,8 +812,10 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// Gets a list of event keys in the given year.
         /// </remarks>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="year">Competition Year (or Season). Must be 4 digits.</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of ApiResponse (List&lt;string&gt;)</returns>
-        System.Threading.Tasks.Task<ApiResponse<List<string>>> GetEventsByYearKeysAsyncWithHttpInfo ();
+        System.Threading.Tasks.Task<ApiResponse<List<string>>> GetEventsByYearKeysAsyncWithHttpInfo (int? year, string ifModifiedSince = null);
         /// <summary>
         /// 
         /// </summary>
@@ -683,8 +823,10 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// Gets a short-form list of events in the given year.
         /// </remarks>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="year">Competition Year (or Season). Must be 4 digits.</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of List&lt;EventSimple&gt;</returns>
-        System.Threading.Tasks.Task<List<EventSimple>> GetEventsByYearSimpleAsync ();
+        System.Threading.Tasks.Task<List<EventSimple>> GetEventsByYearSimpleAsync (int? year, string ifModifiedSince = null);
 
         /// <summary>
         /// 
@@ -693,8 +835,10 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// Gets a short-form list of events in the given year.
         /// </remarks>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="year">Competition Year (or Season). Must be 4 digits.</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of ApiResponse (List&lt;EventSimple&gt;)</returns>
-        System.Threading.Tasks.Task<ApiResponse<List<EventSimple>>> GetEventsByYearSimpleAsyncWithHttpInfo ();
+        System.Threading.Tasks.Task<ApiResponse<List<EventSimple>>> GetEventsByYearSimpleAsyncWithHttpInfo (int? year, string ifModifiedSince = null);
         /// <summary>
         /// 
         /// </summary>
@@ -702,8 +846,11 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// Gets a key-value list of the event statuses for events this team has competed at in the given year.
         /// </remarks>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="teamKey">TBA Team Key, eg &#x60;frc254&#x60;</param>
+        /// <param name="year">Competition Year (or Season). Must be 4 digits.</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of Dictionary&lt;string, TeamEventStatus&gt;</returns>
-        System.Threading.Tasks.Task<Dictionary<string, TeamEventStatus>> GetTeamEventsStatusesByYearAsync ();
+        System.Threading.Tasks.Task<Dictionary<string, TeamEventStatus>> GetTeamEventsStatusesByYearAsync (string teamKey, int? year, string ifModifiedSince = null);
 
         /// <summary>
         /// 
@@ -712,8 +859,11 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// Gets a key-value list of the event statuses for events this team has competed at in the given year.
         /// </remarks>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="teamKey">TBA Team Key, eg &#x60;frc254&#x60;</param>
+        /// <param name="year">Competition Year (or Season). Must be 4 digits.</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of ApiResponse (Dictionary&lt;string, TeamEventStatus&gt;)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Dictionary<string, TeamEventStatus>>> GetTeamEventsStatusesByYearAsyncWithHttpInfo ();
+        System.Threading.Tasks.Task<ApiResponse<Dictionary<string, TeamEventStatus>>> GetTeamEventsStatusesByYearAsyncWithHttpInfo (string teamKey, int? year, string ifModifiedSince = null);
         /// <summary>
         /// 
         /// </summary>
@@ -721,8 +871,10 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// Gets a list of &#x60;Team&#x60; objects, paginated in groups of 500.
         /// </remarks>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="pageNum">Page number of results to return, zero-indexed</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of List&lt;Team&gt;</returns>
-        System.Threading.Tasks.Task<List<Team>> GetTeamsAsync ();
+        System.Threading.Tasks.Task<List<Team>> GetTeamsAsync (int? pageNum, string ifModifiedSince = null);
 
         /// <summary>
         /// 
@@ -731,8 +883,10 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// Gets a list of &#x60;Team&#x60; objects, paginated in groups of 500.
         /// </remarks>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="pageNum">Page number of results to return, zero-indexed</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of ApiResponse (List&lt;Team&gt;)</returns>
-        System.Threading.Tasks.Task<ApiResponse<List<Team>>> GetTeamsAsyncWithHttpInfo ();
+        System.Threading.Tasks.Task<ApiResponse<List<Team>>> GetTeamsAsyncWithHttpInfo (int? pageNum, string ifModifiedSince = null);
         /// <summary>
         /// 
         /// </summary>
@@ -740,8 +894,11 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// Gets a list of &#x60;Team&#x60; objects that competed in the given year, paginated in groups of 500.
         /// </remarks>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="year">Competition Year (or Season). Must be 4 digits.</param>
+        /// <param name="pageNum">Page number of results to return, zero-indexed</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of List&lt;Team&gt;</returns>
-        System.Threading.Tasks.Task<List<Team>> GetTeamsByYearAsync ();
+        System.Threading.Tasks.Task<List<Team>> GetTeamsByYearAsync (int? year, int? pageNum, string ifModifiedSince = null);
 
         /// <summary>
         /// 
@@ -750,8 +907,11 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// Gets a list of &#x60;Team&#x60; objects that competed in the given year, paginated in groups of 500.
         /// </remarks>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="year">Competition Year (or Season). Must be 4 digits.</param>
+        /// <param name="pageNum">Page number of results to return, zero-indexed</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of ApiResponse (List&lt;Team&gt;)</returns>
-        System.Threading.Tasks.Task<ApiResponse<List<Team>>> GetTeamsByYearAsyncWithHttpInfo ();
+        System.Threading.Tasks.Task<ApiResponse<List<Team>>> GetTeamsByYearAsyncWithHttpInfo (int? year, int? pageNum, string ifModifiedSince = null);
         /// <summary>
         /// 
         /// </summary>
@@ -759,8 +919,11 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// Gets a list Team Keys that competed in the given year, paginated in groups of 500.
         /// </remarks>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="year">Competition Year (or Season). Must be 4 digits.</param>
+        /// <param name="pageNum">Page number of results to return, zero-indexed</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of List&lt;string&gt;</returns>
-        System.Threading.Tasks.Task<List<string>> GetTeamsByYearKeysAsync ();
+        System.Threading.Tasks.Task<List<string>> GetTeamsByYearKeysAsync (int? year, int? pageNum, string ifModifiedSince = null);
 
         /// <summary>
         /// 
@@ -769,8 +932,11 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// Gets a list Team Keys that competed in the given year, paginated in groups of 500.
         /// </remarks>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="year">Competition Year (or Season). Must be 4 digits.</param>
+        /// <param name="pageNum">Page number of results to return, zero-indexed</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of ApiResponse (List&lt;string&gt;)</returns>
-        System.Threading.Tasks.Task<ApiResponse<List<string>>> GetTeamsByYearKeysAsyncWithHttpInfo ();
+        System.Threading.Tasks.Task<ApiResponse<List<string>>> GetTeamsByYearKeysAsyncWithHttpInfo (int? year, int? pageNum, string ifModifiedSince = null);
         /// <summary>
         /// 
         /// </summary>
@@ -778,8 +944,11 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// Gets a list of short form &#x60;Team_Simple&#x60; objects that competed in the given year, paginated in groups of 500.
         /// </remarks>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="year">Competition Year (or Season). Must be 4 digits.</param>
+        /// <param name="pageNum">Page number of results to return, zero-indexed</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of List&lt;TeamSimple&gt;</returns>
-        System.Threading.Tasks.Task<List<TeamSimple>> GetTeamsByYearSimpleAsync ();
+        System.Threading.Tasks.Task<List<TeamSimple>> GetTeamsByYearSimpleAsync (int? year, int? pageNum, string ifModifiedSince = null);
 
         /// <summary>
         /// 
@@ -788,8 +957,11 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// Gets a list of short form &#x60;Team_Simple&#x60; objects that competed in the given year, paginated in groups of 500.
         /// </remarks>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="year">Competition Year (or Season). Must be 4 digits.</param>
+        /// <param name="pageNum">Page number of results to return, zero-indexed</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of ApiResponse (List&lt;TeamSimple&gt;)</returns>
-        System.Threading.Tasks.Task<ApiResponse<List<TeamSimple>>> GetTeamsByYearSimpleAsyncWithHttpInfo ();
+        System.Threading.Tasks.Task<ApiResponse<List<TeamSimple>>> GetTeamsByYearSimpleAsyncWithHttpInfo (int? year, int? pageNum, string ifModifiedSince = null);
         /// <summary>
         /// 
         /// </summary>
@@ -797,8 +969,10 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// Gets a list of Team keys, paginated in groups of 500. (Note, each page will not have 500 teams, but will include the teams within that range of 500.)
         /// </remarks>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="pageNum">Page number of results to return, zero-indexed</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of List&lt;string&gt;</returns>
-        System.Threading.Tasks.Task<List<string>> GetTeamsKeysAsync ();
+        System.Threading.Tasks.Task<List<string>> GetTeamsKeysAsync (int? pageNum, string ifModifiedSince = null);
 
         /// <summary>
         /// 
@@ -807,8 +981,10 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// Gets a list of Team keys, paginated in groups of 500. (Note, each page will not have 500 teams, but will include the teams within that range of 500.)
         /// </remarks>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="pageNum">Page number of results to return, zero-indexed</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of ApiResponse (List&lt;string&gt;)</returns>
-        System.Threading.Tasks.Task<ApiResponse<List<string>>> GetTeamsKeysAsyncWithHttpInfo ();
+        System.Threading.Tasks.Task<ApiResponse<List<string>>> GetTeamsKeysAsyncWithHttpInfo (int? pageNum, string ifModifiedSince = null);
         /// <summary>
         /// 
         /// </summary>
@@ -816,8 +992,10 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// Gets a list of short form &#x60;Team_Simple&#x60; objects, paginated in groups of 500.
         /// </remarks>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="pageNum">Page number of results to return, zero-indexed</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of List&lt;TeamSimple&gt;</returns>
-        System.Threading.Tasks.Task<List<TeamSimple>> GetTeamsSimpleAsync ();
+        System.Threading.Tasks.Task<List<TeamSimple>> GetTeamsSimpleAsync (int? pageNum, string ifModifiedSince = null);
 
         /// <summary>
         /// 
@@ -826,8 +1004,10 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// Gets a list of short form &#x60;Team_Simple&#x60; objects, paginated in groups of 500.
         /// </remarks>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="pageNum">Page number of results to return, zero-indexed</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of ApiResponse (List&lt;TeamSimple&gt;)</returns>
-        System.Threading.Tasks.Task<ApiResponse<List<TeamSimple>>> GetTeamsSimpleAsyncWithHttpInfo ();
+        System.Threading.Tasks.Task<ApiResponse<List<TeamSimple>>> GetTeamsSimpleAsyncWithHttpInfo (int? pageNum, string ifModifiedSince = null);
         #endregion Asynchronous Operations
     }
 
@@ -943,10 +1123,12 @@ namespace com.tweirtx.TBAAPIv3client.Api
         ///  Gets a list of events in the given district.
         /// </summary>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>List&lt;Event&gt;</returns>
-        public List<Event> GetDistrictEvents ()
+        public List<Event> GetDistrictEvents (string districtKey, string ifModifiedSince = null)
         {
-             ApiResponse<List<Event>> localVarResponse = GetDistrictEventsWithHttpInfo();
+             ApiResponse<List<Event>> localVarResponse = GetDistrictEventsWithHttpInfo(districtKey, ifModifiedSince);
              return localVarResponse.Data;
         }
 
@@ -954,9 +1136,14 @@ namespace com.tweirtx.TBAAPIv3client.Api
         ///  Gets a list of events in the given district.
         /// </summary>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>ApiResponse of List&lt;Event&gt;</returns>
-        public ApiResponse< List<Event> > GetDistrictEventsWithHttpInfo ()
+        public ApiResponse< List<Event> > GetDistrictEventsWithHttpInfo (string districtKey, string ifModifiedSince = null)
         {
+            // verify the required parameter 'districtKey' is set
+            if (districtKey == null)
+                throw new ApiException(400, "Missing required parameter 'districtKey' when calling ListApi->GetDistrictEvents");
 
             var localVarPath = "/district/{district_key}/events";
             var localVarPathParams = new Dictionary<String, String>();
@@ -979,6 +1166,8 @@ namespace com.tweirtx.TBAAPIv3client.Api
             if (localVarHttpHeaderAccept != null)
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
+            if (districtKey != null) localVarPathParams.Add("district_key", this.Configuration.ApiClient.ParameterToString(districtKey)); // path parameter
+            if (ifModifiedSince != null) localVarHeaderParams.Add("If-Modified-Since", this.Configuration.ApiClient.ParameterToString(ifModifiedSince)); // header parameter
 
             // authentication (apiKey) required
             if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("X-TBA-Auth-Key")))
@@ -1008,10 +1197,12 @@ namespace com.tweirtx.TBAAPIv3client.Api
         ///  Gets a list of events in the given district.
         /// </summary>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of List&lt;Event&gt;</returns>
-        public async System.Threading.Tasks.Task<List<Event>> GetDistrictEventsAsync ()
+        public async System.Threading.Tasks.Task<List<Event>> GetDistrictEventsAsync (string districtKey, string ifModifiedSince = null)
         {
-             ApiResponse<List<Event>> localVarResponse = await GetDistrictEventsAsyncWithHttpInfo();
+             ApiResponse<List<Event>> localVarResponse = await GetDistrictEventsAsyncWithHttpInfo(districtKey, ifModifiedSince);
              return localVarResponse.Data;
 
         }
@@ -1020,9 +1211,14 @@ namespace com.tweirtx.TBAAPIv3client.Api
         ///  Gets a list of events in the given district.
         /// </summary>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of ApiResponse (List&lt;Event&gt;)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<List<Event>>> GetDistrictEventsAsyncWithHttpInfo ()
+        public async System.Threading.Tasks.Task<ApiResponse<List<Event>>> GetDistrictEventsAsyncWithHttpInfo (string districtKey, string ifModifiedSince = null)
         {
+            // verify the required parameter 'districtKey' is set
+            if (districtKey == null)
+                throw new ApiException(400, "Missing required parameter 'districtKey' when calling ListApi->GetDistrictEvents");
 
             var localVarPath = "/district/{district_key}/events";
             var localVarPathParams = new Dictionary<String, String>();
@@ -1045,6 +1241,8 @@ namespace com.tweirtx.TBAAPIv3client.Api
             if (localVarHttpHeaderAccept != null)
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
+            if (districtKey != null) localVarPathParams.Add("district_key", this.Configuration.ApiClient.ParameterToString(districtKey)); // path parameter
+            if (ifModifiedSince != null) localVarHeaderParams.Add("If-Modified-Since", this.Configuration.ApiClient.ParameterToString(ifModifiedSince)); // header parameter
 
             // authentication (apiKey) required
             if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("X-TBA-Auth-Key")))
@@ -1074,10 +1272,12 @@ namespace com.tweirtx.TBAAPIv3client.Api
         ///  Gets a list of event keys for events in the given district.
         /// </summary>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>List&lt;string&gt;</returns>
-        public List<string> GetDistrictEventsKeys ()
+        public List<string> GetDistrictEventsKeys (string districtKey, string ifModifiedSince = null)
         {
-             ApiResponse<List<string>> localVarResponse = GetDistrictEventsKeysWithHttpInfo();
+             ApiResponse<List<string>> localVarResponse = GetDistrictEventsKeysWithHttpInfo(districtKey, ifModifiedSince);
              return localVarResponse.Data;
         }
 
@@ -1085,9 +1285,14 @@ namespace com.tweirtx.TBAAPIv3client.Api
         ///  Gets a list of event keys for events in the given district.
         /// </summary>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>ApiResponse of List&lt;string&gt;</returns>
-        public ApiResponse< List<string> > GetDistrictEventsKeysWithHttpInfo ()
+        public ApiResponse< List<string> > GetDistrictEventsKeysWithHttpInfo (string districtKey, string ifModifiedSince = null)
         {
+            // verify the required parameter 'districtKey' is set
+            if (districtKey == null)
+                throw new ApiException(400, "Missing required parameter 'districtKey' when calling ListApi->GetDistrictEventsKeys");
 
             var localVarPath = "/district/{district_key}/events/keys";
             var localVarPathParams = new Dictionary<String, String>();
@@ -1110,6 +1315,8 @@ namespace com.tweirtx.TBAAPIv3client.Api
             if (localVarHttpHeaderAccept != null)
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
+            if (districtKey != null) localVarPathParams.Add("district_key", this.Configuration.ApiClient.ParameterToString(districtKey)); // path parameter
+            if (ifModifiedSince != null) localVarHeaderParams.Add("If-Modified-Since", this.Configuration.ApiClient.ParameterToString(ifModifiedSince)); // header parameter
 
             // authentication (apiKey) required
             if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("X-TBA-Auth-Key")))
@@ -1139,10 +1346,12 @@ namespace com.tweirtx.TBAAPIv3client.Api
         ///  Gets a list of event keys for events in the given district.
         /// </summary>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of List&lt;string&gt;</returns>
-        public async System.Threading.Tasks.Task<List<string>> GetDistrictEventsKeysAsync ()
+        public async System.Threading.Tasks.Task<List<string>> GetDistrictEventsKeysAsync (string districtKey, string ifModifiedSince = null)
         {
-             ApiResponse<List<string>> localVarResponse = await GetDistrictEventsKeysAsyncWithHttpInfo();
+             ApiResponse<List<string>> localVarResponse = await GetDistrictEventsKeysAsyncWithHttpInfo(districtKey, ifModifiedSince);
              return localVarResponse.Data;
 
         }
@@ -1151,9 +1360,14 @@ namespace com.tweirtx.TBAAPIv3client.Api
         ///  Gets a list of event keys for events in the given district.
         /// </summary>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of ApiResponse (List&lt;string&gt;)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<List<string>>> GetDistrictEventsKeysAsyncWithHttpInfo ()
+        public async System.Threading.Tasks.Task<ApiResponse<List<string>>> GetDistrictEventsKeysAsyncWithHttpInfo (string districtKey, string ifModifiedSince = null)
         {
+            // verify the required parameter 'districtKey' is set
+            if (districtKey == null)
+                throw new ApiException(400, "Missing required parameter 'districtKey' when calling ListApi->GetDistrictEventsKeys");
 
             var localVarPath = "/district/{district_key}/events/keys";
             var localVarPathParams = new Dictionary<String, String>();
@@ -1176,6 +1390,8 @@ namespace com.tweirtx.TBAAPIv3client.Api
             if (localVarHttpHeaderAccept != null)
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
+            if (districtKey != null) localVarPathParams.Add("district_key", this.Configuration.ApiClient.ParameterToString(districtKey)); // path parameter
+            if (ifModifiedSince != null) localVarHeaderParams.Add("If-Modified-Since", this.Configuration.ApiClient.ParameterToString(ifModifiedSince)); // header parameter
 
             // authentication (apiKey) required
             if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("X-TBA-Auth-Key")))
@@ -1206,10 +1422,11 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// </summary>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>List&lt;EventSimple&gt;</returns>
-        public List<EventSimple> GetDistrictEventsSimple (string districtKey)
+        public List<EventSimple> GetDistrictEventsSimple (string districtKey, string ifModifiedSince = null)
         {
-             ApiResponse<List<EventSimple>> localVarResponse = GetDistrictEventsSimpleWithHttpInfo(districtKey);
+             ApiResponse<List<EventSimple>> localVarResponse = GetDistrictEventsSimpleWithHttpInfo(districtKey, ifModifiedSince);
              return localVarResponse.Data;
         }
 
@@ -1218,8 +1435,9 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// </summary>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>ApiResponse of List&lt;EventSimple&gt;</returns>
-        public ApiResponse< List<EventSimple> > GetDistrictEventsSimpleWithHttpInfo (string districtKey)
+        public ApiResponse< List<EventSimple> > GetDistrictEventsSimpleWithHttpInfo (string districtKey, string ifModifiedSince = null)
         {
             // verify the required parameter 'districtKey' is set
             if (districtKey == null)
@@ -1247,6 +1465,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
             if (districtKey != null) localVarPathParams.Add("district_key", this.Configuration.ApiClient.ParameterToString(districtKey)); // path parameter
+            if (ifModifiedSince != null) localVarHeaderParams.Add("If-Modified-Since", this.Configuration.ApiClient.ParameterToString(ifModifiedSince)); // header parameter
 
             // authentication (apiKey) required
             if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("X-TBA-Auth-Key")))
@@ -1277,10 +1496,11 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// </summary>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of List&lt;EventSimple&gt;</returns>
-        public async System.Threading.Tasks.Task<List<EventSimple>> GetDistrictEventsSimpleAsync (string districtKey)
+        public async System.Threading.Tasks.Task<List<EventSimple>> GetDistrictEventsSimpleAsync (string districtKey, string ifModifiedSince = null)
         {
-             ApiResponse<List<EventSimple>> localVarResponse = await GetDistrictEventsSimpleAsyncWithHttpInfo(districtKey);
+             ApiResponse<List<EventSimple>> localVarResponse = await GetDistrictEventsSimpleAsyncWithHttpInfo(districtKey, ifModifiedSince);
              return localVarResponse.Data;
 
         }
@@ -1290,8 +1510,9 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// </summary>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of ApiResponse (List&lt;EventSimple&gt;)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<List<EventSimple>>> GetDistrictEventsSimpleAsyncWithHttpInfo (string districtKey)
+        public async System.Threading.Tasks.Task<ApiResponse<List<EventSimple>>> GetDistrictEventsSimpleAsyncWithHttpInfo (string districtKey, string ifModifiedSince = null)
         {
             // verify the required parameter 'districtKey' is set
             if (districtKey == null)
@@ -1319,6 +1540,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
             if (districtKey != null) localVarPathParams.Add("district_key", this.Configuration.ApiClient.ParameterToString(districtKey)); // path parameter
+            if (ifModifiedSince != null) localVarHeaderParams.Add("If-Modified-Since", this.Configuration.ApiClient.ParameterToString(ifModifiedSince)); // header parameter
 
             // authentication (apiKey) required
             if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("X-TBA-Auth-Key")))
@@ -1348,10 +1570,12 @@ namespace com.tweirtx.TBAAPIv3client.Api
         ///  Gets a list of team district rankings for the given district.
         /// </summary>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>List&lt;DistrictRanking&gt;</returns>
-        public List<DistrictRanking> GetDistrictRankings ()
+        public List<DistrictRanking> GetDistrictRankings (string districtKey, string ifModifiedSince = null)
         {
-             ApiResponse<List<DistrictRanking>> localVarResponse = GetDistrictRankingsWithHttpInfo();
+             ApiResponse<List<DistrictRanking>> localVarResponse = GetDistrictRankingsWithHttpInfo(districtKey, ifModifiedSince);
              return localVarResponse.Data;
         }
 
@@ -1359,9 +1583,14 @@ namespace com.tweirtx.TBAAPIv3client.Api
         ///  Gets a list of team district rankings for the given district.
         /// </summary>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>ApiResponse of List&lt;DistrictRanking&gt;</returns>
-        public ApiResponse< List<DistrictRanking> > GetDistrictRankingsWithHttpInfo ()
+        public ApiResponse< List<DistrictRanking> > GetDistrictRankingsWithHttpInfo (string districtKey, string ifModifiedSince = null)
         {
+            // verify the required parameter 'districtKey' is set
+            if (districtKey == null)
+                throw new ApiException(400, "Missing required parameter 'districtKey' when calling ListApi->GetDistrictRankings");
 
             var localVarPath = "/district/{district_key}/rankings";
             var localVarPathParams = new Dictionary<String, String>();
@@ -1384,6 +1613,8 @@ namespace com.tweirtx.TBAAPIv3client.Api
             if (localVarHttpHeaderAccept != null)
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
+            if (districtKey != null) localVarPathParams.Add("district_key", this.Configuration.ApiClient.ParameterToString(districtKey)); // path parameter
+            if (ifModifiedSince != null) localVarHeaderParams.Add("If-Modified-Since", this.Configuration.ApiClient.ParameterToString(ifModifiedSince)); // header parameter
 
             // authentication (apiKey) required
             if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("X-TBA-Auth-Key")))
@@ -1413,10 +1644,12 @@ namespace com.tweirtx.TBAAPIv3client.Api
         ///  Gets a list of team district rankings for the given district.
         /// </summary>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of List&lt;DistrictRanking&gt;</returns>
-        public async System.Threading.Tasks.Task<List<DistrictRanking>> GetDistrictRankingsAsync ()
+        public async System.Threading.Tasks.Task<List<DistrictRanking>> GetDistrictRankingsAsync (string districtKey, string ifModifiedSince = null)
         {
-             ApiResponse<List<DistrictRanking>> localVarResponse = await GetDistrictRankingsAsyncWithHttpInfo();
+             ApiResponse<List<DistrictRanking>> localVarResponse = await GetDistrictRankingsAsyncWithHttpInfo(districtKey, ifModifiedSince);
              return localVarResponse.Data;
 
         }
@@ -1425,9 +1658,14 @@ namespace com.tweirtx.TBAAPIv3client.Api
         ///  Gets a list of team district rankings for the given district.
         /// </summary>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of ApiResponse (List&lt;DistrictRanking&gt;)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<List<DistrictRanking>>> GetDistrictRankingsAsyncWithHttpInfo ()
+        public async System.Threading.Tasks.Task<ApiResponse<List<DistrictRanking>>> GetDistrictRankingsAsyncWithHttpInfo (string districtKey, string ifModifiedSince = null)
         {
+            // verify the required parameter 'districtKey' is set
+            if (districtKey == null)
+                throw new ApiException(400, "Missing required parameter 'districtKey' when calling ListApi->GetDistrictRankings");
 
             var localVarPath = "/district/{district_key}/rankings";
             var localVarPathParams = new Dictionary<String, String>();
@@ -1450,6 +1688,8 @@ namespace com.tweirtx.TBAAPIv3client.Api
             if (localVarHttpHeaderAccept != null)
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
+            if (districtKey != null) localVarPathParams.Add("district_key", this.Configuration.ApiClient.ParameterToString(districtKey)); // path parameter
+            if (ifModifiedSince != null) localVarHeaderParams.Add("If-Modified-Since", this.Configuration.ApiClient.ParameterToString(ifModifiedSince)); // header parameter
 
             // authentication (apiKey) required
             if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("X-TBA-Auth-Key")))
@@ -1479,10 +1719,12 @@ namespace com.tweirtx.TBAAPIv3client.Api
         ///  Gets a list of &#x60;Team&#x60; objects that competed in events in the given district.
         /// </summary>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>List&lt;Team&gt;</returns>
-        public List<Team> GetDistrictTeams ()
+        public List<Team> GetDistrictTeams (string districtKey, string ifModifiedSince = null)
         {
-             ApiResponse<List<Team>> localVarResponse = GetDistrictTeamsWithHttpInfo();
+             ApiResponse<List<Team>> localVarResponse = GetDistrictTeamsWithHttpInfo(districtKey, ifModifiedSince);
              return localVarResponse.Data;
         }
 
@@ -1490,9 +1732,14 @@ namespace com.tweirtx.TBAAPIv3client.Api
         ///  Gets a list of &#x60;Team&#x60; objects that competed in events in the given district.
         /// </summary>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>ApiResponse of List&lt;Team&gt;</returns>
-        public ApiResponse< List<Team> > GetDistrictTeamsWithHttpInfo ()
+        public ApiResponse< List<Team> > GetDistrictTeamsWithHttpInfo (string districtKey, string ifModifiedSince = null)
         {
+            // verify the required parameter 'districtKey' is set
+            if (districtKey == null)
+                throw new ApiException(400, "Missing required parameter 'districtKey' when calling ListApi->GetDistrictTeams");
 
             var localVarPath = "/district/{district_key}/teams";
             var localVarPathParams = new Dictionary<String, String>();
@@ -1515,6 +1762,8 @@ namespace com.tweirtx.TBAAPIv3client.Api
             if (localVarHttpHeaderAccept != null)
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
+            if (districtKey != null) localVarPathParams.Add("district_key", this.Configuration.ApiClient.ParameterToString(districtKey)); // path parameter
+            if (ifModifiedSince != null) localVarHeaderParams.Add("If-Modified-Since", this.Configuration.ApiClient.ParameterToString(ifModifiedSince)); // header parameter
 
             // authentication (apiKey) required
             if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("X-TBA-Auth-Key")))
@@ -1544,10 +1793,12 @@ namespace com.tweirtx.TBAAPIv3client.Api
         ///  Gets a list of &#x60;Team&#x60; objects that competed in events in the given district.
         /// </summary>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of List&lt;Team&gt;</returns>
-        public async System.Threading.Tasks.Task<List<Team>> GetDistrictTeamsAsync ()
+        public async System.Threading.Tasks.Task<List<Team>> GetDistrictTeamsAsync (string districtKey, string ifModifiedSince = null)
         {
-             ApiResponse<List<Team>> localVarResponse = await GetDistrictTeamsAsyncWithHttpInfo();
+             ApiResponse<List<Team>> localVarResponse = await GetDistrictTeamsAsyncWithHttpInfo(districtKey, ifModifiedSince);
              return localVarResponse.Data;
 
         }
@@ -1556,9 +1807,14 @@ namespace com.tweirtx.TBAAPIv3client.Api
         ///  Gets a list of &#x60;Team&#x60; objects that competed in events in the given district.
         /// </summary>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of ApiResponse (List&lt;Team&gt;)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<List<Team>>> GetDistrictTeamsAsyncWithHttpInfo ()
+        public async System.Threading.Tasks.Task<ApiResponse<List<Team>>> GetDistrictTeamsAsyncWithHttpInfo (string districtKey, string ifModifiedSince = null)
         {
+            // verify the required parameter 'districtKey' is set
+            if (districtKey == null)
+                throw new ApiException(400, "Missing required parameter 'districtKey' when calling ListApi->GetDistrictTeams");
 
             var localVarPath = "/district/{district_key}/teams";
             var localVarPathParams = new Dictionary<String, String>();
@@ -1581,6 +1837,8 @@ namespace com.tweirtx.TBAAPIv3client.Api
             if (localVarHttpHeaderAccept != null)
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
+            if (districtKey != null) localVarPathParams.Add("district_key", this.Configuration.ApiClient.ParameterToString(districtKey)); // path parameter
+            if (ifModifiedSince != null) localVarHeaderParams.Add("If-Modified-Since", this.Configuration.ApiClient.ParameterToString(ifModifiedSince)); // header parameter
 
             // authentication (apiKey) required
             if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("X-TBA-Auth-Key")))
@@ -1610,10 +1868,12 @@ namespace com.tweirtx.TBAAPIv3client.Api
         ///  Gets a list of &#x60;Team&#x60; objects that competed in events in the given district.
         /// </summary>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>List&lt;string&gt;</returns>
-        public List<string> GetDistrictTeamsKeys ()
+        public List<string> GetDistrictTeamsKeys (string districtKey, string ifModifiedSince = null)
         {
-             ApiResponse<List<string>> localVarResponse = GetDistrictTeamsKeysWithHttpInfo();
+             ApiResponse<List<string>> localVarResponse = GetDistrictTeamsKeysWithHttpInfo(districtKey, ifModifiedSince);
              return localVarResponse.Data;
         }
 
@@ -1621,9 +1881,14 @@ namespace com.tweirtx.TBAAPIv3client.Api
         ///  Gets a list of &#x60;Team&#x60; objects that competed in events in the given district.
         /// </summary>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>ApiResponse of List&lt;string&gt;</returns>
-        public ApiResponse< List<string> > GetDistrictTeamsKeysWithHttpInfo ()
+        public ApiResponse< List<string> > GetDistrictTeamsKeysWithHttpInfo (string districtKey, string ifModifiedSince = null)
         {
+            // verify the required parameter 'districtKey' is set
+            if (districtKey == null)
+                throw new ApiException(400, "Missing required parameter 'districtKey' when calling ListApi->GetDistrictTeamsKeys");
 
             var localVarPath = "/district/{district_key}/teams/keys";
             var localVarPathParams = new Dictionary<String, String>();
@@ -1646,6 +1911,8 @@ namespace com.tweirtx.TBAAPIv3client.Api
             if (localVarHttpHeaderAccept != null)
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
+            if (districtKey != null) localVarPathParams.Add("district_key", this.Configuration.ApiClient.ParameterToString(districtKey)); // path parameter
+            if (ifModifiedSince != null) localVarHeaderParams.Add("If-Modified-Since", this.Configuration.ApiClient.ParameterToString(ifModifiedSince)); // header parameter
 
             // authentication (apiKey) required
             if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("X-TBA-Auth-Key")))
@@ -1675,10 +1942,12 @@ namespace com.tweirtx.TBAAPIv3client.Api
         ///  Gets a list of &#x60;Team&#x60; objects that competed in events in the given district.
         /// </summary>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of List&lt;string&gt;</returns>
-        public async System.Threading.Tasks.Task<List<string>> GetDistrictTeamsKeysAsync ()
+        public async System.Threading.Tasks.Task<List<string>> GetDistrictTeamsKeysAsync (string districtKey, string ifModifiedSince = null)
         {
-             ApiResponse<List<string>> localVarResponse = await GetDistrictTeamsKeysAsyncWithHttpInfo();
+             ApiResponse<List<string>> localVarResponse = await GetDistrictTeamsKeysAsyncWithHttpInfo(districtKey, ifModifiedSince);
              return localVarResponse.Data;
 
         }
@@ -1687,9 +1956,14 @@ namespace com.tweirtx.TBAAPIv3client.Api
         ///  Gets a list of &#x60;Team&#x60; objects that competed in events in the given district.
         /// </summary>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of ApiResponse (List&lt;string&gt;)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<List<string>>> GetDistrictTeamsKeysAsyncWithHttpInfo ()
+        public async System.Threading.Tasks.Task<ApiResponse<List<string>>> GetDistrictTeamsKeysAsyncWithHttpInfo (string districtKey, string ifModifiedSince = null)
         {
+            // verify the required parameter 'districtKey' is set
+            if (districtKey == null)
+                throw new ApiException(400, "Missing required parameter 'districtKey' when calling ListApi->GetDistrictTeamsKeys");
 
             var localVarPath = "/district/{district_key}/teams/keys";
             var localVarPathParams = new Dictionary<String, String>();
@@ -1712,6 +1986,8 @@ namespace com.tweirtx.TBAAPIv3client.Api
             if (localVarHttpHeaderAccept != null)
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
+            if (districtKey != null) localVarPathParams.Add("district_key", this.Configuration.ApiClient.ParameterToString(districtKey)); // path parameter
+            if (ifModifiedSince != null) localVarHeaderParams.Add("If-Modified-Since", this.Configuration.ApiClient.ParameterToString(ifModifiedSince)); // header parameter
 
             // authentication (apiKey) required
             if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("X-TBA-Auth-Key")))
@@ -1741,10 +2017,12 @@ namespace com.tweirtx.TBAAPIv3client.Api
         ///  Gets a short-form list of &#x60;Team&#x60; objects that competed in events in the given district.
         /// </summary>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>List&lt;TeamSimple&gt;</returns>
-        public List<TeamSimple> GetDistrictTeamsSimple ()
+        public List<TeamSimple> GetDistrictTeamsSimple (string districtKey, string ifModifiedSince = null)
         {
-             ApiResponse<List<TeamSimple>> localVarResponse = GetDistrictTeamsSimpleWithHttpInfo();
+             ApiResponse<List<TeamSimple>> localVarResponse = GetDistrictTeamsSimpleWithHttpInfo(districtKey, ifModifiedSince);
              return localVarResponse.Data;
         }
 
@@ -1752,9 +2030,14 @@ namespace com.tweirtx.TBAAPIv3client.Api
         ///  Gets a short-form list of &#x60;Team&#x60; objects that competed in events in the given district.
         /// </summary>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>ApiResponse of List&lt;TeamSimple&gt;</returns>
-        public ApiResponse< List<TeamSimple> > GetDistrictTeamsSimpleWithHttpInfo ()
+        public ApiResponse< List<TeamSimple> > GetDistrictTeamsSimpleWithHttpInfo (string districtKey, string ifModifiedSince = null)
         {
+            // verify the required parameter 'districtKey' is set
+            if (districtKey == null)
+                throw new ApiException(400, "Missing required parameter 'districtKey' when calling ListApi->GetDistrictTeamsSimple");
 
             var localVarPath = "/district/{district_key}/teams/simple";
             var localVarPathParams = new Dictionary<String, String>();
@@ -1777,6 +2060,8 @@ namespace com.tweirtx.TBAAPIv3client.Api
             if (localVarHttpHeaderAccept != null)
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
+            if (districtKey != null) localVarPathParams.Add("district_key", this.Configuration.ApiClient.ParameterToString(districtKey)); // path parameter
+            if (ifModifiedSince != null) localVarHeaderParams.Add("If-Modified-Since", this.Configuration.ApiClient.ParameterToString(ifModifiedSince)); // header parameter
 
             // authentication (apiKey) required
             if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("X-TBA-Auth-Key")))
@@ -1806,10 +2091,12 @@ namespace com.tweirtx.TBAAPIv3client.Api
         ///  Gets a short-form list of &#x60;Team&#x60; objects that competed in events in the given district.
         /// </summary>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of List&lt;TeamSimple&gt;</returns>
-        public async System.Threading.Tasks.Task<List<TeamSimple>> GetDistrictTeamsSimpleAsync ()
+        public async System.Threading.Tasks.Task<List<TeamSimple>> GetDistrictTeamsSimpleAsync (string districtKey, string ifModifiedSince = null)
         {
-             ApiResponse<List<TeamSimple>> localVarResponse = await GetDistrictTeamsSimpleAsyncWithHttpInfo();
+             ApiResponse<List<TeamSimple>> localVarResponse = await GetDistrictTeamsSimpleAsyncWithHttpInfo(districtKey, ifModifiedSince);
              return localVarResponse.Data;
 
         }
@@ -1818,9 +2105,14 @@ namespace com.tweirtx.TBAAPIv3client.Api
         ///  Gets a short-form list of &#x60;Team&#x60; objects that competed in events in the given district.
         /// </summary>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of ApiResponse (List&lt;TeamSimple&gt;)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<List<TeamSimple>>> GetDistrictTeamsSimpleAsyncWithHttpInfo ()
+        public async System.Threading.Tasks.Task<ApiResponse<List<TeamSimple>>> GetDistrictTeamsSimpleAsyncWithHttpInfo (string districtKey, string ifModifiedSince = null)
         {
+            // verify the required parameter 'districtKey' is set
+            if (districtKey == null)
+                throw new ApiException(400, "Missing required parameter 'districtKey' when calling ListApi->GetDistrictTeamsSimple");
 
             var localVarPath = "/district/{district_key}/teams/simple";
             var localVarPathParams = new Dictionary<String, String>();
@@ -1843,6 +2135,8 @@ namespace com.tweirtx.TBAAPIv3client.Api
             if (localVarHttpHeaderAccept != null)
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
+            if (districtKey != null) localVarPathParams.Add("district_key", this.Configuration.ApiClient.ParameterToString(districtKey)); // path parameter
+            if (ifModifiedSince != null) localVarHeaderParams.Add("If-Modified-Since", this.Configuration.ApiClient.ParameterToString(ifModifiedSince)); // header parameter
 
             // authentication (apiKey) required
             if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("X-TBA-Auth-Key")))
@@ -1872,10 +2166,12 @@ namespace com.tweirtx.TBAAPIv3client.Api
         ///  Gets a list of &#x60;Team&#x60; objects that competed in the given event.
         /// </summary>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="eventKey">TBA Event Key, eg &#x60;2016nytr&#x60;</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>List&lt;Team&gt;</returns>
-        public List<Team> GetEventTeams ()
+        public List<Team> GetEventTeams (string eventKey, string ifModifiedSince = null)
         {
-             ApiResponse<List<Team>> localVarResponse = GetEventTeamsWithHttpInfo();
+             ApiResponse<List<Team>> localVarResponse = GetEventTeamsWithHttpInfo(eventKey, ifModifiedSince);
              return localVarResponse.Data;
         }
 
@@ -1883,9 +2179,14 @@ namespace com.tweirtx.TBAAPIv3client.Api
         ///  Gets a list of &#x60;Team&#x60; objects that competed in the given event.
         /// </summary>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="eventKey">TBA Event Key, eg &#x60;2016nytr&#x60;</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>ApiResponse of List&lt;Team&gt;</returns>
-        public ApiResponse< List<Team> > GetEventTeamsWithHttpInfo ()
+        public ApiResponse< List<Team> > GetEventTeamsWithHttpInfo (string eventKey, string ifModifiedSince = null)
         {
+            // verify the required parameter 'eventKey' is set
+            if (eventKey == null)
+                throw new ApiException(400, "Missing required parameter 'eventKey' when calling ListApi->GetEventTeams");
 
             var localVarPath = "/event/{event_key}/teams";
             var localVarPathParams = new Dictionary<String, String>();
@@ -1908,6 +2209,8 @@ namespace com.tweirtx.TBAAPIv3client.Api
             if (localVarHttpHeaderAccept != null)
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
+            if (eventKey != null) localVarPathParams.Add("event_key", this.Configuration.ApiClient.ParameterToString(eventKey)); // path parameter
+            if (ifModifiedSince != null) localVarHeaderParams.Add("If-Modified-Since", this.Configuration.ApiClient.ParameterToString(ifModifiedSince)); // header parameter
 
             // authentication (apiKey) required
             if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("X-TBA-Auth-Key")))
@@ -1937,10 +2240,12 @@ namespace com.tweirtx.TBAAPIv3client.Api
         ///  Gets a list of &#x60;Team&#x60; objects that competed in the given event.
         /// </summary>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="eventKey">TBA Event Key, eg &#x60;2016nytr&#x60;</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of List&lt;Team&gt;</returns>
-        public async System.Threading.Tasks.Task<List<Team>> GetEventTeamsAsync ()
+        public async System.Threading.Tasks.Task<List<Team>> GetEventTeamsAsync (string eventKey, string ifModifiedSince = null)
         {
-             ApiResponse<List<Team>> localVarResponse = await GetEventTeamsAsyncWithHttpInfo();
+             ApiResponse<List<Team>> localVarResponse = await GetEventTeamsAsyncWithHttpInfo(eventKey, ifModifiedSince);
              return localVarResponse.Data;
 
         }
@@ -1949,9 +2254,14 @@ namespace com.tweirtx.TBAAPIv3client.Api
         ///  Gets a list of &#x60;Team&#x60; objects that competed in the given event.
         /// </summary>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="eventKey">TBA Event Key, eg &#x60;2016nytr&#x60;</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of ApiResponse (List&lt;Team&gt;)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<List<Team>>> GetEventTeamsAsyncWithHttpInfo ()
+        public async System.Threading.Tasks.Task<ApiResponse<List<Team>>> GetEventTeamsAsyncWithHttpInfo (string eventKey, string ifModifiedSince = null)
         {
+            // verify the required parameter 'eventKey' is set
+            if (eventKey == null)
+                throw new ApiException(400, "Missing required parameter 'eventKey' when calling ListApi->GetEventTeams");
 
             var localVarPath = "/event/{event_key}/teams";
             var localVarPathParams = new Dictionary<String, String>();
@@ -1974,6 +2284,8 @@ namespace com.tweirtx.TBAAPIv3client.Api
             if (localVarHttpHeaderAccept != null)
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
+            if (eventKey != null) localVarPathParams.Add("event_key", this.Configuration.ApiClient.ParameterToString(eventKey)); // path parameter
+            if (ifModifiedSince != null) localVarHeaderParams.Add("If-Modified-Since", this.Configuration.ApiClient.ParameterToString(ifModifiedSince)); // header parameter
 
             // authentication (apiKey) required
             if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("X-TBA-Auth-Key")))
@@ -2003,10 +2315,12 @@ namespace com.tweirtx.TBAAPIv3client.Api
         ///  Gets a list of &#x60;Team&#x60; keys that competed in the given event.
         /// </summary>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="eventKey">TBA Event Key, eg &#x60;2016nytr&#x60;</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>List&lt;string&gt;</returns>
-        public List<string> GetEventTeamsKeys ()
+        public List<string> GetEventTeamsKeys (string eventKey, string ifModifiedSince = null)
         {
-             ApiResponse<List<string>> localVarResponse = GetEventTeamsKeysWithHttpInfo();
+             ApiResponse<List<string>> localVarResponse = GetEventTeamsKeysWithHttpInfo(eventKey, ifModifiedSince);
              return localVarResponse.Data;
         }
 
@@ -2014,9 +2328,14 @@ namespace com.tweirtx.TBAAPIv3client.Api
         ///  Gets a list of &#x60;Team&#x60; keys that competed in the given event.
         /// </summary>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="eventKey">TBA Event Key, eg &#x60;2016nytr&#x60;</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>ApiResponse of List&lt;string&gt;</returns>
-        public ApiResponse< List<string> > GetEventTeamsKeysWithHttpInfo ()
+        public ApiResponse< List<string> > GetEventTeamsKeysWithHttpInfo (string eventKey, string ifModifiedSince = null)
         {
+            // verify the required parameter 'eventKey' is set
+            if (eventKey == null)
+                throw new ApiException(400, "Missing required parameter 'eventKey' when calling ListApi->GetEventTeamsKeys");
 
             var localVarPath = "/event/{event_key}/teams/keys";
             var localVarPathParams = new Dictionary<String, String>();
@@ -2039,6 +2358,8 @@ namespace com.tweirtx.TBAAPIv3client.Api
             if (localVarHttpHeaderAccept != null)
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
+            if (eventKey != null) localVarPathParams.Add("event_key", this.Configuration.ApiClient.ParameterToString(eventKey)); // path parameter
+            if (ifModifiedSince != null) localVarHeaderParams.Add("If-Modified-Since", this.Configuration.ApiClient.ParameterToString(ifModifiedSince)); // header parameter
 
             // authentication (apiKey) required
             if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("X-TBA-Auth-Key")))
@@ -2068,10 +2389,12 @@ namespace com.tweirtx.TBAAPIv3client.Api
         ///  Gets a list of &#x60;Team&#x60; keys that competed in the given event.
         /// </summary>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="eventKey">TBA Event Key, eg &#x60;2016nytr&#x60;</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of List&lt;string&gt;</returns>
-        public async System.Threading.Tasks.Task<List<string>> GetEventTeamsKeysAsync ()
+        public async System.Threading.Tasks.Task<List<string>> GetEventTeamsKeysAsync (string eventKey, string ifModifiedSince = null)
         {
-             ApiResponse<List<string>> localVarResponse = await GetEventTeamsKeysAsyncWithHttpInfo();
+             ApiResponse<List<string>> localVarResponse = await GetEventTeamsKeysAsyncWithHttpInfo(eventKey, ifModifiedSince);
              return localVarResponse.Data;
 
         }
@@ -2080,9 +2403,14 @@ namespace com.tweirtx.TBAAPIv3client.Api
         ///  Gets a list of &#x60;Team&#x60; keys that competed in the given event.
         /// </summary>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="eventKey">TBA Event Key, eg &#x60;2016nytr&#x60;</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of ApiResponse (List&lt;string&gt;)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<List<string>>> GetEventTeamsKeysAsyncWithHttpInfo ()
+        public async System.Threading.Tasks.Task<ApiResponse<List<string>>> GetEventTeamsKeysAsyncWithHttpInfo (string eventKey, string ifModifiedSince = null)
         {
+            // verify the required parameter 'eventKey' is set
+            if (eventKey == null)
+                throw new ApiException(400, "Missing required parameter 'eventKey' when calling ListApi->GetEventTeamsKeys");
 
             var localVarPath = "/event/{event_key}/teams/keys";
             var localVarPathParams = new Dictionary<String, String>();
@@ -2105,6 +2433,8 @@ namespace com.tweirtx.TBAAPIv3client.Api
             if (localVarHttpHeaderAccept != null)
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
+            if (eventKey != null) localVarPathParams.Add("event_key", this.Configuration.ApiClient.ParameterToString(eventKey)); // path parameter
+            if (ifModifiedSince != null) localVarHeaderParams.Add("If-Modified-Since", this.Configuration.ApiClient.ParameterToString(ifModifiedSince)); // header parameter
 
             // authentication (apiKey) required
             if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("X-TBA-Auth-Key")))
@@ -2134,10 +2464,12 @@ namespace com.tweirtx.TBAAPIv3client.Api
         ///  Gets a short-form list of &#x60;Team&#x60; objects that competed in the given event.
         /// </summary>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="eventKey">TBA Event Key, eg &#x60;2016nytr&#x60;</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>List&lt;TeamSimple&gt;</returns>
-        public List<TeamSimple> GetEventTeamsSimple ()
+        public List<TeamSimple> GetEventTeamsSimple (string eventKey, string ifModifiedSince = null)
         {
-             ApiResponse<List<TeamSimple>> localVarResponse = GetEventTeamsSimpleWithHttpInfo();
+             ApiResponse<List<TeamSimple>> localVarResponse = GetEventTeamsSimpleWithHttpInfo(eventKey, ifModifiedSince);
              return localVarResponse.Data;
         }
 
@@ -2145,9 +2477,14 @@ namespace com.tweirtx.TBAAPIv3client.Api
         ///  Gets a short-form list of &#x60;Team&#x60; objects that competed in the given event.
         /// </summary>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="eventKey">TBA Event Key, eg &#x60;2016nytr&#x60;</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>ApiResponse of List&lt;TeamSimple&gt;</returns>
-        public ApiResponse< List<TeamSimple> > GetEventTeamsSimpleWithHttpInfo ()
+        public ApiResponse< List<TeamSimple> > GetEventTeamsSimpleWithHttpInfo (string eventKey, string ifModifiedSince = null)
         {
+            // verify the required parameter 'eventKey' is set
+            if (eventKey == null)
+                throw new ApiException(400, "Missing required parameter 'eventKey' when calling ListApi->GetEventTeamsSimple");
 
             var localVarPath = "/event/{event_key}/teams/simple";
             var localVarPathParams = new Dictionary<String, String>();
@@ -2170,6 +2507,8 @@ namespace com.tweirtx.TBAAPIv3client.Api
             if (localVarHttpHeaderAccept != null)
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
+            if (eventKey != null) localVarPathParams.Add("event_key", this.Configuration.ApiClient.ParameterToString(eventKey)); // path parameter
+            if (ifModifiedSince != null) localVarHeaderParams.Add("If-Modified-Since", this.Configuration.ApiClient.ParameterToString(ifModifiedSince)); // header parameter
 
             // authentication (apiKey) required
             if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("X-TBA-Auth-Key")))
@@ -2199,10 +2538,12 @@ namespace com.tweirtx.TBAAPIv3client.Api
         ///  Gets a short-form list of &#x60;Team&#x60; objects that competed in the given event.
         /// </summary>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="eventKey">TBA Event Key, eg &#x60;2016nytr&#x60;</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of List&lt;TeamSimple&gt;</returns>
-        public async System.Threading.Tasks.Task<List<TeamSimple>> GetEventTeamsSimpleAsync ()
+        public async System.Threading.Tasks.Task<List<TeamSimple>> GetEventTeamsSimpleAsync (string eventKey, string ifModifiedSince = null)
         {
-             ApiResponse<List<TeamSimple>> localVarResponse = await GetEventTeamsSimpleAsyncWithHttpInfo();
+             ApiResponse<List<TeamSimple>> localVarResponse = await GetEventTeamsSimpleAsyncWithHttpInfo(eventKey, ifModifiedSince);
              return localVarResponse.Data;
 
         }
@@ -2211,9 +2552,14 @@ namespace com.tweirtx.TBAAPIv3client.Api
         ///  Gets a short-form list of &#x60;Team&#x60; objects that competed in the given event.
         /// </summary>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="eventKey">TBA Event Key, eg &#x60;2016nytr&#x60;</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of ApiResponse (List&lt;TeamSimple&gt;)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<List<TeamSimple>>> GetEventTeamsSimpleAsyncWithHttpInfo ()
+        public async System.Threading.Tasks.Task<ApiResponse<List<TeamSimple>>> GetEventTeamsSimpleAsyncWithHttpInfo (string eventKey, string ifModifiedSince = null)
         {
+            // verify the required parameter 'eventKey' is set
+            if (eventKey == null)
+                throw new ApiException(400, "Missing required parameter 'eventKey' when calling ListApi->GetEventTeamsSimple");
 
             var localVarPath = "/event/{event_key}/teams/simple";
             var localVarPathParams = new Dictionary<String, String>();
@@ -2236,6 +2582,8 @@ namespace com.tweirtx.TBAAPIv3client.Api
             if (localVarHttpHeaderAccept != null)
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
+            if (eventKey != null) localVarPathParams.Add("event_key", this.Configuration.ApiClient.ParameterToString(eventKey)); // path parameter
+            if (ifModifiedSince != null) localVarHeaderParams.Add("If-Modified-Since", this.Configuration.ApiClient.ParameterToString(ifModifiedSince)); // header parameter
 
             // authentication (apiKey) required
             if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("X-TBA-Auth-Key")))
@@ -2265,10 +2613,12 @@ namespace com.tweirtx.TBAAPIv3client.Api
         ///  Gets a key-value list of the event statuses for teams competing at the given event.
         /// </summary>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="eventKey">TBA Event Key, eg &#x60;2016nytr&#x60;</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Dictionary&lt;string, TeamEventStatus&gt;</returns>
-        public Dictionary<string, TeamEventStatus> GetEventTeamsStatuses ()
+        public Dictionary<string, TeamEventStatus> GetEventTeamsStatuses (string eventKey, string ifModifiedSince = null)
         {
-             ApiResponse<Dictionary<string, TeamEventStatus>> localVarResponse = GetEventTeamsStatusesWithHttpInfo();
+             ApiResponse<Dictionary<string, TeamEventStatus>> localVarResponse = GetEventTeamsStatusesWithHttpInfo(eventKey, ifModifiedSince);
              return localVarResponse.Data;
         }
 
@@ -2276,9 +2626,14 @@ namespace com.tweirtx.TBAAPIv3client.Api
         ///  Gets a key-value list of the event statuses for teams competing at the given event.
         /// </summary>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="eventKey">TBA Event Key, eg &#x60;2016nytr&#x60;</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>ApiResponse of Dictionary&lt;string, TeamEventStatus&gt;</returns>
-        public ApiResponse< Dictionary<string, TeamEventStatus> > GetEventTeamsStatusesWithHttpInfo ()
+        public ApiResponse< Dictionary<string, TeamEventStatus> > GetEventTeamsStatusesWithHttpInfo (string eventKey, string ifModifiedSince = null)
         {
+            // verify the required parameter 'eventKey' is set
+            if (eventKey == null)
+                throw new ApiException(400, "Missing required parameter 'eventKey' when calling ListApi->GetEventTeamsStatuses");
 
             var localVarPath = "/event/{event_key}/teams/statuses";
             var localVarPathParams = new Dictionary<String, String>();
@@ -2301,6 +2656,8 @@ namespace com.tweirtx.TBAAPIv3client.Api
             if (localVarHttpHeaderAccept != null)
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
+            if (eventKey != null) localVarPathParams.Add("event_key", this.Configuration.ApiClient.ParameterToString(eventKey)); // path parameter
+            if (ifModifiedSince != null) localVarHeaderParams.Add("If-Modified-Since", this.Configuration.ApiClient.ParameterToString(ifModifiedSince)); // header parameter
 
             // authentication (apiKey) required
             if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("X-TBA-Auth-Key")))
@@ -2330,10 +2687,12 @@ namespace com.tweirtx.TBAAPIv3client.Api
         ///  Gets a key-value list of the event statuses for teams competing at the given event.
         /// </summary>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="eventKey">TBA Event Key, eg &#x60;2016nytr&#x60;</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of Dictionary&lt;string, TeamEventStatus&gt;</returns>
-        public async System.Threading.Tasks.Task<Dictionary<string, TeamEventStatus>> GetEventTeamsStatusesAsync ()
+        public async System.Threading.Tasks.Task<Dictionary<string, TeamEventStatus>> GetEventTeamsStatusesAsync (string eventKey, string ifModifiedSince = null)
         {
-             ApiResponse<Dictionary<string, TeamEventStatus>> localVarResponse = await GetEventTeamsStatusesAsyncWithHttpInfo();
+             ApiResponse<Dictionary<string, TeamEventStatus>> localVarResponse = await GetEventTeamsStatusesAsyncWithHttpInfo(eventKey, ifModifiedSince);
              return localVarResponse.Data;
 
         }
@@ -2342,9 +2701,14 @@ namespace com.tweirtx.TBAAPIv3client.Api
         ///  Gets a key-value list of the event statuses for teams competing at the given event.
         /// </summary>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="eventKey">TBA Event Key, eg &#x60;2016nytr&#x60;</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of ApiResponse (Dictionary&lt;string, TeamEventStatus&gt;)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Dictionary<string, TeamEventStatus>>> GetEventTeamsStatusesAsyncWithHttpInfo ()
+        public async System.Threading.Tasks.Task<ApiResponse<Dictionary<string, TeamEventStatus>>> GetEventTeamsStatusesAsyncWithHttpInfo (string eventKey, string ifModifiedSince = null)
         {
+            // verify the required parameter 'eventKey' is set
+            if (eventKey == null)
+                throw new ApiException(400, "Missing required parameter 'eventKey' when calling ListApi->GetEventTeamsStatuses");
 
             var localVarPath = "/event/{event_key}/teams/statuses";
             var localVarPathParams = new Dictionary<String, String>();
@@ -2367,6 +2731,8 @@ namespace com.tweirtx.TBAAPIv3client.Api
             if (localVarHttpHeaderAccept != null)
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
+            if (eventKey != null) localVarPathParams.Add("event_key", this.Configuration.ApiClient.ParameterToString(eventKey)); // path parameter
+            if (ifModifiedSince != null) localVarHeaderParams.Add("If-Modified-Since", this.Configuration.ApiClient.ParameterToString(ifModifiedSince)); // header parameter
 
             // authentication (apiKey) required
             if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("X-TBA-Auth-Key")))
@@ -2396,10 +2762,12 @@ namespace com.tweirtx.TBAAPIv3client.Api
         ///  Gets a list of events in the given year.
         /// </summary>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="year">Competition Year (or Season). Must be 4 digits.</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>List&lt;Event&gt;</returns>
-        public List<Event> GetEventsByYear ()
+        public List<Event> GetEventsByYear (int? year, string ifModifiedSince = null)
         {
-             ApiResponse<List<Event>> localVarResponse = GetEventsByYearWithHttpInfo();
+             ApiResponse<List<Event>> localVarResponse = GetEventsByYearWithHttpInfo(year, ifModifiedSince);
              return localVarResponse.Data;
         }
 
@@ -2407,9 +2775,14 @@ namespace com.tweirtx.TBAAPIv3client.Api
         ///  Gets a list of events in the given year.
         /// </summary>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="year">Competition Year (or Season). Must be 4 digits.</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>ApiResponse of List&lt;Event&gt;</returns>
-        public ApiResponse< List<Event> > GetEventsByYearWithHttpInfo ()
+        public ApiResponse< List<Event> > GetEventsByYearWithHttpInfo (int? year, string ifModifiedSince = null)
         {
+            // verify the required parameter 'year' is set
+            if (year == null)
+                throw new ApiException(400, "Missing required parameter 'year' when calling ListApi->GetEventsByYear");
 
             var localVarPath = "/events/{year}";
             var localVarPathParams = new Dictionary<String, String>();
@@ -2432,6 +2805,8 @@ namespace com.tweirtx.TBAAPIv3client.Api
             if (localVarHttpHeaderAccept != null)
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
+            if (year != null) localVarPathParams.Add("year", this.Configuration.ApiClient.ParameterToString(year)); // path parameter
+            if (ifModifiedSince != null) localVarHeaderParams.Add("If-Modified-Since", this.Configuration.ApiClient.ParameterToString(ifModifiedSince)); // header parameter
 
             // authentication (apiKey) required
             if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("X-TBA-Auth-Key")))
@@ -2461,10 +2836,12 @@ namespace com.tweirtx.TBAAPIv3client.Api
         ///  Gets a list of events in the given year.
         /// </summary>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="year">Competition Year (or Season). Must be 4 digits.</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of List&lt;Event&gt;</returns>
-        public async System.Threading.Tasks.Task<List<Event>> GetEventsByYearAsync ()
+        public async System.Threading.Tasks.Task<List<Event>> GetEventsByYearAsync (int? year, string ifModifiedSince = null)
         {
-             ApiResponse<List<Event>> localVarResponse = await GetEventsByYearAsyncWithHttpInfo();
+             ApiResponse<List<Event>> localVarResponse = await GetEventsByYearAsyncWithHttpInfo(year, ifModifiedSince);
              return localVarResponse.Data;
 
         }
@@ -2473,9 +2850,14 @@ namespace com.tweirtx.TBAAPIv3client.Api
         ///  Gets a list of events in the given year.
         /// </summary>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="year">Competition Year (or Season). Must be 4 digits.</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of ApiResponse (List&lt;Event&gt;)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<List<Event>>> GetEventsByYearAsyncWithHttpInfo ()
+        public async System.Threading.Tasks.Task<ApiResponse<List<Event>>> GetEventsByYearAsyncWithHttpInfo (int? year, string ifModifiedSince = null)
         {
+            // verify the required parameter 'year' is set
+            if (year == null)
+                throw new ApiException(400, "Missing required parameter 'year' when calling ListApi->GetEventsByYear");
 
             var localVarPath = "/events/{year}";
             var localVarPathParams = new Dictionary<String, String>();
@@ -2498,6 +2880,8 @@ namespace com.tweirtx.TBAAPIv3client.Api
             if (localVarHttpHeaderAccept != null)
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
+            if (year != null) localVarPathParams.Add("year", this.Configuration.ApiClient.ParameterToString(year)); // path parameter
+            if (ifModifiedSince != null) localVarHeaderParams.Add("If-Modified-Since", this.Configuration.ApiClient.ParameterToString(ifModifiedSince)); // header parameter
 
             // authentication (apiKey) required
             if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("X-TBA-Auth-Key")))
@@ -2527,10 +2911,12 @@ namespace com.tweirtx.TBAAPIv3client.Api
         ///  Gets a list of event keys in the given year.
         /// </summary>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="year">Competition Year (or Season). Must be 4 digits.</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>List&lt;string&gt;</returns>
-        public List<string> GetEventsByYearKeys ()
+        public List<string> GetEventsByYearKeys (int? year, string ifModifiedSince = null)
         {
-             ApiResponse<List<string>> localVarResponse = GetEventsByYearKeysWithHttpInfo();
+             ApiResponse<List<string>> localVarResponse = GetEventsByYearKeysWithHttpInfo(year, ifModifiedSince);
              return localVarResponse.Data;
         }
 
@@ -2538,9 +2924,14 @@ namespace com.tweirtx.TBAAPIv3client.Api
         ///  Gets a list of event keys in the given year.
         /// </summary>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="year">Competition Year (or Season). Must be 4 digits.</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>ApiResponse of List&lt;string&gt;</returns>
-        public ApiResponse< List<string> > GetEventsByYearKeysWithHttpInfo ()
+        public ApiResponse< List<string> > GetEventsByYearKeysWithHttpInfo (int? year, string ifModifiedSince = null)
         {
+            // verify the required parameter 'year' is set
+            if (year == null)
+                throw new ApiException(400, "Missing required parameter 'year' when calling ListApi->GetEventsByYearKeys");
 
             var localVarPath = "/events/{year}/keys";
             var localVarPathParams = new Dictionary<String, String>();
@@ -2563,6 +2954,8 @@ namespace com.tweirtx.TBAAPIv3client.Api
             if (localVarHttpHeaderAccept != null)
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
+            if (year != null) localVarPathParams.Add("year", this.Configuration.ApiClient.ParameterToString(year)); // path parameter
+            if (ifModifiedSince != null) localVarHeaderParams.Add("If-Modified-Since", this.Configuration.ApiClient.ParameterToString(ifModifiedSince)); // header parameter
 
             // authentication (apiKey) required
             if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("X-TBA-Auth-Key")))
@@ -2592,10 +2985,12 @@ namespace com.tweirtx.TBAAPIv3client.Api
         ///  Gets a list of event keys in the given year.
         /// </summary>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="year">Competition Year (or Season). Must be 4 digits.</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of List&lt;string&gt;</returns>
-        public async System.Threading.Tasks.Task<List<string>> GetEventsByYearKeysAsync ()
+        public async System.Threading.Tasks.Task<List<string>> GetEventsByYearKeysAsync (int? year, string ifModifiedSince = null)
         {
-             ApiResponse<List<string>> localVarResponse = await GetEventsByYearKeysAsyncWithHttpInfo();
+             ApiResponse<List<string>> localVarResponse = await GetEventsByYearKeysAsyncWithHttpInfo(year, ifModifiedSince);
              return localVarResponse.Data;
 
         }
@@ -2604,9 +2999,14 @@ namespace com.tweirtx.TBAAPIv3client.Api
         ///  Gets a list of event keys in the given year.
         /// </summary>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="year">Competition Year (or Season). Must be 4 digits.</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of ApiResponse (List&lt;string&gt;)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<List<string>>> GetEventsByYearKeysAsyncWithHttpInfo ()
+        public async System.Threading.Tasks.Task<ApiResponse<List<string>>> GetEventsByYearKeysAsyncWithHttpInfo (int? year, string ifModifiedSince = null)
         {
+            // verify the required parameter 'year' is set
+            if (year == null)
+                throw new ApiException(400, "Missing required parameter 'year' when calling ListApi->GetEventsByYearKeys");
 
             var localVarPath = "/events/{year}/keys";
             var localVarPathParams = new Dictionary<String, String>();
@@ -2629,6 +3029,8 @@ namespace com.tweirtx.TBAAPIv3client.Api
             if (localVarHttpHeaderAccept != null)
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
+            if (year != null) localVarPathParams.Add("year", this.Configuration.ApiClient.ParameterToString(year)); // path parameter
+            if (ifModifiedSince != null) localVarHeaderParams.Add("If-Modified-Since", this.Configuration.ApiClient.ParameterToString(ifModifiedSince)); // header parameter
 
             // authentication (apiKey) required
             if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("X-TBA-Auth-Key")))
@@ -2658,10 +3060,12 @@ namespace com.tweirtx.TBAAPIv3client.Api
         ///  Gets a short-form list of events in the given year.
         /// </summary>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="year">Competition Year (or Season). Must be 4 digits.</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>List&lt;EventSimple&gt;</returns>
-        public List<EventSimple> GetEventsByYearSimple ()
+        public List<EventSimple> GetEventsByYearSimple (int? year, string ifModifiedSince = null)
         {
-             ApiResponse<List<EventSimple>> localVarResponse = GetEventsByYearSimpleWithHttpInfo();
+             ApiResponse<List<EventSimple>> localVarResponse = GetEventsByYearSimpleWithHttpInfo(year, ifModifiedSince);
              return localVarResponse.Data;
         }
 
@@ -2669,9 +3073,14 @@ namespace com.tweirtx.TBAAPIv3client.Api
         ///  Gets a short-form list of events in the given year.
         /// </summary>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="year">Competition Year (or Season). Must be 4 digits.</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>ApiResponse of List&lt;EventSimple&gt;</returns>
-        public ApiResponse< List<EventSimple> > GetEventsByYearSimpleWithHttpInfo ()
+        public ApiResponse< List<EventSimple> > GetEventsByYearSimpleWithHttpInfo (int? year, string ifModifiedSince = null)
         {
+            // verify the required parameter 'year' is set
+            if (year == null)
+                throw new ApiException(400, "Missing required parameter 'year' when calling ListApi->GetEventsByYearSimple");
 
             var localVarPath = "/events/{year}/simple";
             var localVarPathParams = new Dictionary<String, String>();
@@ -2694,6 +3103,8 @@ namespace com.tweirtx.TBAAPIv3client.Api
             if (localVarHttpHeaderAccept != null)
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
+            if (year != null) localVarPathParams.Add("year", this.Configuration.ApiClient.ParameterToString(year)); // path parameter
+            if (ifModifiedSince != null) localVarHeaderParams.Add("If-Modified-Since", this.Configuration.ApiClient.ParameterToString(ifModifiedSince)); // header parameter
 
             // authentication (apiKey) required
             if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("X-TBA-Auth-Key")))
@@ -2723,10 +3134,12 @@ namespace com.tweirtx.TBAAPIv3client.Api
         ///  Gets a short-form list of events in the given year.
         /// </summary>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="year">Competition Year (or Season). Must be 4 digits.</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of List&lt;EventSimple&gt;</returns>
-        public async System.Threading.Tasks.Task<List<EventSimple>> GetEventsByYearSimpleAsync ()
+        public async System.Threading.Tasks.Task<List<EventSimple>> GetEventsByYearSimpleAsync (int? year, string ifModifiedSince = null)
         {
-             ApiResponse<List<EventSimple>> localVarResponse = await GetEventsByYearSimpleAsyncWithHttpInfo();
+             ApiResponse<List<EventSimple>> localVarResponse = await GetEventsByYearSimpleAsyncWithHttpInfo(year, ifModifiedSince);
              return localVarResponse.Data;
 
         }
@@ -2735,9 +3148,14 @@ namespace com.tweirtx.TBAAPIv3client.Api
         ///  Gets a short-form list of events in the given year.
         /// </summary>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="year">Competition Year (or Season). Must be 4 digits.</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of ApiResponse (List&lt;EventSimple&gt;)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<List<EventSimple>>> GetEventsByYearSimpleAsyncWithHttpInfo ()
+        public async System.Threading.Tasks.Task<ApiResponse<List<EventSimple>>> GetEventsByYearSimpleAsyncWithHttpInfo (int? year, string ifModifiedSince = null)
         {
+            // verify the required parameter 'year' is set
+            if (year == null)
+                throw new ApiException(400, "Missing required parameter 'year' when calling ListApi->GetEventsByYearSimple");
 
             var localVarPath = "/events/{year}/simple";
             var localVarPathParams = new Dictionary<String, String>();
@@ -2760,6 +3178,8 @@ namespace com.tweirtx.TBAAPIv3client.Api
             if (localVarHttpHeaderAccept != null)
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
+            if (year != null) localVarPathParams.Add("year", this.Configuration.ApiClient.ParameterToString(year)); // path parameter
+            if (ifModifiedSince != null) localVarHeaderParams.Add("If-Modified-Since", this.Configuration.ApiClient.ParameterToString(ifModifiedSince)); // header parameter
 
             // authentication (apiKey) required
             if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("X-TBA-Auth-Key")))
@@ -2789,10 +3209,13 @@ namespace com.tweirtx.TBAAPIv3client.Api
         ///  Gets a key-value list of the event statuses for events this team has competed at in the given year.
         /// </summary>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="teamKey">TBA Team Key, eg &#x60;frc254&#x60;</param>
+        /// <param name="year">Competition Year (or Season). Must be 4 digits.</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Dictionary&lt;string, TeamEventStatus&gt;</returns>
-        public Dictionary<string, TeamEventStatus> GetTeamEventsStatusesByYear ()
+        public Dictionary<string, TeamEventStatus> GetTeamEventsStatusesByYear (string teamKey, int? year, string ifModifiedSince = null)
         {
-             ApiResponse<Dictionary<string, TeamEventStatus>> localVarResponse = GetTeamEventsStatusesByYearWithHttpInfo();
+             ApiResponse<Dictionary<string, TeamEventStatus>> localVarResponse = GetTeamEventsStatusesByYearWithHttpInfo(teamKey, year, ifModifiedSince);
              return localVarResponse.Data;
         }
 
@@ -2800,9 +3223,18 @@ namespace com.tweirtx.TBAAPIv3client.Api
         ///  Gets a key-value list of the event statuses for events this team has competed at in the given year.
         /// </summary>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="teamKey">TBA Team Key, eg &#x60;frc254&#x60;</param>
+        /// <param name="year">Competition Year (or Season). Must be 4 digits.</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>ApiResponse of Dictionary&lt;string, TeamEventStatus&gt;</returns>
-        public ApiResponse< Dictionary<string, TeamEventStatus> > GetTeamEventsStatusesByYearWithHttpInfo ()
+        public ApiResponse< Dictionary<string, TeamEventStatus> > GetTeamEventsStatusesByYearWithHttpInfo (string teamKey, int? year, string ifModifiedSince = null)
         {
+            // verify the required parameter 'teamKey' is set
+            if (teamKey == null)
+                throw new ApiException(400, "Missing required parameter 'teamKey' when calling ListApi->GetTeamEventsStatusesByYear");
+            // verify the required parameter 'year' is set
+            if (year == null)
+                throw new ApiException(400, "Missing required parameter 'year' when calling ListApi->GetTeamEventsStatusesByYear");
 
             var localVarPath = "/team/{team_key}/events/{year}/statuses";
             var localVarPathParams = new Dictionary<String, String>();
@@ -2825,6 +3257,9 @@ namespace com.tweirtx.TBAAPIv3client.Api
             if (localVarHttpHeaderAccept != null)
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
+            if (teamKey != null) localVarPathParams.Add("team_key", this.Configuration.ApiClient.ParameterToString(teamKey)); // path parameter
+            if (year != null) localVarPathParams.Add("year", this.Configuration.ApiClient.ParameterToString(year)); // path parameter
+            if (ifModifiedSince != null) localVarHeaderParams.Add("If-Modified-Since", this.Configuration.ApiClient.ParameterToString(ifModifiedSince)); // header parameter
 
             // authentication (apiKey) required
             if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("X-TBA-Auth-Key")))
@@ -2854,10 +3289,13 @@ namespace com.tweirtx.TBAAPIv3client.Api
         ///  Gets a key-value list of the event statuses for events this team has competed at in the given year.
         /// </summary>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="teamKey">TBA Team Key, eg &#x60;frc254&#x60;</param>
+        /// <param name="year">Competition Year (or Season). Must be 4 digits.</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of Dictionary&lt;string, TeamEventStatus&gt;</returns>
-        public async System.Threading.Tasks.Task<Dictionary<string, TeamEventStatus>> GetTeamEventsStatusesByYearAsync ()
+        public async System.Threading.Tasks.Task<Dictionary<string, TeamEventStatus>> GetTeamEventsStatusesByYearAsync (string teamKey, int? year, string ifModifiedSince = null)
         {
-             ApiResponse<Dictionary<string, TeamEventStatus>> localVarResponse = await GetTeamEventsStatusesByYearAsyncWithHttpInfo();
+             ApiResponse<Dictionary<string, TeamEventStatus>> localVarResponse = await GetTeamEventsStatusesByYearAsyncWithHttpInfo(teamKey, year, ifModifiedSince);
              return localVarResponse.Data;
 
         }
@@ -2866,9 +3304,18 @@ namespace com.tweirtx.TBAAPIv3client.Api
         ///  Gets a key-value list of the event statuses for events this team has competed at in the given year.
         /// </summary>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="teamKey">TBA Team Key, eg &#x60;frc254&#x60;</param>
+        /// <param name="year">Competition Year (or Season). Must be 4 digits.</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of ApiResponse (Dictionary&lt;string, TeamEventStatus&gt;)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Dictionary<string, TeamEventStatus>>> GetTeamEventsStatusesByYearAsyncWithHttpInfo ()
+        public async System.Threading.Tasks.Task<ApiResponse<Dictionary<string, TeamEventStatus>>> GetTeamEventsStatusesByYearAsyncWithHttpInfo (string teamKey, int? year, string ifModifiedSince = null)
         {
+            // verify the required parameter 'teamKey' is set
+            if (teamKey == null)
+                throw new ApiException(400, "Missing required parameter 'teamKey' when calling ListApi->GetTeamEventsStatusesByYear");
+            // verify the required parameter 'year' is set
+            if (year == null)
+                throw new ApiException(400, "Missing required parameter 'year' when calling ListApi->GetTeamEventsStatusesByYear");
 
             var localVarPath = "/team/{team_key}/events/{year}/statuses";
             var localVarPathParams = new Dictionary<String, String>();
@@ -2891,6 +3338,9 @@ namespace com.tweirtx.TBAAPIv3client.Api
             if (localVarHttpHeaderAccept != null)
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
+            if (teamKey != null) localVarPathParams.Add("team_key", this.Configuration.ApiClient.ParameterToString(teamKey)); // path parameter
+            if (year != null) localVarPathParams.Add("year", this.Configuration.ApiClient.ParameterToString(year)); // path parameter
+            if (ifModifiedSince != null) localVarHeaderParams.Add("If-Modified-Since", this.Configuration.ApiClient.ParameterToString(ifModifiedSince)); // header parameter
 
             // authentication (apiKey) required
             if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("X-TBA-Auth-Key")))
@@ -2920,10 +3370,12 @@ namespace com.tweirtx.TBAAPIv3client.Api
         ///  Gets a list of &#x60;Team&#x60; objects, paginated in groups of 500.
         /// </summary>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="pageNum">Page number of results to return, zero-indexed</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>List&lt;Team&gt;</returns>
-        public List<Team> GetTeams ()
+        public List<Team> GetTeams (int? pageNum, string ifModifiedSince = null)
         {
-             ApiResponse<List<Team>> localVarResponse = GetTeamsWithHttpInfo();
+             ApiResponse<List<Team>> localVarResponse = GetTeamsWithHttpInfo(pageNum, ifModifiedSince);
              return localVarResponse.Data;
         }
 
@@ -2931,9 +3383,14 @@ namespace com.tweirtx.TBAAPIv3client.Api
         ///  Gets a list of &#x60;Team&#x60; objects, paginated in groups of 500.
         /// </summary>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="pageNum">Page number of results to return, zero-indexed</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>ApiResponse of List&lt;Team&gt;</returns>
-        public ApiResponse< List<Team> > GetTeamsWithHttpInfo ()
+        public ApiResponse< List<Team> > GetTeamsWithHttpInfo (int? pageNum, string ifModifiedSince = null)
         {
+            // verify the required parameter 'pageNum' is set
+            if (pageNum == null)
+                throw new ApiException(400, "Missing required parameter 'pageNum' when calling ListApi->GetTeams");
 
             var localVarPath = "/teams/{page_num}";
             var localVarPathParams = new Dictionary<String, String>();
@@ -2956,6 +3413,8 @@ namespace com.tweirtx.TBAAPIv3client.Api
             if (localVarHttpHeaderAccept != null)
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
+            if (pageNum != null) localVarPathParams.Add("page_num", this.Configuration.ApiClient.ParameterToString(pageNum)); // path parameter
+            if (ifModifiedSince != null) localVarHeaderParams.Add("If-Modified-Since", this.Configuration.ApiClient.ParameterToString(ifModifiedSince)); // header parameter
 
             // authentication (apiKey) required
             if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("X-TBA-Auth-Key")))
@@ -2985,10 +3444,12 @@ namespace com.tweirtx.TBAAPIv3client.Api
         ///  Gets a list of &#x60;Team&#x60; objects, paginated in groups of 500.
         /// </summary>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="pageNum">Page number of results to return, zero-indexed</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of List&lt;Team&gt;</returns>
-        public async System.Threading.Tasks.Task<List<Team>> GetTeamsAsync ()
+        public async System.Threading.Tasks.Task<List<Team>> GetTeamsAsync (int? pageNum, string ifModifiedSince = null)
         {
-             ApiResponse<List<Team>> localVarResponse = await GetTeamsAsyncWithHttpInfo();
+             ApiResponse<List<Team>> localVarResponse = await GetTeamsAsyncWithHttpInfo(pageNum, ifModifiedSince);
              return localVarResponse.Data;
 
         }
@@ -2997,9 +3458,14 @@ namespace com.tweirtx.TBAAPIv3client.Api
         ///  Gets a list of &#x60;Team&#x60; objects, paginated in groups of 500.
         /// </summary>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="pageNum">Page number of results to return, zero-indexed</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of ApiResponse (List&lt;Team&gt;)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<List<Team>>> GetTeamsAsyncWithHttpInfo ()
+        public async System.Threading.Tasks.Task<ApiResponse<List<Team>>> GetTeamsAsyncWithHttpInfo (int? pageNum, string ifModifiedSince = null)
         {
+            // verify the required parameter 'pageNum' is set
+            if (pageNum == null)
+                throw new ApiException(400, "Missing required parameter 'pageNum' when calling ListApi->GetTeams");
 
             var localVarPath = "/teams/{page_num}";
             var localVarPathParams = new Dictionary<String, String>();
@@ -3022,6 +3488,8 @@ namespace com.tweirtx.TBAAPIv3client.Api
             if (localVarHttpHeaderAccept != null)
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
+            if (pageNum != null) localVarPathParams.Add("page_num", this.Configuration.ApiClient.ParameterToString(pageNum)); // path parameter
+            if (ifModifiedSince != null) localVarHeaderParams.Add("If-Modified-Since", this.Configuration.ApiClient.ParameterToString(ifModifiedSince)); // header parameter
 
             // authentication (apiKey) required
             if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("X-TBA-Auth-Key")))
@@ -3051,10 +3519,13 @@ namespace com.tweirtx.TBAAPIv3client.Api
         ///  Gets a list of &#x60;Team&#x60; objects that competed in the given year, paginated in groups of 500.
         /// </summary>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="year">Competition Year (or Season). Must be 4 digits.</param>
+        /// <param name="pageNum">Page number of results to return, zero-indexed</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>List&lt;Team&gt;</returns>
-        public List<Team> GetTeamsByYear ()
+        public List<Team> GetTeamsByYear (int? year, int? pageNum, string ifModifiedSince = null)
         {
-             ApiResponse<List<Team>> localVarResponse = GetTeamsByYearWithHttpInfo();
+             ApiResponse<List<Team>> localVarResponse = GetTeamsByYearWithHttpInfo(year, pageNum, ifModifiedSince);
              return localVarResponse.Data;
         }
 
@@ -3062,9 +3533,18 @@ namespace com.tweirtx.TBAAPIv3client.Api
         ///  Gets a list of &#x60;Team&#x60; objects that competed in the given year, paginated in groups of 500.
         /// </summary>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="year">Competition Year (or Season). Must be 4 digits.</param>
+        /// <param name="pageNum">Page number of results to return, zero-indexed</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>ApiResponse of List&lt;Team&gt;</returns>
-        public ApiResponse< List<Team> > GetTeamsByYearWithHttpInfo ()
+        public ApiResponse< List<Team> > GetTeamsByYearWithHttpInfo (int? year, int? pageNum, string ifModifiedSince = null)
         {
+            // verify the required parameter 'year' is set
+            if (year == null)
+                throw new ApiException(400, "Missing required parameter 'year' when calling ListApi->GetTeamsByYear");
+            // verify the required parameter 'pageNum' is set
+            if (pageNum == null)
+                throw new ApiException(400, "Missing required parameter 'pageNum' when calling ListApi->GetTeamsByYear");
 
             var localVarPath = "/teams/{year}/{page_num}";
             var localVarPathParams = new Dictionary<String, String>();
@@ -3087,6 +3567,9 @@ namespace com.tweirtx.TBAAPIv3client.Api
             if (localVarHttpHeaderAccept != null)
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
+            if (year != null) localVarPathParams.Add("year", this.Configuration.ApiClient.ParameterToString(year)); // path parameter
+            if (pageNum != null) localVarPathParams.Add("page_num", this.Configuration.ApiClient.ParameterToString(pageNum)); // path parameter
+            if (ifModifiedSince != null) localVarHeaderParams.Add("If-Modified-Since", this.Configuration.ApiClient.ParameterToString(ifModifiedSince)); // header parameter
 
             // authentication (apiKey) required
             if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("X-TBA-Auth-Key")))
@@ -3116,10 +3599,13 @@ namespace com.tweirtx.TBAAPIv3client.Api
         ///  Gets a list of &#x60;Team&#x60; objects that competed in the given year, paginated in groups of 500.
         /// </summary>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="year">Competition Year (or Season). Must be 4 digits.</param>
+        /// <param name="pageNum">Page number of results to return, zero-indexed</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of List&lt;Team&gt;</returns>
-        public async System.Threading.Tasks.Task<List<Team>> GetTeamsByYearAsync ()
+        public async System.Threading.Tasks.Task<List<Team>> GetTeamsByYearAsync (int? year, int? pageNum, string ifModifiedSince = null)
         {
-             ApiResponse<List<Team>> localVarResponse = await GetTeamsByYearAsyncWithHttpInfo();
+             ApiResponse<List<Team>> localVarResponse = await GetTeamsByYearAsyncWithHttpInfo(year, pageNum, ifModifiedSince);
              return localVarResponse.Data;
 
         }
@@ -3128,9 +3614,18 @@ namespace com.tweirtx.TBAAPIv3client.Api
         ///  Gets a list of &#x60;Team&#x60; objects that competed in the given year, paginated in groups of 500.
         /// </summary>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="year">Competition Year (or Season). Must be 4 digits.</param>
+        /// <param name="pageNum">Page number of results to return, zero-indexed</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of ApiResponse (List&lt;Team&gt;)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<List<Team>>> GetTeamsByYearAsyncWithHttpInfo ()
+        public async System.Threading.Tasks.Task<ApiResponse<List<Team>>> GetTeamsByYearAsyncWithHttpInfo (int? year, int? pageNum, string ifModifiedSince = null)
         {
+            // verify the required parameter 'year' is set
+            if (year == null)
+                throw new ApiException(400, "Missing required parameter 'year' when calling ListApi->GetTeamsByYear");
+            // verify the required parameter 'pageNum' is set
+            if (pageNum == null)
+                throw new ApiException(400, "Missing required parameter 'pageNum' when calling ListApi->GetTeamsByYear");
 
             var localVarPath = "/teams/{year}/{page_num}";
             var localVarPathParams = new Dictionary<String, String>();
@@ -3153,6 +3648,9 @@ namespace com.tweirtx.TBAAPIv3client.Api
             if (localVarHttpHeaderAccept != null)
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
+            if (year != null) localVarPathParams.Add("year", this.Configuration.ApiClient.ParameterToString(year)); // path parameter
+            if (pageNum != null) localVarPathParams.Add("page_num", this.Configuration.ApiClient.ParameterToString(pageNum)); // path parameter
+            if (ifModifiedSince != null) localVarHeaderParams.Add("If-Modified-Since", this.Configuration.ApiClient.ParameterToString(ifModifiedSince)); // header parameter
 
             // authentication (apiKey) required
             if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("X-TBA-Auth-Key")))
@@ -3182,10 +3680,13 @@ namespace com.tweirtx.TBAAPIv3client.Api
         ///  Gets a list Team Keys that competed in the given year, paginated in groups of 500.
         /// </summary>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="year">Competition Year (or Season). Must be 4 digits.</param>
+        /// <param name="pageNum">Page number of results to return, zero-indexed</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>List&lt;string&gt;</returns>
-        public List<string> GetTeamsByYearKeys ()
+        public List<string> GetTeamsByYearKeys (int? year, int? pageNum, string ifModifiedSince = null)
         {
-             ApiResponse<List<string>> localVarResponse = GetTeamsByYearKeysWithHttpInfo();
+             ApiResponse<List<string>> localVarResponse = GetTeamsByYearKeysWithHttpInfo(year, pageNum, ifModifiedSince);
              return localVarResponse.Data;
         }
 
@@ -3193,9 +3694,18 @@ namespace com.tweirtx.TBAAPIv3client.Api
         ///  Gets a list Team Keys that competed in the given year, paginated in groups of 500.
         /// </summary>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="year">Competition Year (or Season). Must be 4 digits.</param>
+        /// <param name="pageNum">Page number of results to return, zero-indexed</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>ApiResponse of List&lt;string&gt;</returns>
-        public ApiResponse< List<string> > GetTeamsByYearKeysWithHttpInfo ()
+        public ApiResponse< List<string> > GetTeamsByYearKeysWithHttpInfo (int? year, int? pageNum, string ifModifiedSince = null)
         {
+            // verify the required parameter 'year' is set
+            if (year == null)
+                throw new ApiException(400, "Missing required parameter 'year' when calling ListApi->GetTeamsByYearKeys");
+            // verify the required parameter 'pageNum' is set
+            if (pageNum == null)
+                throw new ApiException(400, "Missing required parameter 'pageNum' when calling ListApi->GetTeamsByYearKeys");
 
             var localVarPath = "/teams/{year}/{page_num}/keys";
             var localVarPathParams = new Dictionary<String, String>();
@@ -3218,6 +3728,9 @@ namespace com.tweirtx.TBAAPIv3client.Api
             if (localVarHttpHeaderAccept != null)
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
+            if (year != null) localVarPathParams.Add("year", this.Configuration.ApiClient.ParameterToString(year)); // path parameter
+            if (pageNum != null) localVarPathParams.Add("page_num", this.Configuration.ApiClient.ParameterToString(pageNum)); // path parameter
+            if (ifModifiedSince != null) localVarHeaderParams.Add("If-Modified-Since", this.Configuration.ApiClient.ParameterToString(ifModifiedSince)); // header parameter
 
             // authentication (apiKey) required
             if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("X-TBA-Auth-Key")))
@@ -3247,10 +3760,13 @@ namespace com.tweirtx.TBAAPIv3client.Api
         ///  Gets a list Team Keys that competed in the given year, paginated in groups of 500.
         /// </summary>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="year">Competition Year (or Season). Must be 4 digits.</param>
+        /// <param name="pageNum">Page number of results to return, zero-indexed</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of List&lt;string&gt;</returns>
-        public async System.Threading.Tasks.Task<List<string>> GetTeamsByYearKeysAsync ()
+        public async System.Threading.Tasks.Task<List<string>> GetTeamsByYearKeysAsync (int? year, int? pageNum, string ifModifiedSince = null)
         {
-             ApiResponse<List<string>> localVarResponse = await GetTeamsByYearKeysAsyncWithHttpInfo();
+             ApiResponse<List<string>> localVarResponse = await GetTeamsByYearKeysAsyncWithHttpInfo(year, pageNum, ifModifiedSince);
              return localVarResponse.Data;
 
         }
@@ -3259,9 +3775,18 @@ namespace com.tweirtx.TBAAPIv3client.Api
         ///  Gets a list Team Keys that competed in the given year, paginated in groups of 500.
         /// </summary>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="year">Competition Year (or Season). Must be 4 digits.</param>
+        /// <param name="pageNum">Page number of results to return, zero-indexed</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of ApiResponse (List&lt;string&gt;)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<List<string>>> GetTeamsByYearKeysAsyncWithHttpInfo ()
+        public async System.Threading.Tasks.Task<ApiResponse<List<string>>> GetTeamsByYearKeysAsyncWithHttpInfo (int? year, int? pageNum, string ifModifiedSince = null)
         {
+            // verify the required parameter 'year' is set
+            if (year == null)
+                throw new ApiException(400, "Missing required parameter 'year' when calling ListApi->GetTeamsByYearKeys");
+            // verify the required parameter 'pageNum' is set
+            if (pageNum == null)
+                throw new ApiException(400, "Missing required parameter 'pageNum' when calling ListApi->GetTeamsByYearKeys");
 
             var localVarPath = "/teams/{year}/{page_num}/keys";
             var localVarPathParams = new Dictionary<String, String>();
@@ -3284,6 +3809,9 @@ namespace com.tweirtx.TBAAPIv3client.Api
             if (localVarHttpHeaderAccept != null)
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
+            if (year != null) localVarPathParams.Add("year", this.Configuration.ApiClient.ParameterToString(year)); // path parameter
+            if (pageNum != null) localVarPathParams.Add("page_num", this.Configuration.ApiClient.ParameterToString(pageNum)); // path parameter
+            if (ifModifiedSince != null) localVarHeaderParams.Add("If-Modified-Since", this.Configuration.ApiClient.ParameterToString(ifModifiedSince)); // header parameter
 
             // authentication (apiKey) required
             if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("X-TBA-Auth-Key")))
@@ -3313,10 +3841,13 @@ namespace com.tweirtx.TBAAPIv3client.Api
         ///  Gets a list of short form &#x60;Team_Simple&#x60; objects that competed in the given year, paginated in groups of 500.
         /// </summary>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="year">Competition Year (or Season). Must be 4 digits.</param>
+        /// <param name="pageNum">Page number of results to return, zero-indexed</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>List&lt;TeamSimple&gt;</returns>
-        public List<TeamSimple> GetTeamsByYearSimple ()
+        public List<TeamSimple> GetTeamsByYearSimple (int? year, int? pageNum, string ifModifiedSince = null)
         {
-             ApiResponse<List<TeamSimple>> localVarResponse = GetTeamsByYearSimpleWithHttpInfo();
+             ApiResponse<List<TeamSimple>> localVarResponse = GetTeamsByYearSimpleWithHttpInfo(year, pageNum, ifModifiedSince);
              return localVarResponse.Data;
         }
 
@@ -3324,9 +3855,18 @@ namespace com.tweirtx.TBAAPIv3client.Api
         ///  Gets a list of short form &#x60;Team_Simple&#x60; objects that competed in the given year, paginated in groups of 500.
         /// </summary>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="year">Competition Year (or Season). Must be 4 digits.</param>
+        /// <param name="pageNum">Page number of results to return, zero-indexed</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>ApiResponse of List&lt;TeamSimple&gt;</returns>
-        public ApiResponse< List<TeamSimple> > GetTeamsByYearSimpleWithHttpInfo ()
+        public ApiResponse< List<TeamSimple> > GetTeamsByYearSimpleWithHttpInfo (int? year, int? pageNum, string ifModifiedSince = null)
         {
+            // verify the required parameter 'year' is set
+            if (year == null)
+                throw new ApiException(400, "Missing required parameter 'year' when calling ListApi->GetTeamsByYearSimple");
+            // verify the required parameter 'pageNum' is set
+            if (pageNum == null)
+                throw new ApiException(400, "Missing required parameter 'pageNum' when calling ListApi->GetTeamsByYearSimple");
 
             var localVarPath = "/teams/{year}/{page_num}/simple";
             var localVarPathParams = new Dictionary<String, String>();
@@ -3349,6 +3889,9 @@ namespace com.tweirtx.TBAAPIv3client.Api
             if (localVarHttpHeaderAccept != null)
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
+            if (year != null) localVarPathParams.Add("year", this.Configuration.ApiClient.ParameterToString(year)); // path parameter
+            if (pageNum != null) localVarPathParams.Add("page_num", this.Configuration.ApiClient.ParameterToString(pageNum)); // path parameter
+            if (ifModifiedSince != null) localVarHeaderParams.Add("If-Modified-Since", this.Configuration.ApiClient.ParameterToString(ifModifiedSince)); // header parameter
 
             // authentication (apiKey) required
             if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("X-TBA-Auth-Key")))
@@ -3378,10 +3921,13 @@ namespace com.tweirtx.TBAAPIv3client.Api
         ///  Gets a list of short form &#x60;Team_Simple&#x60; objects that competed in the given year, paginated in groups of 500.
         /// </summary>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="year">Competition Year (or Season). Must be 4 digits.</param>
+        /// <param name="pageNum">Page number of results to return, zero-indexed</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of List&lt;TeamSimple&gt;</returns>
-        public async System.Threading.Tasks.Task<List<TeamSimple>> GetTeamsByYearSimpleAsync ()
+        public async System.Threading.Tasks.Task<List<TeamSimple>> GetTeamsByYearSimpleAsync (int? year, int? pageNum, string ifModifiedSince = null)
         {
-             ApiResponse<List<TeamSimple>> localVarResponse = await GetTeamsByYearSimpleAsyncWithHttpInfo();
+             ApiResponse<List<TeamSimple>> localVarResponse = await GetTeamsByYearSimpleAsyncWithHttpInfo(year, pageNum, ifModifiedSince);
              return localVarResponse.Data;
 
         }
@@ -3390,9 +3936,18 @@ namespace com.tweirtx.TBAAPIv3client.Api
         ///  Gets a list of short form &#x60;Team_Simple&#x60; objects that competed in the given year, paginated in groups of 500.
         /// </summary>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="year">Competition Year (or Season). Must be 4 digits.</param>
+        /// <param name="pageNum">Page number of results to return, zero-indexed</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of ApiResponse (List&lt;TeamSimple&gt;)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<List<TeamSimple>>> GetTeamsByYearSimpleAsyncWithHttpInfo ()
+        public async System.Threading.Tasks.Task<ApiResponse<List<TeamSimple>>> GetTeamsByYearSimpleAsyncWithHttpInfo (int? year, int? pageNum, string ifModifiedSince = null)
         {
+            // verify the required parameter 'year' is set
+            if (year == null)
+                throw new ApiException(400, "Missing required parameter 'year' when calling ListApi->GetTeamsByYearSimple");
+            // verify the required parameter 'pageNum' is set
+            if (pageNum == null)
+                throw new ApiException(400, "Missing required parameter 'pageNum' when calling ListApi->GetTeamsByYearSimple");
 
             var localVarPath = "/teams/{year}/{page_num}/simple";
             var localVarPathParams = new Dictionary<String, String>();
@@ -3415,6 +3970,9 @@ namespace com.tweirtx.TBAAPIv3client.Api
             if (localVarHttpHeaderAccept != null)
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
+            if (year != null) localVarPathParams.Add("year", this.Configuration.ApiClient.ParameterToString(year)); // path parameter
+            if (pageNum != null) localVarPathParams.Add("page_num", this.Configuration.ApiClient.ParameterToString(pageNum)); // path parameter
+            if (ifModifiedSince != null) localVarHeaderParams.Add("If-Modified-Since", this.Configuration.ApiClient.ParameterToString(ifModifiedSince)); // header parameter
 
             // authentication (apiKey) required
             if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("X-TBA-Auth-Key")))
@@ -3444,10 +4002,12 @@ namespace com.tweirtx.TBAAPIv3client.Api
         ///  Gets a list of Team keys, paginated in groups of 500. (Note, each page will not have 500 teams, but will include the teams within that range of 500.)
         /// </summary>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="pageNum">Page number of results to return, zero-indexed</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>List&lt;string&gt;</returns>
-        public List<string> GetTeamsKeys ()
+        public List<string> GetTeamsKeys (int? pageNum, string ifModifiedSince = null)
         {
-             ApiResponse<List<string>> localVarResponse = GetTeamsKeysWithHttpInfo();
+             ApiResponse<List<string>> localVarResponse = GetTeamsKeysWithHttpInfo(pageNum, ifModifiedSince);
              return localVarResponse.Data;
         }
 
@@ -3455,9 +4015,14 @@ namespace com.tweirtx.TBAAPIv3client.Api
         ///  Gets a list of Team keys, paginated in groups of 500. (Note, each page will not have 500 teams, but will include the teams within that range of 500.)
         /// </summary>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="pageNum">Page number of results to return, zero-indexed</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>ApiResponse of List&lt;string&gt;</returns>
-        public ApiResponse< List<string> > GetTeamsKeysWithHttpInfo ()
+        public ApiResponse< List<string> > GetTeamsKeysWithHttpInfo (int? pageNum, string ifModifiedSince = null)
         {
+            // verify the required parameter 'pageNum' is set
+            if (pageNum == null)
+                throw new ApiException(400, "Missing required parameter 'pageNum' when calling ListApi->GetTeamsKeys");
 
             var localVarPath = "/teams/{page_num}/keys";
             var localVarPathParams = new Dictionary<String, String>();
@@ -3480,6 +4045,8 @@ namespace com.tweirtx.TBAAPIv3client.Api
             if (localVarHttpHeaderAccept != null)
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
+            if (pageNum != null) localVarPathParams.Add("page_num", this.Configuration.ApiClient.ParameterToString(pageNum)); // path parameter
+            if (ifModifiedSince != null) localVarHeaderParams.Add("If-Modified-Since", this.Configuration.ApiClient.ParameterToString(ifModifiedSince)); // header parameter
 
             // authentication (apiKey) required
             if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("X-TBA-Auth-Key")))
@@ -3509,10 +4076,12 @@ namespace com.tweirtx.TBAAPIv3client.Api
         ///  Gets a list of Team keys, paginated in groups of 500. (Note, each page will not have 500 teams, but will include the teams within that range of 500.)
         /// </summary>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="pageNum">Page number of results to return, zero-indexed</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of List&lt;string&gt;</returns>
-        public async System.Threading.Tasks.Task<List<string>> GetTeamsKeysAsync ()
+        public async System.Threading.Tasks.Task<List<string>> GetTeamsKeysAsync (int? pageNum, string ifModifiedSince = null)
         {
-             ApiResponse<List<string>> localVarResponse = await GetTeamsKeysAsyncWithHttpInfo();
+             ApiResponse<List<string>> localVarResponse = await GetTeamsKeysAsyncWithHttpInfo(pageNum, ifModifiedSince);
              return localVarResponse.Data;
 
         }
@@ -3521,9 +4090,14 @@ namespace com.tweirtx.TBAAPIv3client.Api
         ///  Gets a list of Team keys, paginated in groups of 500. (Note, each page will not have 500 teams, but will include the teams within that range of 500.)
         /// </summary>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="pageNum">Page number of results to return, zero-indexed</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of ApiResponse (List&lt;string&gt;)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<List<string>>> GetTeamsKeysAsyncWithHttpInfo ()
+        public async System.Threading.Tasks.Task<ApiResponse<List<string>>> GetTeamsKeysAsyncWithHttpInfo (int? pageNum, string ifModifiedSince = null)
         {
+            // verify the required parameter 'pageNum' is set
+            if (pageNum == null)
+                throw new ApiException(400, "Missing required parameter 'pageNum' when calling ListApi->GetTeamsKeys");
 
             var localVarPath = "/teams/{page_num}/keys";
             var localVarPathParams = new Dictionary<String, String>();
@@ -3546,6 +4120,8 @@ namespace com.tweirtx.TBAAPIv3client.Api
             if (localVarHttpHeaderAccept != null)
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
+            if (pageNum != null) localVarPathParams.Add("page_num", this.Configuration.ApiClient.ParameterToString(pageNum)); // path parameter
+            if (ifModifiedSince != null) localVarHeaderParams.Add("If-Modified-Since", this.Configuration.ApiClient.ParameterToString(ifModifiedSince)); // header parameter
 
             // authentication (apiKey) required
             if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("X-TBA-Auth-Key")))
@@ -3575,10 +4151,12 @@ namespace com.tweirtx.TBAAPIv3client.Api
         ///  Gets a list of short form &#x60;Team_Simple&#x60; objects, paginated in groups of 500.
         /// </summary>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="pageNum">Page number of results to return, zero-indexed</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>List&lt;TeamSimple&gt;</returns>
-        public List<TeamSimple> GetTeamsSimple ()
+        public List<TeamSimple> GetTeamsSimple (int? pageNum, string ifModifiedSince = null)
         {
-             ApiResponse<List<TeamSimple>> localVarResponse = GetTeamsSimpleWithHttpInfo();
+             ApiResponse<List<TeamSimple>> localVarResponse = GetTeamsSimpleWithHttpInfo(pageNum, ifModifiedSince);
              return localVarResponse.Data;
         }
 
@@ -3586,9 +4164,14 @@ namespace com.tweirtx.TBAAPIv3client.Api
         ///  Gets a list of short form &#x60;Team_Simple&#x60; objects, paginated in groups of 500.
         /// </summary>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="pageNum">Page number of results to return, zero-indexed</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>ApiResponse of List&lt;TeamSimple&gt;</returns>
-        public ApiResponse< List<TeamSimple> > GetTeamsSimpleWithHttpInfo ()
+        public ApiResponse< List<TeamSimple> > GetTeamsSimpleWithHttpInfo (int? pageNum, string ifModifiedSince = null)
         {
+            // verify the required parameter 'pageNum' is set
+            if (pageNum == null)
+                throw new ApiException(400, "Missing required parameter 'pageNum' when calling ListApi->GetTeamsSimple");
 
             var localVarPath = "/teams/{page_num}/simple";
             var localVarPathParams = new Dictionary<String, String>();
@@ -3611,6 +4194,8 @@ namespace com.tweirtx.TBAAPIv3client.Api
             if (localVarHttpHeaderAccept != null)
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
+            if (pageNum != null) localVarPathParams.Add("page_num", this.Configuration.ApiClient.ParameterToString(pageNum)); // path parameter
+            if (ifModifiedSince != null) localVarHeaderParams.Add("If-Modified-Since", this.Configuration.ApiClient.ParameterToString(ifModifiedSince)); // header parameter
 
             // authentication (apiKey) required
             if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("X-TBA-Auth-Key")))
@@ -3640,10 +4225,12 @@ namespace com.tweirtx.TBAAPIv3client.Api
         ///  Gets a list of short form &#x60;Team_Simple&#x60; objects, paginated in groups of 500.
         /// </summary>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="pageNum">Page number of results to return, zero-indexed</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of List&lt;TeamSimple&gt;</returns>
-        public async System.Threading.Tasks.Task<List<TeamSimple>> GetTeamsSimpleAsync ()
+        public async System.Threading.Tasks.Task<List<TeamSimple>> GetTeamsSimpleAsync (int? pageNum, string ifModifiedSince = null)
         {
-             ApiResponse<List<TeamSimple>> localVarResponse = await GetTeamsSimpleAsyncWithHttpInfo();
+             ApiResponse<List<TeamSimple>> localVarResponse = await GetTeamsSimpleAsyncWithHttpInfo(pageNum, ifModifiedSince);
              return localVarResponse.Data;
 
         }
@@ -3652,9 +4239,14 @@ namespace com.tweirtx.TBAAPIv3client.Api
         ///  Gets a list of short form &#x60;Team_Simple&#x60; objects, paginated in groups of 500.
         /// </summary>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="pageNum">Page number of results to return, zero-indexed</param>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of ApiResponse (List&lt;TeamSimple&gt;)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<List<TeamSimple>>> GetTeamsSimpleAsyncWithHttpInfo ()
+        public async System.Threading.Tasks.Task<ApiResponse<List<TeamSimple>>> GetTeamsSimpleAsyncWithHttpInfo (int? pageNum, string ifModifiedSince = null)
         {
+            // verify the required parameter 'pageNum' is set
+            if (pageNum == null)
+                throw new ApiException(400, "Missing required parameter 'pageNum' when calling ListApi->GetTeamsSimple");
 
             var localVarPath = "/teams/{page_num}/simple";
             var localVarPathParams = new Dictionary<String, String>();
@@ -3677,6 +4269,8 @@ namespace com.tweirtx.TBAAPIv3client.Api
             if (localVarHttpHeaderAccept != null)
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
+            if (pageNum != null) localVarPathParams.Add("page_num", this.Configuration.ApiClient.ParameterToString(pageNum)); // path parameter
+            if (ifModifiedSince != null) localVarHeaderParams.Add("If-Modified-Since", this.Configuration.ApiClient.ParameterToString(ifModifiedSince)); // header parameter
 
             // authentication (apiKey) required
             if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("X-TBA-Auth-Key")))

@@ -31,8 +31,9 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// Returns API status, and TBA status information.
         /// </remarks>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>APIStatus</returns>
-        APIStatus GetStatus ();
+        APIStatus GetStatus (string ifModifiedSince = null);
 
         /// <summary>
         /// 
@@ -41,8 +42,9 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// Returns API status, and TBA status information.
         /// </remarks>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>ApiResponse of APIStatus</returns>
-        ApiResponse<APIStatus> GetStatusWithHttpInfo ();
+        ApiResponse<APIStatus> GetStatusWithHttpInfo (string ifModifiedSince = null);
         #endregion Synchronous Operations
         #region Asynchronous Operations
         /// <summary>
@@ -52,8 +54,9 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// Returns API status, and TBA status information.
         /// </remarks>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of APIStatus</returns>
-        System.Threading.Tasks.Task<APIStatus> GetStatusAsync ();
+        System.Threading.Tasks.Task<APIStatus> GetStatusAsync (string ifModifiedSince = null);
 
         /// <summary>
         /// 
@@ -62,8 +65,9 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// Returns API status, and TBA status information.
         /// </remarks>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of ApiResponse (APIStatus)</returns>
-        System.Threading.Tasks.Task<ApiResponse<APIStatus>> GetStatusAsyncWithHttpInfo ();
+        System.Threading.Tasks.Task<ApiResponse<APIStatus>> GetStatusAsyncWithHttpInfo (string ifModifiedSince = null);
         #endregion Asynchronous Operations
     }
 
@@ -179,10 +183,11 @@ namespace com.tweirtx.TBAAPIv3client.Api
         ///  Returns API status, and TBA status information.
         /// </summary>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>APIStatus</returns>
-        public APIStatus GetStatus ()
+        public APIStatus GetStatus (string ifModifiedSince = null)
         {
-             ApiResponse<APIStatus> localVarResponse = GetStatusWithHttpInfo();
+             ApiResponse<APIStatus> localVarResponse = GetStatusWithHttpInfo(ifModifiedSince);
              return localVarResponse.Data;
         }
 
@@ -190,8 +195,9 @@ namespace com.tweirtx.TBAAPIv3client.Api
         ///  Returns API status, and TBA status information.
         /// </summary>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>ApiResponse of APIStatus</returns>
-        public ApiResponse< APIStatus > GetStatusWithHttpInfo ()
+        public ApiResponse< APIStatus > GetStatusWithHttpInfo (string ifModifiedSince = null)
         {
 
             var localVarPath = "/status";
@@ -215,6 +221,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
             if (localVarHttpHeaderAccept != null)
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
+            if (ifModifiedSince != null) localVarHeaderParams.Add("If-Modified-Since", this.Configuration.ApiClient.ParameterToString(ifModifiedSince)); // header parameter
 
             // authentication (apiKey) required
             if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("X-TBA-Auth-Key")))
@@ -244,10 +251,11 @@ namespace com.tweirtx.TBAAPIv3client.Api
         ///  Returns API status, and TBA status information.
         /// </summary>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of APIStatus</returns>
-        public async System.Threading.Tasks.Task<APIStatus> GetStatusAsync ()
+        public async System.Threading.Tasks.Task<APIStatus> GetStatusAsync (string ifModifiedSince = null)
         {
-             ApiResponse<APIStatus> localVarResponse = await GetStatusAsyncWithHttpInfo();
+             ApiResponse<APIStatus> localVarResponse = await GetStatusAsyncWithHttpInfo(ifModifiedSince);
              return localVarResponse.Data;
 
         }
@@ -256,8 +264,9 @@ namespace com.tweirtx.TBAAPIv3client.Api
         ///  Returns API status, and TBA status information.
         /// </summary>
         /// <exception cref="com.tweirtx.TBAAPIv3client.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of ApiResponse (APIStatus)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<APIStatus>> GetStatusAsyncWithHttpInfo ()
+        public async System.Threading.Tasks.Task<ApiResponse<APIStatus>> GetStatusAsyncWithHttpInfo (string ifModifiedSince = null)
         {
 
             var localVarPath = "/status";
@@ -281,6 +290,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
             if (localVarHttpHeaderAccept != null)
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
+            if (ifModifiedSince != null) localVarHeaderParams.Add("If-Modified-Since", this.Configuration.ApiClient.ParameterToString(ifModifiedSince)); // header parameter
 
             // authentication (apiKey) required
             if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("X-TBA-Auth-Key")))

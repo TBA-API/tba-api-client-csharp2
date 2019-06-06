@@ -44,7 +44,7 @@ Method | HTTP request | Description
 
 ## GetDistrictEvents
 
-> List<Event> GetDistrictEvents ()
+> List<Event> GetDistrictEvents (string districtKey, string ifModifiedSince = null)
 
 
 
@@ -71,10 +71,12 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
             var apiInstance = new EventApi();
+            var districtKey = districtKey_example;  // string | TBA District Key, eg `2016fim`
+            var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
             try
             {
-                List&lt;Event&gt; result = apiInstance.GetDistrictEvents();
+                List&lt;Event&gt; result = apiInstance.GetDistrictEvents(districtKey, ifModifiedSince);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -88,7 +90,11 @@ namespace Example
 
 ### Parameters
 
-This endpoint does not need any parameter.
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **districtKey** | **string**| TBA District Key, eg &#x60;2016fim&#x60; | 
+ **ifModifiedSince** | **string**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
 
 ### Return type
 
@@ -111,7 +117,7 @@ This endpoint does not need any parameter.
 
 ## GetDistrictEventsKeys
 
-> List<string> GetDistrictEventsKeys ()
+> List<string> GetDistrictEventsKeys (string districtKey, string ifModifiedSince = null)
 
 
 
@@ -138,10 +144,12 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
             var apiInstance = new EventApi();
+            var districtKey = districtKey_example;  // string | TBA District Key, eg `2016fim`
+            var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
             try
             {
-                List&lt;string&gt; result = apiInstance.GetDistrictEventsKeys();
+                List&lt;string&gt; result = apiInstance.GetDistrictEventsKeys(districtKey, ifModifiedSince);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -155,7 +163,11 @@ namespace Example
 
 ### Parameters
 
-This endpoint does not need any parameter.
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **districtKey** | **string**| TBA District Key, eg &#x60;2016fim&#x60; | 
+ **ifModifiedSince** | **string**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
 
 ### Return type
 
@@ -178,7 +190,7 @@ This endpoint does not need any parameter.
 
 ## GetDistrictEventsSimple
 
-> List<EventSimple> GetDistrictEventsSimple (string districtKey)
+> List<EventSimple> GetDistrictEventsSimple (string districtKey, string ifModifiedSince = null)
 
 
 
@@ -206,10 +218,11 @@ namespace Example
 
             var apiInstance = new EventApi();
             var districtKey = districtKey_example;  // string | TBA District Key, eg `2016fim`
+            var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
             try
             {
-                List&lt;EventSimple&gt; result = apiInstance.GetDistrictEventsSimple(districtKey);
+                List&lt;EventSimple&gt; result = apiInstance.GetDistrictEventsSimple(districtKey, ifModifiedSince);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -227,6 +240,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **districtKey** | **string**| TBA District Key, eg &#x60;2016fim&#x60; | 
+ **ifModifiedSince** | **string**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
 
 ### Return type
 
@@ -249,7 +263,7 @@ Name | Type | Description  | Notes
 
 ## GetEvent
 
-> Event GetEvent ()
+> Event GetEvent (string eventKey, string ifModifiedSince = null)
 
 
 
@@ -276,10 +290,12 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
             var apiInstance = new EventApi();
+            var eventKey = eventKey_example;  // string | TBA Event Key, eg `2016nytr`
+            var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
             try
             {
-                Event result = apiInstance.GetEvent();
+                Event result = apiInstance.GetEvent(eventKey, ifModifiedSince);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -293,7 +309,11 @@ namespace Example
 
 ### Parameters
 
-This endpoint does not need any parameter.
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **eventKey** | **string**| TBA Event Key, eg &#x60;2016nytr&#x60; | 
+ **ifModifiedSince** | **string**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
 
 ### Return type
 
@@ -316,7 +336,7 @@ This endpoint does not need any parameter.
 
 ## GetEventAlliances
 
-> List<EliminationAlliance> GetEventAlliances ()
+> List<EliminationAlliance> GetEventAlliances (string eventKey, string ifModifiedSince = null)
 
 
 
@@ -343,10 +363,12 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
             var apiInstance = new EventApi();
+            var eventKey = eventKey_example;  // string | TBA Event Key, eg `2016nytr`
+            var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
             try
             {
-                List&lt;EliminationAlliance&gt; result = apiInstance.GetEventAlliances();
+                List&lt;EliminationAlliance&gt; result = apiInstance.GetEventAlliances(eventKey, ifModifiedSince);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -360,7 +382,11 @@ namespace Example
 
 ### Parameters
 
-This endpoint does not need any parameter.
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **eventKey** | **string**| TBA Event Key, eg &#x60;2016nytr&#x60; | 
+ **ifModifiedSince** | **string**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
 
 ### Return type
 
@@ -383,7 +409,7 @@ This endpoint does not need any parameter.
 
 ## GetEventAwards
 
-> List<Award> GetEventAwards ()
+> List<Award> GetEventAwards (string eventKey, string ifModifiedSince = null)
 
 
 
@@ -410,10 +436,12 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
             var apiInstance = new EventApi();
+            var eventKey = eventKey_example;  // string | TBA Event Key, eg `2016nytr`
+            var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
             try
             {
-                List&lt;Award&gt; result = apiInstance.GetEventAwards();
+                List&lt;Award&gt; result = apiInstance.GetEventAwards(eventKey, ifModifiedSince);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -427,7 +455,11 @@ namespace Example
 
 ### Parameters
 
-This endpoint does not need any parameter.
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **eventKey** | **string**| TBA Event Key, eg &#x60;2016nytr&#x60; | 
+ **ifModifiedSince** | **string**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
 
 ### Return type
 
@@ -450,7 +482,7 @@ This endpoint does not need any parameter.
 
 ## GetEventDistrictPoints
 
-> EventDistrictPoints GetEventDistrictPoints ()
+> EventDistrictPoints GetEventDistrictPoints (string eventKey, string ifModifiedSince = null)
 
 
 
@@ -477,10 +509,12 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
             var apiInstance = new EventApi();
+            var eventKey = eventKey_example;  // string | TBA Event Key, eg `2016nytr`
+            var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
             try
             {
-                EventDistrictPoints result = apiInstance.GetEventDistrictPoints();
+                EventDistrictPoints result = apiInstance.GetEventDistrictPoints(eventKey, ifModifiedSince);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -494,7 +528,11 @@ namespace Example
 
 ### Parameters
 
-This endpoint does not need any parameter.
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **eventKey** | **string**| TBA Event Key, eg &#x60;2016nytr&#x60; | 
+ **ifModifiedSince** | **string**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
 
 ### Return type
 
@@ -517,7 +555,7 @@ This endpoint does not need any parameter.
 
 ## GetEventInsights
 
-> EventInsights GetEventInsights ()
+> EventInsights GetEventInsights (string eventKey, string ifModifiedSince = null)
 
 
 
@@ -544,10 +582,12 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
             var apiInstance = new EventApi();
+            var eventKey = eventKey_example;  // string | TBA Event Key, eg `2016nytr`
+            var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
             try
             {
-                EventInsights result = apiInstance.GetEventInsights();
+                EventInsights result = apiInstance.GetEventInsights(eventKey, ifModifiedSince);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -561,7 +601,11 @@ namespace Example
 
 ### Parameters
 
-This endpoint does not need any parameter.
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **eventKey** | **string**| TBA Event Key, eg &#x60;2016nytr&#x60; | 
+ **ifModifiedSince** | **string**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
 
 ### Return type
 
@@ -584,7 +628,7 @@ This endpoint does not need any parameter.
 
 ## GetEventMatchTimeseries
 
-> List<string> GetEventMatchTimeseries ()
+> List<string> GetEventMatchTimeseries (string eventKey, string ifModifiedSince = null)
 
 
 
@@ -611,10 +655,12 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
             var apiInstance = new EventApi();
+            var eventKey = eventKey_example;  // string | TBA Event Key, eg `2016nytr`
+            var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
             try
             {
-                List&lt;string&gt; result = apiInstance.GetEventMatchTimeseries();
+                List&lt;string&gt; result = apiInstance.GetEventMatchTimeseries(eventKey, ifModifiedSince);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -628,7 +674,11 @@ namespace Example
 
 ### Parameters
 
-This endpoint does not need any parameter.
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **eventKey** | **string**| TBA Event Key, eg &#x60;2016nytr&#x60; | 
+ **ifModifiedSince** | **string**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
 
 ### Return type
 
@@ -651,7 +701,7 @@ This endpoint does not need any parameter.
 
 ## GetEventMatches
 
-> List<Match> GetEventMatches ()
+> List<Match> GetEventMatches (string eventKey, string ifModifiedSince = null)
 
 
 
@@ -678,10 +728,12 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
             var apiInstance = new EventApi();
+            var eventKey = eventKey_example;  // string | TBA Event Key, eg `2016nytr`
+            var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
             try
             {
-                List&lt;Match&gt; result = apiInstance.GetEventMatches();
+                List&lt;Match&gt; result = apiInstance.GetEventMatches(eventKey, ifModifiedSince);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -695,7 +747,11 @@ namespace Example
 
 ### Parameters
 
-This endpoint does not need any parameter.
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **eventKey** | **string**| TBA Event Key, eg &#x60;2016nytr&#x60; | 
+ **ifModifiedSince** | **string**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
 
 ### Return type
 
@@ -718,7 +774,7 @@ This endpoint does not need any parameter.
 
 ## GetEventMatchesKeys
 
-> List<string> GetEventMatchesKeys ()
+> List<string> GetEventMatchesKeys (string eventKey, string ifModifiedSince = null)
 
 
 
@@ -745,10 +801,12 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
             var apiInstance = new EventApi();
+            var eventKey = eventKey_example;  // string | TBA Event Key, eg `2016nytr`
+            var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
             try
             {
-                List&lt;string&gt; result = apiInstance.GetEventMatchesKeys();
+                List&lt;string&gt; result = apiInstance.GetEventMatchesKeys(eventKey, ifModifiedSince);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -762,7 +820,11 @@ namespace Example
 
 ### Parameters
 
-This endpoint does not need any parameter.
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **eventKey** | **string**| TBA Event Key, eg &#x60;2016nytr&#x60; | 
+ **ifModifiedSince** | **string**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
 
 ### Return type
 
@@ -785,7 +847,7 @@ This endpoint does not need any parameter.
 
 ## GetEventMatchesSimple
 
-> List<MatchSimple> GetEventMatchesSimple ()
+> List<MatchSimple> GetEventMatchesSimple (string eventKey, string ifModifiedSince = null)
 
 
 
@@ -812,10 +874,12 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
             var apiInstance = new EventApi();
+            var eventKey = eventKey_example;  // string | TBA Event Key, eg `2016nytr`
+            var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
             try
             {
-                List&lt;MatchSimple&gt; result = apiInstance.GetEventMatchesSimple();
+                List&lt;MatchSimple&gt; result = apiInstance.GetEventMatchesSimple(eventKey, ifModifiedSince);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -829,7 +893,11 @@ namespace Example
 
 ### Parameters
 
-This endpoint does not need any parameter.
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **eventKey** | **string**| TBA Event Key, eg &#x60;2016nytr&#x60; | 
+ **ifModifiedSince** | **string**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
 
 ### Return type
 
@@ -852,7 +920,7 @@ This endpoint does not need any parameter.
 
 ## GetEventOPRs
 
-> EventOPRs GetEventOPRs ()
+> EventOPRs GetEventOPRs (string eventKey, string ifModifiedSince = null)
 
 
 
@@ -879,10 +947,12 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
             var apiInstance = new EventApi();
+            var eventKey = eventKey_example;  // string | TBA Event Key, eg `2016nytr`
+            var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
             try
             {
-                EventOPRs result = apiInstance.GetEventOPRs();
+                EventOPRs result = apiInstance.GetEventOPRs(eventKey, ifModifiedSince);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -896,7 +966,11 @@ namespace Example
 
 ### Parameters
 
-This endpoint does not need any parameter.
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **eventKey** | **string**| TBA Event Key, eg &#x60;2016nytr&#x60; | 
+ **ifModifiedSince** | **string**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
 
 ### Return type
 
@@ -919,7 +993,7 @@ This endpoint does not need any parameter.
 
 ## GetEventPredictions
 
-> Object GetEventPredictions ()
+> Object GetEventPredictions (string eventKey, string ifModifiedSince = null)
 
 
 
@@ -946,10 +1020,12 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
             var apiInstance = new EventApi();
+            var eventKey = eventKey_example;  // string | TBA Event Key, eg `2016nytr`
+            var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
             try
             {
-                Object result = apiInstance.GetEventPredictions();
+                Object result = apiInstance.GetEventPredictions(eventKey, ifModifiedSince);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -963,7 +1039,11 @@ namespace Example
 
 ### Parameters
 
-This endpoint does not need any parameter.
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **eventKey** | **string**| TBA Event Key, eg &#x60;2016nytr&#x60; | 
+ **ifModifiedSince** | **string**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
 
 ### Return type
 
@@ -986,7 +1066,7 @@ This endpoint does not need any parameter.
 
 ## GetEventRankings
 
-> EventRanking GetEventRankings ()
+> EventRanking GetEventRankings (string eventKey, string ifModifiedSince = null)
 
 
 
@@ -1013,10 +1093,12 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
             var apiInstance = new EventApi();
+            var eventKey = eventKey_example;  // string | TBA Event Key, eg `2016nytr`
+            var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
             try
             {
-                EventRanking result = apiInstance.GetEventRankings();
+                EventRanking result = apiInstance.GetEventRankings(eventKey, ifModifiedSince);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1030,7 +1112,11 @@ namespace Example
 
 ### Parameters
 
-This endpoint does not need any parameter.
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **eventKey** | **string**| TBA Event Key, eg &#x60;2016nytr&#x60; | 
+ **ifModifiedSince** | **string**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
 
 ### Return type
 
@@ -1053,7 +1139,7 @@ This endpoint does not need any parameter.
 
 ## GetEventSimple
 
-> EventSimple GetEventSimple ()
+> EventSimple GetEventSimple (string eventKey, string ifModifiedSince = null)
 
 
 
@@ -1080,10 +1166,12 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
             var apiInstance = new EventApi();
+            var eventKey = eventKey_example;  // string | TBA Event Key, eg `2016nytr`
+            var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
             try
             {
-                EventSimple result = apiInstance.GetEventSimple();
+                EventSimple result = apiInstance.GetEventSimple(eventKey, ifModifiedSince);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1097,7 +1185,11 @@ namespace Example
 
 ### Parameters
 
-This endpoint does not need any parameter.
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **eventKey** | **string**| TBA Event Key, eg &#x60;2016nytr&#x60; | 
+ **ifModifiedSince** | **string**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
 
 ### Return type
 
@@ -1120,7 +1212,7 @@ This endpoint does not need any parameter.
 
 ## GetEventTeams
 
-> List<Team> GetEventTeams ()
+> List<Team> GetEventTeams (string eventKey, string ifModifiedSince = null)
 
 
 
@@ -1147,10 +1239,12 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
             var apiInstance = new EventApi();
+            var eventKey = eventKey_example;  // string | TBA Event Key, eg `2016nytr`
+            var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
             try
             {
-                List&lt;Team&gt; result = apiInstance.GetEventTeams();
+                List&lt;Team&gt; result = apiInstance.GetEventTeams(eventKey, ifModifiedSince);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1164,7 +1258,11 @@ namespace Example
 
 ### Parameters
 
-This endpoint does not need any parameter.
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **eventKey** | **string**| TBA Event Key, eg &#x60;2016nytr&#x60; | 
+ **ifModifiedSince** | **string**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
 
 ### Return type
 
@@ -1187,7 +1285,7 @@ This endpoint does not need any parameter.
 
 ## GetEventTeamsKeys
 
-> List<string> GetEventTeamsKeys ()
+> List<string> GetEventTeamsKeys (string eventKey, string ifModifiedSince = null)
 
 
 
@@ -1214,10 +1312,12 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
             var apiInstance = new EventApi();
+            var eventKey = eventKey_example;  // string | TBA Event Key, eg `2016nytr`
+            var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
             try
             {
-                List&lt;string&gt; result = apiInstance.GetEventTeamsKeys();
+                List&lt;string&gt; result = apiInstance.GetEventTeamsKeys(eventKey, ifModifiedSince);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1231,7 +1331,11 @@ namespace Example
 
 ### Parameters
 
-This endpoint does not need any parameter.
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **eventKey** | **string**| TBA Event Key, eg &#x60;2016nytr&#x60; | 
+ **ifModifiedSince** | **string**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
 
 ### Return type
 
@@ -1254,7 +1358,7 @@ This endpoint does not need any parameter.
 
 ## GetEventTeamsSimple
 
-> List<TeamSimple> GetEventTeamsSimple ()
+> List<TeamSimple> GetEventTeamsSimple (string eventKey, string ifModifiedSince = null)
 
 
 
@@ -1281,10 +1385,12 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
             var apiInstance = new EventApi();
+            var eventKey = eventKey_example;  // string | TBA Event Key, eg `2016nytr`
+            var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
             try
             {
-                List&lt;TeamSimple&gt; result = apiInstance.GetEventTeamsSimple();
+                List&lt;TeamSimple&gt; result = apiInstance.GetEventTeamsSimple(eventKey, ifModifiedSince);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1298,7 +1404,11 @@ namespace Example
 
 ### Parameters
 
-This endpoint does not need any parameter.
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **eventKey** | **string**| TBA Event Key, eg &#x60;2016nytr&#x60; | 
+ **ifModifiedSince** | **string**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
 
 ### Return type
 
@@ -1321,7 +1431,7 @@ This endpoint does not need any parameter.
 
 ## GetEventTeamsStatuses
 
-> Dictionary<string, TeamEventStatus> GetEventTeamsStatuses ()
+> Dictionary<string, TeamEventStatus> GetEventTeamsStatuses (string eventKey, string ifModifiedSince = null)
 
 
 
@@ -1348,10 +1458,12 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
             var apiInstance = new EventApi();
+            var eventKey = eventKey_example;  // string | TBA Event Key, eg `2016nytr`
+            var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
             try
             {
-                Dictionary&lt;string, TeamEventStatus&gt; result = apiInstance.GetEventTeamsStatuses();
+                Dictionary&lt;string, TeamEventStatus&gt; result = apiInstance.GetEventTeamsStatuses(eventKey, ifModifiedSince);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1365,7 +1477,11 @@ namespace Example
 
 ### Parameters
 
-This endpoint does not need any parameter.
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **eventKey** | **string**| TBA Event Key, eg &#x60;2016nytr&#x60; | 
+ **ifModifiedSince** | **string**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
 
 ### Return type
 
@@ -1388,7 +1504,7 @@ This endpoint does not need any parameter.
 
 ## GetEventsByYear
 
-> List<Event> GetEventsByYear ()
+> List<Event> GetEventsByYear (int? year, string ifModifiedSince = null)
 
 
 
@@ -1415,10 +1531,12 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
             var apiInstance = new EventApi();
+            var year = 56;  // int? | Competition Year (or Season). Must be 4 digits.
+            var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
             try
             {
-                List&lt;Event&gt; result = apiInstance.GetEventsByYear();
+                List&lt;Event&gt; result = apiInstance.GetEventsByYear(year, ifModifiedSince);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1432,7 +1550,11 @@ namespace Example
 
 ### Parameters
 
-This endpoint does not need any parameter.
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **year** | **int?**| Competition Year (or Season). Must be 4 digits. | 
+ **ifModifiedSince** | **string**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
 
 ### Return type
 
@@ -1455,7 +1577,7 @@ This endpoint does not need any parameter.
 
 ## GetEventsByYearKeys
 
-> List<string> GetEventsByYearKeys ()
+> List<string> GetEventsByYearKeys (int? year, string ifModifiedSince = null)
 
 
 
@@ -1482,10 +1604,12 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
             var apiInstance = new EventApi();
+            var year = 56;  // int? | Competition Year (or Season). Must be 4 digits.
+            var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
             try
             {
-                List&lt;string&gt; result = apiInstance.GetEventsByYearKeys();
+                List&lt;string&gt; result = apiInstance.GetEventsByYearKeys(year, ifModifiedSince);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1499,7 +1623,11 @@ namespace Example
 
 ### Parameters
 
-This endpoint does not need any parameter.
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **year** | **int?**| Competition Year (or Season). Must be 4 digits. | 
+ **ifModifiedSince** | **string**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
 
 ### Return type
 
@@ -1522,7 +1650,7 @@ This endpoint does not need any parameter.
 
 ## GetEventsByYearSimple
 
-> List<EventSimple> GetEventsByYearSimple ()
+> List<EventSimple> GetEventsByYearSimple (int? year, string ifModifiedSince = null)
 
 
 
@@ -1549,10 +1677,12 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
             var apiInstance = new EventApi();
+            var year = 56;  // int? | Competition Year (or Season). Must be 4 digits.
+            var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
             try
             {
-                List&lt;EventSimple&gt; result = apiInstance.GetEventsByYearSimple();
+                List&lt;EventSimple&gt; result = apiInstance.GetEventsByYearSimple(year, ifModifiedSince);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1566,7 +1696,11 @@ namespace Example
 
 ### Parameters
 
-This endpoint does not need any parameter.
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **year** | **int?**| Competition Year (or Season). Must be 4 digits. | 
+ **ifModifiedSince** | **string**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
 
 ### Return type
 
@@ -1589,7 +1723,7 @@ This endpoint does not need any parameter.
 
 ## GetTeamEventAwards
 
-> List<Award> GetTeamEventAwards ()
+> List<Award> GetTeamEventAwards (string teamKey, string eventKey, string ifModifiedSince = null)
 
 
 
@@ -1616,10 +1750,13 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
             var apiInstance = new EventApi();
+            var teamKey = teamKey_example;  // string | TBA Team Key, eg `frc254`
+            var eventKey = eventKey_example;  // string | TBA Event Key, eg `2016nytr`
+            var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
             try
             {
-                List&lt;Award&gt; result = apiInstance.GetTeamEventAwards();
+                List&lt;Award&gt; result = apiInstance.GetTeamEventAwards(teamKey, eventKey, ifModifiedSince);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1633,7 +1770,12 @@ namespace Example
 
 ### Parameters
 
-This endpoint does not need any parameter.
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **teamKey** | **string**| TBA Team Key, eg &#x60;frc254&#x60; | 
+ **eventKey** | **string**| TBA Event Key, eg &#x60;2016nytr&#x60; | 
+ **ifModifiedSince** | **string**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
 
 ### Return type
 
@@ -1656,7 +1798,7 @@ This endpoint does not need any parameter.
 
 ## GetTeamEventMatches
 
-> List<Match> GetTeamEventMatches ()
+> List<Match> GetTeamEventMatches (string teamKey, string eventKey, string ifModifiedSince = null)
 
 
 
@@ -1683,10 +1825,13 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
             var apiInstance = new EventApi();
+            var teamKey = teamKey_example;  // string | TBA Team Key, eg `frc254`
+            var eventKey = eventKey_example;  // string | TBA Event Key, eg `2016nytr`
+            var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
             try
             {
-                List&lt;Match&gt; result = apiInstance.GetTeamEventMatches();
+                List&lt;Match&gt; result = apiInstance.GetTeamEventMatches(teamKey, eventKey, ifModifiedSince);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1700,7 +1845,12 @@ namespace Example
 
 ### Parameters
 
-This endpoint does not need any parameter.
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **teamKey** | **string**| TBA Team Key, eg &#x60;frc254&#x60; | 
+ **eventKey** | **string**| TBA Event Key, eg &#x60;2016nytr&#x60; | 
+ **ifModifiedSince** | **string**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
 
 ### Return type
 
@@ -1723,7 +1873,7 @@ This endpoint does not need any parameter.
 
 ## GetTeamEventMatchesKeys
 
-> List<string> GetTeamEventMatchesKeys ()
+> List<string> GetTeamEventMatchesKeys (string teamKey, string eventKey, string ifModifiedSince = null)
 
 
 
@@ -1750,10 +1900,13 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
             var apiInstance = new EventApi();
+            var teamKey = teamKey_example;  // string | TBA Team Key, eg `frc254`
+            var eventKey = eventKey_example;  // string | TBA Event Key, eg `2016nytr`
+            var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
             try
             {
-                List&lt;string&gt; result = apiInstance.GetTeamEventMatchesKeys();
+                List&lt;string&gt; result = apiInstance.GetTeamEventMatchesKeys(teamKey, eventKey, ifModifiedSince);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1767,7 +1920,12 @@ namespace Example
 
 ### Parameters
 
-This endpoint does not need any parameter.
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **teamKey** | **string**| TBA Team Key, eg &#x60;frc254&#x60; | 
+ **eventKey** | **string**| TBA Event Key, eg &#x60;2016nytr&#x60; | 
+ **ifModifiedSince** | **string**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
 
 ### Return type
 
@@ -1790,7 +1948,7 @@ This endpoint does not need any parameter.
 
 ## GetTeamEventMatchesSimple
 
-> List<Match> GetTeamEventMatchesSimple ()
+> List<Match> GetTeamEventMatchesSimple (string teamKey, string eventKey, string ifModifiedSince = null)
 
 
 
@@ -1817,10 +1975,13 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
             var apiInstance = new EventApi();
+            var teamKey = teamKey_example;  // string | TBA Team Key, eg `frc254`
+            var eventKey = eventKey_example;  // string | TBA Event Key, eg `2016nytr`
+            var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
             try
             {
-                List&lt;Match&gt; result = apiInstance.GetTeamEventMatchesSimple();
+                List&lt;Match&gt; result = apiInstance.GetTeamEventMatchesSimple(teamKey, eventKey, ifModifiedSince);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1834,7 +1995,12 @@ namespace Example
 
 ### Parameters
 
-This endpoint does not need any parameter.
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **teamKey** | **string**| TBA Team Key, eg &#x60;frc254&#x60; | 
+ **eventKey** | **string**| TBA Event Key, eg &#x60;2016nytr&#x60; | 
+ **ifModifiedSince** | **string**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
 
 ### Return type
 
@@ -1857,7 +2023,7 @@ This endpoint does not need any parameter.
 
 ## GetTeamEventStatus
 
-> TeamEventStatus GetTeamEventStatus ()
+> TeamEventStatus GetTeamEventStatus (string teamKey, string eventKey, string ifModifiedSince = null)
 
 
 
@@ -1884,10 +2050,13 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
             var apiInstance = new EventApi();
+            var teamKey = teamKey_example;  // string | TBA Team Key, eg `frc254`
+            var eventKey = eventKey_example;  // string | TBA Event Key, eg `2016nytr`
+            var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
             try
             {
-                TeamEventStatus result = apiInstance.GetTeamEventStatus();
+                TeamEventStatus result = apiInstance.GetTeamEventStatus(teamKey, eventKey, ifModifiedSince);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1901,7 +2070,12 @@ namespace Example
 
 ### Parameters
 
-This endpoint does not need any parameter.
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **teamKey** | **string**| TBA Team Key, eg &#x60;frc254&#x60; | 
+ **eventKey** | **string**| TBA Event Key, eg &#x60;2016nytr&#x60; | 
+ **ifModifiedSince** | **string**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
 
 ### Return type
 
@@ -1924,7 +2098,7 @@ This endpoint does not need any parameter.
 
 ## GetTeamEvents
 
-> List<Event> GetTeamEvents ()
+> List<Event> GetTeamEvents (string teamKey, string ifModifiedSince = null)
 
 
 
@@ -1951,10 +2125,12 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
             var apiInstance = new EventApi();
+            var teamKey = teamKey_example;  // string | TBA Team Key, eg `frc254`
+            var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
             try
             {
-                List&lt;Event&gt; result = apiInstance.GetTeamEvents();
+                List&lt;Event&gt; result = apiInstance.GetTeamEvents(teamKey, ifModifiedSince);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1968,7 +2144,11 @@ namespace Example
 
 ### Parameters
 
-This endpoint does not need any parameter.
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **teamKey** | **string**| TBA Team Key, eg &#x60;frc254&#x60; | 
+ **ifModifiedSince** | **string**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
 
 ### Return type
 
@@ -1991,7 +2171,7 @@ This endpoint does not need any parameter.
 
 ## GetTeamEventsByYear
 
-> List<Event> GetTeamEventsByYear ()
+> List<Event> GetTeamEventsByYear (string teamKey, int? year, string ifModifiedSince = null)
 
 
 
@@ -2018,10 +2198,13 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
             var apiInstance = new EventApi();
+            var teamKey = teamKey_example;  // string | TBA Team Key, eg `frc254`
+            var year = 56;  // int? | Competition Year (or Season). Must be 4 digits.
+            var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
             try
             {
-                List&lt;Event&gt; result = apiInstance.GetTeamEventsByYear();
+                List&lt;Event&gt; result = apiInstance.GetTeamEventsByYear(teamKey, year, ifModifiedSince);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -2035,7 +2218,12 @@ namespace Example
 
 ### Parameters
 
-This endpoint does not need any parameter.
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **teamKey** | **string**| TBA Team Key, eg &#x60;frc254&#x60; | 
+ **year** | **int?**| Competition Year (or Season). Must be 4 digits. | 
+ **ifModifiedSince** | **string**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
 
 ### Return type
 
@@ -2058,7 +2246,7 @@ This endpoint does not need any parameter.
 
 ## GetTeamEventsByYearKeys
 
-> List<string> GetTeamEventsByYearKeys ()
+> List<string> GetTeamEventsByYearKeys (string teamKey, int? year, string ifModifiedSince = null)
 
 
 
@@ -2085,10 +2273,13 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
             var apiInstance = new EventApi();
+            var teamKey = teamKey_example;  // string | TBA Team Key, eg `frc254`
+            var year = 56;  // int? | Competition Year (or Season). Must be 4 digits.
+            var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
             try
             {
-                List&lt;string&gt; result = apiInstance.GetTeamEventsByYearKeys();
+                List&lt;string&gt; result = apiInstance.GetTeamEventsByYearKeys(teamKey, year, ifModifiedSince);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -2102,7 +2293,12 @@ namespace Example
 
 ### Parameters
 
-This endpoint does not need any parameter.
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **teamKey** | **string**| TBA Team Key, eg &#x60;frc254&#x60; | 
+ **year** | **int?**| Competition Year (or Season). Must be 4 digits. | 
+ **ifModifiedSince** | **string**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
 
 ### Return type
 
@@ -2125,7 +2321,7 @@ This endpoint does not need any parameter.
 
 ## GetTeamEventsByYearSimple
 
-> List<EventSimple> GetTeamEventsByYearSimple ()
+> List<EventSimple> GetTeamEventsByYearSimple (string teamKey, int? year, string ifModifiedSince = null)
 
 
 
@@ -2152,10 +2348,13 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
             var apiInstance = new EventApi();
+            var teamKey = teamKey_example;  // string | TBA Team Key, eg `frc254`
+            var year = 56;  // int? | Competition Year (or Season). Must be 4 digits.
+            var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
             try
             {
-                List&lt;EventSimple&gt; result = apiInstance.GetTeamEventsByYearSimple();
+                List&lt;EventSimple&gt; result = apiInstance.GetTeamEventsByYearSimple(teamKey, year, ifModifiedSince);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -2169,7 +2368,12 @@ namespace Example
 
 ### Parameters
 
-This endpoint does not need any parameter.
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **teamKey** | **string**| TBA Team Key, eg &#x60;frc254&#x60; | 
+ **year** | **int?**| Competition Year (or Season). Must be 4 digits. | 
+ **ifModifiedSince** | **string**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
 
 ### Return type
 
@@ -2192,7 +2396,7 @@ This endpoint does not need any parameter.
 
 ## GetTeamEventsKeys
 
-> List<string> GetTeamEventsKeys ()
+> List<string> GetTeamEventsKeys (string teamKey, string ifModifiedSince = null)
 
 
 
@@ -2219,10 +2423,12 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
             var apiInstance = new EventApi();
+            var teamKey = teamKey_example;  // string | TBA Team Key, eg `frc254`
+            var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
             try
             {
-                List&lt;string&gt; result = apiInstance.GetTeamEventsKeys();
+                List&lt;string&gt; result = apiInstance.GetTeamEventsKeys(teamKey, ifModifiedSince);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -2236,7 +2442,11 @@ namespace Example
 
 ### Parameters
 
-This endpoint does not need any parameter.
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **teamKey** | **string**| TBA Team Key, eg &#x60;frc254&#x60; | 
+ **ifModifiedSince** | **string**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
 
 ### Return type
 
@@ -2259,7 +2469,7 @@ This endpoint does not need any parameter.
 
 ## GetTeamEventsSimple
 
-> List<EventSimple> GetTeamEventsSimple ()
+> List<EventSimple> GetTeamEventsSimple (string teamKey, string ifModifiedSince = null)
 
 
 
@@ -2286,10 +2496,12 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
             var apiInstance = new EventApi();
+            var teamKey = teamKey_example;  // string | TBA Team Key, eg `frc254`
+            var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
             try
             {
-                List&lt;EventSimple&gt; result = apiInstance.GetTeamEventsSimple();
+                List&lt;EventSimple&gt; result = apiInstance.GetTeamEventsSimple(teamKey, ifModifiedSince);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -2303,7 +2515,11 @@ namespace Example
 
 ### Parameters
 
-This endpoint does not need any parameter.
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **teamKey** | **string**| TBA Team Key, eg &#x60;frc254&#x60; | 
+ **ifModifiedSince** | **string**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
 
 ### Return type
 
@@ -2326,7 +2542,7 @@ This endpoint does not need any parameter.
 
 ## GetTeamEventsStatusesByYear
 
-> Dictionary<string, TeamEventStatus> GetTeamEventsStatusesByYear ()
+> Dictionary<string, TeamEventStatus> GetTeamEventsStatusesByYear (string teamKey, int? year, string ifModifiedSince = null)
 
 
 
@@ -2353,10 +2569,13 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
             var apiInstance = new EventApi();
+            var teamKey = teamKey_example;  // string | TBA Team Key, eg `frc254`
+            var year = 56;  // int? | Competition Year (or Season). Must be 4 digits.
+            var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
             try
             {
-                Dictionary&lt;string, TeamEventStatus&gt; result = apiInstance.GetTeamEventsStatusesByYear();
+                Dictionary&lt;string, TeamEventStatus&gt; result = apiInstance.GetTeamEventsStatusesByYear(teamKey, year, ifModifiedSince);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -2370,7 +2589,12 @@ namespace Example
 
 ### Parameters
 
-This endpoint does not need any parameter.
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **teamKey** | **string**| TBA Team Key, eg &#x60;frc254&#x60; | 
+ **year** | **int?**| Competition Year (or Season). Must be 4 digits. | 
+ **ifModifiedSince** | **string**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
 
 ### Return type
 

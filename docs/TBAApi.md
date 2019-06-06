@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 ## GetStatus
 
-> APIStatus GetStatus ()
+> APIStatus GetStatus (string ifModifiedSince = null)
 
 
 
@@ -37,10 +37,11 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
             var apiInstance = new TBAApi();
+            var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
             try
             {
-                APIStatus result = apiInstance.GetStatus();
+                APIStatus result = apiInstance.GetStatus(ifModifiedSince);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -54,7 +55,10 @@ namespace Example
 
 ### Parameters
 
-This endpoint does not need any parameter.
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ifModifiedSince** | **string**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
 
 ### Return type
 
