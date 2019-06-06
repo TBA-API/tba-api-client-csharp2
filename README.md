@@ -83,12 +83,10 @@ namespace Example
             // Configuration.Default.ApiKeyPrefix.Add("X-TBA-Auth-Key", "Bearer");
 
             var apiInstance = new DistrictApi();
-            var districtKey = districtKey_example;  // string | TBA District Key, eg `2016fim`
-            var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
             try
             {
-                List<Event> result = apiInstance.GetDistrictEvents(districtKey, ifModifiedSince);
+                List<Event> result = apiInstance.GetDistrictEvents();
                 Debug.WriteLine(result);
             }
             catch (Exception e)

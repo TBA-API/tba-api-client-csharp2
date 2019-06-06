@@ -49,7 +49,7 @@ Method | HTTP request | Description
 
 ## GetDistrictRankings
 
-> List<DistrictRanking> GetDistrictRankings (string districtKey, string ifModifiedSince = null)
+> List<DistrictRanking> GetDistrictRankings ()
 
 
 
@@ -76,12 +76,10 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
             var apiInstance = new TeamApi();
-            var districtKey = districtKey_example;  // string | TBA District Key, eg `2016fim`
-            var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
             try
             {
-                List&lt;DistrictRanking&gt; result = apiInstance.GetDistrictRankings(districtKey, ifModifiedSince);
+                List&lt;DistrictRanking&gt; result = apiInstance.GetDistrictRankings();
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -95,11 +93,7 @@ namespace Example
 
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **districtKey** | **string**| TBA District Key, eg &#x60;2016fim&#x60; | 
- **ifModifiedSince** | **string**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
+This endpoint does not need any parameter.
 
 ### Return type
 
@@ -122,7 +116,7 @@ Name | Type | Description  | Notes
 
 ## GetDistrictTeams
 
-> List<Team> GetDistrictTeams (string districtKey, string ifModifiedSince = null)
+> List<Team> GetDistrictTeams ()
 
 
 
@@ -149,12 +143,10 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
             var apiInstance = new TeamApi();
-            var districtKey = districtKey_example;  // string | TBA District Key, eg `2016fim`
-            var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
             try
             {
-                List&lt;Team&gt; result = apiInstance.GetDistrictTeams(districtKey, ifModifiedSince);
+                List&lt;Team&gt; result = apiInstance.GetDistrictTeams();
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -168,11 +160,7 @@ namespace Example
 
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **districtKey** | **string**| TBA District Key, eg &#x60;2016fim&#x60; | 
- **ifModifiedSince** | **string**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
+This endpoint does not need any parameter.
 
 ### Return type
 
@@ -195,7 +183,7 @@ Name | Type | Description  | Notes
 
 ## GetDistrictTeamsKeys
 
-> List<string> GetDistrictTeamsKeys (string districtKey, string ifModifiedSince = null)
+> List<string> GetDistrictTeamsKeys ()
 
 
 
@@ -222,12 +210,10 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
             var apiInstance = new TeamApi();
-            var districtKey = districtKey_example;  // string | TBA District Key, eg `2016fim`
-            var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
             try
             {
-                List&lt;string&gt; result = apiInstance.GetDistrictTeamsKeys(districtKey, ifModifiedSince);
+                List&lt;string&gt; result = apiInstance.GetDistrictTeamsKeys();
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -241,11 +227,7 @@ namespace Example
 
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **districtKey** | **string**| TBA District Key, eg &#x60;2016fim&#x60; | 
- **ifModifiedSince** | **string**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
+This endpoint does not need any parameter.
 
 ### Return type
 
@@ -268,7 +250,7 @@ Name | Type | Description  | Notes
 
 ## GetDistrictTeamsSimple
 
-> List<TeamSimple> GetDistrictTeamsSimple (string districtKey, string ifModifiedSince = null)
+> List<TeamSimple> GetDistrictTeamsSimple ()
 
 
 
@@ -295,12 +277,10 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
             var apiInstance = new TeamApi();
-            var districtKey = districtKey_example;  // string | TBA District Key, eg `2016fim`
-            var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
             try
             {
-                List&lt;TeamSimple&gt; result = apiInstance.GetDistrictTeamsSimple(districtKey, ifModifiedSince);
+                List&lt;TeamSimple&gt; result = apiInstance.GetDistrictTeamsSimple();
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -314,11 +294,7 @@ namespace Example
 
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **districtKey** | **string**| TBA District Key, eg &#x60;2016fim&#x60; | 
- **ifModifiedSince** | **string**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
+This endpoint does not need any parameter.
 
 ### Return type
 
@@ -341,7 +317,7 @@ Name | Type | Description  | Notes
 
 ## GetEventTeams
 
-> List<Team> GetEventTeams (string eventKey, string ifModifiedSince = null)
+> List<Team> GetEventTeams ()
 
 
 
@@ -368,12 +344,10 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
             var apiInstance = new TeamApi();
-            var eventKey = eventKey_example;  // string | TBA Event Key, eg `2016nytr`
-            var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
             try
             {
-                List&lt;Team&gt; result = apiInstance.GetEventTeams(eventKey, ifModifiedSince);
+                List&lt;Team&gt; result = apiInstance.GetEventTeams();
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -387,11 +361,7 @@ namespace Example
 
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **eventKey** | **string**| TBA Event Key, eg &#x60;2016nytr&#x60; | 
- **ifModifiedSince** | **string**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
+This endpoint does not need any parameter.
 
 ### Return type
 
@@ -414,7 +384,7 @@ Name | Type | Description  | Notes
 
 ## GetEventTeamsKeys
 
-> List<string> GetEventTeamsKeys (string eventKey, string ifModifiedSince = null)
+> List<string> GetEventTeamsKeys ()
 
 
 
@@ -441,12 +411,10 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
             var apiInstance = new TeamApi();
-            var eventKey = eventKey_example;  // string | TBA Event Key, eg `2016nytr`
-            var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
             try
             {
-                List&lt;string&gt; result = apiInstance.GetEventTeamsKeys(eventKey, ifModifiedSince);
+                List&lt;string&gt; result = apiInstance.GetEventTeamsKeys();
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -460,11 +428,7 @@ namespace Example
 
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **eventKey** | **string**| TBA Event Key, eg &#x60;2016nytr&#x60; | 
- **ifModifiedSince** | **string**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
+This endpoint does not need any parameter.
 
 ### Return type
 
@@ -487,7 +451,7 @@ Name | Type | Description  | Notes
 
 ## GetEventTeamsSimple
 
-> List<TeamSimple> GetEventTeamsSimple (string eventKey, string ifModifiedSince = null)
+> List<TeamSimple> GetEventTeamsSimple ()
 
 
 
@@ -514,12 +478,10 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
             var apiInstance = new TeamApi();
-            var eventKey = eventKey_example;  // string | TBA Event Key, eg `2016nytr`
-            var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
             try
             {
-                List&lt;TeamSimple&gt; result = apiInstance.GetEventTeamsSimple(eventKey, ifModifiedSince);
+                List&lt;TeamSimple&gt; result = apiInstance.GetEventTeamsSimple();
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -533,11 +495,7 @@ namespace Example
 
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **eventKey** | **string**| TBA Event Key, eg &#x60;2016nytr&#x60; | 
- **ifModifiedSince** | **string**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
+This endpoint does not need any parameter.
 
 ### Return type
 
@@ -560,7 +518,7 @@ Name | Type | Description  | Notes
 
 ## GetEventTeamsStatuses
 
-> Dictionary<string, TeamEventStatus> GetEventTeamsStatuses (string eventKey, string ifModifiedSince = null)
+> Dictionary<string, TeamEventStatus> GetEventTeamsStatuses ()
 
 
 
@@ -587,12 +545,10 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
             var apiInstance = new TeamApi();
-            var eventKey = eventKey_example;  // string | TBA Event Key, eg `2016nytr`
-            var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
             try
             {
-                Dictionary&lt;string, TeamEventStatus&gt; result = apiInstance.GetEventTeamsStatuses(eventKey, ifModifiedSince);
+                Dictionary&lt;string, TeamEventStatus&gt; result = apiInstance.GetEventTeamsStatuses();
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -606,11 +562,7 @@ namespace Example
 
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **eventKey** | **string**| TBA Event Key, eg &#x60;2016nytr&#x60; | 
- **ifModifiedSince** | **string**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
+This endpoint does not need any parameter.
 
 ### Return type
 
@@ -633,7 +585,7 @@ Name | Type | Description  | Notes
 
 ## GetTeam
 
-> Team GetTeam (string teamKey, string ifModifiedSince = null)
+> Team GetTeam ()
 
 
 
@@ -660,12 +612,10 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
             var apiInstance = new TeamApi();
-            var teamKey = teamKey_example;  // string | TBA Team Key, eg `frc254`
-            var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
             try
             {
-                Team result = apiInstance.GetTeam(teamKey, ifModifiedSince);
+                Team result = apiInstance.GetTeam();
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -679,11 +629,7 @@ namespace Example
 
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **teamKey** | **string**| TBA Team Key, eg &#x60;frc254&#x60; | 
- **ifModifiedSince** | **string**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
+This endpoint does not need any parameter.
 
 ### Return type
 
@@ -706,7 +652,7 @@ Name | Type | Description  | Notes
 
 ## GetTeamAwards
 
-> List<Award> GetTeamAwards (string teamKey, string ifModifiedSince = null)
+> List<Award> GetTeamAwards ()
 
 
 
@@ -733,12 +679,10 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
             var apiInstance = new TeamApi();
-            var teamKey = teamKey_example;  // string | TBA Team Key, eg `frc254`
-            var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
             try
             {
-                List&lt;Award&gt; result = apiInstance.GetTeamAwards(teamKey, ifModifiedSince);
+                List&lt;Award&gt; result = apiInstance.GetTeamAwards();
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -752,11 +696,7 @@ namespace Example
 
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **teamKey** | **string**| TBA Team Key, eg &#x60;frc254&#x60; | 
- **ifModifiedSince** | **string**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
+This endpoint does not need any parameter.
 
 ### Return type
 
@@ -779,7 +719,7 @@ Name | Type | Description  | Notes
 
 ## GetTeamAwardsByYear
 
-> List<Award> GetTeamAwardsByYear (string teamKey, int? year, string ifModifiedSince = null)
+> List<Award> GetTeamAwardsByYear ()
 
 
 
@@ -806,13 +746,10 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
             var apiInstance = new TeamApi();
-            var teamKey = teamKey_example;  // string | TBA Team Key, eg `frc254`
-            var year = 56;  // int? | Competition Year (or Season). Must be 4 digits.
-            var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
             try
             {
-                List&lt;Award&gt; result = apiInstance.GetTeamAwardsByYear(teamKey, year, ifModifiedSince);
+                List&lt;Award&gt; result = apiInstance.GetTeamAwardsByYear();
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -826,12 +763,7 @@ namespace Example
 
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **teamKey** | **string**| TBA Team Key, eg &#x60;frc254&#x60; | 
- **year** | **int?**| Competition Year (or Season). Must be 4 digits. | 
- **ifModifiedSince** | **string**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
+This endpoint does not need any parameter.
 
 ### Return type
 
@@ -854,7 +786,7 @@ Name | Type | Description  | Notes
 
 ## GetTeamDistricts
 
-> List<DistrictList> GetTeamDistricts (string teamKey, string ifModifiedSince = null)
+> List<DistrictList> GetTeamDistricts ()
 
 
 
@@ -881,12 +813,10 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
             var apiInstance = new TeamApi();
-            var teamKey = teamKey_example;  // string | TBA Team Key, eg `frc254`
-            var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
             try
             {
-                List&lt;DistrictList&gt; result = apiInstance.GetTeamDistricts(teamKey, ifModifiedSince);
+                List&lt;DistrictList&gt; result = apiInstance.GetTeamDistricts();
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -900,11 +830,7 @@ namespace Example
 
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **teamKey** | **string**| TBA Team Key, eg &#x60;frc254&#x60; | 
- **ifModifiedSince** | **string**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
+This endpoint does not need any parameter.
 
 ### Return type
 
@@ -927,7 +853,7 @@ Name | Type | Description  | Notes
 
 ## GetTeamEventAwards
 
-> List<Award> GetTeamEventAwards (string teamKey, string eventKey, string ifModifiedSince = null)
+> List<Award> GetTeamEventAwards ()
 
 
 
@@ -954,13 +880,10 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
             var apiInstance = new TeamApi();
-            var teamKey = teamKey_example;  // string | TBA Team Key, eg `frc254`
-            var eventKey = eventKey_example;  // string | TBA Event Key, eg `2016nytr`
-            var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
             try
             {
-                List&lt;Award&gt; result = apiInstance.GetTeamEventAwards(teamKey, eventKey, ifModifiedSince);
+                List&lt;Award&gt; result = apiInstance.GetTeamEventAwards();
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -974,12 +897,7 @@ namespace Example
 
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **teamKey** | **string**| TBA Team Key, eg &#x60;frc254&#x60; | 
- **eventKey** | **string**| TBA Event Key, eg &#x60;2016nytr&#x60; | 
- **ifModifiedSince** | **string**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
+This endpoint does not need any parameter.
 
 ### Return type
 
@@ -1002,7 +920,7 @@ Name | Type | Description  | Notes
 
 ## GetTeamEventMatches
 
-> List<Match> GetTeamEventMatches (string teamKey, string eventKey, string ifModifiedSince = null)
+> List<Match> GetTeamEventMatches ()
 
 
 
@@ -1029,13 +947,10 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
             var apiInstance = new TeamApi();
-            var teamKey = teamKey_example;  // string | TBA Team Key, eg `frc254`
-            var eventKey = eventKey_example;  // string | TBA Event Key, eg `2016nytr`
-            var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
             try
             {
-                List&lt;Match&gt; result = apiInstance.GetTeamEventMatches(teamKey, eventKey, ifModifiedSince);
+                List&lt;Match&gt; result = apiInstance.GetTeamEventMatches();
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1049,12 +964,7 @@ namespace Example
 
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **teamKey** | **string**| TBA Team Key, eg &#x60;frc254&#x60; | 
- **eventKey** | **string**| TBA Event Key, eg &#x60;2016nytr&#x60; | 
- **ifModifiedSince** | **string**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
+This endpoint does not need any parameter.
 
 ### Return type
 
@@ -1077,7 +987,7 @@ Name | Type | Description  | Notes
 
 ## GetTeamEventMatchesKeys
 
-> List<string> GetTeamEventMatchesKeys (string teamKey, string eventKey, string ifModifiedSince = null)
+> List<string> GetTeamEventMatchesKeys ()
 
 
 
@@ -1104,13 +1014,10 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
             var apiInstance = new TeamApi();
-            var teamKey = teamKey_example;  // string | TBA Team Key, eg `frc254`
-            var eventKey = eventKey_example;  // string | TBA Event Key, eg `2016nytr`
-            var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
             try
             {
-                List&lt;string&gt; result = apiInstance.GetTeamEventMatchesKeys(teamKey, eventKey, ifModifiedSince);
+                List&lt;string&gt; result = apiInstance.GetTeamEventMatchesKeys();
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1124,12 +1031,7 @@ namespace Example
 
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **teamKey** | **string**| TBA Team Key, eg &#x60;frc254&#x60; | 
- **eventKey** | **string**| TBA Event Key, eg &#x60;2016nytr&#x60; | 
- **ifModifiedSince** | **string**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
+This endpoint does not need any parameter.
 
 ### Return type
 
@@ -1152,7 +1054,7 @@ Name | Type | Description  | Notes
 
 ## GetTeamEventMatchesSimple
 
-> List<Match> GetTeamEventMatchesSimple (string teamKey, string eventKey, string ifModifiedSince = null)
+> List<Match> GetTeamEventMatchesSimple ()
 
 
 
@@ -1179,13 +1081,10 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
             var apiInstance = new TeamApi();
-            var teamKey = teamKey_example;  // string | TBA Team Key, eg `frc254`
-            var eventKey = eventKey_example;  // string | TBA Event Key, eg `2016nytr`
-            var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
             try
             {
-                List&lt;Match&gt; result = apiInstance.GetTeamEventMatchesSimple(teamKey, eventKey, ifModifiedSince);
+                List&lt;Match&gt; result = apiInstance.GetTeamEventMatchesSimple();
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1199,12 +1098,7 @@ namespace Example
 
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **teamKey** | **string**| TBA Team Key, eg &#x60;frc254&#x60; | 
- **eventKey** | **string**| TBA Event Key, eg &#x60;2016nytr&#x60; | 
- **ifModifiedSince** | **string**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
+This endpoint does not need any parameter.
 
 ### Return type
 
@@ -1227,7 +1121,7 @@ Name | Type | Description  | Notes
 
 ## GetTeamEventStatus
 
-> TeamEventStatus GetTeamEventStatus (string teamKey, string eventKey, string ifModifiedSince = null)
+> TeamEventStatus GetTeamEventStatus ()
 
 
 
@@ -1254,13 +1148,10 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
             var apiInstance = new TeamApi();
-            var teamKey = teamKey_example;  // string | TBA Team Key, eg `frc254`
-            var eventKey = eventKey_example;  // string | TBA Event Key, eg `2016nytr`
-            var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
             try
             {
-                TeamEventStatus result = apiInstance.GetTeamEventStatus(teamKey, eventKey, ifModifiedSince);
+                TeamEventStatus result = apiInstance.GetTeamEventStatus();
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1274,12 +1165,7 @@ namespace Example
 
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **teamKey** | **string**| TBA Team Key, eg &#x60;frc254&#x60; | 
- **eventKey** | **string**| TBA Event Key, eg &#x60;2016nytr&#x60; | 
- **ifModifiedSince** | **string**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
+This endpoint does not need any parameter.
 
 ### Return type
 
@@ -1302,7 +1188,7 @@ Name | Type | Description  | Notes
 
 ## GetTeamEvents
 
-> List<Event> GetTeamEvents (string teamKey, string ifModifiedSince = null)
+> List<Event> GetTeamEvents ()
 
 
 
@@ -1329,12 +1215,10 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
             var apiInstance = new TeamApi();
-            var teamKey = teamKey_example;  // string | TBA Team Key, eg `frc254`
-            var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
             try
             {
-                List&lt;Event&gt; result = apiInstance.GetTeamEvents(teamKey, ifModifiedSince);
+                List&lt;Event&gt; result = apiInstance.GetTeamEvents();
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1348,11 +1232,7 @@ namespace Example
 
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **teamKey** | **string**| TBA Team Key, eg &#x60;frc254&#x60; | 
- **ifModifiedSince** | **string**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
+This endpoint does not need any parameter.
 
 ### Return type
 
@@ -1375,7 +1255,7 @@ Name | Type | Description  | Notes
 
 ## GetTeamEventsByYear
 
-> List<Event> GetTeamEventsByYear (string teamKey, int? year, string ifModifiedSince = null)
+> List<Event> GetTeamEventsByYear ()
 
 
 
@@ -1402,13 +1282,10 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
             var apiInstance = new TeamApi();
-            var teamKey = teamKey_example;  // string | TBA Team Key, eg `frc254`
-            var year = 56;  // int? | Competition Year (or Season). Must be 4 digits.
-            var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
             try
             {
-                List&lt;Event&gt; result = apiInstance.GetTeamEventsByYear(teamKey, year, ifModifiedSince);
+                List&lt;Event&gt; result = apiInstance.GetTeamEventsByYear();
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1422,12 +1299,7 @@ namespace Example
 
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **teamKey** | **string**| TBA Team Key, eg &#x60;frc254&#x60; | 
- **year** | **int?**| Competition Year (or Season). Must be 4 digits. | 
- **ifModifiedSince** | **string**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
+This endpoint does not need any parameter.
 
 ### Return type
 
@@ -1450,7 +1322,7 @@ Name | Type | Description  | Notes
 
 ## GetTeamEventsByYearKeys
 
-> List<string> GetTeamEventsByYearKeys (string teamKey, int? year, string ifModifiedSince = null)
+> List<string> GetTeamEventsByYearKeys ()
 
 
 
@@ -1477,13 +1349,10 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
             var apiInstance = new TeamApi();
-            var teamKey = teamKey_example;  // string | TBA Team Key, eg `frc254`
-            var year = 56;  // int? | Competition Year (or Season). Must be 4 digits.
-            var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
             try
             {
-                List&lt;string&gt; result = apiInstance.GetTeamEventsByYearKeys(teamKey, year, ifModifiedSince);
+                List&lt;string&gt; result = apiInstance.GetTeamEventsByYearKeys();
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1497,12 +1366,7 @@ namespace Example
 
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **teamKey** | **string**| TBA Team Key, eg &#x60;frc254&#x60; | 
- **year** | **int?**| Competition Year (or Season). Must be 4 digits. | 
- **ifModifiedSince** | **string**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
+This endpoint does not need any parameter.
 
 ### Return type
 
@@ -1525,7 +1389,7 @@ Name | Type | Description  | Notes
 
 ## GetTeamEventsByYearSimple
 
-> List<EventSimple> GetTeamEventsByYearSimple (string teamKey, int? year, string ifModifiedSince = null)
+> List<EventSimple> GetTeamEventsByYearSimple ()
 
 
 
@@ -1552,13 +1416,10 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
             var apiInstance = new TeamApi();
-            var teamKey = teamKey_example;  // string | TBA Team Key, eg `frc254`
-            var year = 56;  // int? | Competition Year (or Season). Must be 4 digits.
-            var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
             try
             {
-                List&lt;EventSimple&gt; result = apiInstance.GetTeamEventsByYearSimple(teamKey, year, ifModifiedSince);
+                List&lt;EventSimple&gt; result = apiInstance.GetTeamEventsByYearSimple();
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1572,12 +1433,7 @@ namespace Example
 
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **teamKey** | **string**| TBA Team Key, eg &#x60;frc254&#x60; | 
- **year** | **int?**| Competition Year (or Season). Must be 4 digits. | 
- **ifModifiedSince** | **string**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
+This endpoint does not need any parameter.
 
 ### Return type
 
@@ -1600,7 +1456,7 @@ Name | Type | Description  | Notes
 
 ## GetTeamEventsKeys
 
-> List<string> GetTeamEventsKeys (string teamKey, string ifModifiedSince = null)
+> List<string> GetTeamEventsKeys ()
 
 
 
@@ -1627,12 +1483,10 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
             var apiInstance = new TeamApi();
-            var teamKey = teamKey_example;  // string | TBA Team Key, eg `frc254`
-            var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
             try
             {
-                List&lt;string&gt; result = apiInstance.GetTeamEventsKeys(teamKey, ifModifiedSince);
+                List&lt;string&gt; result = apiInstance.GetTeamEventsKeys();
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1646,11 +1500,7 @@ namespace Example
 
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **teamKey** | **string**| TBA Team Key, eg &#x60;frc254&#x60; | 
- **ifModifiedSince** | **string**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
+This endpoint does not need any parameter.
 
 ### Return type
 
@@ -1673,7 +1523,7 @@ Name | Type | Description  | Notes
 
 ## GetTeamEventsSimple
 
-> List<EventSimple> GetTeamEventsSimple (string teamKey, string ifModifiedSince = null)
+> List<EventSimple> GetTeamEventsSimple ()
 
 
 
@@ -1700,12 +1550,10 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
             var apiInstance = new TeamApi();
-            var teamKey = teamKey_example;  // string | TBA Team Key, eg `frc254`
-            var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
             try
             {
-                List&lt;EventSimple&gt; result = apiInstance.GetTeamEventsSimple(teamKey, ifModifiedSince);
+                List&lt;EventSimple&gt; result = apiInstance.GetTeamEventsSimple();
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1719,11 +1567,7 @@ namespace Example
 
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **teamKey** | **string**| TBA Team Key, eg &#x60;frc254&#x60; | 
- **ifModifiedSince** | **string**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
+This endpoint does not need any parameter.
 
 ### Return type
 
@@ -1746,7 +1590,7 @@ Name | Type | Description  | Notes
 
 ## GetTeamEventsStatusesByYear
 
-> Dictionary<string, TeamEventStatus> GetTeamEventsStatusesByYear (string teamKey, int? year, string ifModifiedSince = null)
+> Dictionary<string, TeamEventStatus> GetTeamEventsStatusesByYear ()
 
 
 
@@ -1773,13 +1617,10 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
             var apiInstance = new TeamApi();
-            var teamKey = teamKey_example;  // string | TBA Team Key, eg `frc254`
-            var year = 56;  // int? | Competition Year (or Season). Must be 4 digits.
-            var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
             try
             {
-                Dictionary&lt;string, TeamEventStatus&gt; result = apiInstance.GetTeamEventsStatusesByYear(teamKey, year, ifModifiedSince);
+                Dictionary&lt;string, TeamEventStatus&gt; result = apiInstance.GetTeamEventsStatusesByYear();
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1793,12 +1634,7 @@ namespace Example
 
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **teamKey** | **string**| TBA Team Key, eg &#x60;frc254&#x60; | 
- **year** | **int?**| Competition Year (or Season). Must be 4 digits. | 
- **ifModifiedSince** | **string**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
+This endpoint does not need any parameter.
 
 ### Return type
 
@@ -1821,7 +1657,7 @@ Name | Type | Description  | Notes
 
 ## GetTeamMatchesByYear
 
-> List<Match> GetTeamMatchesByYear (string teamKey, int? year, string ifModifiedSince = null)
+> List<Match> GetTeamMatchesByYear ()
 
 
 
@@ -1848,13 +1684,10 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
             var apiInstance = new TeamApi();
-            var teamKey = teamKey_example;  // string | TBA Team Key, eg `frc254`
-            var year = 56;  // int? | Competition Year (or Season). Must be 4 digits.
-            var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
             try
             {
-                List&lt;Match&gt; result = apiInstance.GetTeamMatchesByYear(teamKey, year, ifModifiedSince);
+                List&lt;Match&gt; result = apiInstance.GetTeamMatchesByYear();
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1868,12 +1701,7 @@ namespace Example
 
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **teamKey** | **string**| TBA Team Key, eg &#x60;frc254&#x60; | 
- **year** | **int?**| Competition Year (or Season). Must be 4 digits. | 
- **ifModifiedSince** | **string**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
+This endpoint does not need any parameter.
 
 ### Return type
 
@@ -1896,7 +1724,7 @@ Name | Type | Description  | Notes
 
 ## GetTeamMatchesByYearKeys
 
-> List<string> GetTeamMatchesByYearKeys (string teamKey, int? year, string ifModifiedSince = null)
+> List<string> GetTeamMatchesByYearKeys ()
 
 
 
@@ -1923,13 +1751,10 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
             var apiInstance = new TeamApi();
-            var teamKey = teamKey_example;  // string | TBA Team Key, eg `frc254`
-            var year = 56;  // int? | Competition Year (or Season). Must be 4 digits.
-            var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
             try
             {
-                List&lt;string&gt; result = apiInstance.GetTeamMatchesByYearKeys(teamKey, year, ifModifiedSince);
+                List&lt;string&gt; result = apiInstance.GetTeamMatchesByYearKeys();
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1943,12 +1768,7 @@ namespace Example
 
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **teamKey** | **string**| TBA Team Key, eg &#x60;frc254&#x60; | 
- **year** | **int?**| Competition Year (or Season). Must be 4 digits. | 
- **ifModifiedSince** | **string**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
+This endpoint does not need any parameter.
 
 ### Return type
 
@@ -1971,7 +1791,7 @@ Name | Type | Description  | Notes
 
 ## GetTeamMatchesByYearSimple
 
-> List<MatchSimple> GetTeamMatchesByYearSimple (string teamKey, int? year, string ifModifiedSince = null)
+> List<MatchSimple> GetTeamMatchesByYearSimple ()
 
 
 
@@ -1998,13 +1818,10 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
             var apiInstance = new TeamApi();
-            var teamKey = teamKey_example;  // string | TBA Team Key, eg `frc254`
-            var year = 56;  // int? | Competition Year (or Season). Must be 4 digits.
-            var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
             try
             {
-                List&lt;MatchSimple&gt; result = apiInstance.GetTeamMatchesByYearSimple(teamKey, year, ifModifiedSince);
+                List&lt;MatchSimple&gt; result = apiInstance.GetTeamMatchesByYearSimple();
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -2018,12 +1835,7 @@ namespace Example
 
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **teamKey** | **string**| TBA Team Key, eg &#x60;frc254&#x60; | 
- **year** | **int?**| Competition Year (or Season). Must be 4 digits. | 
- **ifModifiedSince** | **string**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
+This endpoint does not need any parameter.
 
 ### Return type
 
@@ -2046,7 +1858,7 @@ Name | Type | Description  | Notes
 
 ## GetTeamMediaByTag
 
-> List<Media> GetTeamMediaByTag (string teamKey, string mediaTag, string ifModifiedSince = null)
+> List<Media> GetTeamMediaByTag ()
 
 
 
@@ -2073,13 +1885,10 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
             var apiInstance = new TeamApi();
-            var teamKey = teamKey_example;  // string | TBA Team Key, eg `frc254`
-            var mediaTag = mediaTag_example;  // string | Media Tag which describes the Media.
-            var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
             try
             {
-                List&lt;Media&gt; result = apiInstance.GetTeamMediaByTag(teamKey, mediaTag, ifModifiedSince);
+                List&lt;Media&gt; result = apiInstance.GetTeamMediaByTag();
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -2093,12 +1902,7 @@ namespace Example
 
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **teamKey** | **string**| TBA Team Key, eg &#x60;frc254&#x60; | 
- **mediaTag** | **string**| Media Tag which describes the Media. | 
- **ifModifiedSince** | **string**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
+This endpoint does not need any parameter.
 
 ### Return type
 
@@ -2121,7 +1925,7 @@ Name | Type | Description  | Notes
 
 ## GetTeamMediaByTagYear
 
-> List<Media> GetTeamMediaByTagYear (string teamKey, string mediaTag, int? year, string ifModifiedSince = null)
+> List<Media> GetTeamMediaByTagYear ()
 
 
 
@@ -2148,14 +1952,10 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
             var apiInstance = new TeamApi();
-            var teamKey = teamKey_example;  // string | TBA Team Key, eg `frc254`
-            var mediaTag = mediaTag_example;  // string | Media Tag which describes the Media.
-            var year = 56;  // int? | Competition Year (or Season). Must be 4 digits.
-            var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
             try
             {
-                List&lt;Media&gt; result = apiInstance.GetTeamMediaByTagYear(teamKey, mediaTag, year, ifModifiedSince);
+                List&lt;Media&gt; result = apiInstance.GetTeamMediaByTagYear();
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -2169,13 +1969,7 @@ namespace Example
 
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **teamKey** | **string**| TBA Team Key, eg &#x60;frc254&#x60; | 
- **mediaTag** | **string**| Media Tag which describes the Media. | 
- **year** | **int?**| Competition Year (or Season). Must be 4 digits. | 
- **ifModifiedSince** | **string**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
+This endpoint does not need any parameter.
 
 ### Return type
 
@@ -2198,7 +1992,7 @@ Name | Type | Description  | Notes
 
 ## GetTeamMediaByYear
 
-> List<Media> GetTeamMediaByYear (string teamKey, int? year, string ifModifiedSince = null)
+> List<Media> GetTeamMediaByYear ()
 
 
 
@@ -2225,13 +2019,10 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
             var apiInstance = new TeamApi();
-            var teamKey = teamKey_example;  // string | TBA Team Key, eg `frc254`
-            var year = 56;  // int? | Competition Year (or Season). Must be 4 digits.
-            var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
             try
             {
-                List&lt;Media&gt; result = apiInstance.GetTeamMediaByYear(teamKey, year, ifModifiedSince);
+                List&lt;Media&gt; result = apiInstance.GetTeamMediaByYear();
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -2245,12 +2036,7 @@ namespace Example
 
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **teamKey** | **string**| TBA Team Key, eg &#x60;frc254&#x60; | 
- **year** | **int?**| Competition Year (or Season). Must be 4 digits. | 
- **ifModifiedSince** | **string**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
+This endpoint does not need any parameter.
 
 ### Return type
 
@@ -2273,7 +2059,7 @@ Name | Type | Description  | Notes
 
 ## GetTeamRobots
 
-> List<TeamRobot> GetTeamRobots (string teamKey, string ifModifiedSince = null)
+> List<TeamRobot> GetTeamRobots ()
 
 
 
@@ -2300,12 +2086,10 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
             var apiInstance = new TeamApi();
-            var teamKey = teamKey_example;  // string | TBA Team Key, eg `frc254`
-            var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
             try
             {
-                List&lt;TeamRobot&gt; result = apiInstance.GetTeamRobots(teamKey, ifModifiedSince);
+                List&lt;TeamRobot&gt; result = apiInstance.GetTeamRobots();
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -2319,11 +2103,7 @@ namespace Example
 
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **teamKey** | **string**| TBA Team Key, eg &#x60;frc254&#x60; | 
- **ifModifiedSince** | **string**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
+This endpoint does not need any parameter.
 
 ### Return type
 
@@ -2346,7 +2126,7 @@ Name | Type | Description  | Notes
 
 ## GetTeamSimple
 
-> TeamSimple GetTeamSimple (string teamKey, string ifModifiedSince = null)
+> TeamSimple GetTeamSimple ()
 
 
 
@@ -2373,12 +2153,10 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
             var apiInstance = new TeamApi();
-            var teamKey = teamKey_example;  // string | TBA Team Key, eg `frc254`
-            var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
             try
             {
-                TeamSimple result = apiInstance.GetTeamSimple(teamKey, ifModifiedSince);
+                TeamSimple result = apiInstance.GetTeamSimple();
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -2392,11 +2170,7 @@ namespace Example
 
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **teamKey** | **string**| TBA Team Key, eg &#x60;frc254&#x60; | 
- **ifModifiedSince** | **string**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
+This endpoint does not need any parameter.
 
 ### Return type
 
@@ -2419,7 +2193,7 @@ Name | Type | Description  | Notes
 
 ## GetTeamSocialMedia
 
-> List<Media> GetTeamSocialMedia (string teamKey, string ifModifiedSince = null)
+> List<Media> GetTeamSocialMedia ()
 
 
 
@@ -2446,12 +2220,10 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
             var apiInstance = new TeamApi();
-            var teamKey = teamKey_example;  // string | TBA Team Key, eg `frc254`
-            var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
             try
             {
-                List&lt;Media&gt; result = apiInstance.GetTeamSocialMedia(teamKey, ifModifiedSince);
+                List&lt;Media&gt; result = apiInstance.GetTeamSocialMedia();
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -2465,11 +2237,7 @@ namespace Example
 
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **teamKey** | **string**| TBA Team Key, eg &#x60;frc254&#x60; | 
- **ifModifiedSince** | **string**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
+This endpoint does not need any parameter.
 
 ### Return type
 
@@ -2492,7 +2260,7 @@ Name | Type | Description  | Notes
 
 ## GetTeamYearsParticipated
 
-> List<int?> GetTeamYearsParticipated (string teamKey, string ifModifiedSince = null)
+> List<int?> GetTeamYearsParticipated ()
 
 
 
@@ -2519,12 +2287,10 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
             var apiInstance = new TeamApi();
-            var teamKey = teamKey_example;  // string | TBA Team Key, eg `frc254`
-            var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
             try
             {
-                List&lt;int?&gt; result = apiInstance.GetTeamYearsParticipated(teamKey, ifModifiedSince);
+                List&lt;int?&gt; result = apiInstance.GetTeamYearsParticipated();
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -2538,11 +2304,7 @@ namespace Example
 
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **teamKey** | **string**| TBA Team Key, eg &#x60;frc254&#x60; | 
- **ifModifiedSince** | **string**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
+This endpoint does not need any parameter.
 
 ### Return type
 
@@ -2565,7 +2327,7 @@ Name | Type | Description  | Notes
 
 ## GetTeams
 
-> List<Team> GetTeams (int? pageNum, string ifModifiedSince = null)
+> List<Team> GetTeams ()
 
 
 
@@ -2592,12 +2354,10 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
             var apiInstance = new TeamApi();
-            var pageNum = 56;  // int? | Page number of results to return, zero-indexed
-            var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
             try
             {
-                List&lt;Team&gt; result = apiInstance.GetTeams(pageNum, ifModifiedSince);
+                List&lt;Team&gt; result = apiInstance.GetTeams();
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -2611,11 +2371,7 @@ namespace Example
 
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **pageNum** | **int?**| Page number of results to return, zero-indexed | 
- **ifModifiedSince** | **string**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
+This endpoint does not need any parameter.
 
 ### Return type
 
@@ -2638,7 +2394,7 @@ Name | Type | Description  | Notes
 
 ## GetTeamsByYear
 
-> List<Team> GetTeamsByYear (int? year, int? pageNum, string ifModifiedSince = null)
+> List<Team> GetTeamsByYear ()
 
 
 
@@ -2665,13 +2421,10 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
             var apiInstance = new TeamApi();
-            var year = 56;  // int? | Competition Year (or Season). Must be 4 digits.
-            var pageNum = 56;  // int? | Page number of results to return, zero-indexed
-            var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
             try
             {
-                List&lt;Team&gt; result = apiInstance.GetTeamsByYear(year, pageNum, ifModifiedSince);
+                List&lt;Team&gt; result = apiInstance.GetTeamsByYear();
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -2685,12 +2438,7 @@ namespace Example
 
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **year** | **int?**| Competition Year (or Season). Must be 4 digits. | 
- **pageNum** | **int?**| Page number of results to return, zero-indexed | 
- **ifModifiedSince** | **string**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
+This endpoint does not need any parameter.
 
 ### Return type
 
@@ -2713,7 +2461,7 @@ Name | Type | Description  | Notes
 
 ## GetTeamsByYearKeys
 
-> List<string> GetTeamsByYearKeys (int? year, int? pageNum, string ifModifiedSince = null)
+> List<string> GetTeamsByYearKeys ()
 
 
 
@@ -2740,13 +2488,10 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
             var apiInstance = new TeamApi();
-            var year = 56;  // int? | Competition Year (or Season). Must be 4 digits.
-            var pageNum = 56;  // int? | Page number of results to return, zero-indexed
-            var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
             try
             {
-                List&lt;string&gt; result = apiInstance.GetTeamsByYearKeys(year, pageNum, ifModifiedSince);
+                List&lt;string&gt; result = apiInstance.GetTeamsByYearKeys();
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -2760,12 +2505,7 @@ namespace Example
 
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **year** | **int?**| Competition Year (or Season). Must be 4 digits. | 
- **pageNum** | **int?**| Page number of results to return, zero-indexed | 
- **ifModifiedSince** | **string**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
+This endpoint does not need any parameter.
 
 ### Return type
 
@@ -2788,7 +2528,7 @@ Name | Type | Description  | Notes
 
 ## GetTeamsByYearSimple
 
-> List<TeamSimple> GetTeamsByYearSimple (int? year, int? pageNum, string ifModifiedSince = null)
+> List<TeamSimple> GetTeamsByYearSimple ()
 
 
 
@@ -2815,13 +2555,10 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
             var apiInstance = new TeamApi();
-            var year = 56;  // int? | Competition Year (or Season). Must be 4 digits.
-            var pageNum = 56;  // int? | Page number of results to return, zero-indexed
-            var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
             try
             {
-                List&lt;TeamSimple&gt; result = apiInstance.GetTeamsByYearSimple(year, pageNum, ifModifiedSince);
+                List&lt;TeamSimple&gt; result = apiInstance.GetTeamsByYearSimple();
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -2835,12 +2572,7 @@ namespace Example
 
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **year** | **int?**| Competition Year (or Season). Must be 4 digits. | 
- **pageNum** | **int?**| Page number of results to return, zero-indexed | 
- **ifModifiedSince** | **string**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
+This endpoint does not need any parameter.
 
 ### Return type
 
@@ -2863,7 +2595,7 @@ Name | Type | Description  | Notes
 
 ## GetTeamsKeys
 
-> List<string> GetTeamsKeys (int? pageNum, string ifModifiedSince = null)
+> List<string> GetTeamsKeys ()
 
 
 
@@ -2890,12 +2622,10 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
             var apiInstance = new TeamApi();
-            var pageNum = 56;  // int? | Page number of results to return, zero-indexed
-            var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
             try
             {
-                List&lt;string&gt; result = apiInstance.GetTeamsKeys(pageNum, ifModifiedSince);
+                List&lt;string&gt; result = apiInstance.GetTeamsKeys();
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -2909,11 +2639,7 @@ namespace Example
 
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **pageNum** | **int?**| Page number of results to return, zero-indexed | 
- **ifModifiedSince** | **string**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
+This endpoint does not need any parameter.
 
 ### Return type
 
@@ -2936,7 +2662,7 @@ Name | Type | Description  | Notes
 
 ## GetTeamsSimple
 
-> List<TeamSimple> GetTeamsSimple (int? pageNum, string ifModifiedSince = null)
+> List<TeamSimple> GetTeamsSimple ()
 
 
 
@@ -2963,12 +2689,10 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
             var apiInstance = new TeamApi();
-            var pageNum = 56;  // int? | Page number of results to return, zero-indexed
-            var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
             try
             {
-                List&lt;TeamSimple&gt; result = apiInstance.GetTeamsSimple(pageNum, ifModifiedSince);
+                List&lt;TeamSimple&gt; result = apiInstance.GetTeamsSimple();
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -2982,11 +2706,7 @@ namespace Example
 
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **pageNum** | **int?**| Page number of results to return, zero-indexed | 
- **ifModifiedSince** | **string**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
+This endpoint does not need any parameter.
 
 ### Return type
 

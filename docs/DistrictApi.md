@@ -19,7 +19,7 @@ Method | HTTP request | Description
 
 ## GetDistrictEvents
 
-> List<Event> GetDistrictEvents (string districtKey, string ifModifiedSince = null)
+> List<Event> GetDistrictEvents ()
 
 
 
@@ -46,12 +46,10 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
             var apiInstance = new DistrictApi();
-            var districtKey = districtKey_example;  // string | TBA District Key, eg `2016fim`
-            var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
             try
             {
-                List&lt;Event&gt; result = apiInstance.GetDistrictEvents(districtKey, ifModifiedSince);
+                List&lt;Event&gt; result = apiInstance.GetDistrictEvents();
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -65,11 +63,7 @@ namespace Example
 
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **districtKey** | **string**| TBA District Key, eg &#x60;2016fim&#x60; | 
- **ifModifiedSince** | **string**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
+This endpoint does not need any parameter.
 
 ### Return type
 
@@ -92,7 +86,7 @@ Name | Type | Description  | Notes
 
 ## GetDistrictEventsKeys
 
-> List<string> GetDistrictEventsKeys (string districtKey, string ifModifiedSince = null)
+> List<string> GetDistrictEventsKeys ()
 
 
 
@@ -119,12 +113,10 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
             var apiInstance = new DistrictApi();
-            var districtKey = districtKey_example;  // string | TBA District Key, eg `2016fim`
-            var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
             try
             {
-                List&lt;string&gt; result = apiInstance.GetDistrictEventsKeys(districtKey, ifModifiedSince);
+                List&lt;string&gt; result = apiInstance.GetDistrictEventsKeys();
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -138,11 +130,7 @@ namespace Example
 
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **districtKey** | **string**| TBA District Key, eg &#x60;2016fim&#x60; | 
- **ifModifiedSince** | **string**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
+This endpoint does not need any parameter.
 
 ### Return type
 
@@ -165,7 +153,7 @@ Name | Type | Description  | Notes
 
 ## GetDistrictEventsSimple
 
-> List<EventSimple> GetDistrictEventsSimple (string districtKey, string ifModifiedSince = null)
+> List<EventSimple> GetDistrictEventsSimple (string districtKey)
 
 
 
@@ -193,11 +181,10 @@ namespace Example
 
             var apiInstance = new DistrictApi();
             var districtKey = districtKey_example;  // string | TBA District Key, eg `2016fim`
-            var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
             try
             {
-                List&lt;EventSimple&gt; result = apiInstance.GetDistrictEventsSimple(districtKey, ifModifiedSince);
+                List&lt;EventSimple&gt; result = apiInstance.GetDistrictEventsSimple(districtKey);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -215,7 +202,6 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **districtKey** | **string**| TBA District Key, eg &#x60;2016fim&#x60; | 
- **ifModifiedSince** | **string**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
 
 ### Return type
 
@@ -238,7 +224,7 @@ Name | Type | Description  | Notes
 
 ## GetDistrictRankings
 
-> List<DistrictRanking> GetDistrictRankings (string districtKey, string ifModifiedSince = null)
+> List<DistrictRanking> GetDistrictRankings ()
 
 
 
@@ -265,12 +251,10 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
             var apiInstance = new DistrictApi();
-            var districtKey = districtKey_example;  // string | TBA District Key, eg `2016fim`
-            var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
             try
             {
-                List&lt;DistrictRanking&gt; result = apiInstance.GetDistrictRankings(districtKey, ifModifiedSince);
+                List&lt;DistrictRanking&gt; result = apiInstance.GetDistrictRankings();
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -284,11 +268,7 @@ namespace Example
 
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **districtKey** | **string**| TBA District Key, eg &#x60;2016fim&#x60; | 
- **ifModifiedSince** | **string**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
+This endpoint does not need any parameter.
 
 ### Return type
 
@@ -311,7 +291,7 @@ Name | Type | Description  | Notes
 
 ## GetDistrictTeams
 
-> List<Team> GetDistrictTeams (string districtKey, string ifModifiedSince = null)
+> List<Team> GetDistrictTeams ()
 
 
 
@@ -338,12 +318,10 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
             var apiInstance = new DistrictApi();
-            var districtKey = districtKey_example;  // string | TBA District Key, eg `2016fim`
-            var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
             try
             {
-                List&lt;Team&gt; result = apiInstance.GetDistrictTeams(districtKey, ifModifiedSince);
+                List&lt;Team&gt; result = apiInstance.GetDistrictTeams();
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -357,11 +335,7 @@ namespace Example
 
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **districtKey** | **string**| TBA District Key, eg &#x60;2016fim&#x60; | 
- **ifModifiedSince** | **string**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
+This endpoint does not need any parameter.
 
 ### Return type
 
@@ -384,7 +358,7 @@ Name | Type | Description  | Notes
 
 ## GetDistrictTeamsKeys
 
-> List<string> GetDistrictTeamsKeys (string districtKey, string ifModifiedSince = null)
+> List<string> GetDistrictTeamsKeys ()
 
 
 
@@ -411,12 +385,10 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
             var apiInstance = new DistrictApi();
-            var districtKey = districtKey_example;  // string | TBA District Key, eg `2016fim`
-            var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
             try
             {
-                List&lt;string&gt; result = apiInstance.GetDistrictTeamsKeys(districtKey, ifModifiedSince);
+                List&lt;string&gt; result = apiInstance.GetDistrictTeamsKeys();
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -430,11 +402,7 @@ namespace Example
 
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **districtKey** | **string**| TBA District Key, eg &#x60;2016fim&#x60; | 
- **ifModifiedSince** | **string**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
+This endpoint does not need any parameter.
 
 ### Return type
 
@@ -457,7 +425,7 @@ Name | Type | Description  | Notes
 
 ## GetDistrictTeamsSimple
 
-> List<TeamSimple> GetDistrictTeamsSimple (string districtKey, string ifModifiedSince = null)
+> List<TeamSimple> GetDistrictTeamsSimple ()
 
 
 
@@ -484,12 +452,10 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
             var apiInstance = new DistrictApi();
-            var districtKey = districtKey_example;  // string | TBA District Key, eg `2016fim`
-            var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
             try
             {
-                List&lt;TeamSimple&gt; result = apiInstance.GetDistrictTeamsSimple(districtKey, ifModifiedSince);
+                List&lt;TeamSimple&gt; result = apiInstance.GetDistrictTeamsSimple();
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -503,11 +469,7 @@ namespace Example
 
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **districtKey** | **string**| TBA District Key, eg &#x60;2016fim&#x60; | 
- **ifModifiedSince** | **string**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
+This endpoint does not need any parameter.
 
 ### Return type
 
@@ -530,7 +492,7 @@ Name | Type | Description  | Notes
 
 ## GetDistrictsByYear
 
-> List<DistrictList> GetDistrictsByYear (int? year, string ifModifiedSince = null)
+> List<DistrictList> GetDistrictsByYear ()
 
 
 
@@ -557,12 +519,10 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
             var apiInstance = new DistrictApi();
-            var year = 56;  // int? | Competition Year (or Season). Must be 4 digits.
-            var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
             try
             {
-                List&lt;DistrictList&gt; result = apiInstance.GetDistrictsByYear(year, ifModifiedSince);
+                List&lt;DistrictList&gt; result = apiInstance.GetDistrictsByYear();
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -576,11 +536,7 @@ namespace Example
 
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **year** | **int?**| Competition Year (or Season). Must be 4 digits. | 
- **ifModifiedSince** | **string**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
+This endpoint does not need any parameter.
 
 ### Return type
 
@@ -603,7 +559,7 @@ Name | Type | Description  | Notes
 
 ## GetEventDistrictPoints
 
-> EventDistrictPoints GetEventDistrictPoints (string eventKey, string ifModifiedSince = null)
+> EventDistrictPoints GetEventDistrictPoints ()
 
 
 
@@ -630,12 +586,10 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
             var apiInstance = new DistrictApi();
-            var eventKey = eventKey_example;  // string | TBA Event Key, eg `2016nytr`
-            var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
             try
             {
-                EventDistrictPoints result = apiInstance.GetEventDistrictPoints(eventKey, ifModifiedSince);
+                EventDistrictPoints result = apiInstance.GetEventDistrictPoints();
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -649,11 +603,7 @@ namespace Example
 
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **eventKey** | **string**| TBA Event Key, eg &#x60;2016nytr&#x60; | 
- **ifModifiedSince** | **string**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
+This endpoint does not need any parameter.
 
 ### Return type
 
@@ -676,7 +626,7 @@ Name | Type | Description  | Notes
 
 ## GetTeamDistricts
 
-> List<DistrictList> GetTeamDistricts (string teamKey, string ifModifiedSince = null)
+> List<DistrictList> GetTeamDistricts ()
 
 
 
@@ -703,12 +653,10 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
             var apiInstance = new DistrictApi();
-            var teamKey = teamKey_example;  // string | TBA Team Key, eg `frc254`
-            var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
             try
             {
-                List&lt;DistrictList&gt; result = apiInstance.GetTeamDistricts(teamKey, ifModifiedSince);
+                List&lt;DistrictList&gt; result = apiInstance.GetTeamDistricts();
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -722,11 +670,7 @@ namespace Example
 
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **teamKey** | **string**| TBA Team Key, eg &#x60;frc254&#x60; | 
- **ifModifiedSince** | **string**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
+This endpoint does not need any parameter.
 
 ### Return type
 
