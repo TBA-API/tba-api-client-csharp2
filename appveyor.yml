@@ -7,3 +7,7 @@ deploy:
   api_key:
     secure: 7rvP7Js1KhYJYbmLljz7NLskbNJFpBdsJIzeMsfvLAzF0zZp14led4speLiLFsGK
 after_deploy: dir
+
+artifacts:
+  - path: TBAAPIv3client.3.4.1.nupkg
+    name: TBAAPIv3client.3.4.1.nupkg
