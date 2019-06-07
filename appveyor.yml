@@ -1,6 +1,7 @@
 before_deploy: move /y src\com.tweirtx.TBAAPIv3client\com.tweirtx.TBAAPIv3client.nuspec.backup src\com.tweirtx.TBAAPIv3client\com.tweirtx.TBAAPIv3client.nuspec | nuget pack src\com.tweirtx.TBAAPIv3client\com.tweirtx.TBAAPIv3client.nuspec
 deploy:
   provider: NuGet
+  artifact: /.*\.nupkg/
   api_key:
     secure: 7rvP7Js1KhYJYbmLljz7NLskbNJFpBdsJIzeMsfvLAzF0zZp14led4speLiLFsGK
 after_deploy: dir
