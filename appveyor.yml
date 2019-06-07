@@ -3,5 +3,5 @@ deploy:
   provider: NuGet
   api_key: 
     secure: XclGUFnDjfd9zzPCUifE4TZlxMEhUtbI5d15A1Fd7GJi/lmCKnad+ZVsWYcm/njS
-    artifact: TBAAPIv3client.3.0.11.nupkg
+    artifact: TBAAPIv3client.3.4.1.nupkg
 after_deploy: dir
