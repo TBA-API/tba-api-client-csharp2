@@ -3,7 +3,7 @@ before_deploy:
   - nuget pack src\com.tweirtx.TBAAPIv3client\com.tweirtx.TBAAPIv3client.nuspec
 deploy:
   provider: NuGet
-  artifact: /.*\.nupkg/
+  artifact: TBAAPIv3client.3.4.1.nupkg
   api_key:
     secure: 7rvP7Js1KhYJYbmLljz7NLskbNJFpBdsJIzeMsfvLAzF0zZp14led4speLiLFsGK
 after_deploy: dir
