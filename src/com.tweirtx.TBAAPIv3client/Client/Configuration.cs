@@ -29,7 +29,7 @@ namespace com.tweirtx.TBAAPIv3client.Client
         /// Version of the package.
         /// </summary>
         /// <value>Version of the package.</value>
-        public const string Version = "";
+        public const string Version = "3.5";
 
         /// <summary>
         /// Identifier for ISO 8601 DateTime Format
@@ -114,7 +114,7 @@ namespace com.tweirtx.TBAAPIv3client.Client
         /// </summary>
         public Configuration()
         {
-            UserAgent = "OpenAPI-Generator//csharp";
+            UserAgent = "OpenAPI-Generator/3.5/csharp";
             BasePath = "https://www.thebluealliance.com/api/v3";
             DefaultHeader = new ConcurrentDictionary<string, string>();
             ApiKey = new ConcurrentDictionary<string, string>();
@@ -187,7 +187,7 @@ namespace com.tweirtx.TBAAPIv3client.Client
             string tempFolderPath = null,
             string dateTimeFormat = null,
             int timeout = 100000,
-            string userAgent = "OpenAPI-Generator//csharp"
+            string userAgent = "OpenAPI-Generator/3.5/csharp"
             // ReSharper restore UnusedParameter.Local
             )
         {
@@ -421,7 +421,7 @@ namespace com.tweirtx.TBAAPIv3client.Client
             report += "    OS: " + System.Environment.OSVersion + "\n";
             report += "    .NET Framework Version: " + System.Environment.Version  + "\n";
             report += "    Version of the API: 3.5\n";
-            report += "    SDK Package Version: \n";
+            report += "    SDK Package Version: 3.5\n";
 
             return report;
         }
