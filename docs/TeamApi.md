@@ -58,7 +58,6 @@ Gets a list of team district rankings for the given district.
 ### Example
 
 ```csharp
-using System;
 using System.Diagnostics;
 using com.tweirtx.TBAAPIv3client.Api;
 using com.tweirtx.TBAAPIv3client.Client;
@@ -68,14 +67,15 @@ namespace Example
 {
     public class GetDistrictRankingsExample
     {
-        public void main()
+        public static void Main()
         {
+            Configuration.Default.BasePath = "https://www.thebluealliance.com/api/v3";
             // Configure API key authorization: apiKey
             Configuration.Default.AddApiKey("X-TBA-Auth-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
-            var apiInstance = new TeamApi();
+            var apiInstance = new TeamApi(Configuration.Default);
             var districtKey = districtKey_example;  // string | TBA District Key, eg `2016fim`
             var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
@@ -84,9 +84,11 @@ namespace Example
                 List&lt;DistrictRanking&gt; result = apiInstance.GetDistrictRankings(districtKey, ifModifiedSince);
                 Debug.WriteLine(result);
             }
-            catch (Exception e)
+            catch (ApiException e)
             {
                 Debug.Print("Exception when calling TeamApi.GetDistrictRankings: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
             }
         }
     }
@@ -131,7 +133,6 @@ Gets a list of `Team` objects that competed in events in the given district.
 ### Example
 
 ```csharp
-using System;
 using System.Diagnostics;
 using com.tweirtx.TBAAPIv3client.Api;
 using com.tweirtx.TBAAPIv3client.Client;
@@ -141,14 +142,15 @@ namespace Example
 {
     public class GetDistrictTeamsExample
     {
-        public void main()
+        public static void Main()
         {
+            Configuration.Default.BasePath = "https://www.thebluealliance.com/api/v3";
             // Configure API key authorization: apiKey
             Configuration.Default.AddApiKey("X-TBA-Auth-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
-            var apiInstance = new TeamApi();
+            var apiInstance = new TeamApi(Configuration.Default);
             var districtKey = districtKey_example;  // string | TBA District Key, eg `2016fim`
             var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
@@ -157,9 +159,11 @@ namespace Example
                 List&lt;Team&gt; result = apiInstance.GetDistrictTeams(districtKey, ifModifiedSince);
                 Debug.WriteLine(result);
             }
-            catch (Exception e)
+            catch (ApiException e)
             {
                 Debug.Print("Exception when calling TeamApi.GetDistrictTeams: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
             }
         }
     }
@@ -204,7 +208,6 @@ Gets a list of `Team` objects that competed in events in the given district.
 ### Example
 
 ```csharp
-using System;
 using System.Diagnostics;
 using com.tweirtx.TBAAPIv3client.Api;
 using com.tweirtx.TBAAPIv3client.Client;
@@ -214,14 +217,15 @@ namespace Example
 {
     public class GetDistrictTeamsKeysExample
     {
-        public void main()
+        public static void Main()
         {
+            Configuration.Default.BasePath = "https://www.thebluealliance.com/api/v3";
             // Configure API key authorization: apiKey
             Configuration.Default.AddApiKey("X-TBA-Auth-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
-            var apiInstance = new TeamApi();
+            var apiInstance = new TeamApi(Configuration.Default);
             var districtKey = districtKey_example;  // string | TBA District Key, eg `2016fim`
             var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
@@ -230,9 +234,11 @@ namespace Example
                 List&lt;string&gt; result = apiInstance.GetDistrictTeamsKeys(districtKey, ifModifiedSince);
                 Debug.WriteLine(result);
             }
-            catch (Exception e)
+            catch (ApiException e)
             {
                 Debug.Print("Exception when calling TeamApi.GetDistrictTeamsKeys: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
             }
         }
     }
@@ -277,7 +283,6 @@ Gets a short-form list of `Team` objects that competed in events in the given di
 ### Example
 
 ```csharp
-using System;
 using System.Diagnostics;
 using com.tweirtx.TBAAPIv3client.Api;
 using com.tweirtx.TBAAPIv3client.Client;
@@ -287,14 +292,15 @@ namespace Example
 {
     public class GetDistrictTeamsSimpleExample
     {
-        public void main()
+        public static void Main()
         {
+            Configuration.Default.BasePath = "https://www.thebluealliance.com/api/v3";
             // Configure API key authorization: apiKey
             Configuration.Default.AddApiKey("X-TBA-Auth-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
-            var apiInstance = new TeamApi();
+            var apiInstance = new TeamApi(Configuration.Default);
             var districtKey = districtKey_example;  // string | TBA District Key, eg `2016fim`
             var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
@@ -303,9 +309,11 @@ namespace Example
                 List&lt;TeamSimple&gt; result = apiInstance.GetDistrictTeamsSimple(districtKey, ifModifiedSince);
                 Debug.WriteLine(result);
             }
-            catch (Exception e)
+            catch (ApiException e)
             {
                 Debug.Print("Exception when calling TeamApi.GetDistrictTeamsSimple: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
             }
         }
     }
@@ -350,7 +358,6 @@ Gets a list of `Team` objects that competed in the given event.
 ### Example
 
 ```csharp
-using System;
 using System.Diagnostics;
 using com.tweirtx.TBAAPIv3client.Api;
 using com.tweirtx.TBAAPIv3client.Client;
@@ -360,14 +367,15 @@ namespace Example
 {
     public class GetEventTeamsExample
     {
-        public void main()
+        public static void Main()
         {
+            Configuration.Default.BasePath = "https://www.thebluealliance.com/api/v3";
             // Configure API key authorization: apiKey
             Configuration.Default.AddApiKey("X-TBA-Auth-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
-            var apiInstance = new TeamApi();
+            var apiInstance = new TeamApi(Configuration.Default);
             var eventKey = eventKey_example;  // string | TBA Event Key, eg `2016nytr`
             var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
@@ -376,9 +384,11 @@ namespace Example
                 List&lt;Team&gt; result = apiInstance.GetEventTeams(eventKey, ifModifiedSince);
                 Debug.WriteLine(result);
             }
-            catch (Exception e)
+            catch (ApiException e)
             {
                 Debug.Print("Exception when calling TeamApi.GetEventTeams: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
             }
         }
     }
@@ -423,7 +433,6 @@ Gets a list of `Team` keys that competed in the given event.
 ### Example
 
 ```csharp
-using System;
 using System.Diagnostics;
 using com.tweirtx.TBAAPIv3client.Api;
 using com.tweirtx.TBAAPIv3client.Client;
@@ -433,14 +442,15 @@ namespace Example
 {
     public class GetEventTeamsKeysExample
     {
-        public void main()
+        public static void Main()
         {
+            Configuration.Default.BasePath = "https://www.thebluealliance.com/api/v3";
             // Configure API key authorization: apiKey
             Configuration.Default.AddApiKey("X-TBA-Auth-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
-            var apiInstance = new TeamApi();
+            var apiInstance = new TeamApi(Configuration.Default);
             var eventKey = eventKey_example;  // string | TBA Event Key, eg `2016nytr`
             var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
@@ -449,9 +459,11 @@ namespace Example
                 List&lt;string&gt; result = apiInstance.GetEventTeamsKeys(eventKey, ifModifiedSince);
                 Debug.WriteLine(result);
             }
-            catch (Exception e)
+            catch (ApiException e)
             {
                 Debug.Print("Exception when calling TeamApi.GetEventTeamsKeys: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
             }
         }
     }
@@ -496,7 +508,6 @@ Gets a short-form list of `Team` objects that competed in the given event.
 ### Example
 
 ```csharp
-using System;
 using System.Diagnostics;
 using com.tweirtx.TBAAPIv3client.Api;
 using com.tweirtx.TBAAPIv3client.Client;
@@ -506,14 +517,15 @@ namespace Example
 {
     public class GetEventTeamsSimpleExample
     {
-        public void main()
+        public static void Main()
         {
+            Configuration.Default.BasePath = "https://www.thebluealliance.com/api/v3";
             // Configure API key authorization: apiKey
             Configuration.Default.AddApiKey("X-TBA-Auth-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
-            var apiInstance = new TeamApi();
+            var apiInstance = new TeamApi(Configuration.Default);
             var eventKey = eventKey_example;  // string | TBA Event Key, eg `2016nytr`
             var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
@@ -522,9 +534,11 @@ namespace Example
                 List&lt;TeamSimple&gt; result = apiInstance.GetEventTeamsSimple(eventKey, ifModifiedSince);
                 Debug.WriteLine(result);
             }
-            catch (Exception e)
+            catch (ApiException e)
             {
                 Debug.Print("Exception when calling TeamApi.GetEventTeamsSimple: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
             }
         }
     }
@@ -569,7 +583,6 @@ Gets a key-value list of the event statuses for teams competing at the given eve
 ### Example
 
 ```csharp
-using System;
 using System.Diagnostics;
 using com.tweirtx.TBAAPIv3client.Api;
 using com.tweirtx.TBAAPIv3client.Client;
@@ -579,14 +592,15 @@ namespace Example
 {
     public class GetEventTeamsStatusesExample
     {
-        public void main()
+        public static void Main()
         {
+            Configuration.Default.BasePath = "https://www.thebluealliance.com/api/v3";
             // Configure API key authorization: apiKey
             Configuration.Default.AddApiKey("X-TBA-Auth-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
-            var apiInstance = new TeamApi();
+            var apiInstance = new TeamApi(Configuration.Default);
             var eventKey = eventKey_example;  // string | TBA Event Key, eg `2016nytr`
             var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
@@ -595,9 +609,11 @@ namespace Example
                 Dictionary&lt;string, TeamEventStatus&gt; result = apiInstance.GetEventTeamsStatuses(eventKey, ifModifiedSince);
                 Debug.WriteLine(result);
             }
-            catch (Exception e)
+            catch (ApiException e)
             {
                 Debug.Print("Exception when calling TeamApi.GetEventTeamsStatuses: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
             }
         }
     }
@@ -642,7 +658,6 @@ Gets a `Team` object for the team referenced by the given key.
 ### Example
 
 ```csharp
-using System;
 using System.Diagnostics;
 using com.tweirtx.TBAAPIv3client.Api;
 using com.tweirtx.TBAAPIv3client.Client;
@@ -652,14 +667,15 @@ namespace Example
 {
     public class GetTeamExample
     {
-        public void main()
+        public static void Main()
         {
+            Configuration.Default.BasePath = "https://www.thebluealliance.com/api/v3";
             // Configure API key authorization: apiKey
             Configuration.Default.AddApiKey("X-TBA-Auth-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
-            var apiInstance = new TeamApi();
+            var apiInstance = new TeamApi(Configuration.Default);
             var teamKey = teamKey_example;  // string | TBA Team Key, eg `frc254`
             var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
@@ -668,9 +684,11 @@ namespace Example
                 Team result = apiInstance.GetTeam(teamKey, ifModifiedSince);
                 Debug.WriteLine(result);
             }
-            catch (Exception e)
+            catch (ApiException e)
             {
                 Debug.Print("Exception when calling TeamApi.GetTeam: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
             }
         }
     }
@@ -715,7 +733,6 @@ Gets a list of awards the given team has won.
 ### Example
 
 ```csharp
-using System;
 using System.Diagnostics;
 using com.tweirtx.TBAAPIv3client.Api;
 using com.tweirtx.TBAAPIv3client.Client;
@@ -725,14 +742,15 @@ namespace Example
 {
     public class GetTeamAwardsExample
     {
-        public void main()
+        public static void Main()
         {
+            Configuration.Default.BasePath = "https://www.thebluealliance.com/api/v3";
             // Configure API key authorization: apiKey
             Configuration.Default.AddApiKey("X-TBA-Auth-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
-            var apiInstance = new TeamApi();
+            var apiInstance = new TeamApi(Configuration.Default);
             var teamKey = teamKey_example;  // string | TBA Team Key, eg `frc254`
             var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
@@ -741,9 +759,11 @@ namespace Example
                 List&lt;Award&gt; result = apiInstance.GetTeamAwards(teamKey, ifModifiedSince);
                 Debug.WriteLine(result);
             }
-            catch (Exception e)
+            catch (ApiException e)
             {
                 Debug.Print("Exception when calling TeamApi.GetTeamAwards: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
             }
         }
     }
@@ -788,7 +808,6 @@ Gets a list of awards the given team has won in a given year.
 ### Example
 
 ```csharp
-using System;
 using System.Diagnostics;
 using com.tweirtx.TBAAPIv3client.Api;
 using com.tweirtx.TBAAPIv3client.Client;
@@ -798,14 +817,15 @@ namespace Example
 {
     public class GetTeamAwardsByYearExample
     {
-        public void main()
+        public static void Main()
         {
+            Configuration.Default.BasePath = "https://www.thebluealliance.com/api/v3";
             // Configure API key authorization: apiKey
             Configuration.Default.AddApiKey("X-TBA-Auth-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
-            var apiInstance = new TeamApi();
+            var apiInstance = new TeamApi(Configuration.Default);
             var teamKey = teamKey_example;  // string | TBA Team Key, eg `frc254`
             var year = 56;  // int? | Competition Year (or Season). Must be 4 digits.
             var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
@@ -815,9 +835,11 @@ namespace Example
                 List&lt;Award&gt; result = apiInstance.GetTeamAwardsByYear(teamKey, year, ifModifiedSince);
                 Debug.WriteLine(result);
             }
-            catch (Exception e)
+            catch (ApiException e)
             {
                 Debug.Print("Exception when calling TeamApi.GetTeamAwardsByYear: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
             }
         }
     }
@@ -863,7 +885,6 @@ Gets an array of districts representing each year the team was in a district. Wi
 ### Example
 
 ```csharp
-using System;
 using System.Diagnostics;
 using com.tweirtx.TBAAPIv3client.Api;
 using com.tweirtx.TBAAPIv3client.Client;
@@ -873,14 +894,15 @@ namespace Example
 {
     public class GetTeamDistrictsExample
     {
-        public void main()
+        public static void Main()
         {
+            Configuration.Default.BasePath = "https://www.thebluealliance.com/api/v3";
             // Configure API key authorization: apiKey
             Configuration.Default.AddApiKey("X-TBA-Auth-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
-            var apiInstance = new TeamApi();
+            var apiInstance = new TeamApi(Configuration.Default);
             var teamKey = teamKey_example;  // string | TBA Team Key, eg `frc254`
             var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
@@ -889,9 +911,11 @@ namespace Example
                 List&lt;DistrictList&gt; result = apiInstance.GetTeamDistricts(teamKey, ifModifiedSince);
                 Debug.WriteLine(result);
             }
-            catch (Exception e)
+            catch (ApiException e)
             {
                 Debug.Print("Exception when calling TeamApi.GetTeamDistricts: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
             }
         }
     }
@@ -936,7 +960,6 @@ Gets a list of awards the given team won at the given event.
 ### Example
 
 ```csharp
-using System;
 using System.Diagnostics;
 using com.tweirtx.TBAAPIv3client.Api;
 using com.tweirtx.TBAAPIv3client.Client;
@@ -946,14 +969,15 @@ namespace Example
 {
     public class GetTeamEventAwardsExample
     {
-        public void main()
+        public static void Main()
         {
+            Configuration.Default.BasePath = "https://www.thebluealliance.com/api/v3";
             // Configure API key authorization: apiKey
             Configuration.Default.AddApiKey("X-TBA-Auth-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
-            var apiInstance = new TeamApi();
+            var apiInstance = new TeamApi(Configuration.Default);
             var teamKey = teamKey_example;  // string | TBA Team Key, eg `frc254`
             var eventKey = eventKey_example;  // string | TBA Event Key, eg `2016nytr`
             var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
@@ -963,9 +987,11 @@ namespace Example
                 List&lt;Award&gt; result = apiInstance.GetTeamEventAwards(teamKey, eventKey, ifModifiedSince);
                 Debug.WriteLine(result);
             }
-            catch (Exception e)
+            catch (ApiException e)
             {
                 Debug.Print("Exception when calling TeamApi.GetTeamEventAwards: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
             }
         }
     }
@@ -1011,7 +1037,6 @@ Gets a list of matches for the given team and event.
 ### Example
 
 ```csharp
-using System;
 using System.Diagnostics;
 using com.tweirtx.TBAAPIv3client.Api;
 using com.tweirtx.TBAAPIv3client.Client;
@@ -1021,14 +1046,15 @@ namespace Example
 {
     public class GetTeamEventMatchesExample
     {
-        public void main()
+        public static void Main()
         {
+            Configuration.Default.BasePath = "https://www.thebluealliance.com/api/v3";
             // Configure API key authorization: apiKey
             Configuration.Default.AddApiKey("X-TBA-Auth-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
-            var apiInstance = new TeamApi();
+            var apiInstance = new TeamApi(Configuration.Default);
             var teamKey = teamKey_example;  // string | TBA Team Key, eg `frc254`
             var eventKey = eventKey_example;  // string | TBA Event Key, eg `2016nytr`
             var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
@@ -1038,9 +1064,11 @@ namespace Example
                 List&lt;Match&gt; result = apiInstance.GetTeamEventMatches(teamKey, eventKey, ifModifiedSince);
                 Debug.WriteLine(result);
             }
-            catch (Exception e)
+            catch (ApiException e)
             {
                 Debug.Print("Exception when calling TeamApi.GetTeamEventMatches: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
             }
         }
     }
@@ -1086,7 +1114,6 @@ Gets a list of match keys for matches for the given team and event.
 ### Example
 
 ```csharp
-using System;
 using System.Diagnostics;
 using com.tweirtx.TBAAPIv3client.Api;
 using com.tweirtx.TBAAPIv3client.Client;
@@ -1096,14 +1123,15 @@ namespace Example
 {
     public class GetTeamEventMatchesKeysExample
     {
-        public void main()
+        public static void Main()
         {
+            Configuration.Default.BasePath = "https://www.thebluealliance.com/api/v3";
             // Configure API key authorization: apiKey
             Configuration.Default.AddApiKey("X-TBA-Auth-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
-            var apiInstance = new TeamApi();
+            var apiInstance = new TeamApi(Configuration.Default);
             var teamKey = teamKey_example;  // string | TBA Team Key, eg `frc254`
             var eventKey = eventKey_example;  // string | TBA Event Key, eg `2016nytr`
             var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
@@ -1113,9 +1141,11 @@ namespace Example
                 List&lt;string&gt; result = apiInstance.GetTeamEventMatchesKeys(teamKey, eventKey, ifModifiedSince);
                 Debug.WriteLine(result);
             }
-            catch (Exception e)
+            catch (ApiException e)
             {
                 Debug.Print("Exception when calling TeamApi.GetTeamEventMatchesKeys: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
             }
         }
     }
@@ -1161,7 +1191,6 @@ Gets a short-form list of matches for the given team and event.
 ### Example
 
 ```csharp
-using System;
 using System.Diagnostics;
 using com.tweirtx.TBAAPIv3client.Api;
 using com.tweirtx.TBAAPIv3client.Client;
@@ -1171,14 +1200,15 @@ namespace Example
 {
     public class GetTeamEventMatchesSimpleExample
     {
-        public void main()
+        public static void Main()
         {
+            Configuration.Default.BasePath = "https://www.thebluealliance.com/api/v3";
             // Configure API key authorization: apiKey
             Configuration.Default.AddApiKey("X-TBA-Auth-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
-            var apiInstance = new TeamApi();
+            var apiInstance = new TeamApi(Configuration.Default);
             var teamKey = teamKey_example;  // string | TBA Team Key, eg `frc254`
             var eventKey = eventKey_example;  // string | TBA Event Key, eg `2016nytr`
             var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
@@ -1188,9 +1218,11 @@ namespace Example
                 List&lt;Match&gt; result = apiInstance.GetTeamEventMatchesSimple(teamKey, eventKey, ifModifiedSince);
                 Debug.WriteLine(result);
             }
-            catch (Exception e)
+            catch (ApiException e)
             {
                 Debug.Print("Exception when calling TeamApi.GetTeamEventMatchesSimple: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
             }
         }
     }
@@ -1236,7 +1268,6 @@ Gets the competition rank and status of the team at the given event.
 ### Example
 
 ```csharp
-using System;
 using System.Diagnostics;
 using com.tweirtx.TBAAPIv3client.Api;
 using com.tweirtx.TBAAPIv3client.Client;
@@ -1246,14 +1277,15 @@ namespace Example
 {
     public class GetTeamEventStatusExample
     {
-        public void main()
+        public static void Main()
         {
+            Configuration.Default.BasePath = "https://www.thebluealliance.com/api/v3";
             // Configure API key authorization: apiKey
             Configuration.Default.AddApiKey("X-TBA-Auth-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
-            var apiInstance = new TeamApi();
+            var apiInstance = new TeamApi(Configuration.Default);
             var teamKey = teamKey_example;  // string | TBA Team Key, eg `frc254`
             var eventKey = eventKey_example;  // string | TBA Event Key, eg `2016nytr`
             var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
@@ -1263,9 +1295,11 @@ namespace Example
                 TeamEventStatus result = apiInstance.GetTeamEventStatus(teamKey, eventKey, ifModifiedSince);
                 Debug.WriteLine(result);
             }
-            catch (Exception e)
+            catch (ApiException e)
             {
                 Debug.Print("Exception when calling TeamApi.GetTeamEventStatus: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
             }
         }
     }
@@ -1311,7 +1345,6 @@ Gets a list of all events this team has competed at.
 ### Example
 
 ```csharp
-using System;
 using System.Diagnostics;
 using com.tweirtx.TBAAPIv3client.Api;
 using com.tweirtx.TBAAPIv3client.Client;
@@ -1321,14 +1354,15 @@ namespace Example
 {
     public class GetTeamEventsExample
     {
-        public void main()
+        public static void Main()
         {
+            Configuration.Default.BasePath = "https://www.thebluealliance.com/api/v3";
             // Configure API key authorization: apiKey
             Configuration.Default.AddApiKey("X-TBA-Auth-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
-            var apiInstance = new TeamApi();
+            var apiInstance = new TeamApi(Configuration.Default);
             var teamKey = teamKey_example;  // string | TBA Team Key, eg `frc254`
             var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
@@ -1337,9 +1371,11 @@ namespace Example
                 List&lt;Event&gt; result = apiInstance.GetTeamEvents(teamKey, ifModifiedSince);
                 Debug.WriteLine(result);
             }
-            catch (Exception e)
+            catch (ApiException e)
             {
                 Debug.Print("Exception when calling TeamApi.GetTeamEvents: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
             }
         }
     }
@@ -1384,7 +1420,6 @@ Gets a list of events this team has competed at in the given year.
 ### Example
 
 ```csharp
-using System;
 using System.Diagnostics;
 using com.tweirtx.TBAAPIv3client.Api;
 using com.tweirtx.TBAAPIv3client.Client;
@@ -1394,14 +1429,15 @@ namespace Example
 {
     public class GetTeamEventsByYearExample
     {
-        public void main()
+        public static void Main()
         {
+            Configuration.Default.BasePath = "https://www.thebluealliance.com/api/v3";
             // Configure API key authorization: apiKey
             Configuration.Default.AddApiKey("X-TBA-Auth-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
-            var apiInstance = new TeamApi();
+            var apiInstance = new TeamApi(Configuration.Default);
             var teamKey = teamKey_example;  // string | TBA Team Key, eg `frc254`
             var year = 56;  // int? | Competition Year (or Season). Must be 4 digits.
             var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
@@ -1411,9 +1447,11 @@ namespace Example
                 List&lt;Event&gt; result = apiInstance.GetTeamEventsByYear(teamKey, year, ifModifiedSince);
                 Debug.WriteLine(result);
             }
-            catch (Exception e)
+            catch (ApiException e)
             {
                 Debug.Print("Exception when calling TeamApi.GetTeamEventsByYear: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
             }
         }
     }
@@ -1459,7 +1497,6 @@ Gets a list of the event keys for events this team has competed at in the given 
 ### Example
 
 ```csharp
-using System;
 using System.Diagnostics;
 using com.tweirtx.TBAAPIv3client.Api;
 using com.tweirtx.TBAAPIv3client.Client;
@@ -1469,14 +1506,15 @@ namespace Example
 {
     public class GetTeamEventsByYearKeysExample
     {
-        public void main()
+        public static void Main()
         {
+            Configuration.Default.BasePath = "https://www.thebluealliance.com/api/v3";
             // Configure API key authorization: apiKey
             Configuration.Default.AddApiKey("X-TBA-Auth-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
-            var apiInstance = new TeamApi();
+            var apiInstance = new TeamApi(Configuration.Default);
             var teamKey = teamKey_example;  // string | TBA Team Key, eg `frc254`
             var year = 56;  // int? | Competition Year (or Season). Must be 4 digits.
             var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
@@ -1486,9 +1524,11 @@ namespace Example
                 List&lt;string&gt; result = apiInstance.GetTeamEventsByYearKeys(teamKey, year, ifModifiedSince);
                 Debug.WriteLine(result);
             }
-            catch (Exception e)
+            catch (ApiException e)
             {
                 Debug.Print("Exception when calling TeamApi.GetTeamEventsByYearKeys: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
             }
         }
     }
@@ -1534,7 +1574,6 @@ Gets a short-form list of events this team has competed at in the given year.
 ### Example
 
 ```csharp
-using System;
 using System.Diagnostics;
 using com.tweirtx.TBAAPIv3client.Api;
 using com.tweirtx.TBAAPIv3client.Client;
@@ -1544,14 +1583,15 @@ namespace Example
 {
     public class GetTeamEventsByYearSimpleExample
     {
-        public void main()
+        public static void Main()
         {
+            Configuration.Default.BasePath = "https://www.thebluealliance.com/api/v3";
             // Configure API key authorization: apiKey
             Configuration.Default.AddApiKey("X-TBA-Auth-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
-            var apiInstance = new TeamApi();
+            var apiInstance = new TeamApi(Configuration.Default);
             var teamKey = teamKey_example;  // string | TBA Team Key, eg `frc254`
             var year = 56;  // int? | Competition Year (or Season). Must be 4 digits.
             var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
@@ -1561,9 +1601,11 @@ namespace Example
                 List&lt;EventSimple&gt; result = apiInstance.GetTeamEventsByYearSimple(teamKey, year, ifModifiedSince);
                 Debug.WriteLine(result);
             }
-            catch (Exception e)
+            catch (ApiException e)
             {
                 Debug.Print("Exception when calling TeamApi.GetTeamEventsByYearSimple: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
             }
         }
     }
@@ -1609,7 +1651,6 @@ Gets a list of the event keys for all events this team has competed at.
 ### Example
 
 ```csharp
-using System;
 using System.Diagnostics;
 using com.tweirtx.TBAAPIv3client.Api;
 using com.tweirtx.TBAAPIv3client.Client;
@@ -1619,14 +1660,15 @@ namespace Example
 {
     public class GetTeamEventsKeysExample
     {
-        public void main()
+        public static void Main()
         {
+            Configuration.Default.BasePath = "https://www.thebluealliance.com/api/v3";
             // Configure API key authorization: apiKey
             Configuration.Default.AddApiKey("X-TBA-Auth-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
-            var apiInstance = new TeamApi();
+            var apiInstance = new TeamApi(Configuration.Default);
             var teamKey = teamKey_example;  // string | TBA Team Key, eg `frc254`
             var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
@@ -1635,9 +1677,11 @@ namespace Example
                 List&lt;string&gt; result = apiInstance.GetTeamEventsKeys(teamKey, ifModifiedSince);
                 Debug.WriteLine(result);
             }
-            catch (Exception e)
+            catch (ApiException e)
             {
                 Debug.Print("Exception when calling TeamApi.GetTeamEventsKeys: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
             }
         }
     }
@@ -1682,7 +1726,6 @@ Gets a short-form list of all events this team has competed at.
 ### Example
 
 ```csharp
-using System;
 using System.Diagnostics;
 using com.tweirtx.TBAAPIv3client.Api;
 using com.tweirtx.TBAAPIv3client.Client;
@@ -1692,14 +1735,15 @@ namespace Example
 {
     public class GetTeamEventsSimpleExample
     {
-        public void main()
+        public static void Main()
         {
+            Configuration.Default.BasePath = "https://www.thebluealliance.com/api/v3";
             // Configure API key authorization: apiKey
             Configuration.Default.AddApiKey("X-TBA-Auth-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
-            var apiInstance = new TeamApi();
+            var apiInstance = new TeamApi(Configuration.Default);
             var teamKey = teamKey_example;  // string | TBA Team Key, eg `frc254`
             var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
@@ -1708,9 +1752,11 @@ namespace Example
                 List&lt;EventSimple&gt; result = apiInstance.GetTeamEventsSimple(teamKey, ifModifiedSince);
                 Debug.WriteLine(result);
             }
-            catch (Exception e)
+            catch (ApiException e)
             {
                 Debug.Print("Exception when calling TeamApi.GetTeamEventsSimple: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
             }
         }
     }
@@ -1755,7 +1801,6 @@ Gets a key-value list of the event statuses for events this team has competed at
 ### Example
 
 ```csharp
-using System;
 using System.Diagnostics;
 using com.tweirtx.TBAAPIv3client.Api;
 using com.tweirtx.TBAAPIv3client.Client;
@@ -1765,14 +1810,15 @@ namespace Example
 {
     public class GetTeamEventsStatusesByYearExample
     {
-        public void main()
+        public static void Main()
         {
+            Configuration.Default.BasePath = "https://www.thebluealliance.com/api/v3";
             // Configure API key authorization: apiKey
             Configuration.Default.AddApiKey("X-TBA-Auth-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
-            var apiInstance = new TeamApi();
+            var apiInstance = new TeamApi(Configuration.Default);
             var teamKey = teamKey_example;  // string | TBA Team Key, eg `frc254`
             var year = 56;  // int? | Competition Year (or Season). Must be 4 digits.
             var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
@@ -1782,9 +1828,11 @@ namespace Example
                 Dictionary&lt;string, TeamEventStatus&gt; result = apiInstance.GetTeamEventsStatusesByYear(teamKey, year, ifModifiedSince);
                 Debug.WriteLine(result);
             }
-            catch (Exception e)
+            catch (ApiException e)
             {
                 Debug.Print("Exception when calling TeamApi.GetTeamEventsStatusesByYear: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
             }
         }
     }
@@ -1830,7 +1878,6 @@ Gets a list of matches for the given team and year.
 ### Example
 
 ```csharp
-using System;
 using System.Diagnostics;
 using com.tweirtx.TBAAPIv3client.Api;
 using com.tweirtx.TBAAPIv3client.Client;
@@ -1840,14 +1887,15 @@ namespace Example
 {
     public class GetTeamMatchesByYearExample
     {
-        public void main()
+        public static void Main()
         {
+            Configuration.Default.BasePath = "https://www.thebluealliance.com/api/v3";
             // Configure API key authorization: apiKey
             Configuration.Default.AddApiKey("X-TBA-Auth-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
-            var apiInstance = new TeamApi();
+            var apiInstance = new TeamApi(Configuration.Default);
             var teamKey = teamKey_example;  // string | TBA Team Key, eg `frc254`
             var year = 56;  // int? | Competition Year (or Season). Must be 4 digits.
             var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
@@ -1857,9 +1905,11 @@ namespace Example
                 List&lt;Match&gt; result = apiInstance.GetTeamMatchesByYear(teamKey, year, ifModifiedSince);
                 Debug.WriteLine(result);
             }
-            catch (Exception e)
+            catch (ApiException e)
             {
                 Debug.Print("Exception when calling TeamApi.GetTeamMatchesByYear: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
             }
         }
     }
@@ -1905,7 +1955,6 @@ Gets a list of match keys for matches for the given team and year.
 ### Example
 
 ```csharp
-using System;
 using System.Diagnostics;
 using com.tweirtx.TBAAPIv3client.Api;
 using com.tweirtx.TBAAPIv3client.Client;
@@ -1915,14 +1964,15 @@ namespace Example
 {
     public class GetTeamMatchesByYearKeysExample
     {
-        public void main()
+        public static void Main()
         {
+            Configuration.Default.BasePath = "https://www.thebluealliance.com/api/v3";
             // Configure API key authorization: apiKey
             Configuration.Default.AddApiKey("X-TBA-Auth-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
-            var apiInstance = new TeamApi();
+            var apiInstance = new TeamApi(Configuration.Default);
             var teamKey = teamKey_example;  // string | TBA Team Key, eg `frc254`
             var year = 56;  // int? | Competition Year (or Season). Must be 4 digits.
             var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
@@ -1932,9 +1982,11 @@ namespace Example
                 List&lt;string&gt; result = apiInstance.GetTeamMatchesByYearKeys(teamKey, year, ifModifiedSince);
                 Debug.WriteLine(result);
             }
-            catch (Exception e)
+            catch (ApiException e)
             {
                 Debug.Print("Exception when calling TeamApi.GetTeamMatchesByYearKeys: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
             }
         }
     }
@@ -1980,7 +2032,6 @@ Gets a short-form list of matches for the given team and year.
 ### Example
 
 ```csharp
-using System;
 using System.Diagnostics;
 using com.tweirtx.TBAAPIv3client.Api;
 using com.tweirtx.TBAAPIv3client.Client;
@@ -1990,14 +2041,15 @@ namespace Example
 {
     public class GetTeamMatchesByYearSimpleExample
     {
-        public void main()
+        public static void Main()
         {
+            Configuration.Default.BasePath = "https://www.thebluealliance.com/api/v3";
             // Configure API key authorization: apiKey
             Configuration.Default.AddApiKey("X-TBA-Auth-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
-            var apiInstance = new TeamApi();
+            var apiInstance = new TeamApi(Configuration.Default);
             var teamKey = teamKey_example;  // string | TBA Team Key, eg `frc254`
             var year = 56;  // int? | Competition Year (or Season). Must be 4 digits.
             var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
@@ -2007,9 +2059,11 @@ namespace Example
                 List&lt;MatchSimple&gt; result = apiInstance.GetTeamMatchesByYearSimple(teamKey, year, ifModifiedSince);
                 Debug.WriteLine(result);
             }
-            catch (Exception e)
+            catch (ApiException e)
             {
                 Debug.Print("Exception when calling TeamApi.GetTeamMatchesByYearSimple: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
             }
         }
     }
@@ -2055,7 +2109,6 @@ Gets a list of Media (videos / pictures) for the given team and tag.
 ### Example
 
 ```csharp
-using System;
 using System.Diagnostics;
 using com.tweirtx.TBAAPIv3client.Api;
 using com.tweirtx.TBAAPIv3client.Client;
@@ -2065,14 +2118,15 @@ namespace Example
 {
     public class GetTeamMediaByTagExample
     {
-        public void main()
+        public static void Main()
         {
+            Configuration.Default.BasePath = "https://www.thebluealliance.com/api/v3";
             // Configure API key authorization: apiKey
             Configuration.Default.AddApiKey("X-TBA-Auth-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
-            var apiInstance = new TeamApi();
+            var apiInstance = new TeamApi(Configuration.Default);
             var teamKey = teamKey_example;  // string | TBA Team Key, eg `frc254`
             var mediaTag = mediaTag_example;  // string | Media Tag which describes the Media.
             var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
@@ -2082,9 +2136,11 @@ namespace Example
                 List&lt;Media&gt; result = apiInstance.GetTeamMediaByTag(teamKey, mediaTag, ifModifiedSince);
                 Debug.WriteLine(result);
             }
-            catch (Exception e)
+            catch (ApiException e)
             {
                 Debug.Print("Exception when calling TeamApi.GetTeamMediaByTag: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
             }
         }
     }
@@ -2130,7 +2186,6 @@ Gets a list of Media (videos / pictures) for the given team, tag and year.
 ### Example
 
 ```csharp
-using System;
 using System.Diagnostics;
 using com.tweirtx.TBAAPIv3client.Api;
 using com.tweirtx.TBAAPIv3client.Client;
@@ -2140,14 +2195,15 @@ namespace Example
 {
     public class GetTeamMediaByTagYearExample
     {
-        public void main()
+        public static void Main()
         {
+            Configuration.Default.BasePath = "https://www.thebluealliance.com/api/v3";
             // Configure API key authorization: apiKey
             Configuration.Default.AddApiKey("X-TBA-Auth-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
-            var apiInstance = new TeamApi();
+            var apiInstance = new TeamApi(Configuration.Default);
             var teamKey = teamKey_example;  // string | TBA Team Key, eg `frc254`
             var mediaTag = mediaTag_example;  // string | Media Tag which describes the Media.
             var year = 56;  // int? | Competition Year (or Season). Must be 4 digits.
@@ -2158,9 +2214,11 @@ namespace Example
                 List&lt;Media&gt; result = apiInstance.GetTeamMediaByTagYear(teamKey, mediaTag, year, ifModifiedSince);
                 Debug.WriteLine(result);
             }
-            catch (Exception e)
+            catch (ApiException e)
             {
                 Debug.Print("Exception when calling TeamApi.GetTeamMediaByTagYear: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
             }
         }
     }
@@ -2207,7 +2265,6 @@ Gets a list of Media (videos / pictures) for the given team and year.
 ### Example
 
 ```csharp
-using System;
 using System.Diagnostics;
 using com.tweirtx.TBAAPIv3client.Api;
 using com.tweirtx.TBAAPIv3client.Client;
@@ -2217,14 +2274,15 @@ namespace Example
 {
     public class GetTeamMediaByYearExample
     {
-        public void main()
+        public static void Main()
         {
+            Configuration.Default.BasePath = "https://www.thebluealliance.com/api/v3";
             // Configure API key authorization: apiKey
             Configuration.Default.AddApiKey("X-TBA-Auth-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
-            var apiInstance = new TeamApi();
+            var apiInstance = new TeamApi(Configuration.Default);
             var teamKey = teamKey_example;  // string | TBA Team Key, eg `frc254`
             var year = 56;  // int? | Competition Year (or Season). Must be 4 digits.
             var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
@@ -2234,9 +2292,11 @@ namespace Example
                 List&lt;Media&gt; result = apiInstance.GetTeamMediaByYear(teamKey, year, ifModifiedSince);
                 Debug.WriteLine(result);
             }
-            catch (Exception e)
+            catch (ApiException e)
             {
                 Debug.Print("Exception when calling TeamApi.GetTeamMediaByYear: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
             }
         }
     }
@@ -2282,7 +2342,6 @@ Gets a list of year and robot name pairs for each year that a robot name was pro
 ### Example
 
 ```csharp
-using System;
 using System.Diagnostics;
 using com.tweirtx.TBAAPIv3client.Api;
 using com.tweirtx.TBAAPIv3client.Client;
@@ -2292,14 +2351,15 @@ namespace Example
 {
     public class GetTeamRobotsExample
     {
-        public void main()
+        public static void Main()
         {
+            Configuration.Default.BasePath = "https://www.thebluealliance.com/api/v3";
             // Configure API key authorization: apiKey
             Configuration.Default.AddApiKey("X-TBA-Auth-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
-            var apiInstance = new TeamApi();
+            var apiInstance = new TeamApi(Configuration.Default);
             var teamKey = teamKey_example;  // string | TBA Team Key, eg `frc254`
             var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
@@ -2308,9 +2368,11 @@ namespace Example
                 List&lt;TeamRobot&gt; result = apiInstance.GetTeamRobots(teamKey, ifModifiedSince);
                 Debug.WriteLine(result);
             }
-            catch (Exception e)
+            catch (ApiException e)
             {
                 Debug.Print("Exception when calling TeamApi.GetTeamRobots: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
             }
         }
     }
@@ -2355,7 +2417,6 @@ Gets a `Team_Simple` object for the team referenced by the given key.
 ### Example
 
 ```csharp
-using System;
 using System.Diagnostics;
 using com.tweirtx.TBAAPIv3client.Api;
 using com.tweirtx.TBAAPIv3client.Client;
@@ -2365,14 +2426,15 @@ namespace Example
 {
     public class GetTeamSimpleExample
     {
-        public void main()
+        public static void Main()
         {
+            Configuration.Default.BasePath = "https://www.thebluealliance.com/api/v3";
             // Configure API key authorization: apiKey
             Configuration.Default.AddApiKey("X-TBA-Auth-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
-            var apiInstance = new TeamApi();
+            var apiInstance = new TeamApi(Configuration.Default);
             var teamKey = teamKey_example;  // string | TBA Team Key, eg `frc254`
             var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
@@ -2381,9 +2443,11 @@ namespace Example
                 TeamSimple result = apiInstance.GetTeamSimple(teamKey, ifModifiedSince);
                 Debug.WriteLine(result);
             }
-            catch (Exception e)
+            catch (ApiException e)
             {
                 Debug.Print("Exception when calling TeamApi.GetTeamSimple: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
             }
         }
     }
@@ -2428,7 +2492,6 @@ Gets a list of Media (social media) for the given team.
 ### Example
 
 ```csharp
-using System;
 using System.Diagnostics;
 using com.tweirtx.TBAAPIv3client.Api;
 using com.tweirtx.TBAAPIv3client.Client;
@@ -2438,14 +2501,15 @@ namespace Example
 {
     public class GetTeamSocialMediaExample
     {
-        public void main()
+        public static void Main()
         {
+            Configuration.Default.BasePath = "https://www.thebluealliance.com/api/v3";
             // Configure API key authorization: apiKey
             Configuration.Default.AddApiKey("X-TBA-Auth-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
-            var apiInstance = new TeamApi();
+            var apiInstance = new TeamApi(Configuration.Default);
             var teamKey = teamKey_example;  // string | TBA Team Key, eg `frc254`
             var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
@@ -2454,9 +2518,11 @@ namespace Example
                 List&lt;Media&gt; result = apiInstance.GetTeamSocialMedia(teamKey, ifModifiedSince);
                 Debug.WriteLine(result);
             }
-            catch (Exception e)
+            catch (ApiException e)
             {
                 Debug.Print("Exception when calling TeamApi.GetTeamSocialMedia: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
             }
         }
     }
@@ -2501,7 +2567,6 @@ Gets a list of years in which the team participated in at least one competition.
 ### Example
 
 ```csharp
-using System;
 using System.Diagnostics;
 using com.tweirtx.TBAAPIv3client.Api;
 using com.tweirtx.TBAAPIv3client.Client;
@@ -2511,14 +2576,15 @@ namespace Example
 {
     public class GetTeamYearsParticipatedExample
     {
-        public void main()
+        public static void Main()
         {
+            Configuration.Default.BasePath = "https://www.thebluealliance.com/api/v3";
             // Configure API key authorization: apiKey
             Configuration.Default.AddApiKey("X-TBA-Auth-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
-            var apiInstance = new TeamApi();
+            var apiInstance = new TeamApi(Configuration.Default);
             var teamKey = teamKey_example;  // string | TBA Team Key, eg `frc254`
             var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
@@ -2527,9 +2593,11 @@ namespace Example
                 List&lt;int?&gt; result = apiInstance.GetTeamYearsParticipated(teamKey, ifModifiedSince);
                 Debug.WriteLine(result);
             }
-            catch (Exception e)
+            catch (ApiException e)
             {
                 Debug.Print("Exception when calling TeamApi.GetTeamYearsParticipated: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
             }
         }
     }
@@ -2574,7 +2642,6 @@ Gets a list of `Team` objects, paginated in groups of 500.
 ### Example
 
 ```csharp
-using System;
 using System.Diagnostics;
 using com.tweirtx.TBAAPIv3client.Api;
 using com.tweirtx.TBAAPIv3client.Client;
@@ -2584,14 +2651,15 @@ namespace Example
 {
     public class GetTeamsExample
     {
-        public void main()
+        public static void Main()
         {
+            Configuration.Default.BasePath = "https://www.thebluealliance.com/api/v3";
             // Configure API key authorization: apiKey
             Configuration.Default.AddApiKey("X-TBA-Auth-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
-            var apiInstance = new TeamApi();
+            var apiInstance = new TeamApi(Configuration.Default);
             var pageNum = 56;  // int? | Page number of results to return, zero-indexed
             var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
@@ -2600,9 +2668,11 @@ namespace Example
                 List&lt;Team&gt; result = apiInstance.GetTeams(pageNum, ifModifiedSince);
                 Debug.WriteLine(result);
             }
-            catch (Exception e)
+            catch (ApiException e)
             {
                 Debug.Print("Exception when calling TeamApi.GetTeams: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
             }
         }
     }
@@ -2647,7 +2717,6 @@ Gets a list of `Team` objects that competed in the given year, paginated in grou
 ### Example
 
 ```csharp
-using System;
 using System.Diagnostics;
 using com.tweirtx.TBAAPIv3client.Api;
 using com.tweirtx.TBAAPIv3client.Client;
@@ -2657,14 +2726,15 @@ namespace Example
 {
     public class GetTeamsByYearExample
     {
-        public void main()
+        public static void Main()
         {
+            Configuration.Default.BasePath = "https://www.thebluealliance.com/api/v3";
             // Configure API key authorization: apiKey
             Configuration.Default.AddApiKey("X-TBA-Auth-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
-            var apiInstance = new TeamApi();
+            var apiInstance = new TeamApi(Configuration.Default);
             var year = 56;  // int? | Competition Year (or Season). Must be 4 digits.
             var pageNum = 56;  // int? | Page number of results to return, zero-indexed
             var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
@@ -2674,9 +2744,11 @@ namespace Example
                 List&lt;Team&gt; result = apiInstance.GetTeamsByYear(year, pageNum, ifModifiedSince);
                 Debug.WriteLine(result);
             }
-            catch (Exception e)
+            catch (ApiException e)
             {
                 Debug.Print("Exception when calling TeamApi.GetTeamsByYear: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
             }
         }
     }
@@ -2722,7 +2794,6 @@ Gets a list Team Keys that competed in the given year, paginated in groups of 50
 ### Example
 
 ```csharp
-using System;
 using System.Diagnostics;
 using com.tweirtx.TBAAPIv3client.Api;
 using com.tweirtx.TBAAPIv3client.Client;
@@ -2732,14 +2803,15 @@ namespace Example
 {
     public class GetTeamsByYearKeysExample
     {
-        public void main()
+        public static void Main()
         {
+            Configuration.Default.BasePath = "https://www.thebluealliance.com/api/v3";
             // Configure API key authorization: apiKey
             Configuration.Default.AddApiKey("X-TBA-Auth-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
-            var apiInstance = new TeamApi();
+            var apiInstance = new TeamApi(Configuration.Default);
             var year = 56;  // int? | Competition Year (or Season). Must be 4 digits.
             var pageNum = 56;  // int? | Page number of results to return, zero-indexed
             var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
@@ -2749,9 +2821,11 @@ namespace Example
                 List&lt;string&gt; result = apiInstance.GetTeamsByYearKeys(year, pageNum, ifModifiedSince);
                 Debug.WriteLine(result);
             }
-            catch (Exception e)
+            catch (ApiException e)
             {
                 Debug.Print("Exception when calling TeamApi.GetTeamsByYearKeys: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
             }
         }
     }
@@ -2797,7 +2871,6 @@ Gets a list of short form `Team_Simple` objects that competed in the given year,
 ### Example
 
 ```csharp
-using System;
 using System.Diagnostics;
 using com.tweirtx.TBAAPIv3client.Api;
 using com.tweirtx.TBAAPIv3client.Client;
@@ -2807,14 +2880,15 @@ namespace Example
 {
     public class GetTeamsByYearSimpleExample
     {
-        public void main()
+        public static void Main()
         {
+            Configuration.Default.BasePath = "https://www.thebluealliance.com/api/v3";
             // Configure API key authorization: apiKey
             Configuration.Default.AddApiKey("X-TBA-Auth-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
-            var apiInstance = new TeamApi();
+            var apiInstance = new TeamApi(Configuration.Default);
             var year = 56;  // int? | Competition Year (or Season). Must be 4 digits.
             var pageNum = 56;  // int? | Page number of results to return, zero-indexed
             var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
@@ -2824,9 +2898,11 @@ namespace Example
                 List&lt;TeamSimple&gt; result = apiInstance.GetTeamsByYearSimple(year, pageNum, ifModifiedSince);
                 Debug.WriteLine(result);
             }
-            catch (Exception e)
+            catch (ApiException e)
             {
                 Debug.Print("Exception when calling TeamApi.GetTeamsByYearSimple: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
             }
         }
     }
@@ -2872,7 +2948,6 @@ Gets a list of Team keys, paginated in groups of 500. (Note, each page will not 
 ### Example
 
 ```csharp
-using System;
 using System.Diagnostics;
 using com.tweirtx.TBAAPIv3client.Api;
 using com.tweirtx.TBAAPIv3client.Client;
@@ -2882,14 +2957,15 @@ namespace Example
 {
     public class GetTeamsKeysExample
     {
-        public void main()
+        public static void Main()
         {
+            Configuration.Default.BasePath = "https://www.thebluealliance.com/api/v3";
             // Configure API key authorization: apiKey
             Configuration.Default.AddApiKey("X-TBA-Auth-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
-            var apiInstance = new TeamApi();
+            var apiInstance = new TeamApi(Configuration.Default);
             var pageNum = 56;  // int? | Page number of results to return, zero-indexed
             var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
@@ -2898,9 +2974,11 @@ namespace Example
                 List&lt;string&gt; result = apiInstance.GetTeamsKeys(pageNum, ifModifiedSince);
                 Debug.WriteLine(result);
             }
-            catch (Exception e)
+            catch (ApiException e)
             {
                 Debug.Print("Exception when calling TeamApi.GetTeamsKeys: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
             }
         }
     }
@@ -2945,7 +3023,6 @@ Gets a list of short form `Team_Simple` objects, paginated in groups of 500.
 ### Example
 
 ```csharp
-using System;
 using System.Diagnostics;
 using com.tweirtx.TBAAPIv3client.Api;
 using com.tweirtx.TBAAPIv3client.Client;
@@ -2955,14 +3032,15 @@ namespace Example
 {
     public class GetTeamsSimpleExample
     {
-        public void main()
+        public static void Main()
         {
+            Configuration.Default.BasePath = "https://www.thebluealliance.com/api/v3";
             // Configure API key authorization: apiKey
             Configuration.Default.AddApiKey("X-TBA-Auth-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
-            var apiInstance = new TeamApi();
+            var apiInstance = new TeamApi(Configuration.Default);
             var pageNum = 56;  // int? | Page number of results to return, zero-indexed
             var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
@@ -2971,9 +3049,11 @@ namespace Example
                 List&lt;TeamSimple&gt; result = apiInstance.GetTeamsSimple(pageNum, ifModifiedSince);
                 Debug.WriteLine(result);
             }
-            catch (Exception e)
+            catch (ApiException e)
             {
                 Debug.Print("Exception when calling TeamApi.GetTeamsSimple: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
             }
         }
     }

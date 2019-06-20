@@ -19,7 +19,6 @@ Returns API status, and TBA status information.
 ### Example
 
 ```csharp
-using System;
 using System.Diagnostics;
 using com.tweirtx.TBAAPIv3client.Api;
 using com.tweirtx.TBAAPIv3client.Client;
@@ -29,14 +28,15 @@ namespace Example
 {
     public class GetStatusExample
     {
-        public void main()
+        public static void Main()
         {
+            Configuration.Default.BasePath = "https://www.thebluealliance.com/api/v3";
             // Configure API key authorization: apiKey
             Configuration.Default.AddApiKey("X-TBA-Auth-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
-            var apiInstance = new TBAApi();
+            var apiInstance = new TBAApi(Configuration.Default);
             var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
             try
@@ -44,9 +44,11 @@ namespace Example
                 APIStatus result = apiInstance.GetStatus(ifModifiedSince);
                 Debug.WriteLine(result);
             }
-            catch (Exception e)
+            catch (ApiException e)
             {
                 Debug.Print("Exception when calling TBAApi.GetStatus: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
             }
         }
     }

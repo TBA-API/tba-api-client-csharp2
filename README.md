@@ -64,7 +64,6 @@ Then, publish to a [local feed](https://docs.microsoft.com/en-us/nuget/hosting-p
 ## Getting Started
 
 ```csharp
-using System;
 using System.Diagnostics;
 using com.tweirtx.TBAAPIv3client.Api;
 using com.tweirtx.TBAAPIv3client.Client;
@@ -74,15 +73,16 @@ namespace Example
 {
     public class Example
     {
-        public void main()
+        public static void Main()
         {
 
+            Configuration.Default.BasePath = "https://www.thebluealliance.com/api/v3";
             // Configure API key authorization: apiKey
             Configuration.Default.ApiKey.Add("X-TBA-Auth-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.ApiKeyPrefix.Add("X-TBA-Auth-Key", "Bearer");
 
-            var apiInstance = new DistrictApi();
+            var apiInstance = new DistrictApi(Configuration.Default);
             var districtKey = districtKey_example;  // string | TBA District Key, eg `2016fim`
             var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
@@ -91,9 +91,11 @@ namespace Example
                 List<Event> result = apiInstance.GetDistrictEvents(districtKey, ifModifiedSince);
                 Debug.WriteLine(result);
             }
-            catch (Exception e)
+            catch (ApiException e)
             {
                 Debug.Print("Exception when calling DistrictApi.GetDistrictEvents: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
             }
 
         }
