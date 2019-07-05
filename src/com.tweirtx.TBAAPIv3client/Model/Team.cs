@@ -53,7 +53,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// <param name="lng">Will be NULL, for future development..</param>
         /// <param name="locationName">Will be NULL, for future development..</param>
         /// <param name="website">Official website associated with the team..</param>
-        /// <param name="rookieYear">First year the team officially competed. (required).</param>
+        /// <param name="rookieYear">First year the team officially competed..</param>
         /// <param name="motto">Team&#39;s motto as provided by FIRST. This field is deprecated and will return null - will be removed at end-of-season in 2019..</param>
         /// <param name="homeChampionship">Location of the team&#39;s home championship each year as a key-value pair. The year (as a string) is the key, and the city is the value..</param>
         public Team(string key = default(string), int? teamNumber = default(int?), string nickname = default(string), string name = default(string), string city = default(string), string stateProv = default(string), string country = default(string), string address = default(string), string postalCode = default(string), string gmapsPlaceId = default(string), string gmapsUrl = default(string), double? lat = default(double?), double? lng = default(double?), string locationName = default(string), string website = default(string), int? rookieYear = default(int?), string motto = default(string), Object homeChampionship = default(Object))
@@ -88,16 +88,6 @@ namespace com.tweirtx.TBAAPIv3client.Model
                 this.Name = name;
             }
             
-            // to ensure "rookieYear" is required (not null)
-            if (rookieYear == null)
-            {
-                throw new InvalidDataException("rookieYear is a required property for Team and cannot be null");
-            }
-            else
-            {
-                this.RookieYear = rookieYear;
-            }
-            
             this.Nickname = nickname;
             this.City = city;
             this.StateProv = stateProv;
@@ -110,6 +100,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             this.Lng = lng;
             this.LocationName = locationName;
             this.Website = website;
+            this.RookieYear = rookieYear;
             this.Motto = motto;
             this.HomeChampionship = homeChampionship;
         }

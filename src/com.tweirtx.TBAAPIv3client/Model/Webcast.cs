@@ -77,7 +77,13 @@ namespace com.tweirtx.TBAAPIv3client.Model
             /// Enum Livestream for value: livestream
             /// </summary>
             [EnumMember(Value = "livestream")]
-            Livestream = 7
+            Livestream = 7,
+
+            /// <summary>
+            /// Enum Directlink for value: direct_link
+            /// </summary>
+            [EnumMember(Value = "direct_link")]
+            Directlink = 8
 
         }
 
