@@ -49,7 +49,7 @@ Method | HTTP request | Description
 
 ## GetDistrictRankings
 
-> List<DistrictRanking> GetDistrictRankings (string districtKey, string ifModifiedSince = null)
+> List&lt;DistrictRanking&gt; GetDistrictRankings (string districtKey, string ifModifiedSince = null)
 
 
 
@@ -58,6 +58,7 @@ Gets a list of team district rankings for the given district.
 ### Example
 
 ```csharp
+using System.Collections.Generic;
 using System.Diagnostics;
 using com.tweirtx.TBAAPIv3client.Api;
 using com.tweirtx.TBAAPIv3client.Client;
@@ -81,7 +82,7 @@ namespace Example
 
             try
             {
-                List&lt;DistrictRanking&gt; result = apiInstance.GetDistrictRankings(districtKey, ifModifiedSince);
+                List<DistrictRanking> result = apiInstance.GetDistrictRankings(districtKey, ifModifiedSince);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -105,7 +106,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**List<DistrictRanking>**](DistrictRanking.md)
+[**List&lt;DistrictRanking&gt;**](DistrictRanking.md)
 
 ### Authorization
 
@@ -116,6 +117,13 @@ Name | Type | Description  | Notes
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful response |  * Cache-Control - The &#x60;Cache-Control&#x60; header, in particular the &#x60;max-age&#x60; value, contains the number of seconds the result should be considered valid for. During this time subsequent calls should return from the local cache directly. <br>  * Last-Modified - Indicates the date and time the data returned was last updated. Used by clients in the &#x60;If-Modified-Since&#x60; request header. <br>  |
+| **304** | Not Modified - Use Local Cached Value |  -  |
+| **401** |  |  -  |
+
 [[Back to top]](#)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)
 [[Back to Model list]](../README.md#documentation-for-models)
@@ -124,7 +132,7 @@ Name | Type | Description  | Notes
 
 ## GetDistrictTeams
 
-> List<Team> GetDistrictTeams (string districtKey, string ifModifiedSince = null)
+> List&lt;Team&gt; GetDistrictTeams (string districtKey, string ifModifiedSince = null)
 
 
 
@@ -133,6 +141,7 @@ Gets a list of `Team` objects that competed in events in the given district.
 ### Example
 
 ```csharp
+using System.Collections.Generic;
 using System.Diagnostics;
 using com.tweirtx.TBAAPIv3client.Api;
 using com.tweirtx.TBAAPIv3client.Client;
@@ -156,7 +165,7 @@ namespace Example
 
             try
             {
-                List&lt;Team&gt; result = apiInstance.GetDistrictTeams(districtKey, ifModifiedSince);
+                List<Team> result = apiInstance.GetDistrictTeams(districtKey, ifModifiedSince);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -180,7 +189,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**List<Team>**](Team.md)
+[**List&lt;Team&gt;**](Team.md)
 
 ### Authorization
 
@@ -191,6 +200,13 @@ Name | Type | Description  | Notes
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful response |  * Cache-Control - The &#x60;Cache-Control&#x60; header, in particular the &#x60;max-age&#x60; value, contains the number of seconds the result should be considered valid for. During this time subsequent calls should return from the local cache directly. <br>  * Last-Modified - Indicates the date and time the data returned was last updated. Used by clients in the &#x60;If-Modified-Since&#x60; request header. <br>  |
+| **304** | Not Modified - Use Local Cached Value |  -  |
+| **401** |  |  -  |
+
 [[Back to top]](#)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)
 [[Back to Model list]](../README.md#documentation-for-models)
@@ -199,7 +215,7 @@ Name | Type | Description  | Notes
 
 ## GetDistrictTeamsKeys
 
-> List<string> GetDistrictTeamsKeys (string districtKey, string ifModifiedSince = null)
+> List&lt;string&gt; GetDistrictTeamsKeys (string districtKey, string ifModifiedSince = null)
 
 
 
@@ -208,6 +224,7 @@ Gets a list of `Team` objects that competed in events in the given district.
 ### Example
 
 ```csharp
+using System.Collections.Generic;
 using System.Diagnostics;
 using com.tweirtx.TBAAPIv3client.Api;
 using com.tweirtx.TBAAPIv3client.Client;
@@ -231,7 +248,7 @@ namespace Example
 
             try
             {
-                List&lt;string&gt; result = apiInstance.GetDistrictTeamsKeys(districtKey, ifModifiedSince);
+                List<string> result = apiInstance.GetDistrictTeamsKeys(districtKey, ifModifiedSince);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -266,6 +283,13 @@ Name | Type | Description  | Notes
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful response |  * Cache-Control - The &#x60;Cache-Control&#x60; header, in particular the &#x60;max-age&#x60; value, contains the number of seconds the result should be considered valid for. During this time subsequent calls should return from the local cache directly. <br>  * Last-Modified - Indicates the date and time the data returned was last updated. Used by clients in the &#x60;If-Modified-Since&#x60; request header. <br>  |
+| **304** | Not Modified - Use Local Cached Value |  -  |
+| **401** |  |  -  |
+
 [[Back to top]](#)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)
 [[Back to Model list]](../README.md#documentation-for-models)
@@ -274,7 +298,7 @@ Name | Type | Description  | Notes
 
 ## GetDistrictTeamsSimple
 
-> List<TeamSimple> GetDistrictTeamsSimple (string districtKey, string ifModifiedSince = null)
+> List&lt;TeamSimple&gt; GetDistrictTeamsSimple (string districtKey, string ifModifiedSince = null)
 
 
 
@@ -283,6 +307,7 @@ Gets a short-form list of `Team` objects that competed in events in the given di
 ### Example
 
 ```csharp
+using System.Collections.Generic;
 using System.Diagnostics;
 using com.tweirtx.TBAAPIv3client.Api;
 using com.tweirtx.TBAAPIv3client.Client;
@@ -306,7 +331,7 @@ namespace Example
 
             try
             {
-                List&lt;TeamSimple&gt; result = apiInstance.GetDistrictTeamsSimple(districtKey, ifModifiedSince);
+                List<TeamSimple> result = apiInstance.GetDistrictTeamsSimple(districtKey, ifModifiedSince);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -330,7 +355,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**List<TeamSimple>**](TeamSimple.md)
+[**List&lt;TeamSimple&gt;**](TeamSimple.md)
 
 ### Authorization
 
@@ -341,6 +366,13 @@ Name | Type | Description  | Notes
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful response |  * Cache-Control - The &#x60;Cache-Control&#x60; header, in particular the &#x60;max-age&#x60; value, contains the number of seconds the result should be considered valid for. During this time subsequent calls should return from the local cache directly. <br>  * Last-Modified - Indicates the date and time the data returned was last updated. Used by clients in the &#x60;If-Modified-Since&#x60; request header. <br>  |
+| **304** | Not Modified - Use Local Cached Value |  -  |
+| **401** |  |  -  |
+
 [[Back to top]](#)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)
 [[Back to Model list]](../README.md#documentation-for-models)
@@ -349,7 +381,7 @@ Name | Type | Description  | Notes
 
 ## GetEventTeams
 
-> List<Team> GetEventTeams (string eventKey, string ifModifiedSince = null)
+> List&lt;Team&gt; GetEventTeams (string eventKey, string ifModifiedSince = null)
 
 
 
@@ -358,6 +390,7 @@ Gets a list of `Team` objects that competed in the given event.
 ### Example
 
 ```csharp
+using System.Collections.Generic;
 using System.Diagnostics;
 using com.tweirtx.TBAAPIv3client.Api;
 using com.tweirtx.TBAAPIv3client.Client;
@@ -381,7 +414,7 @@ namespace Example
 
             try
             {
-                List&lt;Team&gt; result = apiInstance.GetEventTeams(eventKey, ifModifiedSince);
+                List<Team> result = apiInstance.GetEventTeams(eventKey, ifModifiedSince);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -405,7 +438,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**List<Team>**](Team.md)
+[**List&lt;Team&gt;**](Team.md)
 
 ### Authorization
 
@@ -416,6 +449,13 @@ Name | Type | Description  | Notes
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful response |  * Cache-Control - The &#x60;Cache-Control&#x60; header, in particular the &#x60;max-age&#x60; value, contains the number of seconds the result should be considered valid for. During this time subsequent calls should return from the local cache directly. <br>  * Last-Modified - Indicates the date and time the data returned was last updated. Used by clients in the &#x60;If-Modified-Since&#x60; request header. <br>  |
+| **304** | Not Modified - Use Local Cached Value |  -  |
+| **401** |  |  -  |
+
 [[Back to top]](#)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)
 [[Back to Model list]](../README.md#documentation-for-models)
@@ -424,7 +464,7 @@ Name | Type | Description  | Notes
 
 ## GetEventTeamsKeys
 
-> List<string> GetEventTeamsKeys (string eventKey, string ifModifiedSince = null)
+> List&lt;string&gt; GetEventTeamsKeys (string eventKey, string ifModifiedSince = null)
 
 
 
@@ -433,6 +473,7 @@ Gets a list of `Team` keys that competed in the given event.
 ### Example
 
 ```csharp
+using System.Collections.Generic;
 using System.Diagnostics;
 using com.tweirtx.TBAAPIv3client.Api;
 using com.tweirtx.TBAAPIv3client.Client;
@@ -456,7 +497,7 @@ namespace Example
 
             try
             {
-                List&lt;string&gt; result = apiInstance.GetEventTeamsKeys(eventKey, ifModifiedSince);
+                List<string> result = apiInstance.GetEventTeamsKeys(eventKey, ifModifiedSince);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -491,6 +532,13 @@ Name | Type | Description  | Notes
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful response |  * Cache-Control - The &#x60;Cache-Control&#x60; header, in particular the &#x60;max-age&#x60; value, contains the number of seconds the result should be considered valid for. During this time subsequent calls should return from the local cache directly. <br>  * Last-Modified - Indicates the date and time the data returned was last updated. Used by clients in the &#x60;If-Modified-Since&#x60; request header. <br>  |
+| **304** | Not Modified - Use Local Cached Value |  -  |
+| **401** |  |  -  |
+
 [[Back to top]](#)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)
 [[Back to Model list]](../README.md#documentation-for-models)
@@ -499,7 +547,7 @@ Name | Type | Description  | Notes
 
 ## GetEventTeamsSimple
 
-> List<TeamSimple> GetEventTeamsSimple (string eventKey, string ifModifiedSince = null)
+> List&lt;TeamSimple&gt; GetEventTeamsSimple (string eventKey, string ifModifiedSince = null)
 
 
 
@@ -508,6 +556,7 @@ Gets a short-form list of `Team` objects that competed in the given event.
 ### Example
 
 ```csharp
+using System.Collections.Generic;
 using System.Diagnostics;
 using com.tweirtx.TBAAPIv3client.Api;
 using com.tweirtx.TBAAPIv3client.Client;
@@ -531,7 +580,7 @@ namespace Example
 
             try
             {
-                List&lt;TeamSimple&gt; result = apiInstance.GetEventTeamsSimple(eventKey, ifModifiedSince);
+                List<TeamSimple> result = apiInstance.GetEventTeamsSimple(eventKey, ifModifiedSince);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -555,7 +604,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**List<TeamSimple>**](TeamSimple.md)
+[**List&lt;TeamSimple&gt;**](TeamSimple.md)
 
 ### Authorization
 
@@ -566,6 +615,13 @@ Name | Type | Description  | Notes
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful response |  * Cache-Control - The &#x60;Cache-Control&#x60; header, in particular the &#x60;max-age&#x60; value, contains the number of seconds the result should be considered valid for. During this time subsequent calls should return from the local cache directly. <br>  * Last-Modified - Indicates the date and time the data returned was last updated. Used by clients in the &#x60;If-Modified-Since&#x60; request header. <br>  |
+| **304** | Not Modified - Use Local Cached Value |  -  |
+| **401** |  |  -  |
+
 [[Back to top]](#)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)
 [[Back to Model list]](../README.md#documentation-for-models)
@@ -574,7 +630,7 @@ Name | Type | Description  | Notes
 
 ## GetEventTeamsStatuses
 
-> Dictionary<string, TeamEventStatus> GetEventTeamsStatuses (string eventKey, string ifModifiedSince = null)
+> Dictionary&lt;string, TeamEventStatus&gt; GetEventTeamsStatuses (string eventKey, string ifModifiedSince = null)
 
 
 
@@ -583,6 +639,7 @@ Gets a key-value list of the event statuses for teams competing at the given eve
 ### Example
 
 ```csharp
+using System.Collections.Generic;
 using System.Diagnostics;
 using com.tweirtx.TBAAPIv3client.Api;
 using com.tweirtx.TBAAPIv3client.Client;
@@ -606,7 +663,7 @@ namespace Example
 
             try
             {
-                Dictionary&lt;string, TeamEventStatus&gt; result = apiInstance.GetEventTeamsStatuses(eventKey, ifModifiedSince);
+                Dictionary<string, TeamEventStatus> result = apiInstance.GetEventTeamsStatuses(eventKey, ifModifiedSince);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -630,7 +687,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**Dictionary<string, TeamEventStatus>**](TeamEventStatus.md)
+[**Dictionary&lt;string, TeamEventStatus&gt;**](TeamEventStatus.md)
 
 ### Authorization
 
@@ -640,6 +697,13 @@ Name | Type | Description  | Notes
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful response |  * Cache-Control - The &#x60;Cache-Control&#x60; header, in particular the &#x60;max-age&#x60; value, contains the number of seconds the result should be considered valid for. During this time subsequent calls should return from the local cache directly. <br>  * Last-Modified - Indicates the date and time the data returned was last updated. Used by clients in the &#x60;If-Modified-Since&#x60; request header. <br>  |
+| **304** | Not Modified - Use Local Cached Value |  -  |
+| **401** |  |  -  |
 
 [[Back to top]](#)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)
@@ -658,6 +722,7 @@ Gets a `Team` object for the team referenced by the given key.
 ### Example
 
 ```csharp
+using System.Collections.Generic;
 using System.Diagnostics;
 using com.tweirtx.TBAAPIv3client.Api;
 using com.tweirtx.TBAAPIv3client.Client;
@@ -716,6 +781,13 @@ Name | Type | Description  | Notes
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful response |  * Cache-Control - The &#x60;Cache-Control&#x60; header, in particular the &#x60;max-age&#x60; value, contains the number of seconds the result should be considered valid for. During this time subsequent calls should return from the local cache directly. <br>  * Last-Modified - Indicates the date and time the data returned was last updated. Used by clients in the &#x60;If-Modified-Since&#x60; request header. <br>  |
+| **304** | Not Modified - Use Local Cached Value |  -  |
+| **401** |  |  -  |
+
 [[Back to top]](#)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)
 [[Back to Model list]](../README.md#documentation-for-models)
@@ -724,7 +796,7 @@ Name | Type | Description  | Notes
 
 ## GetTeamAwards
 
-> List<Award> GetTeamAwards (string teamKey, string ifModifiedSince = null)
+> List&lt;Award&gt; GetTeamAwards (string teamKey, string ifModifiedSince = null)
 
 
 
@@ -733,6 +805,7 @@ Gets a list of awards the given team has won.
 ### Example
 
 ```csharp
+using System.Collections.Generic;
 using System.Diagnostics;
 using com.tweirtx.TBAAPIv3client.Api;
 using com.tweirtx.TBAAPIv3client.Client;
@@ -756,7 +829,7 @@ namespace Example
 
             try
             {
-                List&lt;Award&gt; result = apiInstance.GetTeamAwards(teamKey, ifModifiedSince);
+                List<Award> result = apiInstance.GetTeamAwards(teamKey, ifModifiedSince);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -780,7 +853,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**List<Award>**](Award.md)
+[**List&lt;Award&gt;**](Award.md)
 
 ### Authorization
 
@@ -791,6 +864,13 @@ Name | Type | Description  | Notes
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful response |  * Cache-Control - The &#x60;Cache-Control&#x60; header, in particular the &#x60;max-age&#x60; value, contains the number of seconds the result should be considered valid for. During this time subsequent calls should return from the local cache directly. <br>  * Last-Modified - Indicates the date and time the data returned was last updated. Used by clients in the &#x60;If-Modified-Since&#x60; request header. <br>  |
+| **304** | Not Modified - Use Local Cached Value |  -  |
+| **401** |  |  -  |
+
 [[Back to top]](#)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)
 [[Back to Model list]](../README.md#documentation-for-models)
@@ -799,7 +879,7 @@ Name | Type | Description  | Notes
 
 ## GetTeamAwardsByYear
 
-> List<Award> GetTeamAwardsByYear (string teamKey, int? year, string ifModifiedSince = null)
+> List&lt;Award&gt; GetTeamAwardsByYear (string teamKey, int? year, string ifModifiedSince = null)
 
 
 
@@ -808,6 +888,7 @@ Gets a list of awards the given team has won in a given year.
 ### Example
 
 ```csharp
+using System.Collections.Generic;
 using System.Diagnostics;
 using com.tweirtx.TBAAPIv3client.Api;
 using com.tweirtx.TBAAPIv3client.Client;
@@ -832,7 +913,7 @@ namespace Example
 
             try
             {
-                List&lt;Award&gt; result = apiInstance.GetTeamAwardsByYear(teamKey, year, ifModifiedSince);
+                List<Award> result = apiInstance.GetTeamAwardsByYear(teamKey, year, ifModifiedSince);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -857,7 +938,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**List<Award>**](Award.md)
+[**List&lt;Award&gt;**](Award.md)
 
 ### Authorization
 
@@ -868,6 +949,13 @@ Name | Type | Description  | Notes
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful response |  * Cache-Control - The &#x60;Cache-Control&#x60; header, in particular the &#x60;max-age&#x60; value, contains the number of seconds the result should be considered valid for. During this time subsequent calls should return from the local cache directly. <br>  * Last-Modified - Indicates the date and time the data returned was last updated. Used by clients in the &#x60;If-Modified-Since&#x60; request header. <br>  |
+| **304** | Not Modified - Use Local Cached Value |  -  |
+| **401** |  |  -  |
+
 [[Back to top]](#)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)
 [[Back to Model list]](../README.md#documentation-for-models)
@@ -876,7 +964,7 @@ Name | Type | Description  | Notes
 
 ## GetTeamDistricts
 
-> List<DistrictList> GetTeamDistricts (string teamKey, string ifModifiedSince = null)
+> List&lt;DistrictList&gt; GetTeamDistricts (string teamKey, string ifModifiedSince = null)
 
 
 
@@ -885,6 +973,7 @@ Gets an array of districts representing each year the team was in a district. Wi
 ### Example
 
 ```csharp
+using System.Collections.Generic;
 using System.Diagnostics;
 using com.tweirtx.TBAAPIv3client.Api;
 using com.tweirtx.TBAAPIv3client.Client;
@@ -908,7 +997,7 @@ namespace Example
 
             try
             {
-                List&lt;DistrictList&gt; result = apiInstance.GetTeamDistricts(teamKey, ifModifiedSince);
+                List<DistrictList> result = apiInstance.GetTeamDistricts(teamKey, ifModifiedSince);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -932,7 +1021,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**List<DistrictList>**](DistrictList.md)
+[**List&lt;DistrictList&gt;**](DistrictList.md)
 
 ### Authorization
 
@@ -943,6 +1032,13 @@ Name | Type | Description  | Notes
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful response |  * Cache-Control - The &#x60;Cache-Control&#x60; header, in particular the &#x60;max-age&#x60; value, contains the number of seconds the result should be considered valid for. During this time subsequent calls should return from the local cache directly. <br>  * Last-Modified - Indicates the date and time the data returned was last updated. Used by clients in the &#x60;If-Modified-Since&#x60; request header. <br>  |
+| **304** | Not Modified - Use Local Cached Value |  -  |
+| **401** |  |  -  |
+
 [[Back to top]](#)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)
 [[Back to Model list]](../README.md#documentation-for-models)
@@ -951,7 +1047,7 @@ Name | Type | Description  | Notes
 
 ## GetTeamEventAwards
 
-> List<Award> GetTeamEventAwards (string teamKey, string eventKey, string ifModifiedSince = null)
+> List&lt;Award&gt; GetTeamEventAwards (string teamKey, string eventKey, string ifModifiedSince = null)
 
 
 
@@ -960,6 +1056,7 @@ Gets a list of awards the given team won at the given event.
 ### Example
 
 ```csharp
+using System.Collections.Generic;
 using System.Diagnostics;
 using com.tweirtx.TBAAPIv3client.Api;
 using com.tweirtx.TBAAPIv3client.Client;
@@ -984,7 +1081,7 @@ namespace Example
 
             try
             {
-                List&lt;Award&gt; result = apiInstance.GetTeamEventAwards(teamKey, eventKey, ifModifiedSince);
+                List<Award> result = apiInstance.GetTeamEventAwards(teamKey, eventKey, ifModifiedSince);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -1009,7 +1106,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**List<Award>**](Award.md)
+[**List&lt;Award&gt;**](Award.md)
 
 ### Authorization
 
@@ -1020,6 +1117,13 @@ Name | Type | Description  | Notes
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful response |  * Cache-Control - The &#x60;Cache-Control&#x60; header, in particular the &#x60;max-age&#x60; value, contains the number of seconds the result should be considered valid for. During this time subsequent calls should return from the local cache directly. <br>  * Last-Modified - Indicates the date and time the data returned was last updated. Used by clients in the &#x60;If-Modified-Since&#x60; request header. <br>  |
+| **304** | Not Modified - Use Local Cached Value |  -  |
+| **401** |  |  -  |
+
 [[Back to top]](#)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)
 [[Back to Model list]](../README.md#documentation-for-models)
@@ -1028,7 +1132,7 @@ Name | Type | Description  | Notes
 
 ## GetTeamEventMatches
 
-> List<Match> GetTeamEventMatches (string teamKey, string eventKey, string ifModifiedSince = null)
+> List&lt;Match&gt; GetTeamEventMatches (string teamKey, string eventKey, string ifModifiedSince = null)
 
 
 
@@ -1037,6 +1141,7 @@ Gets a list of matches for the given team and event.
 ### Example
 
 ```csharp
+using System.Collections.Generic;
 using System.Diagnostics;
 using com.tweirtx.TBAAPIv3client.Api;
 using com.tweirtx.TBAAPIv3client.Client;
@@ -1061,7 +1166,7 @@ namespace Example
 
             try
             {
-                List&lt;Match&gt; result = apiInstance.GetTeamEventMatches(teamKey, eventKey, ifModifiedSince);
+                List<Match> result = apiInstance.GetTeamEventMatches(teamKey, eventKey, ifModifiedSince);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -1086,7 +1191,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**List<Match>**](Match.md)
+[**List&lt;Match&gt;**](Match.md)
 
 ### Authorization
 
@@ -1097,6 +1202,13 @@ Name | Type | Description  | Notes
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful response |  * Cache-Control - The &#x60;Cache-Control&#x60; header, in particular the &#x60;max-age&#x60; value, contains the number of seconds the result should be considered valid for. During this time subsequent calls should return from the local cache directly. <br>  * Last-Modified - Indicates the date and time the data returned was last updated. Used by clients in the &#x60;If-Modified-Since&#x60; request header. <br>  |
+| **304** | Not Modified - Use Local Cached Value |  -  |
+| **401** |  |  -  |
+
 [[Back to top]](#)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)
 [[Back to Model list]](../README.md#documentation-for-models)
@@ -1105,7 +1217,7 @@ Name | Type | Description  | Notes
 
 ## GetTeamEventMatchesKeys
 
-> List<string> GetTeamEventMatchesKeys (string teamKey, string eventKey, string ifModifiedSince = null)
+> List&lt;string&gt; GetTeamEventMatchesKeys (string teamKey, string eventKey, string ifModifiedSince = null)
 
 
 
@@ -1114,6 +1226,7 @@ Gets a list of match keys for matches for the given team and event.
 ### Example
 
 ```csharp
+using System.Collections.Generic;
 using System.Diagnostics;
 using com.tweirtx.TBAAPIv3client.Api;
 using com.tweirtx.TBAAPIv3client.Client;
@@ -1138,7 +1251,7 @@ namespace Example
 
             try
             {
-                List&lt;string&gt; result = apiInstance.GetTeamEventMatchesKeys(teamKey, eventKey, ifModifiedSince);
+                List<string> result = apiInstance.GetTeamEventMatchesKeys(teamKey, eventKey, ifModifiedSince);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -1174,6 +1287,13 @@ Name | Type | Description  | Notes
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful response |  * Cache-Control - The &#x60;Cache-Control&#x60; header, in particular the &#x60;max-age&#x60; value, contains the number of seconds the result should be considered valid for. During this time subsequent calls should return from the local cache directly. <br>  * Last-Modified - Indicates the date and time the data returned was last updated. Used by clients in the &#x60;If-Modified-Since&#x60; request header. <br>  |
+| **304** | Not Modified - Use Local Cached Value |  -  |
+| **401** |  |  -  |
+
 [[Back to top]](#)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)
 [[Back to Model list]](../README.md#documentation-for-models)
@@ -1182,7 +1302,7 @@ Name | Type | Description  | Notes
 
 ## GetTeamEventMatchesSimple
 
-> List<Match> GetTeamEventMatchesSimple (string teamKey, string eventKey, string ifModifiedSince = null)
+> List&lt;Match&gt; GetTeamEventMatchesSimple (string teamKey, string eventKey, string ifModifiedSince = null)
 
 
 
@@ -1191,6 +1311,7 @@ Gets a short-form list of matches for the given team and event.
 ### Example
 
 ```csharp
+using System.Collections.Generic;
 using System.Diagnostics;
 using com.tweirtx.TBAAPIv3client.Api;
 using com.tweirtx.TBAAPIv3client.Client;
@@ -1215,7 +1336,7 @@ namespace Example
 
             try
             {
-                List&lt;Match&gt; result = apiInstance.GetTeamEventMatchesSimple(teamKey, eventKey, ifModifiedSince);
+                List<Match> result = apiInstance.GetTeamEventMatchesSimple(teamKey, eventKey, ifModifiedSince);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -1240,7 +1361,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**List<Match>**](Match.md)
+[**List&lt;Match&gt;**](Match.md)
 
 ### Authorization
 
@@ -1250,6 +1371,13 @@ Name | Type | Description  | Notes
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful response |  * Cache-Control - The &#x60;Cache-Control&#x60; header, in particular the &#x60;max-age&#x60; value, contains the number of seconds the result should be considered valid for. During this time subsequent calls should return from the local cache directly. <br>  * Last-Modified - Indicates the date and time the data returned was last updated. Used by clients in the &#x60;If-Modified-Since&#x60; request header. <br>  |
+| **304** | Not Modified - Use Local Cached Value |  -  |
+| **401** |  |  -  |
 
 [[Back to top]](#)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)
@@ -1268,6 +1396,7 @@ Gets the competition rank and status of the team at the given event.
 ### Example
 
 ```csharp
+using System.Collections.Generic;
 using System.Diagnostics;
 using com.tweirtx.TBAAPIv3client.Api;
 using com.tweirtx.TBAAPIv3client.Client;
@@ -1328,6 +1457,13 @@ Name | Type | Description  | Notes
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful response |  * Cache-Control - The &#x60;Cache-Control&#x60; header, in particular the &#x60;max-age&#x60; value, contains the number of seconds the result should be considered valid for. During this time subsequent calls should return from the local cache directly. <br>  * Last-Modified - Indicates the date and time the data returned was last updated. Used by clients in the &#x60;If-Modified-Since&#x60; request header. <br>  |
+| **304** | Not Modified - Use Local Cached Value |  -  |
+| **401** |  |  -  |
+
 [[Back to top]](#)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)
 [[Back to Model list]](../README.md#documentation-for-models)
@@ -1336,7 +1472,7 @@ Name | Type | Description  | Notes
 
 ## GetTeamEvents
 
-> List<Event> GetTeamEvents (string teamKey, string ifModifiedSince = null)
+> List&lt;Event&gt; GetTeamEvents (string teamKey, string ifModifiedSince = null)
 
 
 
@@ -1345,6 +1481,7 @@ Gets a list of all events this team has competed at.
 ### Example
 
 ```csharp
+using System.Collections.Generic;
 using System.Diagnostics;
 using com.tweirtx.TBAAPIv3client.Api;
 using com.tweirtx.TBAAPIv3client.Client;
@@ -1368,7 +1505,7 @@ namespace Example
 
             try
             {
-                List&lt;Event&gt; result = apiInstance.GetTeamEvents(teamKey, ifModifiedSince);
+                List<Event> result = apiInstance.GetTeamEvents(teamKey, ifModifiedSince);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -1392,7 +1529,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**List<Event>**](Event.md)
+[**List&lt;Event&gt;**](Event.md)
 
 ### Authorization
 
@@ -1403,6 +1540,13 @@ Name | Type | Description  | Notes
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful response |  * Cache-Control - The &#x60;Cache-Control&#x60; header, in particular the &#x60;max-age&#x60; value, contains the number of seconds the result should be considered valid for. During this time subsequent calls should return from the local cache directly. <br>  * Last-Modified - Indicates the date and time the data returned was last updated. Used by clients in the &#x60;If-Modified-Since&#x60; request header. <br>  |
+| **304** | Not Modified - Use Local Cached Value |  -  |
+| **401** |  |  -  |
+
 [[Back to top]](#)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)
 [[Back to Model list]](../README.md#documentation-for-models)
@@ -1411,7 +1555,7 @@ Name | Type | Description  | Notes
 
 ## GetTeamEventsByYear
 
-> List<Event> GetTeamEventsByYear (string teamKey, int? year, string ifModifiedSince = null)
+> List&lt;Event&gt; GetTeamEventsByYear (string teamKey, int? year, string ifModifiedSince = null)
 
 
 
@@ -1420,6 +1564,7 @@ Gets a list of events this team has competed at in the given year.
 ### Example
 
 ```csharp
+using System.Collections.Generic;
 using System.Diagnostics;
 using com.tweirtx.TBAAPIv3client.Api;
 using com.tweirtx.TBAAPIv3client.Client;
@@ -1444,7 +1589,7 @@ namespace Example
 
             try
             {
-                List&lt;Event&gt; result = apiInstance.GetTeamEventsByYear(teamKey, year, ifModifiedSince);
+                List<Event> result = apiInstance.GetTeamEventsByYear(teamKey, year, ifModifiedSince);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -1469,7 +1614,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**List<Event>**](Event.md)
+[**List&lt;Event&gt;**](Event.md)
 
 ### Authorization
 
@@ -1480,6 +1625,13 @@ Name | Type | Description  | Notes
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful response |  * Cache-Control - The &#x60;Cache-Control&#x60; header, in particular the &#x60;max-age&#x60; value, contains the number of seconds the result should be considered valid for. During this time subsequent calls should return from the local cache directly. <br>  * Last-Modified - Indicates the date and time the data returned was last updated. Used by clients in the &#x60;If-Modified-Since&#x60; request header. <br>  |
+| **304** | Not Modified - Use Local Cached Value |  -  |
+| **401** |  |  -  |
+
 [[Back to top]](#)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)
 [[Back to Model list]](../README.md#documentation-for-models)
@@ -1488,7 +1640,7 @@ Name | Type | Description  | Notes
 
 ## GetTeamEventsByYearKeys
 
-> List<string> GetTeamEventsByYearKeys (string teamKey, int? year, string ifModifiedSince = null)
+> List&lt;string&gt; GetTeamEventsByYearKeys (string teamKey, int? year, string ifModifiedSince = null)
 
 
 
@@ -1497,6 +1649,7 @@ Gets a list of the event keys for events this team has competed at in the given 
 ### Example
 
 ```csharp
+using System.Collections.Generic;
 using System.Diagnostics;
 using com.tweirtx.TBAAPIv3client.Api;
 using com.tweirtx.TBAAPIv3client.Client;
@@ -1521,7 +1674,7 @@ namespace Example
 
             try
             {
-                List&lt;string&gt; result = apiInstance.GetTeamEventsByYearKeys(teamKey, year, ifModifiedSince);
+                List<string> result = apiInstance.GetTeamEventsByYearKeys(teamKey, year, ifModifiedSince);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -1557,6 +1710,13 @@ Name | Type | Description  | Notes
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful response |  * Cache-Control - The &#x60;Cache-Control&#x60; header, in particular the &#x60;max-age&#x60; value, contains the number of seconds the result should be considered valid for. During this time subsequent calls should return from the local cache directly. <br>  * Last-Modified - Indicates the date and time the data returned was last updated. Used by clients in the &#x60;If-Modified-Since&#x60; request header. <br>  |
+| **304** | Not Modified - Use Local Cached Value |  -  |
+| **401** |  |  -  |
+
 [[Back to top]](#)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)
 [[Back to Model list]](../README.md#documentation-for-models)
@@ -1565,7 +1725,7 @@ Name | Type | Description  | Notes
 
 ## GetTeamEventsByYearSimple
 
-> List<EventSimple> GetTeamEventsByYearSimple (string teamKey, int? year, string ifModifiedSince = null)
+> List&lt;EventSimple&gt; GetTeamEventsByYearSimple (string teamKey, int? year, string ifModifiedSince = null)
 
 
 
@@ -1574,6 +1734,7 @@ Gets a short-form list of events this team has competed at in the given year.
 ### Example
 
 ```csharp
+using System.Collections.Generic;
 using System.Diagnostics;
 using com.tweirtx.TBAAPIv3client.Api;
 using com.tweirtx.TBAAPIv3client.Client;
@@ -1598,7 +1759,7 @@ namespace Example
 
             try
             {
-                List&lt;EventSimple&gt; result = apiInstance.GetTeamEventsByYearSimple(teamKey, year, ifModifiedSince);
+                List<EventSimple> result = apiInstance.GetTeamEventsByYearSimple(teamKey, year, ifModifiedSince);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -1623,7 +1784,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**List<EventSimple>**](EventSimple.md)
+[**List&lt;EventSimple&gt;**](EventSimple.md)
 
 ### Authorization
 
@@ -1634,6 +1795,13 @@ Name | Type | Description  | Notes
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful response |  * Cache-Control - The &#x60;Cache-Control&#x60; header, in particular the &#x60;max-age&#x60; value, contains the number of seconds the result should be considered valid for. During this time subsequent calls should return from the local cache directly. <br>  * Last-Modified - Indicates the date and time the data returned was last updated. Used by clients in the &#x60;If-Modified-Since&#x60; request header. <br>  |
+| **304** | Not Modified - Use Local Cached Value |  -  |
+| **401** |  |  -  |
+
 [[Back to top]](#)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)
 [[Back to Model list]](../README.md#documentation-for-models)
@@ -1642,7 +1810,7 @@ Name | Type | Description  | Notes
 
 ## GetTeamEventsKeys
 
-> List<string> GetTeamEventsKeys (string teamKey, string ifModifiedSince = null)
+> List&lt;string&gt; GetTeamEventsKeys (string teamKey, string ifModifiedSince = null)
 
 
 
@@ -1651,6 +1819,7 @@ Gets a list of the event keys for all events this team has competed at.
 ### Example
 
 ```csharp
+using System.Collections.Generic;
 using System.Diagnostics;
 using com.tweirtx.TBAAPIv3client.Api;
 using com.tweirtx.TBAAPIv3client.Client;
@@ -1674,7 +1843,7 @@ namespace Example
 
             try
             {
-                List&lt;string&gt; result = apiInstance.GetTeamEventsKeys(teamKey, ifModifiedSince);
+                List<string> result = apiInstance.GetTeamEventsKeys(teamKey, ifModifiedSince);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -1709,6 +1878,13 @@ Name | Type | Description  | Notes
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful response |  * Cache-Control - The &#x60;Cache-Control&#x60; header, in particular the &#x60;max-age&#x60; value, contains the number of seconds the result should be considered valid for. During this time subsequent calls should return from the local cache directly. <br>  * Last-Modified - Indicates the date and time the data returned was last updated. Used by clients in the &#x60;If-Modified-Since&#x60; request header. <br>  |
+| **304** | Not Modified - Use Local Cached Value |  -  |
+| **401** |  |  -  |
+
 [[Back to top]](#)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)
 [[Back to Model list]](../README.md#documentation-for-models)
@@ -1717,7 +1893,7 @@ Name | Type | Description  | Notes
 
 ## GetTeamEventsSimple
 
-> List<EventSimple> GetTeamEventsSimple (string teamKey, string ifModifiedSince = null)
+> List&lt;EventSimple&gt; GetTeamEventsSimple (string teamKey, string ifModifiedSince = null)
 
 
 
@@ -1726,6 +1902,7 @@ Gets a short-form list of all events this team has competed at.
 ### Example
 
 ```csharp
+using System.Collections.Generic;
 using System.Diagnostics;
 using com.tweirtx.TBAAPIv3client.Api;
 using com.tweirtx.TBAAPIv3client.Client;
@@ -1749,7 +1926,7 @@ namespace Example
 
             try
             {
-                List&lt;EventSimple&gt; result = apiInstance.GetTeamEventsSimple(teamKey, ifModifiedSince);
+                List<EventSimple> result = apiInstance.GetTeamEventsSimple(teamKey, ifModifiedSince);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -1773,7 +1950,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**List<EventSimple>**](EventSimple.md)
+[**List&lt;EventSimple&gt;**](EventSimple.md)
 
 ### Authorization
 
@@ -1784,6 +1961,13 @@ Name | Type | Description  | Notes
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful response |  * Cache-Control - The &#x60;Cache-Control&#x60; header, in particular the &#x60;max-age&#x60; value, contains the number of seconds the result should be considered valid for. During this time subsequent calls should return from the local cache directly. <br>  * Last-Modified - Indicates the date and time the data returned was last updated. Used by clients in the &#x60;If-Modified-Since&#x60; request header. <br>  |
+| **304** | Not Modified - Use Local Cached Value |  -  |
+| **401** |  |  -  |
+
 [[Back to top]](#)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)
 [[Back to Model list]](../README.md#documentation-for-models)
@@ -1792,7 +1976,7 @@ Name | Type | Description  | Notes
 
 ## GetTeamEventsStatusesByYear
 
-> Dictionary<string, TeamEventStatus> GetTeamEventsStatusesByYear (string teamKey, int? year, string ifModifiedSince = null)
+> Dictionary&lt;string, TeamEventStatus&gt; GetTeamEventsStatusesByYear (string teamKey, int? year, string ifModifiedSince = null)
 
 
 
@@ -1801,6 +1985,7 @@ Gets a key-value list of the event statuses for events this team has competed at
 ### Example
 
 ```csharp
+using System.Collections.Generic;
 using System.Diagnostics;
 using com.tweirtx.TBAAPIv3client.Api;
 using com.tweirtx.TBAAPIv3client.Client;
@@ -1825,7 +2010,7 @@ namespace Example
 
             try
             {
-                Dictionary&lt;string, TeamEventStatus&gt; result = apiInstance.GetTeamEventsStatusesByYear(teamKey, year, ifModifiedSince);
+                Dictionary<string, TeamEventStatus> result = apiInstance.GetTeamEventsStatusesByYear(teamKey, year, ifModifiedSince);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -1850,7 +2035,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**Dictionary<string, TeamEventStatus>**](TeamEventStatus.md)
+[**Dictionary&lt;string, TeamEventStatus&gt;**](TeamEventStatus.md)
 
 ### Authorization
 
@@ -1861,6 +2046,13 @@ Name | Type | Description  | Notes
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful response |  * Cache-Control - The &#x60;Cache-Control&#x60; header, in particular the &#x60;max-age&#x60; value, contains the number of seconds the result should be considered valid for. During this time subsequent calls should return from the local cache directly. <br>  * Last-Modified - Indicates the date and time the data returned was last updated. Used by clients in the &#x60;If-Modified-Since&#x60; request header. <br>  |
+| **304** | Not Modified - Use Local Cached Value |  -  |
+| **401** |  |  -  |
+
 [[Back to top]](#)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)
 [[Back to Model list]](../README.md#documentation-for-models)
@@ -1869,7 +2061,7 @@ Name | Type | Description  | Notes
 
 ## GetTeamMatchesByYear
 
-> List<Match> GetTeamMatchesByYear (string teamKey, int? year, string ifModifiedSince = null)
+> List&lt;Match&gt; GetTeamMatchesByYear (string teamKey, int? year, string ifModifiedSince = null)
 
 
 
@@ -1878,6 +2070,7 @@ Gets a list of matches for the given team and year.
 ### Example
 
 ```csharp
+using System.Collections.Generic;
 using System.Diagnostics;
 using com.tweirtx.TBAAPIv3client.Api;
 using com.tweirtx.TBAAPIv3client.Client;
@@ -1902,7 +2095,7 @@ namespace Example
 
             try
             {
-                List&lt;Match&gt; result = apiInstance.GetTeamMatchesByYear(teamKey, year, ifModifiedSince);
+                List<Match> result = apiInstance.GetTeamMatchesByYear(teamKey, year, ifModifiedSince);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -1927,7 +2120,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**List<Match>**](Match.md)
+[**List&lt;Match&gt;**](Match.md)
 
 ### Authorization
 
@@ -1938,6 +2131,13 @@ Name | Type | Description  | Notes
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful response |  * Cache-Control - The &#x60;Cache-Control&#x60; header, in particular the &#x60;max-age&#x60; value, contains the number of seconds the result should be considered valid for. During this time subsequent calls should return from the local cache directly. <br>  * Last-Modified - Indicates the date and time the data returned was last updated. Used by clients in the &#x60;If-Modified-Since&#x60; request header. <br>  |
+| **304** | Not Modified - Use Local Cached Value |  -  |
+| **401** |  |  -  |
+
 [[Back to top]](#)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)
 [[Back to Model list]](../README.md#documentation-for-models)
@@ -1946,7 +2146,7 @@ Name | Type | Description  | Notes
 
 ## GetTeamMatchesByYearKeys
 
-> List<string> GetTeamMatchesByYearKeys (string teamKey, int? year, string ifModifiedSince = null)
+> List&lt;string&gt; GetTeamMatchesByYearKeys (string teamKey, int? year, string ifModifiedSince = null)
 
 
 
@@ -1955,6 +2155,7 @@ Gets a list of match keys for matches for the given team and year.
 ### Example
 
 ```csharp
+using System.Collections.Generic;
 using System.Diagnostics;
 using com.tweirtx.TBAAPIv3client.Api;
 using com.tweirtx.TBAAPIv3client.Client;
@@ -1979,7 +2180,7 @@ namespace Example
 
             try
             {
-                List&lt;string&gt; result = apiInstance.GetTeamMatchesByYearKeys(teamKey, year, ifModifiedSince);
+                List<string> result = apiInstance.GetTeamMatchesByYearKeys(teamKey, year, ifModifiedSince);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -2015,6 +2216,13 @@ Name | Type | Description  | Notes
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful response |  * Cache-Control - The &#x60;Cache-Control&#x60; header, in particular the &#x60;max-age&#x60; value, contains the number of seconds the result should be considered valid for. During this time subsequent calls should return from the local cache directly. <br>  * Last-Modified - Indicates the date and time the data returned was last updated. Used by clients in the &#x60;If-Modified-Since&#x60; request header. <br>  |
+| **304** | Not Modified - Use Local Cached Value |  -  |
+| **401** |  |  -  |
+
 [[Back to top]](#)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)
 [[Back to Model list]](../README.md#documentation-for-models)
@@ -2023,7 +2231,7 @@ Name | Type | Description  | Notes
 
 ## GetTeamMatchesByYearSimple
 
-> List<MatchSimple> GetTeamMatchesByYearSimple (string teamKey, int? year, string ifModifiedSince = null)
+> List&lt;MatchSimple&gt; GetTeamMatchesByYearSimple (string teamKey, int? year, string ifModifiedSince = null)
 
 
 
@@ -2032,6 +2240,7 @@ Gets a short-form list of matches for the given team and year.
 ### Example
 
 ```csharp
+using System.Collections.Generic;
 using System.Diagnostics;
 using com.tweirtx.TBAAPIv3client.Api;
 using com.tweirtx.TBAAPIv3client.Client;
@@ -2056,7 +2265,7 @@ namespace Example
 
             try
             {
-                List&lt;MatchSimple&gt; result = apiInstance.GetTeamMatchesByYearSimple(teamKey, year, ifModifiedSince);
+                List<MatchSimple> result = apiInstance.GetTeamMatchesByYearSimple(teamKey, year, ifModifiedSince);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -2081,7 +2290,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**List<MatchSimple>**](MatchSimple.md)
+[**List&lt;MatchSimple&gt;**](MatchSimple.md)
 
 ### Authorization
 
@@ -2092,6 +2301,13 @@ Name | Type | Description  | Notes
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful response |  * Cache-Control - The &#x60;Cache-Control&#x60; header, in particular the &#x60;max-age&#x60; value, contains the number of seconds the result should be considered valid for. During this time subsequent calls should return from the local cache directly. <br>  * Last-Modified - Indicates the date and time the data returned was last updated. Used by clients in the &#x60;If-Modified-Since&#x60; request header. <br>  |
+| **304** | Not Modified - Use Local Cached Value |  -  |
+| **401** |  |  -  |
+
 [[Back to top]](#)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)
 [[Back to Model list]](../README.md#documentation-for-models)
@@ -2100,7 +2316,7 @@ Name | Type | Description  | Notes
 
 ## GetTeamMediaByTag
 
-> List<Media> GetTeamMediaByTag (string teamKey, string mediaTag, string ifModifiedSince = null)
+> List&lt;Media&gt; GetTeamMediaByTag (string teamKey, string mediaTag, string ifModifiedSince = null)
 
 
 
@@ -2109,6 +2325,7 @@ Gets a list of Media (videos / pictures) for the given team and tag.
 ### Example
 
 ```csharp
+using System.Collections.Generic;
 using System.Diagnostics;
 using com.tweirtx.TBAAPIv3client.Api;
 using com.tweirtx.TBAAPIv3client.Client;
@@ -2133,7 +2350,7 @@ namespace Example
 
             try
             {
-                List&lt;Media&gt; result = apiInstance.GetTeamMediaByTag(teamKey, mediaTag, ifModifiedSince);
+                List<Media> result = apiInstance.GetTeamMediaByTag(teamKey, mediaTag, ifModifiedSince);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -2158,7 +2375,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**List<Media>**](Media.md)
+[**List&lt;Media&gt;**](Media.md)
 
 ### Authorization
 
@@ -2169,6 +2386,13 @@ Name | Type | Description  | Notes
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful response |  * Cache-Control - The &#x60;Cache-Control&#x60; header, in particular the &#x60;max-age&#x60; value, contains the number of seconds the result should be considered valid for. During this time subsequent calls should return from the local cache directly. <br>  * Last-Modified - Indicates the date and time the data returned was last updated. Used by clients in the &#x60;If-Modified-Since&#x60; request header. <br>  |
+| **304** | Not Modified - Use Local Cached Value |  -  |
+| **401** |  |  -  |
+
 [[Back to top]](#)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)
 [[Back to Model list]](../README.md#documentation-for-models)
@@ -2177,7 +2401,7 @@ Name | Type | Description  | Notes
 
 ## GetTeamMediaByTagYear
 
-> List<Media> GetTeamMediaByTagYear (string teamKey, string mediaTag, int? year, string ifModifiedSince = null)
+> List&lt;Media&gt; GetTeamMediaByTagYear (string teamKey, string mediaTag, int? year, string ifModifiedSince = null)
 
 
 
@@ -2186,6 +2410,7 @@ Gets a list of Media (videos / pictures) for the given team, tag and year.
 ### Example
 
 ```csharp
+using System.Collections.Generic;
 using System.Diagnostics;
 using com.tweirtx.TBAAPIv3client.Api;
 using com.tweirtx.TBAAPIv3client.Client;
@@ -2211,7 +2436,7 @@ namespace Example
 
             try
             {
-                List&lt;Media&gt; result = apiInstance.GetTeamMediaByTagYear(teamKey, mediaTag, year, ifModifiedSince);
+                List<Media> result = apiInstance.GetTeamMediaByTagYear(teamKey, mediaTag, year, ifModifiedSince);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -2237,7 +2462,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**List<Media>**](Media.md)
+[**List&lt;Media&gt;**](Media.md)
 
 ### Authorization
 
@@ -2248,6 +2473,13 @@ Name | Type | Description  | Notes
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful response |  * Cache-Control - The &#x60;Cache-Control&#x60; header, in particular the &#x60;max-age&#x60; value, contains the number of seconds the result should be considered valid for. During this time subsequent calls should return from the local cache directly. <br>  * Last-Modified - Indicates the date and time the data returned was last updated. Used by clients in the &#x60;If-Modified-Since&#x60; request header. <br>  |
+| **304** | Not Modified - Use Local Cached Value |  -  |
+| **401** |  |  -  |
+
 [[Back to top]](#)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)
 [[Back to Model list]](../README.md#documentation-for-models)
@@ -2256,7 +2488,7 @@ Name | Type | Description  | Notes
 
 ## GetTeamMediaByYear
 
-> List<Media> GetTeamMediaByYear (string teamKey, int? year, string ifModifiedSince = null)
+> List&lt;Media&gt; GetTeamMediaByYear (string teamKey, int? year, string ifModifiedSince = null)
 
 
 
@@ -2265,6 +2497,7 @@ Gets a list of Media (videos / pictures) for the given team and year.
 ### Example
 
 ```csharp
+using System.Collections.Generic;
 using System.Diagnostics;
 using com.tweirtx.TBAAPIv3client.Api;
 using com.tweirtx.TBAAPIv3client.Client;
@@ -2289,7 +2522,7 @@ namespace Example
 
             try
             {
-                List&lt;Media&gt; result = apiInstance.GetTeamMediaByYear(teamKey, year, ifModifiedSince);
+                List<Media> result = apiInstance.GetTeamMediaByYear(teamKey, year, ifModifiedSince);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -2314,7 +2547,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**List<Media>**](Media.md)
+[**List&lt;Media&gt;**](Media.md)
 
 ### Authorization
 
@@ -2325,6 +2558,13 @@ Name | Type | Description  | Notes
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful response |  * Cache-Control - The &#x60;Cache-Control&#x60; header, in particular the &#x60;max-age&#x60; value, contains the number of seconds the result should be considered valid for. During this time subsequent calls should return from the local cache directly. <br>  * Last-Modified - Indicates the date and time the data returned was last updated. Used by clients in the &#x60;If-Modified-Since&#x60; request header. <br>  |
+| **304** | Not Modified - Use Local Cached Value |  -  |
+| **401** |  |  -  |
+
 [[Back to top]](#)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)
 [[Back to Model list]](../README.md#documentation-for-models)
@@ -2333,7 +2573,7 @@ Name | Type | Description  | Notes
 
 ## GetTeamRobots
 
-> List<TeamRobot> GetTeamRobots (string teamKey, string ifModifiedSince = null)
+> List&lt;TeamRobot&gt; GetTeamRobots (string teamKey, string ifModifiedSince = null)
 
 
 
@@ -2342,6 +2582,7 @@ Gets a list of year and robot name pairs for each year that a robot name was pro
 ### Example
 
 ```csharp
+using System.Collections.Generic;
 using System.Diagnostics;
 using com.tweirtx.TBAAPIv3client.Api;
 using com.tweirtx.TBAAPIv3client.Client;
@@ -2365,7 +2606,7 @@ namespace Example
 
             try
             {
-                List&lt;TeamRobot&gt; result = apiInstance.GetTeamRobots(teamKey, ifModifiedSince);
+                List<TeamRobot> result = apiInstance.GetTeamRobots(teamKey, ifModifiedSince);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -2389,7 +2630,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**List<TeamRobot>**](TeamRobot.md)
+[**List&lt;TeamRobot&gt;**](TeamRobot.md)
 
 ### Authorization
 
@@ -2399,6 +2640,13 @@ Name | Type | Description  | Notes
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful response |  * Cache-Control - The &#x60;Cache-Control&#x60; header, in particular the &#x60;max-age&#x60; value, contains the number of seconds the result should be considered valid for. During this time subsequent calls should return from the local cache directly. <br>  * Last-Modified - Indicates the date and time the data returned was last updated. Used by clients in the &#x60;If-Modified-Since&#x60; request header. <br>  |
+| **304** | Not Modified - Use Local Cached Value |  -  |
+| **401** |  |  -  |
 
 [[Back to top]](#)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)
@@ -2417,6 +2665,7 @@ Gets a `Team_Simple` object for the team referenced by the given key.
 ### Example
 
 ```csharp
+using System.Collections.Generic;
 using System.Diagnostics;
 using com.tweirtx.TBAAPIv3client.Api;
 using com.tweirtx.TBAAPIv3client.Client;
@@ -2475,6 +2724,13 @@ Name | Type | Description  | Notes
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful response |  * Cache-Control - The &#x60;Cache-Control&#x60; header, in particular the &#x60;max-age&#x60; value, contains the number of seconds the result should be considered valid for. During this time subsequent calls should return from the local cache directly. <br>  * Last-Modified - Indicates the date and time the data returned was last updated. Used by clients in the &#x60;If-Modified-Since&#x60; request header. <br>  |
+| **304** | Not Modified - Use Local Cached Value |  -  |
+| **401** |  |  -  |
+
 [[Back to top]](#)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)
 [[Back to Model list]](../README.md#documentation-for-models)
@@ -2483,7 +2739,7 @@ Name | Type | Description  | Notes
 
 ## GetTeamSocialMedia
 
-> List<Media> GetTeamSocialMedia (string teamKey, string ifModifiedSince = null)
+> List&lt;Media&gt; GetTeamSocialMedia (string teamKey, string ifModifiedSince = null)
 
 
 
@@ -2492,6 +2748,7 @@ Gets a list of Media (social media) for the given team.
 ### Example
 
 ```csharp
+using System.Collections.Generic;
 using System.Diagnostics;
 using com.tweirtx.TBAAPIv3client.Api;
 using com.tweirtx.TBAAPIv3client.Client;
@@ -2515,7 +2772,7 @@ namespace Example
 
             try
             {
-                List&lt;Media&gt; result = apiInstance.GetTeamSocialMedia(teamKey, ifModifiedSince);
+                List<Media> result = apiInstance.GetTeamSocialMedia(teamKey, ifModifiedSince);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -2539,7 +2796,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**List<Media>**](Media.md)
+[**List&lt;Media&gt;**](Media.md)
 
 ### Authorization
 
@@ -2550,6 +2807,13 @@ Name | Type | Description  | Notes
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful response |  * Cache-Control - The &#x60;Cache-Control&#x60; header, in particular the &#x60;max-age&#x60; value, contains the number of seconds the result should be considered valid for. During this time subsequent calls should return from the local cache directly. <br>  * Last-Modified - Indicates the date and time the data returned was last updated. Used by clients in the &#x60;If-Modified-Since&#x60; request header. <br>  |
+| **304** | Not Modified - Use Local Cached Value |  -  |
+| **401** |  |  -  |
+
 [[Back to top]](#)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)
 [[Back to Model list]](../README.md#documentation-for-models)
@@ -2558,7 +2822,7 @@ Name | Type | Description  | Notes
 
 ## GetTeamYearsParticipated
 
-> List<int?> GetTeamYearsParticipated (string teamKey, string ifModifiedSince = null)
+> List&lt;int?&gt; GetTeamYearsParticipated (string teamKey, string ifModifiedSince = null)
 
 
 
@@ -2567,6 +2831,7 @@ Gets a list of years in which the team participated in at least one competition.
 ### Example
 
 ```csharp
+using System.Collections.Generic;
 using System.Diagnostics;
 using com.tweirtx.TBAAPIv3client.Api;
 using com.tweirtx.TBAAPIv3client.Client;
@@ -2590,7 +2855,7 @@ namespace Example
 
             try
             {
-                List&lt;int?&gt; result = apiInstance.GetTeamYearsParticipated(teamKey, ifModifiedSince);
+                List<int?> result = apiInstance.GetTeamYearsParticipated(teamKey, ifModifiedSince);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -2625,6 +2890,13 @@ Name | Type | Description  | Notes
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful response |  * Cache-Control - The &#x60;Cache-Control&#x60; header, in particular the &#x60;max-age&#x60; value, contains the number of seconds the result should be considered valid for. During this time subsequent calls should return from the local cache directly. <br>  * Last-Modified - Indicates the date and time the data returned was last updated. Used by clients in the &#x60;If-Modified-Since&#x60; request header. <br>  |
+| **304** | Not Modified - Use Local Cached Value |  -  |
+| **401** |  |  -  |
+
 [[Back to top]](#)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)
 [[Back to Model list]](../README.md#documentation-for-models)
@@ -2633,7 +2905,7 @@ Name | Type | Description  | Notes
 
 ## GetTeams
 
-> List<Team> GetTeams (int? pageNum, string ifModifiedSince = null)
+> List&lt;Team&gt; GetTeams (int? pageNum, string ifModifiedSince = null)
 
 
 
@@ -2642,6 +2914,7 @@ Gets a list of `Team` objects, paginated in groups of 500.
 ### Example
 
 ```csharp
+using System.Collections.Generic;
 using System.Diagnostics;
 using com.tweirtx.TBAAPIv3client.Api;
 using com.tweirtx.TBAAPIv3client.Client;
@@ -2665,7 +2938,7 @@ namespace Example
 
             try
             {
-                List&lt;Team&gt; result = apiInstance.GetTeams(pageNum, ifModifiedSince);
+                List<Team> result = apiInstance.GetTeams(pageNum, ifModifiedSince);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -2689,7 +2962,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**List<Team>**](Team.md)
+[**List&lt;Team&gt;**](Team.md)
 
 ### Authorization
 
@@ -2700,6 +2973,13 @@ Name | Type | Description  | Notes
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful response |  * Cache-Control - The &#x60;Cache-Control&#x60; header, in particular the &#x60;max-age&#x60; value, contains the number of seconds the result should be considered valid for. During this time subsequent calls should return from the local cache directly. <br>  * Last-Modified - Indicates the date and time the data returned was last updated. Used by clients in the &#x60;If-Modified-Since&#x60; request header. <br>  |
+| **304** | Not Modified - Use Local Cached Value |  -  |
+| **401** |  |  -  |
+
 [[Back to top]](#)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)
 [[Back to Model list]](../README.md#documentation-for-models)
@@ -2708,7 +2988,7 @@ Name | Type | Description  | Notes
 
 ## GetTeamsByYear
 
-> List<Team> GetTeamsByYear (int? year, int? pageNum, string ifModifiedSince = null)
+> List&lt;Team&gt; GetTeamsByYear (int? year, int? pageNum, string ifModifiedSince = null)
 
 
 
@@ -2717,6 +2997,7 @@ Gets a list of `Team` objects that competed in the given year, paginated in grou
 ### Example
 
 ```csharp
+using System.Collections.Generic;
 using System.Diagnostics;
 using com.tweirtx.TBAAPIv3client.Api;
 using com.tweirtx.TBAAPIv3client.Client;
@@ -2741,7 +3022,7 @@ namespace Example
 
             try
             {
-                List&lt;Team&gt; result = apiInstance.GetTeamsByYear(year, pageNum, ifModifiedSince);
+                List<Team> result = apiInstance.GetTeamsByYear(year, pageNum, ifModifiedSince);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -2766,7 +3047,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**List<Team>**](Team.md)
+[**List&lt;Team&gt;**](Team.md)
 
 ### Authorization
 
@@ -2777,6 +3058,13 @@ Name | Type | Description  | Notes
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful response |  * Cache-Control - The &#x60;Cache-Control&#x60; header, in particular the &#x60;max-age&#x60; value, contains the number of seconds the result should be considered valid for. During this time subsequent calls should return from the local cache directly. <br>  * Last-Modified - Indicates the date and time the data returned was last updated. Used by clients in the &#x60;If-Modified-Since&#x60; request header. <br>  |
+| **304** | Not Modified - Use Local Cached Value |  -  |
+| **401** |  |  -  |
+
 [[Back to top]](#)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)
 [[Back to Model list]](../README.md#documentation-for-models)
@@ -2785,7 +3073,7 @@ Name | Type | Description  | Notes
 
 ## GetTeamsByYearKeys
 
-> List<string> GetTeamsByYearKeys (int? year, int? pageNum, string ifModifiedSince = null)
+> List&lt;string&gt; GetTeamsByYearKeys (int? year, int? pageNum, string ifModifiedSince = null)
 
 
 
@@ -2794,6 +3082,7 @@ Gets a list Team Keys that competed in the given year, paginated in groups of 50
 ### Example
 
 ```csharp
+using System.Collections.Generic;
 using System.Diagnostics;
 using com.tweirtx.TBAAPIv3client.Api;
 using com.tweirtx.TBAAPIv3client.Client;
@@ -2818,7 +3107,7 @@ namespace Example
 
             try
             {
-                List&lt;string&gt; result = apiInstance.GetTeamsByYearKeys(year, pageNum, ifModifiedSince);
+                List<string> result = apiInstance.GetTeamsByYearKeys(year, pageNum, ifModifiedSince);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -2854,6 +3143,13 @@ Name | Type | Description  | Notes
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful response |  * Cache-Control - The &#x60;Cache-Control&#x60; header, in particular the &#x60;max-age&#x60; value, contains the number of seconds the result should be considered valid for. During this time subsequent calls should return from the local cache directly. <br>  * Last-Modified - Indicates the date and time the data returned was last updated. Used by clients in the &#x60;If-Modified-Since&#x60; request header. <br>  |
+| **304** | Not Modified - Use Local Cached Value |  -  |
+| **401** |  |  -  |
+
 [[Back to top]](#)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)
 [[Back to Model list]](../README.md#documentation-for-models)
@@ -2862,7 +3158,7 @@ Name | Type | Description  | Notes
 
 ## GetTeamsByYearSimple
 
-> List<TeamSimple> GetTeamsByYearSimple (int? year, int? pageNum, string ifModifiedSince = null)
+> List&lt;TeamSimple&gt; GetTeamsByYearSimple (int? year, int? pageNum, string ifModifiedSince = null)
 
 
 
@@ -2871,6 +3167,7 @@ Gets a list of short form `Team_Simple` objects that competed in the given year,
 ### Example
 
 ```csharp
+using System.Collections.Generic;
 using System.Diagnostics;
 using com.tweirtx.TBAAPIv3client.Api;
 using com.tweirtx.TBAAPIv3client.Client;
@@ -2895,7 +3192,7 @@ namespace Example
 
             try
             {
-                List&lt;TeamSimple&gt; result = apiInstance.GetTeamsByYearSimple(year, pageNum, ifModifiedSince);
+                List<TeamSimple> result = apiInstance.GetTeamsByYearSimple(year, pageNum, ifModifiedSince);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -2920,7 +3217,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**List<TeamSimple>**](TeamSimple.md)
+[**List&lt;TeamSimple&gt;**](TeamSimple.md)
 
 ### Authorization
 
@@ -2931,6 +3228,13 @@ Name | Type | Description  | Notes
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful response |  * Cache-Control - The &#x60;Cache-Control&#x60; header, in particular the &#x60;max-age&#x60; value, contains the number of seconds the result should be considered valid for. During this time subsequent calls should return from the local cache directly. <br>  * Last-Modified - Indicates the date and time the data returned was last updated. Used by clients in the &#x60;If-Modified-Since&#x60; request header. <br>  |
+| **304** | Not Modified - Use Local Cached Value |  -  |
+| **401** |  |  -  |
+
 [[Back to top]](#)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)
 [[Back to Model list]](../README.md#documentation-for-models)
@@ -2939,7 +3243,7 @@ Name | Type | Description  | Notes
 
 ## GetTeamsKeys
 
-> List<string> GetTeamsKeys (int? pageNum, string ifModifiedSince = null)
+> List&lt;string&gt; GetTeamsKeys (int? pageNum, string ifModifiedSince = null)
 
 
 
@@ -2948,6 +3252,7 @@ Gets a list of Team keys, paginated in groups of 500. (Note, each page will not 
 ### Example
 
 ```csharp
+using System.Collections.Generic;
 using System.Diagnostics;
 using com.tweirtx.TBAAPIv3client.Api;
 using com.tweirtx.TBAAPIv3client.Client;
@@ -2971,7 +3276,7 @@ namespace Example
 
             try
             {
-                List&lt;string&gt; result = apiInstance.GetTeamsKeys(pageNum, ifModifiedSince);
+                List<string> result = apiInstance.GetTeamsKeys(pageNum, ifModifiedSince);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -3006,6 +3311,13 @@ Name | Type | Description  | Notes
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful response |  * Cache-Control - The &#x60;Cache-Control&#x60; header, in particular the &#x60;max-age&#x60; value, contains the number of seconds the result should be considered valid for. During this time subsequent calls should return from the local cache directly. <br>  * Last-Modified - Indicates the date and time the data returned was last updated. Used by clients in the &#x60;If-Modified-Since&#x60; request header. <br>  |
+| **304** | Not Modified - Use Local Cached Value |  -  |
+| **401** |  |  -  |
+
 [[Back to top]](#)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)
 [[Back to Model list]](../README.md#documentation-for-models)
@@ -3014,7 +3326,7 @@ Name | Type | Description  | Notes
 
 ## GetTeamsSimple
 
-> List<TeamSimple> GetTeamsSimple (int? pageNum, string ifModifiedSince = null)
+> List&lt;TeamSimple&gt; GetTeamsSimple (int? pageNum, string ifModifiedSince = null)
 
 
 
@@ -3023,6 +3335,7 @@ Gets a list of short form `Team_Simple` objects, paginated in groups of 500.
 ### Example
 
 ```csharp
+using System.Collections.Generic;
 using System.Diagnostics;
 using com.tweirtx.TBAAPIv3client.Api;
 using com.tweirtx.TBAAPIv3client.Client;
@@ -3046,7 +3359,7 @@ namespace Example
 
             try
             {
-                List&lt;TeamSimple&gt; result = apiInstance.GetTeamsSimple(pageNum, ifModifiedSince);
+                List<TeamSimple> result = apiInstance.GetTeamsSimple(pageNum, ifModifiedSince);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -3070,7 +3383,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**List<TeamSimple>**](TeamSimple.md)
+[**List&lt;TeamSimple&gt;**](TeamSimple.md)
 
 ### Authorization
 
@@ -3080,6 +3393,13 @@ Name | Type | Description  | Notes
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful response |  * Cache-Control - The &#x60;Cache-Control&#x60; header, in particular the &#x60;max-age&#x60; value, contains the number of seconds the result should be considered valid for. During this time subsequent calls should return from the local cache directly. <br>  * Last-Modified - Indicates the date and time the data returned was last updated. Used by clients in the &#x60;If-Modified-Since&#x60; request header. <br>  |
+| **304** | Not Modified - Use Local Cached Value |  -  |
+| **401** |  |  -  |
 
 [[Back to top]](#)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)

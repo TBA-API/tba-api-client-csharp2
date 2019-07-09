@@ -83,7 +83,31 @@ namespace com.tweirtx.TBAAPIv3client.Model
             /// Enum Directlink for value: direct_link
             /// </summary>
             [EnumMember(Value = "direct_link")]
-            Directlink = 8
+            Directlink = 8,
+
+            /// <summary>
+            /// Enum Mms for value: mms
+            /// </summary>
+            [EnumMember(Value = "mms")]
+            Mms = 9,
+
+            /// <summary>
+            /// Enum Justin for value: justin
+            /// </summary>
+            [EnumMember(Value = "justin")]
+            Justin = 10,
+
+            /// <summary>
+            /// Enum Stemtv for value: stemtv
+            /// </summary>
+            [EnumMember(Value = "stemtv")]
+            Stemtv = 11,
+
+            /// <summary>
+            /// Enum Dacast for value: dacast
+            /// </summary>
+            [EnumMember(Value = "dacast")]
+            Dacast = 12
 
         }
 
