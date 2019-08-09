@@ -35,7 +35,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// </summary>
         /// <param name="highestQualScores">highestQualScores.</param>
         /// <param name="qualWins">qualWins.</param>
-        public EventDistrictPointsTiebreakers(List<int?> highestQualScores = default(List<int?>), int? qualWins = default(int?))
+        public EventDistrictPointsTiebreakers(List<int> highestQualScores = default(List<int>), int qualWins = default(int))
         {
             this.HighestQualScores = highestQualScores;
             this.QualWins = qualWins;
@@ -45,13 +45,13 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// Gets or Sets HighestQualScores
         /// </summary>
         [DataMember(Name="highest_qual_scores", EmitDefaultValue=false)]
-        public List<int?> HighestQualScores { get; set; }
+        public List<int> HighestQualScores { get; set; }
 
         /// <summary>
         /// Gets or Sets QualWins
         /// </summary>
         [DataMember(Name="qual_wins", EmitDefaultValue=false)]
-        public int? QualWins { get; set; }
+        public int QualWins { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

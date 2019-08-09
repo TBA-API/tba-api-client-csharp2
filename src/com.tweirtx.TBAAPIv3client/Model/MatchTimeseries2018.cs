@@ -64,7 +64,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// <param name="redScaleOwned">1 if the red alliance owns the SCALE, 0 if not..</param>
         /// <param name="redScore">Current score for the red alliance..</param>
         /// <param name="redSwitchOwned">1 if the red alliance owns their SWITCH, 0 if not..</param>
-        public MatchTimeseries2018(string eventKey = default(string), string matchId = default(string), string mode = default(string), int? play = default(int?), int? timeRemaining = default(int?), int? blueAutoQuest = default(int?), int? blueBoostCount = default(int?), int? blueBoostPlayed = default(int?), string blueCurrentPowerup = default(string), int? blueFaceTheBoss = default(int?), int? blueForceCount = default(int?), int? blueForcePlayed = default(int?), int? blueLevitateCount = default(int?), int? blueLevitatePlayed = default(int?), string bluePowerupTimeRemaining = default(string), int? blueScaleOwned = default(int?), int? blueScore = default(int?), int? blueSwitchOwned = default(int?), int? redAutoQuest = default(int?), int? redBoostCount = default(int?), int? redBoostPlayed = default(int?), string redCurrentPowerup = default(string), int? redFaceTheBoss = default(int?), int? redForceCount = default(int?), int? redForcePlayed = default(int?), int? redLevitateCount = default(int?), int? redLevitatePlayed = default(int?), string redPowerupTimeRemaining = default(string), int? redScaleOwned = default(int?), int? redScore = default(int?), int? redSwitchOwned = default(int?))
+        public MatchTimeseries2018(string eventKey = default(string), string matchId = default(string), string mode = default(string), int play = default(int), int timeRemaining = default(int), int blueAutoQuest = default(int), int blueBoostCount = default(int), int blueBoostPlayed = default(int), string blueCurrentPowerup = default(string), int blueFaceTheBoss = default(int), int blueForceCount = default(int), int blueForcePlayed = default(int), int blueLevitateCount = default(int), int blueLevitatePlayed = default(int), string bluePowerupTimeRemaining = default(string), int blueScaleOwned = default(int), int blueScore = default(int), int blueSwitchOwned = default(int), int redAutoQuest = default(int), int redBoostCount = default(int), int redBoostPlayed = default(int), string redCurrentPowerup = default(string), int redFaceTheBoss = default(int), int redForceCount = default(int), int redForcePlayed = default(int), int redLevitateCount = default(int), int redLevitatePlayed = default(int), string redPowerupTimeRemaining = default(string), int redScaleOwned = default(int), int redScore = default(int), int redSwitchOwned = default(int))
         {
             this.EventKey = eventKey;
             this.MatchId = matchId;
@@ -124,35 +124,35 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// Gets or Sets Play
         /// </summary>
         [DataMember(Name="play", EmitDefaultValue=false)]
-        public int? Play { get; set; }
+        public int Play { get; set; }
 
         /// <summary>
         /// Amount of time remaining in the match, only valid during &#x60;auto&#x60; and &#x60;teleop&#x60; modes.
         /// </summary>
         /// <value>Amount of time remaining in the match, only valid during &#x60;auto&#x60; and &#x60;teleop&#x60; modes.</value>
         [DataMember(Name="time_remaining", EmitDefaultValue=false)]
-        public int? TimeRemaining { get; set; }
+        public int TimeRemaining { get; set; }
 
         /// <summary>
         /// 1 if the blue alliance is credited with the AUTO QUEST, 0 if not.
         /// </summary>
         /// <value>1 if the blue alliance is credited with the AUTO QUEST, 0 if not.</value>
         [DataMember(Name="blue_auto_quest", EmitDefaultValue=false)]
-        public int? BlueAutoQuest { get; set; }
+        public int BlueAutoQuest { get; set; }
 
         /// <summary>
         /// Number of POWER CUBES in the BOOST section of the blue alliance VAULT.
         /// </summary>
         /// <value>Number of POWER CUBES in the BOOST section of the blue alliance VAULT.</value>
         [DataMember(Name="blue_boost_count", EmitDefaultValue=false)]
-        public int? BlueBoostCount { get; set; }
+        public int BlueBoostCount { get; set; }
 
         /// <summary>
         /// Returns 1 if the blue alliance BOOST was played, or 0 if not played.
         /// </summary>
         /// <value>Returns 1 if the blue alliance BOOST was played, or 0 if not played.</value>
         [DataMember(Name="blue_boost_played", EmitDefaultValue=false)]
-        public int? BlueBoostPlayed { get; set; }
+        public int BlueBoostPlayed { get; set; }
 
         /// <summary>
         /// Name of the current blue alliance POWER UP being played, or &#x60;null&#x60;.
@@ -166,35 +166,35 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// </summary>
         /// <value>1 if the blue alliance is credited with FACING THE BOSS, 0 if not.</value>
         [DataMember(Name="blue_face_the_boss", EmitDefaultValue=false)]
-        public int? BlueFaceTheBoss { get; set; }
+        public int BlueFaceTheBoss { get; set; }
 
         /// <summary>
         /// Number of POWER CUBES in the FORCE section of the blue alliance VAULT.
         /// </summary>
         /// <value>Number of POWER CUBES in the FORCE section of the blue alliance VAULT.</value>
         [DataMember(Name="blue_force_count", EmitDefaultValue=false)]
-        public int? BlueForceCount { get; set; }
+        public int BlueForceCount { get; set; }
 
         /// <summary>
         /// Returns 1 if the blue alliance FORCE was played, or 0 if not played.
         /// </summary>
         /// <value>Returns 1 if the blue alliance FORCE was played, or 0 if not played.</value>
         [DataMember(Name="blue_force_played", EmitDefaultValue=false)]
-        public int? BlueForcePlayed { get; set; }
+        public int BlueForcePlayed { get; set; }
 
         /// <summary>
         /// Number of POWER CUBES in the LEVITATE section of the blue alliance VAULT.
         /// </summary>
         /// <value>Number of POWER CUBES in the LEVITATE section of the blue alliance VAULT.</value>
         [DataMember(Name="blue_levitate_count", EmitDefaultValue=false)]
-        public int? BlueLevitateCount { get; set; }
+        public int BlueLevitateCount { get; set; }
 
         /// <summary>
         /// Returns 1 if the blue alliance LEVITATE was played, or 0 if not played.
         /// </summary>
         /// <value>Returns 1 if the blue alliance LEVITATE was played, or 0 if not played.</value>
         [DataMember(Name="blue_levitate_played", EmitDefaultValue=false)]
-        public int? BlueLevitatePlayed { get; set; }
+        public int BlueLevitatePlayed { get; set; }
 
         /// <summary>
         /// Number of seconds remaining in the blue alliance POWER UP time, or 0 if none is active.
@@ -208,42 +208,42 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// </summary>
         /// <value>1 if the blue alliance owns the SCALE, 0 if not.</value>
         [DataMember(Name="blue_scale_owned", EmitDefaultValue=false)]
-        public int? BlueScaleOwned { get; set; }
+        public int BlueScaleOwned { get; set; }
 
         /// <summary>
         /// Current score for the blue alliance.
         /// </summary>
         /// <value>Current score for the blue alliance.</value>
         [DataMember(Name="blue_score", EmitDefaultValue=false)]
-        public int? BlueScore { get; set; }
+        public int BlueScore { get; set; }
 
         /// <summary>
         /// 1 if the blue alliance owns their SWITCH, 0 if not.
         /// </summary>
         /// <value>1 if the blue alliance owns their SWITCH, 0 if not.</value>
         [DataMember(Name="blue_switch_owned", EmitDefaultValue=false)]
-        public int? BlueSwitchOwned { get; set; }
+        public int BlueSwitchOwned { get; set; }
 
         /// <summary>
         /// 1 if the red alliance is credited with the AUTO QUEST, 0 if not.
         /// </summary>
         /// <value>1 if the red alliance is credited with the AUTO QUEST, 0 if not.</value>
         [DataMember(Name="red_auto_quest", EmitDefaultValue=false)]
-        public int? RedAutoQuest { get; set; }
+        public int RedAutoQuest { get; set; }
 
         /// <summary>
         /// Number of POWER CUBES in the BOOST section of the red alliance VAULT.
         /// </summary>
         /// <value>Number of POWER CUBES in the BOOST section of the red alliance VAULT.</value>
         [DataMember(Name="red_boost_count", EmitDefaultValue=false)]
-        public int? RedBoostCount { get; set; }
+        public int RedBoostCount { get; set; }
 
         /// <summary>
         /// Returns 1 if the red alliance BOOST was played, or 0 if not played.
         /// </summary>
         /// <value>Returns 1 if the red alliance BOOST was played, or 0 if not played.</value>
         [DataMember(Name="red_boost_played", EmitDefaultValue=false)]
-        public int? RedBoostPlayed { get; set; }
+        public int RedBoostPlayed { get; set; }
 
         /// <summary>
         /// Name of the current red alliance POWER UP being played, or &#x60;null&#x60;.
@@ -257,35 +257,35 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// </summary>
         /// <value>1 if the red alliance is credited with FACING THE BOSS, 0 if not.</value>
         [DataMember(Name="red_face_the_boss", EmitDefaultValue=false)]
-        public int? RedFaceTheBoss { get; set; }
+        public int RedFaceTheBoss { get; set; }
 
         /// <summary>
         /// Number of POWER CUBES in the FORCE section of the red alliance VAULT.
         /// </summary>
         /// <value>Number of POWER CUBES in the FORCE section of the red alliance VAULT.</value>
         [DataMember(Name="red_force_count", EmitDefaultValue=false)]
-        public int? RedForceCount { get; set; }
+        public int RedForceCount { get; set; }
 
         /// <summary>
         /// Returns 1 if the red alliance FORCE was played, or 0 if not played.
         /// </summary>
         /// <value>Returns 1 if the red alliance FORCE was played, or 0 if not played.</value>
         [DataMember(Name="red_force_played", EmitDefaultValue=false)]
-        public int? RedForcePlayed { get; set; }
+        public int RedForcePlayed { get; set; }
 
         /// <summary>
         /// Number of POWER CUBES in the LEVITATE section of the red alliance VAULT.
         /// </summary>
         /// <value>Number of POWER CUBES in the LEVITATE section of the red alliance VAULT.</value>
         [DataMember(Name="red_levitate_count", EmitDefaultValue=false)]
-        public int? RedLevitateCount { get; set; }
+        public int RedLevitateCount { get; set; }
 
         /// <summary>
         /// Returns 1 if the red alliance LEVITATE was played, or 0 if not played.
         /// </summary>
         /// <value>Returns 1 if the red alliance LEVITATE was played, or 0 if not played.</value>
         [DataMember(Name="red_levitate_played", EmitDefaultValue=false)]
-        public int? RedLevitatePlayed { get; set; }
+        public int RedLevitatePlayed { get; set; }
 
         /// <summary>
         /// Number of seconds remaining in the red alliance POWER UP time, or 0 if none is active.
@@ -299,21 +299,21 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// </summary>
         /// <value>1 if the red alliance owns the SCALE, 0 if not.</value>
         [DataMember(Name="red_scale_owned", EmitDefaultValue=false)]
-        public int? RedScaleOwned { get; set; }
+        public int RedScaleOwned { get; set; }
 
         /// <summary>
         /// Current score for the red alliance.
         /// </summary>
         /// <value>Current score for the red alliance.</value>
         [DataMember(Name="red_score", EmitDefaultValue=false)]
-        public int? RedScore { get; set; }
+        public int RedScore { get; set; }
 
         /// <summary>
         /// 1 if the red alliance owns their SWITCH, 0 if not.
         /// </summary>
         /// <value>1 if the red alliance owns their SWITCH, 0 if not.</value>
         [DataMember(Name="red_switch_owned", EmitDefaultValue=false)]
-        public int? RedSwitchOwned { get; set; }
+        public int RedSwitchOwned { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

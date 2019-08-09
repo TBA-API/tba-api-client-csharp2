@@ -40,7 +40,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// </summary>
         /// <param name="precision">Integer expressing the number of digits of precision in the number provided in &#x60;sort_orders&#x60;. (required).</param>
         /// <param name="name">Name of the field used in the &#x60;sort_order&#x60; array. (required).</param>
-        public EventRankingSortOrderInfo(int? precision = default(int?), string name = default(string))
+        public EventRankingSortOrderInfo(int precision = default(int), string name = default(string))
         {
             // to ensure "precision" is required (not null)
             if (precision == null)
@@ -69,7 +69,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// </summary>
         /// <value>Integer expressing the number of digits of precision in the number provided in &#x60;sort_orders&#x60;.</value>
         [DataMember(Name="precision", EmitDefaultValue=false)]
-        public int? Precision { get; set; }
+        public int Precision { get; set; }
 
         /// <summary>
         /// Name of the field used in the &#x60;sort_order&#x60; array.

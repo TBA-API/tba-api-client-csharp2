@@ -62,7 +62,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// <param name="averageTowerScore">Average tower score. (required).</param>
         /// <param name="averageFoulScore">Average foul score. (required).</param>
         /// <param name="highScore">An array with three values, high score, match key from the match with the high score, and the name of the match. (required).</param>
-        public EventInsights2016(List<float?> lowBar = default(List<float?>), List<float?> aChevalDeFrise = default(List<float?>), List<float?> aPortcullis = default(List<float?>), List<float?> bRamparts = default(List<float?>), List<float?> bMoat = default(List<float?>), List<float?> cSallyPort = default(List<float?>), List<float?> cDrawbridge = default(List<float?>), List<float?> dRoughTerrain = default(List<float?>), List<float?> dRockWall = default(List<float?>), float? averageHighGoals = default(float?), float? averageLowGoals = default(float?), List<float?> breaches = default(List<float?>), List<float?> scales = default(List<float?>), List<float?> challenges = default(List<float?>), List<float?> captures = default(List<float?>), float? averageWinScore = default(float?), float? averageWinMargin = default(float?), float? averageScore = default(float?), float? averageAutoScore = default(float?), float? averageCrossingScore = default(float?), float? averageBoulderScore = default(float?), float? averageTowerScore = default(float?), float? averageFoulScore = default(float?), List<string> highScore = default(List<string>))
+        public EventInsights2016(List<float> lowBar = default(List<float>), List<float> aChevalDeFrise = default(List<float>), List<float> aPortcullis = default(List<float>), List<float> bRamparts = default(List<float>), List<float> bMoat = default(List<float>), List<float> cSallyPort = default(List<float>), List<float> cDrawbridge = default(List<float>), List<float> dRoughTerrain = default(List<float>), List<float> dRockWall = default(List<float>), float averageHighGoals = default(float), float averageLowGoals = default(float), List<float> breaches = default(List<float>), List<float> scales = default(List<float>), List<float> challenges = default(List<float>), List<float> captures = default(List<float>), float averageWinScore = default(float), float averageWinMargin = default(float), float averageScore = default(float), float averageAutoScore = default(float), float averageCrossingScore = default(float), float averageBoulderScore = default(float), float averageTowerScore = default(float), float averageFoulScore = default(float), List<string> highScore = default(List<string>))
         {
             // to ensure "lowBar" is required (not null)
             if (lowBar == null)
@@ -311,161 +311,161 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// </summary>
         /// <value>For the Low Bar - An array with three values, number of times damaged, number of opportunities to damage, and percentage.</value>
         [DataMember(Name="LowBar", EmitDefaultValue=false)]
-        public List<float?> LowBar { get; set; }
+        public List<float> LowBar { get; set; }
 
         /// <summary>
         /// For the Cheval De Frise - An array with three values, number of times damaged, number of opportunities to damage, and percentage.
         /// </summary>
         /// <value>For the Cheval De Frise - An array with three values, number of times damaged, number of opportunities to damage, and percentage.</value>
         [DataMember(Name="A_ChevalDeFrise", EmitDefaultValue=false)]
-        public List<float?> AChevalDeFrise { get; set; }
+        public List<float> AChevalDeFrise { get; set; }
 
         /// <summary>
         /// For the Portcullis - An array with three values, number of times damaged, number of opportunities to damage, and percentage.
         /// </summary>
         /// <value>For the Portcullis - An array with three values, number of times damaged, number of opportunities to damage, and percentage.</value>
         [DataMember(Name="A_Portcullis", EmitDefaultValue=false)]
-        public List<float?> APortcullis { get; set; }
+        public List<float> APortcullis { get; set; }
 
         /// <summary>
         /// For the Ramparts - An array with three values, number of times damaged, number of opportunities to damage, and percentage.
         /// </summary>
         /// <value>For the Ramparts - An array with three values, number of times damaged, number of opportunities to damage, and percentage.</value>
         [DataMember(Name="B_Ramparts", EmitDefaultValue=false)]
-        public List<float?> BRamparts { get; set; }
+        public List<float> BRamparts { get; set; }
 
         /// <summary>
         /// For the Moat - An array with three values, number of times damaged, number of opportunities to damage, and percentage.
         /// </summary>
         /// <value>For the Moat - An array with three values, number of times damaged, number of opportunities to damage, and percentage.</value>
         [DataMember(Name="B_Moat", EmitDefaultValue=false)]
-        public List<float?> BMoat { get; set; }
+        public List<float> BMoat { get; set; }
 
         /// <summary>
         /// For the Sally Port - An array with three values, number of times damaged, number of opportunities to damage, and percentage.
         /// </summary>
         /// <value>For the Sally Port - An array with three values, number of times damaged, number of opportunities to damage, and percentage.</value>
         [DataMember(Name="C_SallyPort", EmitDefaultValue=false)]
-        public List<float?> CSallyPort { get; set; }
+        public List<float> CSallyPort { get; set; }
 
         /// <summary>
         /// For the Drawbridge - An array with three values, number of times damaged, number of opportunities to damage, and percentage.
         /// </summary>
         /// <value>For the Drawbridge - An array with three values, number of times damaged, number of opportunities to damage, and percentage.</value>
         [DataMember(Name="C_Drawbridge", EmitDefaultValue=false)]
-        public List<float?> CDrawbridge { get; set; }
+        public List<float> CDrawbridge { get; set; }
 
         /// <summary>
         /// For the Rough Terrain - An array with three values, number of times damaged, number of opportunities to damage, and percentage.
         /// </summary>
         /// <value>For the Rough Terrain - An array with three values, number of times damaged, number of opportunities to damage, and percentage.</value>
         [DataMember(Name="D_RoughTerrain", EmitDefaultValue=false)]
-        public List<float?> DRoughTerrain { get; set; }
+        public List<float> DRoughTerrain { get; set; }
 
         /// <summary>
         /// For the Rock Wall - An array with three values, number of times damaged, number of opportunities to damage, and percentage.
         /// </summary>
         /// <value>For the Rock Wall - An array with three values, number of times damaged, number of opportunities to damage, and percentage.</value>
         [DataMember(Name="D_RockWall", EmitDefaultValue=false)]
-        public List<float?> DRockWall { get; set; }
+        public List<float> DRockWall { get; set; }
 
         /// <summary>
         /// Average number of high goals scored.
         /// </summary>
         /// <value>Average number of high goals scored.</value>
         [DataMember(Name="average_high_goals", EmitDefaultValue=false)]
-        public float? AverageHighGoals { get; set; }
+        public float AverageHighGoals { get; set; }
 
         /// <summary>
         /// Average number of low goals scored.
         /// </summary>
         /// <value>Average number of low goals scored.</value>
         [DataMember(Name="average_low_goals", EmitDefaultValue=false)]
-        public float? AverageLowGoals { get; set; }
+        public float AverageLowGoals { get; set; }
 
         /// <summary>
         /// An array with three values, number of times breached, number of opportunities to breach, and percentage.
         /// </summary>
         /// <value>An array with three values, number of times breached, number of opportunities to breach, and percentage.</value>
         [DataMember(Name="breaches", EmitDefaultValue=false)]
-        public List<float?> Breaches { get; set; }
+        public List<float> Breaches { get; set; }
 
         /// <summary>
         /// An array with three values, number of times scaled, number of opportunities to scale, and percentage.
         /// </summary>
         /// <value>An array with three values, number of times scaled, number of opportunities to scale, and percentage.</value>
         [DataMember(Name="scales", EmitDefaultValue=false)]
-        public List<float?> Scales { get; set; }
+        public List<float> Scales { get; set; }
 
         /// <summary>
         /// An array with three values, number of times challenged, number of opportunities to challenge, and percentage.
         /// </summary>
         /// <value>An array with three values, number of times challenged, number of opportunities to challenge, and percentage.</value>
         [DataMember(Name="challenges", EmitDefaultValue=false)]
-        public List<float?> Challenges { get; set; }
+        public List<float> Challenges { get; set; }
 
         /// <summary>
         /// An array with three values, number of times captured, number of opportunities to capture, and percentage.
         /// </summary>
         /// <value>An array with three values, number of times captured, number of opportunities to capture, and percentage.</value>
         [DataMember(Name="captures", EmitDefaultValue=false)]
-        public List<float?> Captures { get; set; }
+        public List<float> Captures { get; set; }
 
         /// <summary>
         /// Average winning score.
         /// </summary>
         /// <value>Average winning score.</value>
         [DataMember(Name="average_win_score", EmitDefaultValue=false)]
-        public float? AverageWinScore { get; set; }
+        public float AverageWinScore { get; set; }
 
         /// <summary>
         /// Average margin of victory.
         /// </summary>
         /// <value>Average margin of victory.</value>
         [DataMember(Name="average_win_margin", EmitDefaultValue=false)]
-        public float? AverageWinMargin { get; set; }
+        public float AverageWinMargin { get; set; }
 
         /// <summary>
         /// Average total score.
         /// </summary>
         /// <value>Average total score.</value>
         [DataMember(Name="average_score", EmitDefaultValue=false)]
-        public float? AverageScore { get; set; }
+        public float AverageScore { get; set; }
 
         /// <summary>
         /// Average autonomous score.
         /// </summary>
         /// <value>Average autonomous score.</value>
         [DataMember(Name="average_auto_score", EmitDefaultValue=false)]
-        public float? AverageAutoScore { get; set; }
+        public float AverageAutoScore { get; set; }
 
         /// <summary>
         /// Average crossing score.
         /// </summary>
         /// <value>Average crossing score.</value>
         [DataMember(Name="average_crossing_score", EmitDefaultValue=false)]
-        public float? AverageCrossingScore { get; set; }
+        public float AverageCrossingScore { get; set; }
 
         /// <summary>
         /// Average boulder score.
         /// </summary>
         /// <value>Average boulder score.</value>
         [DataMember(Name="average_boulder_score", EmitDefaultValue=false)]
-        public float? AverageBoulderScore { get; set; }
+        public float AverageBoulderScore { get; set; }
 
         /// <summary>
         /// Average tower score.
         /// </summary>
         /// <value>Average tower score.</value>
         [DataMember(Name="average_tower_score", EmitDefaultValue=false)]
-        public float? AverageTowerScore { get; set; }
+        public float AverageTowerScore { get; set; }
 
         /// <summary>
         /// Average foul score.
         /// </summary>
         /// <value>Average foul score.</value>
         [DataMember(Name="average_foul_score", EmitDefaultValue=false)]
-        public float? AverageFoulScore { get; set; }
+        public float AverageFoulScore { get; set; }
 
         /// <summary>
         /// An array with three values, high score, match key from the match with the high score, and the name of the match.

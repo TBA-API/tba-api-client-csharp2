@@ -37,7 +37,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// <param name="ranking">ranking.</param>
         /// <param name="sortOrderInfo">Ordered list of names corresponding to the elements of the &#x60;sort_orders&#x60; array..</param>
         /// <param name="status">status.</param>
-        public TeamEventStatusRank(int? numTeams = default(int?), TeamEventStatusRankRanking ranking = default(TeamEventStatusRankRanking), List<TeamEventStatusRankSortOrderInfo> sortOrderInfo = default(List<TeamEventStatusRankSortOrderInfo>), string status = default(string))
+        public TeamEventStatusRank(int numTeams = default(int), TeamEventStatusRankRanking ranking = default(TeamEventStatusRankRanking), List<TeamEventStatusRankSortOrderInfo> sortOrderInfo = default(List<TeamEventStatusRankSortOrderInfo>), string status = default(string))
         {
             this.NumTeams = numTeams;
             this.Ranking = ranking;
@@ -50,7 +50,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// </summary>
         /// <value>Number of teams ranked.</value>
         [DataMember(Name="num_teams", EmitDefaultValue=false)]
-        public int? NumTeams { get; set; }
+        public int NumTeams { get; set; }
 
         /// <summary>
         /// Gets or Sets Ranking

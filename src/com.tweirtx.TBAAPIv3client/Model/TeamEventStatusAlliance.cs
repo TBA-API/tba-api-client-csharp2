@@ -42,7 +42,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// <param name="number">Alliance number. (required).</param>
         /// <param name="backup">backup.</param>
         /// <param name="pick">Order the team was picked in the alliance from 0-2, with 0 being alliance captain. (required).</param>
-        public TeamEventStatusAlliance(string name = default(string), int? number = default(int?), TeamEventStatusAllianceBackup backup = default(TeamEventStatusAllianceBackup), int? pick = default(int?))
+        public TeamEventStatusAlliance(string name = default(string), int number = default(int), TeamEventStatusAllianceBackup backup = default(TeamEventStatusAllianceBackup), int pick = default(int))
         {
             // to ensure "number" is required (not null)
             if (number == null)
@@ -80,7 +80,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// </summary>
         /// <value>Alliance number.</value>
         [DataMember(Name="number", EmitDefaultValue=false)]
-        public int? Number { get; set; }
+        public int Number { get; set; }
 
         /// <summary>
         /// Gets or Sets Backup
@@ -93,7 +93,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// </summary>
         /// <value>Order the team was picked in the alliance from 0-2, with 0 being alliance captain.</value>
         [DataMember(Name="pick", EmitDefaultValue=false)]
-        public int? Pick { get; set; }
+        public int Pick { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

@@ -45,7 +45,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// <param name="city">City of team derived from parsing the address registered with FIRST..</param>
         /// <param name="stateProv">State of team derived from parsing the address registered with FIRST..</param>
         /// <param name="country">Country of team derived from parsing the address registered with FIRST..</param>
-        public TeamSimple(string key = default(string), int? teamNumber = default(int?), string nickname = default(string), string name = default(string), string city = default(string), string stateProv = default(string), string country = default(string))
+        public TeamSimple(string key = default(string), int teamNumber = default(int), string nickname = default(string), string name = default(string), string city = default(string), string stateProv = default(string), string country = default(string))
         {
             // to ensure "key" is required (not null)
             if (key == null)
@@ -95,7 +95,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// </summary>
         /// <value>Official team number issued by FIRST.</value>
         [DataMember(Name="team_number", EmitDefaultValue=false)]
-        public int? TeamNumber { get; set; }
+        public int TeamNumber { get; set; }
 
         /// <summary>
         /// Team nickname provided by FIRST.

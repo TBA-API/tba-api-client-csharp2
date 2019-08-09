@@ -38,7 +38,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// <param name="record">record.</param>
         /// <param name="currentLevelRecord">currentLevelRecord.</param>
         /// <param name="status">status.</param>
-        public EliminationAllianceStatus(double? playoffAverage = default(double?), string level = default(string), WLTRecord record = default(WLTRecord), WLTRecord currentLevelRecord = default(WLTRecord), string status = default(string))
+        public EliminationAllianceStatus(double playoffAverage = default(double), string level = default(string), WLTRecord record = default(WLTRecord), WLTRecord currentLevelRecord = default(WLTRecord), string status = default(string))
         {
             this.PlayoffAverage = playoffAverage;
             this.Level = level;
@@ -51,7 +51,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// Gets or Sets PlayoffAverage
         /// </summary>
         [DataMember(Name="playoff_average", EmitDefaultValue=false)]
-        public double? PlayoffAverage { get; set; }
+        public double PlayoffAverage { get; set; }
 
         /// <summary>
         /// Gets or Sets Level

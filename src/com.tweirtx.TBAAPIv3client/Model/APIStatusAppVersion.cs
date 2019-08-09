@@ -40,7 +40,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// </summary>
         /// <param name="minAppVersion">Internal use - Minimum application version required to correctly connect and process data. (required).</param>
         /// <param name="latestAppVersion">Internal use - Latest application version available. (required).</param>
-        public APIStatusAppVersion(int? minAppVersion = default(int?), int? latestAppVersion = default(int?))
+        public APIStatusAppVersion(int minAppVersion = default(int), int latestAppVersion = default(int))
         {
             // to ensure "minAppVersion" is required (not null)
             if (minAppVersion == null)
@@ -69,14 +69,14 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// </summary>
         /// <value>Internal use - Minimum application version required to correctly connect and process data.</value>
         [DataMember(Name="min_app_version", EmitDefaultValue=false)]
-        public int? MinAppVersion { get; set; }
+        public int MinAppVersion { get; set; }
 
         /// <summary>
         /// Internal use - Latest application version available.
         /// </summary>
         /// <value>Internal use - Latest application version available.</value>
         [DataMember(Name="latest_app_version", EmitDefaultValue=false)]
-        public int? LatestAppVersion { get; set; }
+        public int LatestAppVersion { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

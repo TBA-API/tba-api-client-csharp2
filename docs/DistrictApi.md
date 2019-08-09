@@ -600,7 +600,7 @@ Name | Type | Description  | Notes
 
 ## GetDistrictsByYear
 
-> List&lt;DistrictList&gt; GetDistrictsByYear (int? year, string ifModifiedSince = null)
+> List&lt;DistrictList&gt; GetDistrictsByYear (int year, string ifModifiedSince = null)
 
 
 
@@ -628,7 +628,7 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
             var apiInstance = new DistrictApi(Configuration.Default);
-            var year = 56;  // int? | Competition Year (or Season). Must be 4 digits.
+            var year = 56;  // int | Competition Year (or Season). Must be 4 digits.
             var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
             try
@@ -652,7 +652,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **year** | **int?**| Competition Year (or Season). Must be 4 digits. | 
+ **year** | **int**| Competition Year (or Season). Must be 4 digits. | 
  **ifModifiedSince** | **string**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
 
 ### Return type

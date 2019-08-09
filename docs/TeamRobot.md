@@ -5,7 +5,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Year** | **int?** | Year this robot competed in. | 
+**Year** | **int** | Year this robot competed in. | 
 **RobotName** | **string** | Name of the robot as provided by the team. | 
 **Key** | **string** | Internal TBA identifier for this robot. | 
 **TeamKey** | **string** | TBA team key for this robot. | 

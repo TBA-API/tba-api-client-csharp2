@@ -75,7 +75,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// <param name="winningScaleOwnershipPercentage">Average scale ownership percentage for the winning alliance. (required).</param>
         /// <param name="winningScaleOwnershipPercentageAuto">Average scale ownership percentage for the winning alliance during auto. (required).</param>
         /// <param name="winningScaleOwnershipPercentageTeleop">Average scale ownership percentage for the winning alliance during teleop. (required).</param>
-        public EventInsights2018(List<float?> autoQuestAchieved = default(List<float?>), float? averageBoostPlayed = default(float?), float? averageEndgamePoints = default(float?), float? averageForcePlayed = default(float?), float? averageFoulScore = default(float?), float? averagePointsAuto = default(float?), float? averagePointsTeleop = default(float?), float? averageRunPointsAuto = default(float?), float? averageScaleOwnershipPoints = default(float?), float? averageScaleOwnershipPointsAuto = default(float?), float? averageScaleOwnershipPointsTeleop = default(float?), float? averageScore = default(float?), float? averageSwitchOwnershipPoints = default(float?), float? averageSwitchOwnershipPointsAuto = default(float?), float? averageSwitchOwnershipPointsTeleop = default(float?), float? averageVaultPoints = default(float?), float? averageWinMargin = default(float?), float? averageWinScore = default(float?), List<float?> boostPlayedCounts = default(List<float?>), List<float?> climbCounts = default(List<float?>), List<float?> faceTheBossAchieved = default(List<float?>), List<float?> forcePlayedCounts = default(List<float?>), List<string> highScore = default(List<string>), List<float?> levitatePlayedCounts = default(List<float?>), List<float?> runCountsAuto = default(List<float?>), float? scaleNeutralPercentage = default(float?), float? scaleNeutralPercentageAuto = default(float?), float? scaleNeutralPercentageTeleop = default(float?), List<float?> switchOwnedCountsAuto = default(List<float?>), List<float?> unicornMatches = default(List<float?>), float? winningOppSwitchDenialPercentageTeleop = default(float?), float? winningOwnSwitchOwnershipPercentage = default(float?), float? winningOwnSwitchOwnershipPercentageAuto = default(float?), float? winningOwnSwitchOwnershipPercentageTeleop = default(float?), float? winningScaleOwnershipPercentage = default(float?), float? winningScaleOwnershipPercentageAuto = default(float?), float? winningScaleOwnershipPercentageTeleop = default(float?))
+        public EventInsights2018(List<float> autoQuestAchieved = default(List<float>), float averageBoostPlayed = default(float), float averageEndgamePoints = default(float), float averageForcePlayed = default(float), float averageFoulScore = default(float), float averagePointsAuto = default(float), float averagePointsTeleop = default(float), float averageRunPointsAuto = default(float), float averageScaleOwnershipPoints = default(float), float averageScaleOwnershipPointsAuto = default(float), float averageScaleOwnershipPointsTeleop = default(float), float averageScore = default(float), float averageSwitchOwnershipPoints = default(float), float averageSwitchOwnershipPointsAuto = default(float), float averageSwitchOwnershipPointsTeleop = default(float), float averageVaultPoints = default(float), float averageWinMargin = default(float), float averageWinScore = default(float), List<float> boostPlayedCounts = default(List<float>), List<float> climbCounts = default(List<float>), List<float> faceTheBossAchieved = default(List<float>), List<float> forcePlayedCounts = default(List<float>), List<string> highScore = default(List<string>), List<float> levitatePlayedCounts = default(List<float>), List<float> runCountsAuto = default(List<float>), float scaleNeutralPercentage = default(float), float scaleNeutralPercentageAuto = default(float), float scaleNeutralPercentageTeleop = default(float), List<float> switchOwnedCountsAuto = default(List<float>), List<float> unicornMatches = default(List<float>), float winningOppSwitchDenialPercentageTeleop = default(float), float winningOwnSwitchOwnershipPercentage = default(float), float winningOwnSwitchOwnershipPercentageAuto = default(float), float winningOwnSwitchOwnershipPercentageTeleop = default(float), float winningScaleOwnershipPercentage = default(float), float winningScaleOwnershipPercentageAuto = default(float), float winningScaleOwnershipPercentageTeleop = default(float))
         {
             // to ensure "autoQuestAchieved" is required (not null)
             if (autoQuestAchieved == null)
@@ -454,154 +454,154 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// </summary>
         /// <value>An array with three values, number of times auto quest was completed, number of opportunities to complete the auto quest, and percentage.</value>
         [DataMember(Name="auto_quest_achieved", EmitDefaultValue=false)]
-        public List<float?> AutoQuestAchieved { get; set; }
+        public List<float> AutoQuestAchieved { get; set; }
 
         /// <summary>
         /// Average number of boost power up scored (out of 3).
         /// </summary>
         /// <value>Average number of boost power up scored (out of 3).</value>
         [DataMember(Name="average_boost_played", EmitDefaultValue=false)]
-        public float? AverageBoostPlayed { get; set; }
+        public float AverageBoostPlayed { get; set; }
 
         /// <summary>
         /// Average endgame points.
         /// </summary>
         /// <value>Average endgame points.</value>
         [DataMember(Name="average_endgame_points", EmitDefaultValue=false)]
-        public float? AverageEndgamePoints { get; set; }
+        public float AverageEndgamePoints { get; set; }
 
         /// <summary>
         /// Average number of force power up scored (out of 3).
         /// </summary>
         /// <value>Average number of force power up scored (out of 3).</value>
         [DataMember(Name="average_force_played", EmitDefaultValue=false)]
-        public float? AverageForcePlayed { get; set; }
+        public float AverageForcePlayed { get; set; }
 
         /// <summary>
         /// Average foul score.
         /// </summary>
         /// <value>Average foul score.</value>
         [DataMember(Name="average_foul_score", EmitDefaultValue=false)]
-        public float? AverageFoulScore { get; set; }
+        public float AverageFoulScore { get; set; }
 
         /// <summary>
         /// Average points scored during auto.
         /// </summary>
         /// <value>Average points scored during auto.</value>
         [DataMember(Name="average_points_auto", EmitDefaultValue=false)]
-        public float? AveragePointsAuto { get; set; }
+        public float AveragePointsAuto { get; set; }
 
         /// <summary>
         /// Average points scored during teleop.
         /// </summary>
         /// <value>Average points scored during teleop.</value>
         [DataMember(Name="average_points_teleop", EmitDefaultValue=false)]
-        public float? AveragePointsTeleop { get; set; }
+        public float AveragePointsTeleop { get; set; }
 
         /// <summary>
         /// Average mobility points scored during auto.
         /// </summary>
         /// <value>Average mobility points scored during auto.</value>
         [DataMember(Name="average_run_points_auto", EmitDefaultValue=false)]
-        public float? AverageRunPointsAuto { get; set; }
+        public float AverageRunPointsAuto { get; set; }
 
         /// <summary>
         /// Average scale ownership points scored.
         /// </summary>
         /// <value>Average scale ownership points scored.</value>
         [DataMember(Name="average_scale_ownership_points", EmitDefaultValue=false)]
-        public float? AverageScaleOwnershipPoints { get; set; }
+        public float AverageScaleOwnershipPoints { get; set; }
 
         /// <summary>
         /// Average scale ownership points scored during auto.
         /// </summary>
         /// <value>Average scale ownership points scored during auto.</value>
         [DataMember(Name="average_scale_ownership_points_auto", EmitDefaultValue=false)]
-        public float? AverageScaleOwnershipPointsAuto { get; set; }
+        public float AverageScaleOwnershipPointsAuto { get; set; }
 
         /// <summary>
         /// Average scale ownership points scored during teleop.
         /// </summary>
         /// <value>Average scale ownership points scored during teleop.</value>
         [DataMember(Name="average_scale_ownership_points_teleop", EmitDefaultValue=false)]
-        public float? AverageScaleOwnershipPointsTeleop { get; set; }
+        public float AverageScaleOwnershipPointsTeleop { get; set; }
 
         /// <summary>
         /// Average score.
         /// </summary>
         /// <value>Average score.</value>
         [DataMember(Name="average_score", EmitDefaultValue=false)]
-        public float? AverageScore { get; set; }
+        public float AverageScore { get; set; }
 
         /// <summary>
         /// Average switch ownership points scored.
         /// </summary>
         /// <value>Average switch ownership points scored.</value>
         [DataMember(Name="average_switch_ownership_points", EmitDefaultValue=false)]
-        public float? AverageSwitchOwnershipPoints { get; set; }
+        public float AverageSwitchOwnershipPoints { get; set; }
 
         /// <summary>
         /// Average switch ownership points scored during auto.
         /// </summary>
         /// <value>Average switch ownership points scored during auto.</value>
         [DataMember(Name="average_switch_ownership_points_auto", EmitDefaultValue=false)]
-        public float? AverageSwitchOwnershipPointsAuto { get; set; }
+        public float AverageSwitchOwnershipPointsAuto { get; set; }
 
         /// <summary>
         /// Average switch ownership points scored during teleop.
         /// </summary>
         /// <value>Average switch ownership points scored during teleop.</value>
         [DataMember(Name="average_switch_ownership_points_teleop", EmitDefaultValue=false)]
-        public float? AverageSwitchOwnershipPointsTeleop { get; set; }
+        public float AverageSwitchOwnershipPointsTeleop { get; set; }
 
         /// <summary>
         /// Average value points scored.
         /// </summary>
         /// <value>Average value points scored.</value>
         [DataMember(Name="average_vault_points", EmitDefaultValue=false)]
-        public float? AverageVaultPoints { get; set; }
+        public float AverageVaultPoints { get; set; }
 
         /// <summary>
         /// Average margin of victory.
         /// </summary>
         /// <value>Average margin of victory.</value>
         [DataMember(Name="average_win_margin", EmitDefaultValue=false)]
-        public float? AverageWinMargin { get; set; }
+        public float AverageWinMargin { get; set; }
 
         /// <summary>
         /// Average winning score.
         /// </summary>
         /// <value>Average winning score.</value>
         [DataMember(Name="average_win_score", EmitDefaultValue=false)]
-        public float? AverageWinScore { get; set; }
+        public float AverageWinScore { get; set; }
 
         /// <summary>
         /// An array with three values, number of times a boost power up was played, number of opportunities to play a boost power up, and percentage.
         /// </summary>
         /// <value>An array with three values, number of times a boost power up was played, number of opportunities to play a boost power up, and percentage.</value>
         [DataMember(Name="boost_played_counts", EmitDefaultValue=false)]
-        public List<float?> BoostPlayedCounts { get; set; }
+        public List<float> BoostPlayedCounts { get; set; }
 
         /// <summary>
         /// An array with three values, number of times a climb occurred, number of opportunities to climb, and percentage.
         /// </summary>
         /// <value>An array with three values, number of times a climb occurred, number of opportunities to climb, and percentage.</value>
         [DataMember(Name="climb_counts", EmitDefaultValue=false)]
-        public List<float?> ClimbCounts { get; set; }
+        public List<float> ClimbCounts { get; set; }
 
         /// <summary>
         /// An array with three values, number of times an alliance faced the boss, number of opportunities to face the boss, and percentage.
         /// </summary>
         /// <value>An array with three values, number of times an alliance faced the boss, number of opportunities to face the boss, and percentage.</value>
         [DataMember(Name="face_the_boss_achieved", EmitDefaultValue=false)]
-        public List<float?> FaceTheBossAchieved { get; set; }
+        public List<float> FaceTheBossAchieved { get; set; }
 
         /// <summary>
         /// An array with three values, number of times a force power up was played, number of opportunities to play a force power up, and percentage.
         /// </summary>
         /// <value>An array with three values, number of times a force power up was played, number of opportunities to play a force power up, and percentage.</value>
         [DataMember(Name="force_played_counts", EmitDefaultValue=false)]
-        public List<float?> ForcePlayedCounts { get; set; }
+        public List<float> ForcePlayedCounts { get; set; }
 
         /// <summary>
         /// An array with three values, high score, match key from the match with the high score, and the name of the match
@@ -615,98 +615,98 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// </summary>
         /// <value>An array with three values, number of times a levitate power up was played, number of opportunities to play a levitate power up, and percentage.</value>
         [DataMember(Name="levitate_played_counts", EmitDefaultValue=false)]
-        public List<float?> LevitatePlayedCounts { get; set; }
+        public List<float> LevitatePlayedCounts { get; set; }
 
         /// <summary>
         /// An array with three values, number of times a team scored mobility points in auto, number of opportunities to score mobility points in auto, and percentage.
         /// </summary>
         /// <value>An array with three values, number of times a team scored mobility points in auto, number of opportunities to score mobility points in auto, and percentage.</value>
         [DataMember(Name="run_counts_auto", EmitDefaultValue=false)]
-        public List<float?> RunCountsAuto { get; set; }
+        public List<float> RunCountsAuto { get; set; }
 
         /// <summary>
         /// Average scale neutral percentage.
         /// </summary>
         /// <value>Average scale neutral percentage.</value>
         [DataMember(Name="scale_neutral_percentage", EmitDefaultValue=false)]
-        public float? ScaleNeutralPercentage { get; set; }
+        public float ScaleNeutralPercentage { get; set; }
 
         /// <summary>
         /// Average scale neutral percentage during auto.
         /// </summary>
         /// <value>Average scale neutral percentage during auto.</value>
         [DataMember(Name="scale_neutral_percentage_auto", EmitDefaultValue=false)]
-        public float? ScaleNeutralPercentageAuto { get; set; }
+        public float ScaleNeutralPercentageAuto { get; set; }
 
         /// <summary>
         /// Average scale neutral percentage during teleop.
         /// </summary>
         /// <value>Average scale neutral percentage during teleop.</value>
         [DataMember(Name="scale_neutral_percentage_teleop", EmitDefaultValue=false)]
-        public float? ScaleNeutralPercentageTeleop { get; set; }
+        public float ScaleNeutralPercentageTeleop { get; set; }
 
         /// <summary>
         /// An array with three values, number of times a switch was owned during auto, number of opportunities to own a switch during auto, and percentage.
         /// </summary>
         /// <value>An array with three values, number of times a switch was owned during auto, number of opportunities to own a switch during auto, and percentage.</value>
         [DataMember(Name="switch_owned_counts_auto", EmitDefaultValue=false)]
-        public List<float?> SwitchOwnedCountsAuto { get; set; }
+        public List<float> SwitchOwnedCountsAuto { get; set; }
 
         /// <summary>
         /// An array with three values, number of times a unicorn match (Win + Auto Quest + Face the Boss) occurred, number of opportunities to have a unicorn match, and percentage.
         /// </summary>
         /// <value>An array with three values, number of times a unicorn match (Win + Auto Quest + Face the Boss) occurred, number of opportunities to have a unicorn match, and percentage.</value>
         [DataMember(Name="unicorn_matches", EmitDefaultValue=false)]
-        public List<float?> UnicornMatches { get; set; }
+        public List<float> UnicornMatches { get; set; }
 
         /// <summary>
         /// Average opposing switch denail percentage for the winning alliance during teleop.
         /// </summary>
         /// <value>Average opposing switch denail percentage for the winning alliance during teleop.</value>
         [DataMember(Name="winning_opp_switch_denial_percentage_teleop", EmitDefaultValue=false)]
-        public float? WinningOppSwitchDenialPercentageTeleop { get; set; }
+        public float WinningOppSwitchDenialPercentageTeleop { get; set; }
 
         /// <summary>
         /// Average own switch ownership percentage for the winning alliance.
         /// </summary>
         /// <value>Average own switch ownership percentage for the winning alliance.</value>
         [DataMember(Name="winning_own_switch_ownership_percentage", EmitDefaultValue=false)]
-        public float? WinningOwnSwitchOwnershipPercentage { get; set; }
+        public float WinningOwnSwitchOwnershipPercentage { get; set; }
 
         /// <summary>
         /// Average own switch ownership percentage for the winning alliance during auto.
         /// </summary>
         /// <value>Average own switch ownership percentage for the winning alliance during auto.</value>
         [DataMember(Name="winning_own_switch_ownership_percentage_auto", EmitDefaultValue=false)]
-        public float? WinningOwnSwitchOwnershipPercentageAuto { get; set; }
+        public float WinningOwnSwitchOwnershipPercentageAuto { get; set; }
 
         /// <summary>
         /// Average own switch ownership percentage for the winning alliance during teleop.
         /// </summary>
         /// <value>Average own switch ownership percentage for the winning alliance during teleop.</value>
         [DataMember(Name="winning_own_switch_ownership_percentage_teleop", EmitDefaultValue=false)]
-        public float? WinningOwnSwitchOwnershipPercentageTeleop { get; set; }
+        public float WinningOwnSwitchOwnershipPercentageTeleop { get; set; }
 
         /// <summary>
         /// Average scale ownership percentage for the winning alliance.
         /// </summary>
         /// <value>Average scale ownership percentage for the winning alliance.</value>
         [DataMember(Name="winning_scale_ownership_percentage", EmitDefaultValue=false)]
-        public float? WinningScaleOwnershipPercentage { get; set; }
+        public float WinningScaleOwnershipPercentage { get; set; }
 
         /// <summary>
         /// Average scale ownership percentage for the winning alliance during auto.
         /// </summary>
         /// <value>Average scale ownership percentage for the winning alliance during auto.</value>
         [DataMember(Name="winning_scale_ownership_percentage_auto", EmitDefaultValue=false)]
-        public float? WinningScaleOwnershipPercentageAuto { get; set; }
+        public float WinningScaleOwnershipPercentageAuto { get; set; }
 
         /// <summary>
         /// Average scale ownership percentage for the winning alliance during teleop.
         /// </summary>
         /// <value>Average scale ownership percentage for the winning alliance during teleop.</value>
         [DataMember(Name="winning_scale_ownership_percentage_teleop", EmitDefaultValue=false)]
-        public float? WinningScaleOwnershipPercentageTeleop { get; set; }
+        public float WinningScaleOwnershipPercentageTeleop { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

@@ -42,7 +42,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// <param name="robotName">Name of the robot as provided by the team. (required).</param>
         /// <param name="key">Internal TBA identifier for this robot. (required).</param>
         /// <param name="teamKey">TBA team key for this robot. (required).</param>
-        public TeamRobot(int? year = default(int?), string robotName = default(string), string key = default(string), string teamKey = default(string))
+        public TeamRobot(int year = default(int), string robotName = default(string), string key = default(string), string teamKey = default(string))
         {
             // to ensure "year" is required (not null)
             if (year == null)
@@ -91,7 +91,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// </summary>
         /// <value>Year this robot competed in.</value>
         [DataMember(Name="year", EmitDefaultValue=false)]
-        public int? Year { get; set; }
+        public int Year { get; set; }
 
         /// <summary>
         /// Name of the robot as provided by the team.

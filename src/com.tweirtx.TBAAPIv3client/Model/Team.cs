@@ -56,7 +56,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// <param name="rookieYear">First year the team officially competed..</param>
         /// <param name="motto">Team&#39;s motto as provided by FIRST. This field is deprecated and will return null - will be removed at end-of-season in 2019..</param>
         /// <param name="homeChampionship">Location of the team&#39;s home championship each year as a key-value pair. The year (as a string) is the key, and the city is the value..</param>
-        public Team(string key = default(string), int? teamNumber = default(int?), string nickname = default(string), string name = default(string), string city = default(string), string stateProv = default(string), string country = default(string), string address = default(string), string postalCode = default(string), string gmapsPlaceId = default(string), string gmapsUrl = default(string), double? lat = default(double?), double? lng = default(double?), string locationName = default(string), string website = default(string), int? rookieYear = default(int?), string motto = default(string), Object homeChampionship = default(Object))
+        public Team(string key = default(string), int teamNumber = default(int), string nickname = default(string), string name = default(string), string city = default(string), string stateProv = default(string), string country = default(string), string address = default(string), string postalCode = default(string), string gmapsPlaceId = default(string), string gmapsUrl = default(string), double lat = default(double), double lng = default(double), string locationName = default(string), string website = default(string), int rookieYear = default(int), string motto = default(string), Object homeChampionship = default(Object))
         {
             // to ensure "key" is required (not null)
             if (key == null)
@@ -117,7 +117,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// </summary>
         /// <value>Official team number issued by FIRST.</value>
         [DataMember(Name="team_number", EmitDefaultValue=false)]
-        public int? TeamNumber { get; set; }
+        public int TeamNumber { get; set; }
 
         /// <summary>
         /// Team nickname provided by FIRST.
@@ -187,14 +187,14 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// </summary>
         /// <value>Will be NULL, for future development.</value>
         [DataMember(Name="lat", EmitDefaultValue=false)]
-        public double? Lat { get; set; }
+        public double Lat { get; set; }
 
         /// <summary>
         /// Will be NULL, for future development.
         /// </summary>
         /// <value>Will be NULL, for future development.</value>
         [DataMember(Name="lng", EmitDefaultValue=false)]
-        public double? Lng { get; set; }
+        public double Lng { get; set; }
 
         /// <summary>
         /// Will be NULL, for future development.
@@ -215,7 +215,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// </summary>
         /// <value>First year the team officially competed.</value>
         [DataMember(Name="rookie_year", EmitDefaultValue=false)]
-        public int? RookieYear { get; set; }
+        public int RookieYear { get; set; }
 
         /// <summary>
         /// Team&#39;s motto as provided by FIRST. This field is deprecated and will return null - will be removed at end-of-season in 2019.

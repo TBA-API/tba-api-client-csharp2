@@ -35,7 +35,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// </summary>
         /// <param name="precision">The number of digits of precision used for this value, eg &#x60;2&#x60; would correspond to a value of &#x60;101.11&#x60; while &#x60;0&#x60; would correspond to &#x60;101&#x60;..</param>
         /// <param name="name">The descriptive name of the value used to sort the ranking..</param>
-        public TeamEventStatusRankSortOrderInfo(int? precision = default(int?), string name = default(string))
+        public TeamEventStatusRankSortOrderInfo(int precision = default(int), string name = default(string))
         {
             this.Precision = precision;
             this.Name = name;
@@ -46,7 +46,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// </summary>
         /// <value>The number of digits of precision used for this value, eg &#x60;2&#x60; would correspond to a value of &#x60;101.11&#x60; while &#x60;0&#x60; would correspond to &#x60;101&#x60;.</value>
         [DataMember(Name="precision", EmitDefaultValue=false)]
-        public int? Precision { get; set; }
+        public int Precision { get; set; }
 
         /// <summary>
         /// The descriptive name of the value used to sort the ranking.

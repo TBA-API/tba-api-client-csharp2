@@ -1704,7 +1704,7 @@ Name | Type | Description  | Notes
 
 ## GetEventsByYear
 
-> List&lt;Event&gt; GetEventsByYear (int? year, string ifModifiedSince = null)
+> List&lt;Event&gt; GetEventsByYear (int year, string ifModifiedSince = null)
 
 
 
@@ -1732,7 +1732,7 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
             var apiInstance = new EventApi(Configuration.Default);
-            var year = 56;  // int? | Competition Year (or Season). Must be 4 digits.
+            var year = 56;  // int | Competition Year (or Season). Must be 4 digits.
             var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
             try
@@ -1756,7 +1756,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **year** | **int?**| Competition Year (or Season). Must be 4 digits. | 
+ **year** | **int**| Competition Year (or Season). Must be 4 digits. | 
  **ifModifiedSince** | **string**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
 
 ### Return type
@@ -1787,7 +1787,7 @@ Name | Type | Description  | Notes
 
 ## GetEventsByYearKeys
 
-> List&lt;string&gt; GetEventsByYearKeys (int? year, string ifModifiedSince = null)
+> List&lt;string&gt; GetEventsByYearKeys (int year, string ifModifiedSince = null)
 
 
 
@@ -1815,7 +1815,7 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
             var apiInstance = new EventApi(Configuration.Default);
-            var year = 56;  // int? | Competition Year (or Season). Must be 4 digits.
+            var year = 56;  // int | Competition Year (or Season). Must be 4 digits.
             var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
             try
@@ -1839,7 +1839,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **year** | **int?**| Competition Year (or Season). Must be 4 digits. | 
+ **year** | **int**| Competition Year (or Season). Must be 4 digits. | 
  **ifModifiedSince** | **string**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
 
 ### Return type
@@ -1870,7 +1870,7 @@ Name | Type | Description  | Notes
 
 ## GetEventsByYearSimple
 
-> List&lt;EventSimple&gt; GetEventsByYearSimple (int? year, string ifModifiedSince = null)
+> List&lt;EventSimple&gt; GetEventsByYearSimple (int year, string ifModifiedSince = null)
 
 
 
@@ -1898,7 +1898,7 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-TBA-Auth-Key", "Bearer");
 
             var apiInstance = new EventApi(Configuration.Default);
-            var year = 56;  // int? | Competition Year (or Season). Must be 4 digits.
+            var year = 56;  // int | Competition Year (or Season). Must be 4 digits.
             var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
             try
@@ -1922,7 +1922,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **year** | **int?**| Competition Year (or Season). Must be 4 digits. | 
+ **year** | **int**| Competition Year (or Season). Must be 4 digits. | 
  **ifModifiedSince** | **string**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
 
 ### Return type
@@ -2461,7 +2461,7 @@ Name | Type | Description  | Notes
 
 ## GetTeamEventsByYear
 
-> List&lt;Event&gt; GetTeamEventsByYear (string teamKey, int? year, string ifModifiedSince = null)
+> List&lt;Event&gt; GetTeamEventsByYear (string teamKey, int year, string ifModifiedSince = null)
 
 
 
@@ -2490,7 +2490,7 @@ namespace Example
 
             var apiInstance = new EventApi(Configuration.Default);
             var teamKey = teamKey_example;  // string | TBA Team Key, eg `frc254`
-            var year = 56;  // int? | Competition Year (or Season). Must be 4 digits.
+            var year = 56;  // int | Competition Year (or Season). Must be 4 digits.
             var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
             try
@@ -2515,7 +2515,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **teamKey** | **string**| TBA Team Key, eg &#x60;frc254&#x60; | 
- **year** | **int?**| Competition Year (or Season). Must be 4 digits. | 
+ **year** | **int**| Competition Year (or Season). Must be 4 digits. | 
  **ifModifiedSince** | **string**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
 
 ### Return type
@@ -2546,7 +2546,7 @@ Name | Type | Description  | Notes
 
 ## GetTeamEventsByYearKeys
 
-> List&lt;string&gt; GetTeamEventsByYearKeys (string teamKey, int? year, string ifModifiedSince = null)
+> List&lt;string&gt; GetTeamEventsByYearKeys (string teamKey, int year, string ifModifiedSince = null)
 
 
 
@@ -2575,7 +2575,7 @@ namespace Example
 
             var apiInstance = new EventApi(Configuration.Default);
             var teamKey = teamKey_example;  // string | TBA Team Key, eg `frc254`
-            var year = 56;  // int? | Competition Year (or Season). Must be 4 digits.
+            var year = 56;  // int | Competition Year (or Season). Must be 4 digits.
             var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
             try
@@ -2600,7 +2600,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **teamKey** | **string**| TBA Team Key, eg &#x60;frc254&#x60; | 
- **year** | **int?**| Competition Year (or Season). Must be 4 digits. | 
+ **year** | **int**| Competition Year (or Season). Must be 4 digits. | 
  **ifModifiedSince** | **string**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
 
 ### Return type
@@ -2631,7 +2631,7 @@ Name | Type | Description  | Notes
 
 ## GetTeamEventsByYearSimple
 
-> List&lt;EventSimple&gt; GetTeamEventsByYearSimple (string teamKey, int? year, string ifModifiedSince = null)
+> List&lt;EventSimple&gt; GetTeamEventsByYearSimple (string teamKey, int year, string ifModifiedSince = null)
 
 
 
@@ -2660,7 +2660,7 @@ namespace Example
 
             var apiInstance = new EventApi(Configuration.Default);
             var teamKey = teamKey_example;  // string | TBA Team Key, eg `frc254`
-            var year = 56;  // int? | Competition Year (or Season). Must be 4 digits.
+            var year = 56;  // int | Competition Year (or Season). Must be 4 digits.
             var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
             try
@@ -2685,7 +2685,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **teamKey** | **string**| TBA Team Key, eg &#x60;frc254&#x60; | 
- **year** | **int?**| Competition Year (or Season). Must be 4 digits. | 
+ **year** | **int**| Competition Year (or Season). Must be 4 digits. | 
  **ifModifiedSince** | **string**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
 
 ### Return type
@@ -2882,7 +2882,7 @@ Name | Type | Description  | Notes
 
 ## GetTeamEventsStatusesByYear
 
-> Dictionary&lt;string, TeamEventStatus&gt; GetTeamEventsStatusesByYear (string teamKey, int? year, string ifModifiedSince = null)
+> Dictionary&lt;string, TeamEventStatus&gt; GetTeamEventsStatusesByYear (string teamKey, int year, string ifModifiedSince = null)
 
 
 
@@ -2911,7 +2911,7 @@ namespace Example
 
             var apiInstance = new EventApi(Configuration.Default);
             var teamKey = teamKey_example;  // string | TBA Team Key, eg `frc254`
-            var year = 56;  // int? | Competition Year (or Season). Must be 4 digits.
+            var year = 56;  // int | Competition Year (or Season). Must be 4 digits.
             var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
             try
@@ -2936,7 +2936,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **teamKey** | **string**| TBA Team Key, eg &#x60;frc254&#x60; | 
- **year** | **int?**| Competition Year (or Season). Must be 4 digits. | 
+ **year** | **int**| Competition Year (or Season). Must be 4 digits. | 
  **ifModifiedSince** | **string**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
 
 ### Return type

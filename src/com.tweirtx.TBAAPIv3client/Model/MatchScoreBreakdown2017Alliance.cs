@@ -159,7 +159,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// <param name="touchpadNear">touchpadNear.</param>
         /// <param name="touchpadMiddle">touchpadMiddle.</param>
         /// <param name="touchpadFar">touchpadFar.</param>
-        public MatchScoreBreakdown2017Alliance(int? autoPoints = default(int?), int? teleopPoints = default(int?), int? foulPoints = default(int?), int? adjustPoints = default(int?), int? totalPoints = default(int?), Robot1AutoEnum? robot1Auto = default(Robot1AutoEnum?), Robot2AutoEnum? robot2Auto = default(Robot2AutoEnum?), Robot3AutoEnum? robot3Auto = default(Robot3AutoEnum?), bool? rotor1Auto = default(bool?), bool? rotor2Auto = default(bool?), int? autoFuelLow = default(int?), int? autoFuelHigh = default(int?), int? autoMobilityPoints = default(int?), int? autoRotorPoints = default(int?), int? autoFuelPoints = default(int?), int? teleopFuelPoints = default(int?), int? teleopFuelLow = default(int?), int? teleopFuelHigh = default(int?), int? teleopRotorPoints = default(int?), bool? kPaRankingPointAchieved = default(bool?), int? teleopTakeoffPoints = default(int?), int? kPaBonusPoints = default(int?), int? rotorBonusPoints = default(int?), bool? rotor1Engaged = default(bool?), bool? rotor2Engaged = default(bool?), bool? rotor3Engaged = default(bool?), bool? rotor4Engaged = default(bool?), bool? rotorRankingPointAchieved = default(bool?), int? techFoulCount = default(int?), int? foulCount = default(int?), string touchpadNear = default(string), string touchpadMiddle = default(string), string touchpadFar = default(string))
+        public MatchScoreBreakdown2017Alliance(int autoPoints = default(int), int teleopPoints = default(int), int foulPoints = default(int), int adjustPoints = default(int), int totalPoints = default(int), Robot1AutoEnum? robot1Auto = default(Robot1AutoEnum?), Robot2AutoEnum? robot2Auto = default(Robot2AutoEnum?), Robot3AutoEnum? robot3Auto = default(Robot3AutoEnum?), bool rotor1Auto = default(bool), bool rotor2Auto = default(bool), int autoFuelLow = default(int), int autoFuelHigh = default(int), int autoMobilityPoints = default(int), int autoRotorPoints = default(int), int autoFuelPoints = default(int), int teleopFuelPoints = default(int), int teleopFuelLow = default(int), int teleopFuelHigh = default(int), int teleopRotorPoints = default(int), bool kPaRankingPointAchieved = default(bool), int teleopTakeoffPoints = default(int), int kPaBonusPoints = default(int), int rotorBonusPoints = default(int), bool rotor1Engaged = default(bool), bool rotor2Engaged = default(bool), bool rotor3Engaged = default(bool), bool rotor4Engaged = default(bool), bool rotorRankingPointAchieved = default(bool), int techFoulCount = default(int), int foulCount = default(int), string touchpadNear = default(string), string touchpadMiddle = default(string), string touchpadFar = default(string))
         {
             this.AutoPoints = autoPoints;
             this.TeleopPoints = teleopPoints;
@@ -200,31 +200,31 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// Gets or Sets AutoPoints
         /// </summary>
         [DataMember(Name="autoPoints", EmitDefaultValue=false)]
-        public int? AutoPoints { get; set; }
+        public int AutoPoints { get; set; }
 
         /// <summary>
         /// Gets or Sets TeleopPoints
         /// </summary>
         [DataMember(Name="teleopPoints", EmitDefaultValue=false)]
-        public int? TeleopPoints { get; set; }
+        public int TeleopPoints { get; set; }
 
         /// <summary>
         /// Gets or Sets FoulPoints
         /// </summary>
         [DataMember(Name="foulPoints", EmitDefaultValue=false)]
-        public int? FoulPoints { get; set; }
+        public int FoulPoints { get; set; }
 
         /// <summary>
         /// Gets or Sets AdjustPoints
         /// </summary>
         [DataMember(Name="adjustPoints", EmitDefaultValue=false)]
-        public int? AdjustPoints { get; set; }
+        public int AdjustPoints { get; set; }
 
         /// <summary>
         /// Gets or Sets TotalPoints
         /// </summary>
         [DataMember(Name="totalPoints", EmitDefaultValue=false)]
-        public int? TotalPoints { get; set; }
+        public int TotalPoints { get; set; }
 
 
 
@@ -233,133 +233,133 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// Gets or Sets Rotor1Auto
         /// </summary>
         [DataMember(Name="rotor1Auto", EmitDefaultValue=false)]
-        public bool? Rotor1Auto { get; set; }
+        public bool Rotor1Auto { get; set; }
 
         /// <summary>
         /// Gets or Sets Rotor2Auto
         /// </summary>
         [DataMember(Name="rotor2Auto", EmitDefaultValue=false)]
-        public bool? Rotor2Auto { get; set; }
+        public bool Rotor2Auto { get; set; }
 
         /// <summary>
         /// Gets or Sets AutoFuelLow
         /// </summary>
         [DataMember(Name="autoFuelLow", EmitDefaultValue=false)]
-        public int? AutoFuelLow { get; set; }
+        public int AutoFuelLow { get; set; }
 
         /// <summary>
         /// Gets or Sets AutoFuelHigh
         /// </summary>
         [DataMember(Name="autoFuelHigh", EmitDefaultValue=false)]
-        public int? AutoFuelHigh { get; set; }
+        public int AutoFuelHigh { get; set; }
 
         /// <summary>
         /// Gets or Sets AutoMobilityPoints
         /// </summary>
         [DataMember(Name="autoMobilityPoints", EmitDefaultValue=false)]
-        public int? AutoMobilityPoints { get; set; }
+        public int AutoMobilityPoints { get; set; }
 
         /// <summary>
         /// Gets or Sets AutoRotorPoints
         /// </summary>
         [DataMember(Name="autoRotorPoints", EmitDefaultValue=false)]
-        public int? AutoRotorPoints { get; set; }
+        public int AutoRotorPoints { get; set; }
 
         /// <summary>
         /// Gets or Sets AutoFuelPoints
         /// </summary>
         [DataMember(Name="autoFuelPoints", EmitDefaultValue=false)]
-        public int? AutoFuelPoints { get; set; }
+        public int AutoFuelPoints { get; set; }
 
         /// <summary>
         /// Gets or Sets TeleopFuelPoints
         /// </summary>
         [DataMember(Name="teleopFuelPoints", EmitDefaultValue=false)]
-        public int? TeleopFuelPoints { get; set; }
+        public int TeleopFuelPoints { get; set; }
 
         /// <summary>
         /// Gets or Sets TeleopFuelLow
         /// </summary>
         [DataMember(Name="teleopFuelLow", EmitDefaultValue=false)]
-        public int? TeleopFuelLow { get; set; }
+        public int TeleopFuelLow { get; set; }
 
         /// <summary>
         /// Gets or Sets TeleopFuelHigh
         /// </summary>
         [DataMember(Name="teleopFuelHigh", EmitDefaultValue=false)]
-        public int? TeleopFuelHigh { get; set; }
+        public int TeleopFuelHigh { get; set; }
 
         /// <summary>
         /// Gets or Sets TeleopRotorPoints
         /// </summary>
         [DataMember(Name="teleopRotorPoints", EmitDefaultValue=false)]
-        public int? TeleopRotorPoints { get; set; }
+        public int TeleopRotorPoints { get; set; }
 
         /// <summary>
         /// Gets or Sets KPaRankingPointAchieved
         /// </summary>
         [DataMember(Name="kPaRankingPointAchieved", EmitDefaultValue=false)]
-        public bool? KPaRankingPointAchieved { get; set; }
+        public bool KPaRankingPointAchieved { get; set; }
 
         /// <summary>
         /// Gets or Sets TeleopTakeoffPoints
         /// </summary>
         [DataMember(Name="teleopTakeoffPoints", EmitDefaultValue=false)]
-        public int? TeleopTakeoffPoints { get; set; }
+        public int TeleopTakeoffPoints { get; set; }
 
         /// <summary>
         /// Gets or Sets KPaBonusPoints
         /// </summary>
         [DataMember(Name="kPaBonusPoints", EmitDefaultValue=false)]
-        public int? KPaBonusPoints { get; set; }
+        public int KPaBonusPoints { get; set; }
 
         /// <summary>
         /// Gets or Sets RotorBonusPoints
         /// </summary>
         [DataMember(Name="rotorBonusPoints", EmitDefaultValue=false)]
-        public int? RotorBonusPoints { get; set; }
+        public int RotorBonusPoints { get; set; }
 
         /// <summary>
         /// Gets or Sets Rotor1Engaged
         /// </summary>
         [DataMember(Name="rotor1Engaged", EmitDefaultValue=false)]
-        public bool? Rotor1Engaged { get; set; }
+        public bool Rotor1Engaged { get; set; }
 
         /// <summary>
         /// Gets or Sets Rotor2Engaged
         /// </summary>
         [DataMember(Name="rotor2Engaged", EmitDefaultValue=false)]
-        public bool? Rotor2Engaged { get; set; }
+        public bool Rotor2Engaged { get; set; }
 
         /// <summary>
         /// Gets or Sets Rotor3Engaged
         /// </summary>
         [DataMember(Name="rotor3Engaged", EmitDefaultValue=false)]
-        public bool? Rotor3Engaged { get; set; }
+        public bool Rotor3Engaged { get; set; }
 
         /// <summary>
         /// Gets or Sets Rotor4Engaged
         /// </summary>
         [DataMember(Name="rotor4Engaged", EmitDefaultValue=false)]
-        public bool? Rotor4Engaged { get; set; }
+        public bool Rotor4Engaged { get; set; }
 
         /// <summary>
         /// Gets or Sets RotorRankingPointAchieved
         /// </summary>
         [DataMember(Name="rotorRankingPointAchieved", EmitDefaultValue=false)]
-        public bool? RotorRankingPointAchieved { get; set; }
+        public bool RotorRankingPointAchieved { get; set; }
 
         /// <summary>
         /// Gets or Sets TechFoulCount
         /// </summary>
         [DataMember(Name="techFoulCount", EmitDefaultValue=false)]
-        public int? TechFoulCount { get; set; }
+        public int TechFoulCount { get; set; }
 
         /// <summary>
         /// Gets or Sets FoulCount
         /// </summary>
         [DataMember(Name="foulCount", EmitDefaultValue=false)]
-        public int? FoulCount { get; set; }
+        public int FoulCount { get; set; }
 
         /// <summary>
         /// Gets or Sets TouchpadNear

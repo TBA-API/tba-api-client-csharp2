@@ -57,7 +57,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// <param name="litterCountLandfill">litterCountLandfill.</param>
         /// <param name="litterCountUnprocessed">litterCountUnprocessed.</param>
         /// <param name="robotSet">robotSet.</param>
-        public MatchScoreBreakdown2015Alliance(int? autoPoints = default(int?), int? teleopPoints = default(int?), int? containerPoints = default(int?), int? totePoints = default(int?), int? litterPoints = default(int?), int? foulPoints = default(int?), int? adjustPoints = default(int?), int? totalPoints = default(int?), int? foulCount = default(int?), int? toteCountFar = default(int?), int? toteCountNear = default(int?), bool? toteSet = default(bool?), bool? toteStack = default(bool?), int? containerCountLevel1 = default(int?), int? containerCountLevel2 = default(int?), int? containerCountLevel3 = default(int?), int? containerCountLevel4 = default(int?), int? containerCountLevel5 = default(int?), int? containerCountLevel6 = default(int?), bool? containerSet = default(bool?), int? litterCountContainer = default(int?), int? litterCountLandfill = default(int?), int? litterCountUnprocessed = default(int?), bool? robotSet = default(bool?))
+        public MatchScoreBreakdown2015Alliance(int autoPoints = default(int), int teleopPoints = default(int), int containerPoints = default(int), int totePoints = default(int), int litterPoints = default(int), int foulPoints = default(int), int adjustPoints = default(int), int totalPoints = default(int), int foulCount = default(int), int toteCountFar = default(int), int toteCountNear = default(int), bool toteSet = default(bool), bool toteStack = default(bool), int containerCountLevel1 = default(int), int containerCountLevel2 = default(int), int containerCountLevel3 = default(int), int containerCountLevel4 = default(int), int containerCountLevel5 = default(int), int containerCountLevel6 = default(int), bool containerSet = default(bool), int litterCountContainer = default(int), int litterCountLandfill = default(int), int litterCountUnprocessed = default(int), bool robotSet = default(bool))
         {
             this.AutoPoints = autoPoints;
             this.TeleopPoints = teleopPoints;
@@ -89,145 +89,145 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// Gets or Sets AutoPoints
         /// </summary>
         [DataMember(Name="auto_points", EmitDefaultValue=false)]
-        public int? AutoPoints { get; set; }
+        public int AutoPoints { get; set; }
 
         /// <summary>
         /// Gets or Sets TeleopPoints
         /// </summary>
         [DataMember(Name="teleop_points", EmitDefaultValue=false)]
-        public int? TeleopPoints { get; set; }
+        public int TeleopPoints { get; set; }
 
         /// <summary>
         /// Gets or Sets ContainerPoints
         /// </summary>
         [DataMember(Name="container_points", EmitDefaultValue=false)]
-        public int? ContainerPoints { get; set; }
+        public int ContainerPoints { get; set; }
 
         /// <summary>
         /// Gets or Sets TotePoints
         /// </summary>
         [DataMember(Name="tote_points", EmitDefaultValue=false)]
-        public int? TotePoints { get; set; }
+        public int TotePoints { get; set; }
 
         /// <summary>
         /// Gets or Sets LitterPoints
         /// </summary>
         [DataMember(Name="litter_points", EmitDefaultValue=false)]
-        public int? LitterPoints { get; set; }
+        public int LitterPoints { get; set; }
 
         /// <summary>
         /// Gets or Sets FoulPoints
         /// </summary>
         [DataMember(Name="foul_points", EmitDefaultValue=false)]
-        public int? FoulPoints { get; set; }
+        public int FoulPoints { get; set; }
 
         /// <summary>
         /// Gets or Sets AdjustPoints
         /// </summary>
         [DataMember(Name="adjust_points", EmitDefaultValue=false)]
-        public int? AdjustPoints { get; set; }
+        public int AdjustPoints { get; set; }
 
         /// <summary>
         /// Gets or Sets TotalPoints
         /// </summary>
         [DataMember(Name="total_points", EmitDefaultValue=false)]
-        public int? TotalPoints { get; set; }
+        public int TotalPoints { get; set; }
 
         /// <summary>
         /// Gets or Sets FoulCount
         /// </summary>
         [DataMember(Name="foul_count", EmitDefaultValue=false)]
-        public int? FoulCount { get; set; }
+        public int FoulCount { get; set; }
 
         /// <summary>
         /// Gets or Sets ToteCountFar
         /// </summary>
         [DataMember(Name="tote_count_far", EmitDefaultValue=false)]
-        public int? ToteCountFar { get; set; }
+        public int ToteCountFar { get; set; }
 
         /// <summary>
         /// Gets or Sets ToteCountNear
         /// </summary>
         [DataMember(Name="tote_count_near", EmitDefaultValue=false)]
-        public int? ToteCountNear { get; set; }
+        public int ToteCountNear { get; set; }
 
         /// <summary>
         /// Gets or Sets ToteSet
         /// </summary>
         [DataMember(Name="tote_set", EmitDefaultValue=false)]
-        public bool? ToteSet { get; set; }
+        public bool ToteSet { get; set; }
 
         /// <summary>
         /// Gets or Sets ToteStack
         /// </summary>
         [DataMember(Name="tote_stack", EmitDefaultValue=false)]
-        public bool? ToteStack { get; set; }
+        public bool ToteStack { get; set; }
 
         /// <summary>
         /// Gets or Sets ContainerCountLevel1
         /// </summary>
         [DataMember(Name="container_count_level1", EmitDefaultValue=false)]
-        public int? ContainerCountLevel1 { get; set; }
+        public int ContainerCountLevel1 { get; set; }
 
         /// <summary>
         /// Gets or Sets ContainerCountLevel2
         /// </summary>
         [DataMember(Name="container_count_level2", EmitDefaultValue=false)]
-        public int? ContainerCountLevel2 { get; set; }
+        public int ContainerCountLevel2 { get; set; }
 
         /// <summary>
         /// Gets or Sets ContainerCountLevel3
         /// </summary>
         [DataMember(Name="container_count_level3", EmitDefaultValue=false)]
-        public int? ContainerCountLevel3 { get; set; }
+        public int ContainerCountLevel3 { get; set; }
 
         /// <summary>
         /// Gets or Sets ContainerCountLevel4
         /// </summary>
         [DataMember(Name="container_count_level4", EmitDefaultValue=false)]
-        public int? ContainerCountLevel4 { get; set; }
+        public int ContainerCountLevel4 { get; set; }
 
         /// <summary>
         /// Gets or Sets ContainerCountLevel5
         /// </summary>
         [DataMember(Name="container_count_level5", EmitDefaultValue=false)]
-        public int? ContainerCountLevel5 { get; set; }
+        public int ContainerCountLevel5 { get; set; }
 
         /// <summary>
         /// Gets or Sets ContainerCountLevel6
         /// </summary>
         [DataMember(Name="container_count_level6", EmitDefaultValue=false)]
-        public int? ContainerCountLevel6 { get; set; }
+        public int ContainerCountLevel6 { get; set; }
 
         /// <summary>
         /// Gets or Sets ContainerSet
         /// </summary>
         [DataMember(Name="container_set", EmitDefaultValue=false)]
-        public bool? ContainerSet { get; set; }
+        public bool ContainerSet { get; set; }
 
         /// <summary>
         /// Gets or Sets LitterCountContainer
         /// </summary>
         [DataMember(Name="litter_count_container", EmitDefaultValue=false)]
-        public int? LitterCountContainer { get; set; }
+        public int LitterCountContainer { get; set; }
 
         /// <summary>
         /// Gets or Sets LitterCountLandfill
         /// </summary>
         [DataMember(Name="litter_count_landfill", EmitDefaultValue=false)]
-        public int? LitterCountLandfill { get; set; }
+        public int LitterCountLandfill { get; set; }
 
         /// <summary>
         /// Gets or Sets LitterCountUnprocessed
         /// </summary>
         [DataMember(Name="litter_count_unprocessed", EmitDefaultValue=false)]
-        public int? LitterCountUnprocessed { get; set; }
+        public int LitterCountUnprocessed { get; set; }
 
         /// <summary>
         /// Gets or Sets RobotSet
         /// </summary>
         [DataMember(Name="robot_set", EmitDefaultValue=false)]
-        public bool? RobotSet { get; set; }
+        public bool RobotSet { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

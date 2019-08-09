@@ -96,7 +96,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// <param name="postResultTime">UNIX timestamp (seconds since 1-Jan-1970 00:00:00) when the match result was posted..</param>
         /// <param name="scoreBreakdown">Score breakdown for auto, teleop, etc. points. Varies from year to year. May be null..</param>
         /// <param name="videos">Array of video objects associated with this match..</param>
-        public Match(string key = default(string), CompLevelEnum compLevel = default(CompLevelEnum), int? setNumber = default(int?), int? matchNumber = default(int?), MatchSimpleAlliances alliances = default(MatchSimpleAlliances), string winningAlliance = default(string), string eventKey = default(string), long? time = default(long?), long? actualTime = default(long?), long? predictedTime = default(long?), long? postResultTime = default(long?), Object scoreBreakdown = default(Object), List<MatchVideos> videos = default(List<MatchVideos>))
+        public Match(string key = default(string), CompLevelEnum compLevel = default(CompLevelEnum), int setNumber = default(int), int matchNumber = default(int), MatchSimpleAlliances alliances = default(MatchSimpleAlliances), string winningAlliance = default(string), string eventKey = default(string), long time = default(long), long actualTime = default(long), long predictedTime = default(long), long postResultTime = default(long), Object scoreBreakdown = default(Object), List<MatchVideos> videos = default(List<MatchVideos>))
         {
             // to ensure "key" is required (not null)
             if (key == null)
@@ -171,14 +171,14 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// </summary>
         /// <value>The set number in a series of matches where more than one match is required in the match series.</value>
         [DataMember(Name="set_number", EmitDefaultValue=false)]
-        public int? SetNumber { get; set; }
+        public int SetNumber { get; set; }
 
         /// <summary>
         /// The match number of the match in the competition level.
         /// </summary>
         /// <value>The match number of the match in the competition level.</value>
         [DataMember(Name="match_number", EmitDefaultValue=false)]
-        public int? MatchNumber { get; set; }
+        public int MatchNumber { get; set; }
 
         /// <summary>
         /// Gets or Sets Alliances
@@ -205,28 +205,28 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// </summary>
         /// <value>UNIX timestamp (seconds since 1-Jan-1970 00:00:00) of the scheduled match time, as taken from the published schedule.</value>
         [DataMember(Name="time", EmitDefaultValue=false)]
-        public long? Time { get; set; }
+        public long Time { get; set; }
 
         /// <summary>
         /// UNIX timestamp (seconds since 1-Jan-1970 00:00:00) of actual match start time.
         /// </summary>
         /// <value>UNIX timestamp (seconds since 1-Jan-1970 00:00:00) of actual match start time.</value>
         [DataMember(Name="actual_time", EmitDefaultValue=false)]
-        public long? ActualTime { get; set; }
+        public long ActualTime { get; set; }
 
         /// <summary>
         /// UNIX timestamp (seconds since 1-Jan-1970 00:00:00) of the TBA predicted match start time.
         /// </summary>
         /// <value>UNIX timestamp (seconds since 1-Jan-1970 00:00:00) of the TBA predicted match start time.</value>
         [DataMember(Name="predicted_time", EmitDefaultValue=false)]
-        public long? PredictedTime { get; set; }
+        public long PredictedTime { get; set; }
 
         /// <summary>
         /// UNIX timestamp (seconds since 1-Jan-1970 00:00:00) when the match result was posted.
         /// </summary>
         /// <value>UNIX timestamp (seconds since 1-Jan-1970 00:00:00) when the match result was posted.</value>
         [DataMember(Name="post_result_time", EmitDefaultValue=false)]
-        public long? PostResultTime { get; set; }
+        public long PostResultTime { get; set; }
 
         /// <summary>
         /// Score breakdown for auto, teleop, etc. points. Varies from year to year. May be null.

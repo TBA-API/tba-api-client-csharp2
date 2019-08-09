@@ -40,7 +40,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// <param name="rank">Relative rank of this team..</param>
         /// <param name="dq">Number of matches the team was disqualified for..</param>
         /// <param name="teamKey">TBA team key for this rank..</param>
-        public TeamEventStatusRankRanking(int? matchesPlayed = default(int?), double? qualAverage = default(double?), List<decimal?> sortOrders = default(List<decimal?>), WLTRecord record = default(WLTRecord), int? rank = default(int?), int? dq = default(int?), string teamKey = default(string))
+        public TeamEventStatusRankRanking(int matchesPlayed = default(int), double qualAverage = default(double), List<decimal> sortOrders = default(List<decimal>), WLTRecord record = default(WLTRecord), int rank = default(int), int dq = default(int), string teamKey = default(string))
         {
             this.MatchesPlayed = matchesPlayed;
             this.QualAverage = qualAverage;
@@ -56,21 +56,21 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// </summary>
         /// <value>Number of matches played.</value>
         [DataMember(Name="matches_played", EmitDefaultValue=false)]
-        public int? MatchesPlayed { get; set; }
+        public int MatchesPlayed { get; set; }
 
         /// <summary>
         /// For some years, average qualification score. Can be null.
         /// </summary>
         /// <value>For some years, average qualification score. Can be null.</value>
         [DataMember(Name="qual_average", EmitDefaultValue=false)]
-        public double? QualAverage { get; set; }
+        public double QualAverage { get; set; }
 
         /// <summary>
         /// Ordered list of values used to determine the rank. See the &#x60;sort_order_info&#x60; property for the name of each value.
         /// </summary>
         /// <value>Ordered list of values used to determine the rank. See the &#x60;sort_order_info&#x60; property for the name of each value.</value>
         [DataMember(Name="sort_orders", EmitDefaultValue=false)]
-        public List<decimal?> SortOrders { get; set; }
+        public List<decimal> SortOrders { get; set; }
 
         /// <summary>
         /// Gets or Sets Record
@@ -83,14 +83,14 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// </summary>
         /// <value>Relative rank of this team.</value>
         [DataMember(Name="rank", EmitDefaultValue=false)]
-        public int? Rank { get; set; }
+        public int Rank { get; set; }
 
         /// <summary>
         /// Number of matches the team was disqualified for.
         /// </summary>
         /// <value>Number of matches the team was disqualified for.</value>
         [DataMember(Name="dq", EmitDefaultValue=false)]
-        public int? Dq { get; set; }
+        public int Dq { get; set; }
 
         /// <summary>
         /// TBA team key for this rank.

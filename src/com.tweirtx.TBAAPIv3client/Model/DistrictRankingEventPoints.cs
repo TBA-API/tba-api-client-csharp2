@@ -45,7 +45,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// <param name="awardPoints">Points awarded for event awards. (required).</param>
         /// <param name="eventKey">TBA Event key for this event. (required).</param>
         /// <param name="qualPoints">Points awarded for qualification match performance. (required).</param>
-        public DistrictRankingEventPoints(bool? districtCmp = default(bool?), int? total = default(int?), int? alliancePoints = default(int?), int? elimPoints = default(int?), int? awardPoints = default(int?), string eventKey = default(string), int? qualPoints = default(int?))
+        public DistrictRankingEventPoints(bool districtCmp = default(bool), int total = default(int), int alliancePoints = default(int), int elimPoints = default(int), int awardPoints = default(int), string eventKey = default(string), int qualPoints = default(int))
         {
             // to ensure "districtCmp" is required (not null)
             if (districtCmp == null)
@@ -124,35 +124,35 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// </summary>
         /// <value>&#x60;true&#x60; if this event is a District Championship event.</value>
         [DataMember(Name="district_cmp", EmitDefaultValue=false)]
-        public bool? DistrictCmp { get; set; }
+        public bool DistrictCmp { get; set; }
 
         /// <summary>
         /// Total points awarded at this event.
         /// </summary>
         /// <value>Total points awarded at this event.</value>
         [DataMember(Name="total", EmitDefaultValue=false)]
-        public int? Total { get; set; }
+        public int Total { get; set; }
 
         /// <summary>
         /// Points awarded for alliance selection.
         /// </summary>
         /// <value>Points awarded for alliance selection.</value>
         [DataMember(Name="alliance_points", EmitDefaultValue=false)]
-        public int? AlliancePoints { get; set; }
+        public int AlliancePoints { get; set; }
 
         /// <summary>
         /// Points awarded for elimination match performance.
         /// </summary>
         /// <value>Points awarded for elimination match performance.</value>
         [DataMember(Name="elim_points", EmitDefaultValue=false)]
-        public int? ElimPoints { get; set; }
+        public int ElimPoints { get; set; }
 
         /// <summary>
         /// Points awarded for event awards.
         /// </summary>
         /// <value>Points awarded for event awards.</value>
         [DataMember(Name="award_points", EmitDefaultValue=false)]
-        public int? AwardPoints { get; set; }
+        public int AwardPoints { get; set; }
 
         /// <summary>
         /// TBA Event key for this event.
@@ -166,7 +166,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// </summary>
         /// <value>Points awarded for qualification match performance.</value>
         [DataMember(Name="qual_points", EmitDefaultValue=false)]
-        public int? QualPoints { get; set; }
+        public int QualPoints { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

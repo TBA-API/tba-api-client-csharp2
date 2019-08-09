@@ -49,7 +49,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// <param name="startDate">Event start date in &#x60;yyyy-mm-dd&#x60; format. (required).</param>
         /// <param name="endDate">Event end date in &#x60;yyyy-mm-dd&#x60; format. (required).</param>
         /// <param name="year">Year the event data is for. (required).</param>
-        public EventSimple(string key = default(string), string name = default(string), string eventCode = default(string), int? eventType = default(int?), DistrictList district = default(DistrictList), string city = default(string), string stateProv = default(string), string country = default(string), DateTime? startDate = default(DateTime?), DateTime? endDate = default(DateTime?), int? year = default(int?))
+        public EventSimple(string key = default(string), string name = default(string), string eventCode = default(string), int eventType = default(int), DistrictList district = default(DistrictList), string city = default(string), string stateProv = default(string), string country = default(string), DateTime startDate = default(DateTime), DateTime endDate = default(DateTime), int year = default(int))
         {
             // to ensure "key" is required (not null)
             if (key == null)
@@ -153,7 +153,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// </summary>
         /// <value>Event Type, as defined here: https://github.com/the-blue-alliance/the-blue-alliance/blob/master/consts/event_type.py#L2</value>
         [DataMember(Name="event_type", EmitDefaultValue=false)]
-        public int? EventType { get; set; }
+        public int EventType { get; set; }
 
         /// <summary>
         /// Gets or Sets District
@@ -188,7 +188,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// <value>Event start date in &#x60;yyyy-mm-dd&#x60; format.</value>
         [DataMember(Name="start_date", EmitDefaultValue=false)]
         [JsonConverter(typeof(OpenAPIDateConverter))]
-        public DateTime? StartDate { get; set; }
+        public DateTime StartDate { get; set; }
 
         /// <summary>
         /// Event end date in &#x60;yyyy-mm-dd&#x60; format.
@@ -196,14 +196,14 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// <value>Event end date in &#x60;yyyy-mm-dd&#x60; format.</value>
         [DataMember(Name="end_date", EmitDefaultValue=false)]
         [JsonConverter(typeof(OpenAPIDateConverter))]
-        public DateTime? EndDate { get; set; }
+        public DateTime EndDate { get; set; }
 
         /// <summary>
         /// Year the event data is for.
         /// </summary>
         /// <value>Year the event data is for.</value>
         [DataMember(Name="year", EmitDefaultValue=false)]
-        public int? Year { get; set; }
+        public int Year { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

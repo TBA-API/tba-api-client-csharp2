@@ -70,7 +70,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// <param name="rotor4Engaged">An array with three values, number of times rotor 4 engaged, number of opportunities to engage, and percentage. (required).</param>
         /// <param name="takeoffCounts">An array with three values, number of times takeoff was counted, number of opportunities to takeoff, and percentage. (required).</param>
         /// <param name="unicornMatches">An array with three values, number of times a unicorn match (Win + kPa &amp; Rotor Bonuses) occured, number of opportunities to have a unicorn match, and percentage. (required).</param>
-        public EventInsights2017(float? averageFoulScore = default(float?), float? averageFuelPoints = default(float?), float? averageFuelPointsAuto = default(float?), float? averageFuelPointsTeleop = default(float?), float? averageHighGoals = default(float?), float? averageHighGoalsAuto = default(float?), float? averageHighGoalsTeleop = default(float?), float? averageLowGoals = default(float?), float? averageLowGoalsAuto = default(float?), float? averageLowGoalsTeleop = default(float?), float? averageMobilityPointsAuto = default(float?), float? averagePointsAuto = default(float?), float? averagePointsTeleop = default(float?), float? averageRotorPoints = default(float?), float? averageRotorPointsAuto = default(float?), float? averageRotorPointsTeleop = default(float?), float? averageScore = default(float?), float? averageTakeoffPointsTeleop = default(float?), float? averageWinMargin = default(float?), float? averageWinScore = default(float?), List<string> highKpa = default(List<string>), List<string> highScore = default(List<string>), List<float?> kpaAchieved = default(List<float?>), List<float?> mobilityCounts = default(List<float?>), List<float?> rotor1Engaged = default(List<float?>), List<float?> rotor1EngagedAuto = default(List<float?>), List<float?> rotor2Engaged = default(List<float?>), List<float?> rotor2EngagedAuto = default(List<float?>), List<float?> rotor3Engaged = default(List<float?>), List<float?> rotor4Engaged = default(List<float?>), List<float?> takeoffCounts = default(List<float?>), List<float?> unicornMatches = default(List<float?>))
+        public EventInsights2017(float averageFoulScore = default(float), float averageFuelPoints = default(float), float averageFuelPointsAuto = default(float), float averageFuelPointsTeleop = default(float), float averageHighGoals = default(float), float averageHighGoalsAuto = default(float), float averageHighGoalsTeleop = default(float), float averageLowGoals = default(float), float averageLowGoalsAuto = default(float), float averageLowGoalsTeleop = default(float), float averageMobilityPointsAuto = default(float), float averagePointsAuto = default(float), float averagePointsTeleop = default(float), float averageRotorPoints = default(float), float averageRotorPointsAuto = default(float), float averageRotorPointsTeleop = default(float), float averageScore = default(float), float averageTakeoffPointsTeleop = default(float), float averageWinMargin = default(float), float averageWinScore = default(float), List<string> highKpa = default(List<string>), List<string> highScore = default(List<string>), List<float> kpaAchieved = default(List<float>), List<float> mobilityCounts = default(List<float>), List<float> rotor1Engaged = default(List<float>), List<float> rotor1EngagedAuto = default(List<float>), List<float> rotor2Engaged = default(List<float>), List<float> rotor2EngagedAuto = default(List<float>), List<float> rotor3Engaged = default(List<float>), List<float> rotor4Engaged = default(List<float>), List<float> takeoffCounts = default(List<float>), List<float> unicornMatches = default(List<float>))
         {
             // to ensure "averageFoulScore" is required (not null)
             if (averageFoulScore == null)
@@ -399,140 +399,140 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// </summary>
         /// <value>Average foul score.</value>
         [DataMember(Name="average_foul_score", EmitDefaultValue=false)]
-        public float? AverageFoulScore { get; set; }
+        public float AverageFoulScore { get; set; }
 
         /// <summary>
         /// Average fuel points scored.
         /// </summary>
         /// <value>Average fuel points scored.</value>
         [DataMember(Name="average_fuel_points", EmitDefaultValue=false)]
-        public float? AverageFuelPoints { get; set; }
+        public float AverageFuelPoints { get; set; }
 
         /// <summary>
         /// Average fuel points scored during auto.
         /// </summary>
         /// <value>Average fuel points scored during auto.</value>
         [DataMember(Name="average_fuel_points_auto", EmitDefaultValue=false)]
-        public float? AverageFuelPointsAuto { get; set; }
+        public float AverageFuelPointsAuto { get; set; }
 
         /// <summary>
         /// Average fuel points scored during teleop.
         /// </summary>
         /// <value>Average fuel points scored during teleop.</value>
         [DataMember(Name="average_fuel_points_teleop", EmitDefaultValue=false)]
-        public float? AverageFuelPointsTeleop { get; set; }
+        public float AverageFuelPointsTeleop { get; set; }
 
         /// <summary>
         /// Average points scored in the high goal.
         /// </summary>
         /// <value>Average points scored in the high goal.</value>
         [DataMember(Name="average_high_goals", EmitDefaultValue=false)]
-        public float? AverageHighGoals { get; set; }
+        public float AverageHighGoals { get; set; }
 
         /// <summary>
         /// Average points scored in the high goal during auto.
         /// </summary>
         /// <value>Average points scored in the high goal during auto.</value>
         [DataMember(Name="average_high_goals_auto", EmitDefaultValue=false)]
-        public float? AverageHighGoalsAuto { get; set; }
+        public float AverageHighGoalsAuto { get; set; }
 
         /// <summary>
         /// Average points scored in the high goal during teleop.
         /// </summary>
         /// <value>Average points scored in the high goal during teleop.</value>
         [DataMember(Name="average_high_goals_teleop", EmitDefaultValue=false)]
-        public float? AverageHighGoalsTeleop { get; set; }
+        public float AverageHighGoalsTeleop { get; set; }
 
         /// <summary>
         /// Average points scored in the low goal.
         /// </summary>
         /// <value>Average points scored in the low goal.</value>
         [DataMember(Name="average_low_goals", EmitDefaultValue=false)]
-        public float? AverageLowGoals { get; set; }
+        public float AverageLowGoals { get; set; }
 
         /// <summary>
         /// Average points scored in the low goal during auto.
         /// </summary>
         /// <value>Average points scored in the low goal during auto.</value>
         [DataMember(Name="average_low_goals_auto", EmitDefaultValue=false)]
-        public float? AverageLowGoalsAuto { get; set; }
+        public float AverageLowGoalsAuto { get; set; }
 
         /// <summary>
         /// Average points scored in the low goal during teleop.
         /// </summary>
         /// <value>Average points scored in the low goal during teleop.</value>
         [DataMember(Name="average_low_goals_teleop", EmitDefaultValue=false)]
-        public float? AverageLowGoalsTeleop { get; set; }
+        public float AverageLowGoalsTeleop { get; set; }
 
         /// <summary>
         /// Average mobility points scored during auto.
         /// </summary>
         /// <value>Average mobility points scored during auto.</value>
         [DataMember(Name="average_mobility_points_auto", EmitDefaultValue=false)]
-        public float? AverageMobilityPointsAuto { get; set; }
+        public float AverageMobilityPointsAuto { get; set; }
 
         /// <summary>
         /// Average points scored during auto.
         /// </summary>
         /// <value>Average points scored during auto.</value>
         [DataMember(Name="average_points_auto", EmitDefaultValue=false)]
-        public float? AveragePointsAuto { get; set; }
+        public float AveragePointsAuto { get; set; }
 
         /// <summary>
         /// Average points scored during teleop.
         /// </summary>
         /// <value>Average points scored during teleop.</value>
         [DataMember(Name="average_points_teleop", EmitDefaultValue=false)]
-        public float? AveragePointsTeleop { get; set; }
+        public float AveragePointsTeleop { get; set; }
 
         /// <summary>
         /// Average rotor points scored.
         /// </summary>
         /// <value>Average rotor points scored.</value>
         [DataMember(Name="average_rotor_points", EmitDefaultValue=false)]
-        public float? AverageRotorPoints { get; set; }
+        public float AverageRotorPoints { get; set; }
 
         /// <summary>
         /// Average rotor points scored during auto.
         /// </summary>
         /// <value>Average rotor points scored during auto.</value>
         [DataMember(Name="average_rotor_points_auto", EmitDefaultValue=false)]
-        public float? AverageRotorPointsAuto { get; set; }
+        public float AverageRotorPointsAuto { get; set; }
 
         /// <summary>
         /// Average rotor points scored during teleop.
         /// </summary>
         /// <value>Average rotor points scored during teleop.</value>
         [DataMember(Name="average_rotor_points_teleop", EmitDefaultValue=false)]
-        public float? AverageRotorPointsTeleop { get; set; }
+        public float AverageRotorPointsTeleop { get; set; }
 
         /// <summary>
         /// Average score.
         /// </summary>
         /// <value>Average score.</value>
         [DataMember(Name="average_score", EmitDefaultValue=false)]
-        public float? AverageScore { get; set; }
+        public float AverageScore { get; set; }
 
         /// <summary>
         /// Average takeoff points scored during teleop.
         /// </summary>
         /// <value>Average takeoff points scored during teleop.</value>
         [DataMember(Name="average_takeoff_points_teleop", EmitDefaultValue=false)]
-        public float? AverageTakeoffPointsTeleop { get; set; }
+        public float AverageTakeoffPointsTeleop { get; set; }
 
         /// <summary>
         /// Average margin of victory.
         /// </summary>
         /// <value>Average margin of victory.</value>
         [DataMember(Name="average_win_margin", EmitDefaultValue=false)]
-        public float? AverageWinMargin { get; set; }
+        public float AverageWinMargin { get; set; }
 
         /// <summary>
         /// Average winning score.
         /// </summary>
         /// <value>Average winning score.</value>
         [DataMember(Name="average_win_score", EmitDefaultValue=false)]
-        public float? AverageWinScore { get; set; }
+        public float AverageWinScore { get; set; }
 
         /// <summary>
         /// An array with three values, kPa scored, match key from the match with the high kPa, and the name of the match
@@ -553,70 +553,70 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// </summary>
         /// <value>An array with three values, number of times kPa bonus achieved, number of opportunities to bonus, and percentage.</value>
         [DataMember(Name="kpa_achieved", EmitDefaultValue=false)]
-        public List<float?> KpaAchieved { get; set; }
+        public List<float> KpaAchieved { get; set; }
 
         /// <summary>
         /// An array with three values, number of times mobility bonus achieved, number of opportunities to bonus, and percentage.
         /// </summary>
         /// <value>An array with three values, number of times mobility bonus achieved, number of opportunities to bonus, and percentage.</value>
         [DataMember(Name="mobility_counts", EmitDefaultValue=false)]
-        public List<float?> MobilityCounts { get; set; }
+        public List<float> MobilityCounts { get; set; }
 
         /// <summary>
         /// An array with three values, number of times rotor 1 engaged, number of opportunities to engage, and percentage.
         /// </summary>
         /// <value>An array with three values, number of times rotor 1 engaged, number of opportunities to engage, and percentage.</value>
         [DataMember(Name="rotor_1_engaged", EmitDefaultValue=false)]
-        public List<float?> Rotor1Engaged { get; set; }
+        public List<float> Rotor1Engaged { get; set; }
 
         /// <summary>
         /// An array with three values, number of times rotor 1 engaged in auto, number of opportunities to engage in auto, and percentage.
         /// </summary>
         /// <value>An array with three values, number of times rotor 1 engaged in auto, number of opportunities to engage in auto, and percentage.</value>
         [DataMember(Name="rotor_1_engaged_auto", EmitDefaultValue=false)]
-        public List<float?> Rotor1EngagedAuto { get; set; }
+        public List<float> Rotor1EngagedAuto { get; set; }
 
         /// <summary>
         /// An array with three values, number of times rotor 2 engaged, number of opportunities to engage, and percentage.
         /// </summary>
         /// <value>An array with three values, number of times rotor 2 engaged, number of opportunities to engage, and percentage.</value>
         [DataMember(Name="rotor_2_engaged", EmitDefaultValue=false)]
-        public List<float?> Rotor2Engaged { get; set; }
+        public List<float> Rotor2Engaged { get; set; }
 
         /// <summary>
         /// An array with three values, number of times rotor 2 engaged in auto, number of opportunities to engage in auto, and percentage.
         /// </summary>
         /// <value>An array with three values, number of times rotor 2 engaged in auto, number of opportunities to engage in auto, and percentage.</value>
         [DataMember(Name="rotor_2_engaged_auto", EmitDefaultValue=false)]
-        public List<float?> Rotor2EngagedAuto { get; set; }
+        public List<float> Rotor2EngagedAuto { get; set; }
 
         /// <summary>
         /// An array with three values, number of times rotor 3 engaged, number of opportunities to engage, and percentage.
         /// </summary>
         /// <value>An array with three values, number of times rotor 3 engaged, number of opportunities to engage, and percentage.</value>
         [DataMember(Name="rotor_3_engaged", EmitDefaultValue=false)]
-        public List<float?> Rotor3Engaged { get; set; }
+        public List<float> Rotor3Engaged { get; set; }
 
         /// <summary>
         /// An array with three values, number of times rotor 4 engaged, number of opportunities to engage, and percentage.
         /// </summary>
         /// <value>An array with three values, number of times rotor 4 engaged, number of opportunities to engage, and percentage.</value>
         [DataMember(Name="rotor_4_engaged", EmitDefaultValue=false)]
-        public List<float?> Rotor4Engaged { get; set; }
+        public List<float> Rotor4Engaged { get; set; }
 
         /// <summary>
         /// An array with three values, number of times takeoff was counted, number of opportunities to takeoff, and percentage.
         /// </summary>
         /// <value>An array with three values, number of times takeoff was counted, number of opportunities to takeoff, and percentage.</value>
         [DataMember(Name="takeoff_counts", EmitDefaultValue=false)]
-        public List<float?> TakeoffCounts { get; set; }
+        public List<float> TakeoffCounts { get; set; }
 
         /// <summary>
         /// An array with three values, number of times a unicorn match (Win + kPa &amp; Rotor Bonuses) occured, number of opportunities to have a unicorn match, and percentage.
         /// </summary>
         /// <value>An array with three values, number of times a unicorn match (Win + kPa &amp; Rotor Bonuses) occured, number of opportunities to have a unicorn match, and percentage.</value>
         [DataMember(Name="unicorn_matches", EmitDefaultValue=false)]
-        public List<float?> UnicornMatches { get; set; }
+        public List<float> UnicornMatches { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

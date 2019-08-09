@@ -46,7 +46,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// <param name="rank">The team&#39;s rank at the event as provided by FIRST. (required).</param>
         /// <param name="dq">Number of times disqualified. (required).</param>
         /// <param name="teamKey">The team with this rank. (required).</param>
-        public EventRankingRankings(int? matchesPlayed = default(int?), int? qualAverage = default(int?), List<decimal?> extraStats = default(List<decimal?>), List<decimal?> sortOrders = default(List<decimal?>), WLTRecord record = default(WLTRecord), int? rank = default(int?), int? dq = default(int?), string teamKey = default(string))
+        public EventRankingRankings(int matchesPlayed = default(int), int qualAverage = default(int), List<decimal> extraStats = default(List<decimal>), List<decimal> sortOrders = default(List<decimal>), WLTRecord record = default(WLTRecord), int rank = default(int), int dq = default(int), string teamKey = default(string))
         {
             // to ensure "matchesPlayed" is required (not null)
             if (matchesPlayed == null)
@@ -108,28 +108,28 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// </summary>
         /// <value>Number of matches played by this team.</value>
         [DataMember(Name="matches_played", EmitDefaultValue=false)]
-        public int? MatchesPlayed { get; set; }
+        public int MatchesPlayed { get; set; }
 
         /// <summary>
         /// The average match score during qualifications. Year specific. May be null if not relevant for a given year.
         /// </summary>
         /// <value>The average match score during qualifications. Year specific. May be null if not relevant for a given year.</value>
         [DataMember(Name="qual_average", EmitDefaultValue=false)]
-        public int? QualAverage { get; set; }
+        public int QualAverage { get; set; }
 
         /// <summary>
         /// Additional special data on the team&#39;s performance calculated by TBA.
         /// </summary>
         /// <value>Additional special data on the team&#39;s performance calculated by TBA.</value>
         [DataMember(Name="extra_stats", EmitDefaultValue=false)]
-        public List<decimal?> ExtraStats { get; set; }
+        public List<decimal> ExtraStats { get; set; }
 
         /// <summary>
         /// Additional year-specific information, may be null. See parent &#x60;sort_order_info&#x60; for details.
         /// </summary>
         /// <value>Additional year-specific information, may be null. See parent &#x60;sort_order_info&#x60; for details.</value>
         [DataMember(Name="sort_orders", EmitDefaultValue=false)]
-        public List<decimal?> SortOrders { get; set; }
+        public List<decimal> SortOrders { get; set; }
 
         /// <summary>
         /// Gets or Sets Record
@@ -142,14 +142,14 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// </summary>
         /// <value>The team&#39;s rank at the event as provided by FIRST.</value>
         [DataMember(Name="rank", EmitDefaultValue=false)]
-        public int? Rank { get; set; }
+        public int Rank { get; set; }
 
         /// <summary>
         /// Number of times disqualified.
         /// </summary>
         /// <value>Number of times disqualified.</value>
         [DataMember(Name="dq", EmitDefaultValue=false)]
-        public int? Dq { get; set; }
+        public int Dq { get; set; }
 
         /// <summary>
         /// The team with this rank.

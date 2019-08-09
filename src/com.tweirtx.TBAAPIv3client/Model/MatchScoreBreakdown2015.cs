@@ -68,7 +68,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// <param name="red">red.</param>
         /// <param name="coopertition">coopertition.</param>
         /// <param name="coopertitionPoints">coopertitionPoints.</param>
-        public MatchScoreBreakdown2015(MatchScoreBreakdown2015Alliance blue = default(MatchScoreBreakdown2015Alliance), MatchScoreBreakdown2015Alliance red = default(MatchScoreBreakdown2015Alliance), CoopertitionEnum? coopertition = default(CoopertitionEnum?), int? coopertitionPoints = default(int?))
+        public MatchScoreBreakdown2015(MatchScoreBreakdown2015Alliance blue = default(MatchScoreBreakdown2015Alliance), MatchScoreBreakdown2015Alliance red = default(MatchScoreBreakdown2015Alliance), CoopertitionEnum? coopertition = default(CoopertitionEnum?), int coopertitionPoints = default(int))
         {
             this.Blue = blue;
             this.Red = red;
@@ -93,7 +93,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// Gets or Sets CoopertitionPoints
         /// </summary>
         [DataMember(Name="coopertition_points", EmitDefaultValue=false)]
-        public int? CoopertitionPoints { get; set; }
+        public int CoopertitionPoints { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

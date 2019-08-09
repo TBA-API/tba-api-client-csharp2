@@ -70,7 +70,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// <param name="vaultLevitateTotal">vaultLevitateTotal.</param>
         /// <param name="vaultPoints">vaultPoints.</param>
         /// <param name="tbaGameData">Unofficial TBA-computed value of the FMS provided GameData given to the alliance teams at the start of the match. 3 Character String containing &#x60;L&#x60; and &#x60;R&#x60; only. The first character represents the near switch, the 2nd the scale, and the 3rd the far, opposing, switch from the alliance&#39;s perspective. An &#x60;L&#x60; in a position indicates the platform on the left will be lit for the alliance while an &#x60;R&#x60; will indicate the right platform will be lit for the alliance. See also [WPI Screen Steps](https://wpilib.screenstepslive.com/s/currentCS/m/getting_started/l/826278-2018-game-data-details)..</param>
-        public MatchScoreBreakdown2018Alliance(int? adjustPoints = default(int?), int? autoOwnershipPoints = default(int?), int? autoPoints = default(int?), bool? autoQuestRankingPoint = default(bool?), string autoRobot1 = default(string), string autoRobot2 = default(string), string autoRobot3 = default(string), int? autoRunPoints = default(int?), int? autoScaleOwnershipSec = default(int?), bool? autoSwitchAtZero = default(bool?), int? autoSwitchOwnershipSec = default(int?), int? endgamePoints = default(int?), string endgameRobot1 = default(string), string endgameRobot2 = default(string), string endgameRobot3 = default(string), bool? faceTheBossRankingPoint = default(bool?), int? foulCount = default(int?), int? foulPoints = default(int?), int? rp = default(int?), int? techFoulCount = default(int?), int? teleopOwnershipPoints = default(int?), int? teleopPoints = default(int?), int? teleopScaleBoostSec = default(int?), int? teleopScaleForceSec = default(int?), int? teleopScaleOwnershipSec = default(int?), int? teleopSwitchBoostSec = default(int?), int? teleopSwitchForceSec = default(int?), int? teleopSwitchOwnershipSec = default(int?), int? totalPoints = default(int?), int? vaultBoostPlayed = default(int?), int? vaultBoostTotal = default(int?), int? vaultForcePlayed = default(int?), int? vaultForceTotal = default(int?), int? vaultLevitatePlayed = default(int?), int? vaultLevitateTotal = default(int?), int? vaultPoints = default(int?), string tbaGameData = default(string))
+        public MatchScoreBreakdown2018Alliance(int adjustPoints = default(int), int autoOwnershipPoints = default(int), int autoPoints = default(int), bool autoQuestRankingPoint = default(bool), string autoRobot1 = default(string), string autoRobot2 = default(string), string autoRobot3 = default(string), int autoRunPoints = default(int), int autoScaleOwnershipSec = default(int), bool autoSwitchAtZero = default(bool), int autoSwitchOwnershipSec = default(int), int endgamePoints = default(int), string endgameRobot1 = default(string), string endgameRobot2 = default(string), string endgameRobot3 = default(string), bool faceTheBossRankingPoint = default(bool), int foulCount = default(int), int foulPoints = default(int), int rp = default(int), int techFoulCount = default(int), int teleopOwnershipPoints = default(int), int teleopPoints = default(int), int teleopScaleBoostSec = default(int), int teleopScaleForceSec = default(int), int teleopScaleOwnershipSec = default(int), int teleopSwitchBoostSec = default(int), int teleopSwitchForceSec = default(int), int teleopSwitchOwnershipSec = default(int), int totalPoints = default(int), int vaultBoostPlayed = default(int), int vaultBoostTotal = default(int), int vaultForcePlayed = default(int), int vaultForceTotal = default(int), int vaultLevitatePlayed = default(int), int vaultLevitateTotal = default(int), int vaultPoints = default(int), string tbaGameData = default(string))
         {
             this.AdjustPoints = adjustPoints;
             this.AutoOwnershipPoints = autoOwnershipPoints;
@@ -115,25 +115,25 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// Gets or Sets AdjustPoints
         /// </summary>
         [DataMember(Name="adjustPoints", EmitDefaultValue=false)]
-        public int? AdjustPoints { get; set; }
+        public int AdjustPoints { get; set; }
 
         /// <summary>
         /// Gets or Sets AutoOwnershipPoints
         /// </summary>
         [DataMember(Name="autoOwnershipPoints", EmitDefaultValue=false)]
-        public int? AutoOwnershipPoints { get; set; }
+        public int AutoOwnershipPoints { get; set; }
 
         /// <summary>
         /// Gets or Sets AutoPoints
         /// </summary>
         [DataMember(Name="autoPoints", EmitDefaultValue=false)]
-        public int? AutoPoints { get; set; }
+        public int AutoPoints { get; set; }
 
         /// <summary>
         /// Gets or Sets AutoQuestRankingPoint
         /// </summary>
         [DataMember(Name="autoQuestRankingPoint", EmitDefaultValue=false)]
-        public bool? AutoQuestRankingPoint { get; set; }
+        public bool AutoQuestRankingPoint { get; set; }
 
         /// <summary>
         /// Gets or Sets AutoRobot1
@@ -157,31 +157,31 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// Gets or Sets AutoRunPoints
         /// </summary>
         [DataMember(Name="autoRunPoints", EmitDefaultValue=false)]
-        public int? AutoRunPoints { get; set; }
+        public int AutoRunPoints { get; set; }
 
         /// <summary>
         /// Gets or Sets AutoScaleOwnershipSec
         /// </summary>
         [DataMember(Name="autoScaleOwnershipSec", EmitDefaultValue=false)]
-        public int? AutoScaleOwnershipSec { get; set; }
+        public int AutoScaleOwnershipSec { get; set; }
 
         /// <summary>
         /// Gets or Sets AutoSwitchAtZero
         /// </summary>
         [DataMember(Name="autoSwitchAtZero", EmitDefaultValue=false)]
-        public bool? AutoSwitchAtZero { get; set; }
+        public bool AutoSwitchAtZero { get; set; }
 
         /// <summary>
         /// Gets or Sets AutoSwitchOwnershipSec
         /// </summary>
         [DataMember(Name="autoSwitchOwnershipSec", EmitDefaultValue=false)]
-        public int? AutoSwitchOwnershipSec { get; set; }
+        public int AutoSwitchOwnershipSec { get; set; }
 
         /// <summary>
         /// Gets or Sets EndgamePoints
         /// </summary>
         [DataMember(Name="endgamePoints", EmitDefaultValue=false)]
-        public int? EndgamePoints { get; set; }
+        public int EndgamePoints { get; set; }
 
         /// <summary>
         /// Gets or Sets EndgameRobot1
@@ -205,127 +205,127 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// Gets or Sets FaceTheBossRankingPoint
         /// </summary>
         [DataMember(Name="faceTheBossRankingPoint", EmitDefaultValue=false)]
-        public bool? FaceTheBossRankingPoint { get; set; }
+        public bool FaceTheBossRankingPoint { get; set; }
 
         /// <summary>
         /// Gets or Sets FoulCount
         /// </summary>
         [DataMember(Name="foulCount", EmitDefaultValue=false)]
-        public int? FoulCount { get; set; }
+        public int FoulCount { get; set; }
 
         /// <summary>
         /// Gets or Sets FoulPoints
         /// </summary>
         [DataMember(Name="foulPoints", EmitDefaultValue=false)]
-        public int? FoulPoints { get; set; }
+        public int FoulPoints { get; set; }
 
         /// <summary>
         /// Gets or Sets Rp
         /// </summary>
         [DataMember(Name="rp", EmitDefaultValue=false)]
-        public int? Rp { get; set; }
+        public int Rp { get; set; }
 
         /// <summary>
         /// Gets or Sets TechFoulCount
         /// </summary>
         [DataMember(Name="techFoulCount", EmitDefaultValue=false)]
-        public int? TechFoulCount { get; set; }
+        public int TechFoulCount { get; set; }
 
         /// <summary>
         /// Gets or Sets TeleopOwnershipPoints
         /// </summary>
         [DataMember(Name="teleopOwnershipPoints", EmitDefaultValue=false)]
-        public int? TeleopOwnershipPoints { get; set; }
+        public int TeleopOwnershipPoints { get; set; }
 
         /// <summary>
         /// Gets or Sets TeleopPoints
         /// </summary>
         [DataMember(Name="teleopPoints", EmitDefaultValue=false)]
-        public int? TeleopPoints { get; set; }
+        public int TeleopPoints { get; set; }
 
         /// <summary>
         /// Gets or Sets TeleopScaleBoostSec
         /// </summary>
         [DataMember(Name="teleopScaleBoostSec", EmitDefaultValue=false)]
-        public int? TeleopScaleBoostSec { get; set; }
+        public int TeleopScaleBoostSec { get; set; }
 
         /// <summary>
         /// Gets or Sets TeleopScaleForceSec
         /// </summary>
         [DataMember(Name="teleopScaleForceSec", EmitDefaultValue=false)]
-        public int? TeleopScaleForceSec { get; set; }
+        public int TeleopScaleForceSec { get; set; }
 
         /// <summary>
         /// Gets or Sets TeleopScaleOwnershipSec
         /// </summary>
         [DataMember(Name="teleopScaleOwnershipSec", EmitDefaultValue=false)]
-        public int? TeleopScaleOwnershipSec { get; set; }
+        public int TeleopScaleOwnershipSec { get; set; }
 
         /// <summary>
         /// Gets or Sets TeleopSwitchBoostSec
         /// </summary>
         [DataMember(Name="teleopSwitchBoostSec", EmitDefaultValue=false)]
-        public int? TeleopSwitchBoostSec { get; set; }
+        public int TeleopSwitchBoostSec { get; set; }
 
         /// <summary>
         /// Gets or Sets TeleopSwitchForceSec
         /// </summary>
         [DataMember(Name="teleopSwitchForceSec", EmitDefaultValue=false)]
-        public int? TeleopSwitchForceSec { get; set; }
+        public int TeleopSwitchForceSec { get; set; }
 
         /// <summary>
         /// Gets or Sets TeleopSwitchOwnershipSec
         /// </summary>
         [DataMember(Name="teleopSwitchOwnershipSec", EmitDefaultValue=false)]
-        public int? TeleopSwitchOwnershipSec { get; set; }
+        public int TeleopSwitchOwnershipSec { get; set; }
 
         /// <summary>
         /// Gets or Sets TotalPoints
         /// </summary>
         [DataMember(Name="totalPoints", EmitDefaultValue=false)]
-        public int? TotalPoints { get; set; }
+        public int TotalPoints { get; set; }
 
         /// <summary>
         /// Gets or Sets VaultBoostPlayed
         /// </summary>
         [DataMember(Name="vaultBoostPlayed", EmitDefaultValue=false)]
-        public int? VaultBoostPlayed { get; set; }
+        public int VaultBoostPlayed { get; set; }
 
         /// <summary>
         /// Gets or Sets VaultBoostTotal
         /// </summary>
         [DataMember(Name="vaultBoostTotal", EmitDefaultValue=false)]
-        public int? VaultBoostTotal { get; set; }
+        public int VaultBoostTotal { get; set; }
 
         /// <summary>
         /// Gets or Sets VaultForcePlayed
         /// </summary>
         [DataMember(Name="vaultForcePlayed", EmitDefaultValue=false)]
-        public int? VaultForcePlayed { get; set; }
+        public int VaultForcePlayed { get; set; }
 
         /// <summary>
         /// Gets or Sets VaultForceTotal
         /// </summary>
         [DataMember(Name="vaultForceTotal", EmitDefaultValue=false)]
-        public int? VaultForceTotal { get; set; }
+        public int VaultForceTotal { get; set; }
 
         /// <summary>
         /// Gets or Sets VaultLevitatePlayed
         /// </summary>
         [DataMember(Name="vaultLevitatePlayed", EmitDefaultValue=false)]
-        public int? VaultLevitatePlayed { get; set; }
+        public int VaultLevitatePlayed { get; set; }
 
         /// <summary>
         /// Gets or Sets VaultLevitateTotal
         /// </summary>
         [DataMember(Name="vaultLevitateTotal", EmitDefaultValue=false)]
-        public int? VaultLevitateTotal { get; set; }
+        public int VaultLevitateTotal { get; set; }
 
         /// <summary>
         /// Gets or Sets VaultPoints
         /// </summary>
         [DataMember(Name="vaultPoints", EmitDefaultValue=false)]
-        public int? VaultPoints { get; set; }
+        public int VaultPoints { get; set; }
 
         /// <summary>
         /// Unofficial TBA-computed value of the FMS provided GameData given to the alliance teams at the start of the match. 3 Character String containing &#x60;L&#x60; and &#x60;R&#x60; only. The first character represents the near switch, the 2nd the scale, and the 3rd the far, opposing, switch from the alliance&#39;s perspective. An &#x60;L&#x60; in a position indicates the platform on the left will be lit for the alliance while an &#x60;R&#x60; will indicate the right platform will be lit for the alliance. See also [WPI Screen Steps](https://wpilib.screenstepslive.com/s/currentCS/m/getting_started/l/826278-2018-game-data-details).

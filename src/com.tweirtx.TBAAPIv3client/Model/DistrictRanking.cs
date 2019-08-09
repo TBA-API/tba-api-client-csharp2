@@ -43,7 +43,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// <param name="rookieBonus">Any points added to a team as a result of the rookie bonus..</param>
         /// <param name="pointTotal">Total district points for the team. (required).</param>
         /// <param name="eventPoints">List of events that contributed to the point total for the team..</param>
-        public DistrictRanking(string teamKey = default(string), int? rank = default(int?), int? rookieBonus = default(int?), int? pointTotal = default(int?), List<DistrictRankingEventPoints> eventPoints = default(List<DistrictRankingEventPoints>))
+        public DistrictRanking(string teamKey = default(string), int rank = default(int), int rookieBonus = default(int), int pointTotal = default(int), List<DistrictRankingEventPoints> eventPoints = default(List<DistrictRankingEventPoints>))
         {
             // to ensure "teamKey" is required (not null)
             if (teamKey == null)
@@ -91,21 +91,21 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// </summary>
         /// <value>Numerical rank of the team, 1 being top rank.</value>
         [DataMember(Name="rank", EmitDefaultValue=false)]
-        public int? Rank { get; set; }
+        public int Rank { get; set; }
 
         /// <summary>
         /// Any points added to a team as a result of the rookie bonus.
         /// </summary>
         /// <value>Any points added to a team as a result of the rookie bonus.</value>
         [DataMember(Name="rookie_bonus", EmitDefaultValue=false)]
-        public int? RookieBonus { get; set; }
+        public int RookieBonus { get; set; }
 
         /// <summary>
         /// Total district points for the team.
         /// </summary>
         /// <value>Total district points for the team.</value>
         [DataMember(Name="point_total", EmitDefaultValue=false)]
-        public int? PointTotal { get; set; }
+        public int PointTotal { get; set; }
 
         /// <summary>
         /// List of events that contributed to the point total for the team.

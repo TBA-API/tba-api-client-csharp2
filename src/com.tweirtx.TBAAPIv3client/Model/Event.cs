@@ -68,7 +68,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// <param name="parentEventKey">The TBA Event key that represents the event&#39;s parent. Used to link back to the event from a division event. It is also the inverse relation of &#x60;divison_keys&#x60;..</param>
         /// <param name="playoffType">Playoff Type, as defined here: https://github.com/the-blue-alliance/the-blue-alliance/blob/master/consts/playoff_type.py#L4, or null..</param>
         /// <param name="playoffTypeString">String representation of the &#x60;playoff_type&#x60;, or null..</param>
-        public Event(string key = default(string), string name = default(string), string eventCode = default(string), int? eventType = default(int?), DistrictList district = default(DistrictList), string city = default(string), string stateProv = default(string), string country = default(string), DateTime? startDate = default(DateTime?), DateTime? endDate = default(DateTime?), int? year = default(int?), string shortName = default(string), string eventTypeString = default(string), int? week = default(int?), string address = default(string), string postalCode = default(string), string gmapsPlaceId = default(string), string gmapsUrl = default(string), double? lat = default(double?), double? lng = default(double?), string locationName = default(string), string timezone = default(string), string website = default(string), string firstEventId = default(string), string firstEventCode = default(string), List<Webcast> webcasts = default(List<Webcast>), List<string> divisionKeys = default(List<string>), string parentEventKey = default(string), int? playoffType = default(int?), string playoffTypeString = default(string))
+        public Event(string key = default(string), string name = default(string), string eventCode = default(string), int eventType = default(int), DistrictList district = default(DistrictList), string city = default(string), string stateProv = default(string), string country = default(string), DateTime startDate = default(DateTime), DateTime endDate = default(DateTime), int year = default(int), string shortName = default(string), string eventTypeString = default(string), int week = default(int), string address = default(string), string postalCode = default(string), string gmapsPlaceId = default(string), string gmapsUrl = default(string), double lat = default(double), double lng = default(double), string locationName = default(string), string timezone = default(string), string website = default(string), string firstEventId = default(string), string firstEventCode = default(string), List<Webcast> webcasts = default(List<Webcast>), List<string> divisionKeys = default(List<string>), string parentEventKey = default(string), int playoffType = default(int), string playoffTypeString = default(string))
         {
             // to ensure "key" is required (not null)
             if (key == null)
@@ -200,7 +200,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// </summary>
         /// <value>Event Type, as defined here: https://github.com/the-blue-alliance/the-blue-alliance/blob/master/consts/event_type.py#L2</value>
         [DataMember(Name="event_type", EmitDefaultValue=false)]
-        public int? EventType { get; set; }
+        public int EventType { get; set; }
 
         /// <summary>
         /// Gets or Sets District
@@ -235,7 +235,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// <value>Event start date in &#x60;yyyy-mm-dd&#x60; format.</value>
         [DataMember(Name="start_date", EmitDefaultValue=false)]
         [JsonConverter(typeof(OpenAPIDateConverter))]
-        public DateTime? StartDate { get; set; }
+        public DateTime StartDate { get; set; }
 
         /// <summary>
         /// Event end date in &#x60;yyyy-mm-dd&#x60; format.
@@ -243,14 +243,14 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// <value>Event end date in &#x60;yyyy-mm-dd&#x60; format.</value>
         [DataMember(Name="end_date", EmitDefaultValue=false)]
         [JsonConverter(typeof(OpenAPIDateConverter))]
-        public DateTime? EndDate { get; set; }
+        public DateTime EndDate { get; set; }
 
         /// <summary>
         /// Year the event data is for.
         /// </summary>
         /// <value>Year the event data is for.</value>
         [DataMember(Name="year", EmitDefaultValue=false)]
-        public int? Year { get; set; }
+        public int Year { get; set; }
 
         /// <summary>
         /// Same as &#x60;name&#x60; but doesn&#39;t include event specifiers, such as &#39;Regional&#39; or &#39;District&#39;. May be null.
@@ -271,7 +271,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// </summary>
         /// <value>Week of the event relative to the first official season event, zero-indexed. Only valid for Regionals, Districts, and District Championships. Null otherwise. (Eg. A season with a week 0 &#39;preseason&#39; event does not count, and week 1 events will show 0 here. Seasons with a week 0.5 regional event will show week 0 for those event(s) and week 1 for week 1 events and so on.)</value>
         [DataMember(Name="week", EmitDefaultValue=false)]
-        public int? Week { get; set; }
+        public int Week { get; set; }
 
         /// <summary>
         /// Address of the event&#39;s venue, if available.
@@ -306,14 +306,14 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// </summary>
         /// <value>Latitude for the event address.</value>
         [DataMember(Name="lat", EmitDefaultValue=false)]
-        public double? Lat { get; set; }
+        public double Lat { get; set; }
 
         /// <summary>
         /// Longitude for the event address.
         /// </summary>
         /// <value>Longitude for the event address.</value>
         [DataMember(Name="lng", EmitDefaultValue=false)]
-        public double? Lng { get; set; }
+        public double Lng { get; set; }
 
         /// <summary>
         /// Name of the location at the address for the event, eg. Blue Alliance High School.
@@ -375,7 +375,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// </summary>
         /// <value>Playoff Type, as defined here: https://github.com/the-blue-alliance/the-blue-alliance/blob/master/consts/playoff_type.py#L4, or null.</value>
         [DataMember(Name="playoff_type", EmitDefaultValue=false)]
-        public int? PlayoffType { get; set; }
+        public int PlayoffType { get; set; }
 
         /// <summary>
         /// String representation of the &#x60;playoff_type&#x60;, or null.

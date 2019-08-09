@@ -34,7 +34,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>List&lt;Event&gt;</returns>
-        List<Event> GetDistrictEvents (string districtKey, string ifModifiedSince = null);
+        List<Event> GetDistrictEvents (string districtKey, string ifModifiedSince = default(string));
 
         /// <summary>
         /// 
@@ -46,7 +46,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>ApiResponse of List&lt;Event&gt;</returns>
-        ApiResponse<List<Event>> GetDistrictEventsWithHttpInfo (string districtKey, string ifModifiedSince = null);
+        ApiResponse<List<Event>> GetDistrictEventsWithHttpInfo (string districtKey, string ifModifiedSince = default(string));
         /// <summary>
         /// 
         /// </summary>
@@ -57,7 +57,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>List&lt;string&gt;</returns>
-        List<string> GetDistrictEventsKeys (string districtKey, string ifModifiedSince = null);
+        List<string> GetDistrictEventsKeys (string districtKey, string ifModifiedSince = default(string));
 
         /// <summary>
         /// 
@@ -69,7 +69,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>ApiResponse of List&lt;string&gt;</returns>
-        ApiResponse<List<string>> GetDistrictEventsKeysWithHttpInfo (string districtKey, string ifModifiedSince = null);
+        ApiResponse<List<string>> GetDistrictEventsKeysWithHttpInfo (string districtKey, string ifModifiedSince = default(string));
         /// <summary>
         /// 
         /// </summary>
@@ -80,7 +80,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>List&lt;EventSimple&gt;</returns>
-        List<EventSimple> GetDistrictEventsSimple (string districtKey, string ifModifiedSince = null);
+        List<EventSimple> GetDistrictEventsSimple (string districtKey, string ifModifiedSince = default(string));
 
         /// <summary>
         /// 
@@ -92,7 +92,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>ApiResponse of List&lt;EventSimple&gt;</returns>
-        ApiResponse<List<EventSimple>> GetDistrictEventsSimpleWithHttpInfo (string districtKey, string ifModifiedSince = null);
+        ApiResponse<List<EventSimple>> GetDistrictEventsSimpleWithHttpInfo (string districtKey, string ifModifiedSince = default(string));
         /// <summary>
         /// 
         /// </summary>
@@ -103,7 +103,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>List&lt;DistrictRanking&gt;</returns>
-        List<DistrictRanking> GetDistrictRankings (string districtKey, string ifModifiedSince = null);
+        List<DistrictRanking> GetDistrictRankings (string districtKey, string ifModifiedSince = default(string));
 
         /// <summary>
         /// 
@@ -115,7 +115,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>ApiResponse of List&lt;DistrictRanking&gt;</returns>
-        ApiResponse<List<DistrictRanking>> GetDistrictRankingsWithHttpInfo (string districtKey, string ifModifiedSince = null);
+        ApiResponse<List<DistrictRanking>> GetDistrictRankingsWithHttpInfo (string districtKey, string ifModifiedSince = default(string));
         /// <summary>
         /// 
         /// </summary>
@@ -126,7 +126,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>List&lt;Team&gt;</returns>
-        List<Team> GetDistrictTeams (string districtKey, string ifModifiedSince = null);
+        List<Team> GetDistrictTeams (string districtKey, string ifModifiedSince = default(string));
 
         /// <summary>
         /// 
@@ -138,7 +138,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>ApiResponse of List&lt;Team&gt;</returns>
-        ApiResponse<List<Team>> GetDistrictTeamsWithHttpInfo (string districtKey, string ifModifiedSince = null);
+        ApiResponse<List<Team>> GetDistrictTeamsWithHttpInfo (string districtKey, string ifModifiedSince = default(string));
         /// <summary>
         /// 
         /// </summary>
@@ -149,7 +149,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>List&lt;string&gt;</returns>
-        List<string> GetDistrictTeamsKeys (string districtKey, string ifModifiedSince = null);
+        List<string> GetDistrictTeamsKeys (string districtKey, string ifModifiedSince = default(string));
 
         /// <summary>
         /// 
@@ -161,7 +161,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>ApiResponse of List&lt;string&gt;</returns>
-        ApiResponse<List<string>> GetDistrictTeamsKeysWithHttpInfo (string districtKey, string ifModifiedSince = null);
+        ApiResponse<List<string>> GetDistrictTeamsKeysWithHttpInfo (string districtKey, string ifModifiedSince = default(string));
         /// <summary>
         /// 
         /// </summary>
@@ -172,7 +172,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>List&lt;TeamSimple&gt;</returns>
-        List<TeamSimple> GetDistrictTeamsSimple (string districtKey, string ifModifiedSince = null);
+        List<TeamSimple> GetDistrictTeamsSimple (string districtKey, string ifModifiedSince = default(string));
 
         /// <summary>
         /// 
@@ -184,7 +184,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>ApiResponse of List&lt;TeamSimple&gt;</returns>
-        ApiResponse<List<TeamSimple>> GetDistrictTeamsSimpleWithHttpInfo (string districtKey, string ifModifiedSince = null);
+        ApiResponse<List<TeamSimple>> GetDistrictTeamsSimpleWithHttpInfo (string districtKey, string ifModifiedSince = default(string));
         /// <summary>
         /// 
         /// </summary>
@@ -195,7 +195,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="eventKey">TBA Event Key, eg &#x60;2016nytr&#x60;</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>List&lt;Team&gt;</returns>
-        List<Team> GetEventTeams (string eventKey, string ifModifiedSince = null);
+        List<Team> GetEventTeams (string eventKey, string ifModifiedSince = default(string));
 
         /// <summary>
         /// 
@@ -207,7 +207,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="eventKey">TBA Event Key, eg &#x60;2016nytr&#x60;</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>ApiResponse of List&lt;Team&gt;</returns>
-        ApiResponse<List<Team>> GetEventTeamsWithHttpInfo (string eventKey, string ifModifiedSince = null);
+        ApiResponse<List<Team>> GetEventTeamsWithHttpInfo (string eventKey, string ifModifiedSince = default(string));
         /// <summary>
         /// 
         /// </summary>
@@ -218,7 +218,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="eventKey">TBA Event Key, eg &#x60;2016nytr&#x60;</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>List&lt;string&gt;</returns>
-        List<string> GetEventTeamsKeys (string eventKey, string ifModifiedSince = null);
+        List<string> GetEventTeamsKeys (string eventKey, string ifModifiedSince = default(string));
 
         /// <summary>
         /// 
@@ -230,7 +230,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="eventKey">TBA Event Key, eg &#x60;2016nytr&#x60;</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>ApiResponse of List&lt;string&gt;</returns>
-        ApiResponse<List<string>> GetEventTeamsKeysWithHttpInfo (string eventKey, string ifModifiedSince = null);
+        ApiResponse<List<string>> GetEventTeamsKeysWithHttpInfo (string eventKey, string ifModifiedSince = default(string));
         /// <summary>
         /// 
         /// </summary>
@@ -241,7 +241,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="eventKey">TBA Event Key, eg &#x60;2016nytr&#x60;</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>List&lt;TeamSimple&gt;</returns>
-        List<TeamSimple> GetEventTeamsSimple (string eventKey, string ifModifiedSince = null);
+        List<TeamSimple> GetEventTeamsSimple (string eventKey, string ifModifiedSince = default(string));
 
         /// <summary>
         /// 
@@ -253,7 +253,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="eventKey">TBA Event Key, eg &#x60;2016nytr&#x60;</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>ApiResponse of List&lt;TeamSimple&gt;</returns>
-        ApiResponse<List<TeamSimple>> GetEventTeamsSimpleWithHttpInfo (string eventKey, string ifModifiedSince = null);
+        ApiResponse<List<TeamSimple>> GetEventTeamsSimpleWithHttpInfo (string eventKey, string ifModifiedSince = default(string));
         /// <summary>
         /// 
         /// </summary>
@@ -264,7 +264,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="eventKey">TBA Event Key, eg &#x60;2016nytr&#x60;</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Dictionary&lt;string, TeamEventStatus&gt;</returns>
-        Dictionary<string, TeamEventStatus> GetEventTeamsStatuses (string eventKey, string ifModifiedSince = null);
+        Dictionary<string, TeamEventStatus> GetEventTeamsStatuses (string eventKey, string ifModifiedSince = default(string));
 
         /// <summary>
         /// 
@@ -276,7 +276,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="eventKey">TBA Event Key, eg &#x60;2016nytr&#x60;</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>ApiResponse of Dictionary&lt;string, TeamEventStatus&gt;</returns>
-        ApiResponse<Dictionary<string, TeamEventStatus>> GetEventTeamsStatusesWithHttpInfo (string eventKey, string ifModifiedSince = null);
+        ApiResponse<Dictionary<string, TeamEventStatus>> GetEventTeamsStatusesWithHttpInfo (string eventKey, string ifModifiedSince = default(string));
         /// <summary>
         /// 
         /// </summary>
@@ -287,7 +287,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="year">Competition Year (or Season). Must be 4 digits.</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>List&lt;Event&gt;</returns>
-        List<Event> GetEventsByYear (int? year, string ifModifiedSince = null);
+        List<Event> GetEventsByYear (int year, string ifModifiedSince = default(string));
 
         /// <summary>
         /// 
@@ -299,7 +299,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="year">Competition Year (or Season). Must be 4 digits.</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>ApiResponse of List&lt;Event&gt;</returns>
-        ApiResponse<List<Event>> GetEventsByYearWithHttpInfo (int? year, string ifModifiedSince = null);
+        ApiResponse<List<Event>> GetEventsByYearWithHttpInfo (int year, string ifModifiedSince = default(string));
         /// <summary>
         /// 
         /// </summary>
@@ -310,7 +310,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="year">Competition Year (or Season). Must be 4 digits.</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>List&lt;string&gt;</returns>
-        List<string> GetEventsByYearKeys (int? year, string ifModifiedSince = null);
+        List<string> GetEventsByYearKeys (int year, string ifModifiedSince = default(string));
 
         /// <summary>
         /// 
@@ -322,7 +322,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="year">Competition Year (or Season). Must be 4 digits.</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>ApiResponse of List&lt;string&gt;</returns>
-        ApiResponse<List<string>> GetEventsByYearKeysWithHttpInfo (int? year, string ifModifiedSince = null);
+        ApiResponse<List<string>> GetEventsByYearKeysWithHttpInfo (int year, string ifModifiedSince = default(string));
         /// <summary>
         /// 
         /// </summary>
@@ -333,7 +333,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="year">Competition Year (or Season). Must be 4 digits.</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>List&lt;EventSimple&gt;</returns>
-        List<EventSimple> GetEventsByYearSimple (int? year, string ifModifiedSince = null);
+        List<EventSimple> GetEventsByYearSimple (int year, string ifModifiedSince = default(string));
 
         /// <summary>
         /// 
@@ -345,7 +345,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="year">Competition Year (or Season). Must be 4 digits.</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>ApiResponse of List&lt;EventSimple&gt;</returns>
-        ApiResponse<List<EventSimple>> GetEventsByYearSimpleWithHttpInfo (int? year, string ifModifiedSince = null);
+        ApiResponse<List<EventSimple>> GetEventsByYearSimpleWithHttpInfo (int year, string ifModifiedSince = default(string));
         /// <summary>
         /// 
         /// </summary>
@@ -357,7 +357,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="year">Competition Year (or Season). Must be 4 digits.</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Dictionary&lt;string, TeamEventStatus&gt;</returns>
-        Dictionary<string, TeamEventStatus> GetTeamEventsStatusesByYear (string teamKey, int? year, string ifModifiedSince = null);
+        Dictionary<string, TeamEventStatus> GetTeamEventsStatusesByYear (string teamKey, int year, string ifModifiedSince = default(string));
 
         /// <summary>
         /// 
@@ -370,7 +370,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="year">Competition Year (or Season). Must be 4 digits.</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>ApiResponse of Dictionary&lt;string, TeamEventStatus&gt;</returns>
-        ApiResponse<Dictionary<string, TeamEventStatus>> GetTeamEventsStatusesByYearWithHttpInfo (string teamKey, int? year, string ifModifiedSince = null);
+        ApiResponse<Dictionary<string, TeamEventStatus>> GetTeamEventsStatusesByYearWithHttpInfo (string teamKey, int year, string ifModifiedSince = default(string));
         /// <summary>
         /// 
         /// </summary>
@@ -381,7 +381,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="pageNum">Page number of results to return, zero-indexed</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>List&lt;Team&gt;</returns>
-        List<Team> GetTeams (int? pageNum, string ifModifiedSince = null);
+        List<Team> GetTeams (int pageNum, string ifModifiedSince = default(string));
 
         /// <summary>
         /// 
@@ -393,7 +393,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="pageNum">Page number of results to return, zero-indexed</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>ApiResponse of List&lt;Team&gt;</returns>
-        ApiResponse<List<Team>> GetTeamsWithHttpInfo (int? pageNum, string ifModifiedSince = null);
+        ApiResponse<List<Team>> GetTeamsWithHttpInfo (int pageNum, string ifModifiedSince = default(string));
         /// <summary>
         /// 
         /// </summary>
@@ -405,7 +405,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="pageNum">Page number of results to return, zero-indexed</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>List&lt;Team&gt;</returns>
-        List<Team> GetTeamsByYear (int? year, int? pageNum, string ifModifiedSince = null);
+        List<Team> GetTeamsByYear (int year, int pageNum, string ifModifiedSince = default(string));
 
         /// <summary>
         /// 
@@ -418,7 +418,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="pageNum">Page number of results to return, zero-indexed</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>ApiResponse of List&lt;Team&gt;</returns>
-        ApiResponse<List<Team>> GetTeamsByYearWithHttpInfo (int? year, int? pageNum, string ifModifiedSince = null);
+        ApiResponse<List<Team>> GetTeamsByYearWithHttpInfo (int year, int pageNum, string ifModifiedSince = default(string));
         /// <summary>
         /// 
         /// </summary>
@@ -430,7 +430,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="pageNum">Page number of results to return, zero-indexed</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>List&lt;string&gt;</returns>
-        List<string> GetTeamsByYearKeys (int? year, int? pageNum, string ifModifiedSince = null);
+        List<string> GetTeamsByYearKeys (int year, int pageNum, string ifModifiedSince = default(string));
 
         /// <summary>
         /// 
@@ -443,7 +443,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="pageNum">Page number of results to return, zero-indexed</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>ApiResponse of List&lt;string&gt;</returns>
-        ApiResponse<List<string>> GetTeamsByYearKeysWithHttpInfo (int? year, int? pageNum, string ifModifiedSince = null);
+        ApiResponse<List<string>> GetTeamsByYearKeysWithHttpInfo (int year, int pageNum, string ifModifiedSince = default(string));
         /// <summary>
         /// 
         /// </summary>
@@ -455,7 +455,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="pageNum">Page number of results to return, zero-indexed</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>List&lt;TeamSimple&gt;</returns>
-        List<TeamSimple> GetTeamsByYearSimple (int? year, int? pageNum, string ifModifiedSince = null);
+        List<TeamSimple> GetTeamsByYearSimple (int year, int pageNum, string ifModifiedSince = default(string));
 
         /// <summary>
         /// 
@@ -468,7 +468,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="pageNum">Page number of results to return, zero-indexed</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>ApiResponse of List&lt;TeamSimple&gt;</returns>
-        ApiResponse<List<TeamSimple>> GetTeamsByYearSimpleWithHttpInfo (int? year, int? pageNum, string ifModifiedSince = null);
+        ApiResponse<List<TeamSimple>> GetTeamsByYearSimpleWithHttpInfo (int year, int pageNum, string ifModifiedSince = default(string));
         /// <summary>
         /// 
         /// </summary>
@@ -479,7 +479,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="pageNum">Page number of results to return, zero-indexed</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>List&lt;string&gt;</returns>
-        List<string> GetTeamsKeys (int? pageNum, string ifModifiedSince = null);
+        List<string> GetTeamsKeys (int pageNum, string ifModifiedSince = default(string));
 
         /// <summary>
         /// 
@@ -491,7 +491,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="pageNum">Page number of results to return, zero-indexed</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>ApiResponse of List&lt;string&gt;</returns>
-        ApiResponse<List<string>> GetTeamsKeysWithHttpInfo (int? pageNum, string ifModifiedSince = null);
+        ApiResponse<List<string>> GetTeamsKeysWithHttpInfo (int pageNum, string ifModifiedSince = default(string));
         /// <summary>
         /// 
         /// </summary>
@@ -502,7 +502,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="pageNum">Page number of results to return, zero-indexed</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>List&lt;TeamSimple&gt;</returns>
-        List<TeamSimple> GetTeamsSimple (int? pageNum, string ifModifiedSince = null);
+        List<TeamSimple> GetTeamsSimple (int pageNum, string ifModifiedSince = default(string));
 
         /// <summary>
         /// 
@@ -514,7 +514,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="pageNum">Page number of results to return, zero-indexed</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>ApiResponse of List&lt;TeamSimple&gt;</returns>
-        ApiResponse<List<TeamSimple>> GetTeamsSimpleWithHttpInfo (int? pageNum, string ifModifiedSince = null);
+        ApiResponse<List<TeamSimple>> GetTeamsSimpleWithHttpInfo (int pageNum, string ifModifiedSince = default(string));
         #endregion Synchronous Operations
         #region Asynchronous Operations
         /// <summary>
@@ -527,7 +527,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of List&lt;Event&gt;</returns>
-        System.Threading.Tasks.Task<List<Event>> GetDistrictEventsAsync (string districtKey, string ifModifiedSince = null);
+        System.Threading.Tasks.Task<List<Event>> GetDistrictEventsAsync (string districtKey, string ifModifiedSince = default(string));
 
         /// <summary>
         /// 
@@ -539,7 +539,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of ApiResponse (List&lt;Event&gt;)</returns>
-        System.Threading.Tasks.Task<ApiResponse<List<Event>>> GetDistrictEventsAsyncWithHttpInfo (string districtKey, string ifModifiedSince = null);
+        System.Threading.Tasks.Task<ApiResponse<List<Event>>> GetDistrictEventsAsyncWithHttpInfo (string districtKey, string ifModifiedSince = default(string));
         /// <summary>
         /// 
         /// </summary>
@@ -550,7 +550,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of List&lt;string&gt;</returns>
-        System.Threading.Tasks.Task<List<string>> GetDistrictEventsKeysAsync (string districtKey, string ifModifiedSince = null);
+        System.Threading.Tasks.Task<List<string>> GetDistrictEventsKeysAsync (string districtKey, string ifModifiedSince = default(string));
 
         /// <summary>
         /// 
@@ -562,7 +562,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of ApiResponse (List&lt;string&gt;)</returns>
-        System.Threading.Tasks.Task<ApiResponse<List<string>>> GetDistrictEventsKeysAsyncWithHttpInfo (string districtKey, string ifModifiedSince = null);
+        System.Threading.Tasks.Task<ApiResponse<List<string>>> GetDistrictEventsKeysAsyncWithHttpInfo (string districtKey, string ifModifiedSince = default(string));
         /// <summary>
         /// 
         /// </summary>
@@ -573,7 +573,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of List&lt;EventSimple&gt;</returns>
-        System.Threading.Tasks.Task<List<EventSimple>> GetDistrictEventsSimpleAsync (string districtKey, string ifModifiedSince = null);
+        System.Threading.Tasks.Task<List<EventSimple>> GetDistrictEventsSimpleAsync (string districtKey, string ifModifiedSince = default(string));
 
         /// <summary>
         /// 
@@ -585,7 +585,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of ApiResponse (List&lt;EventSimple&gt;)</returns>
-        System.Threading.Tasks.Task<ApiResponse<List<EventSimple>>> GetDistrictEventsSimpleAsyncWithHttpInfo (string districtKey, string ifModifiedSince = null);
+        System.Threading.Tasks.Task<ApiResponse<List<EventSimple>>> GetDistrictEventsSimpleAsyncWithHttpInfo (string districtKey, string ifModifiedSince = default(string));
         /// <summary>
         /// 
         /// </summary>
@@ -596,7 +596,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of List&lt;DistrictRanking&gt;</returns>
-        System.Threading.Tasks.Task<List<DistrictRanking>> GetDistrictRankingsAsync (string districtKey, string ifModifiedSince = null);
+        System.Threading.Tasks.Task<List<DistrictRanking>> GetDistrictRankingsAsync (string districtKey, string ifModifiedSince = default(string));
 
         /// <summary>
         /// 
@@ -608,7 +608,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of ApiResponse (List&lt;DistrictRanking&gt;)</returns>
-        System.Threading.Tasks.Task<ApiResponse<List<DistrictRanking>>> GetDistrictRankingsAsyncWithHttpInfo (string districtKey, string ifModifiedSince = null);
+        System.Threading.Tasks.Task<ApiResponse<List<DistrictRanking>>> GetDistrictRankingsAsyncWithHttpInfo (string districtKey, string ifModifiedSince = default(string));
         /// <summary>
         /// 
         /// </summary>
@@ -619,7 +619,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of List&lt;Team&gt;</returns>
-        System.Threading.Tasks.Task<List<Team>> GetDistrictTeamsAsync (string districtKey, string ifModifiedSince = null);
+        System.Threading.Tasks.Task<List<Team>> GetDistrictTeamsAsync (string districtKey, string ifModifiedSince = default(string));
 
         /// <summary>
         /// 
@@ -631,7 +631,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of ApiResponse (List&lt;Team&gt;)</returns>
-        System.Threading.Tasks.Task<ApiResponse<List<Team>>> GetDistrictTeamsAsyncWithHttpInfo (string districtKey, string ifModifiedSince = null);
+        System.Threading.Tasks.Task<ApiResponse<List<Team>>> GetDistrictTeamsAsyncWithHttpInfo (string districtKey, string ifModifiedSince = default(string));
         /// <summary>
         /// 
         /// </summary>
@@ -642,7 +642,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of List&lt;string&gt;</returns>
-        System.Threading.Tasks.Task<List<string>> GetDistrictTeamsKeysAsync (string districtKey, string ifModifiedSince = null);
+        System.Threading.Tasks.Task<List<string>> GetDistrictTeamsKeysAsync (string districtKey, string ifModifiedSince = default(string));
 
         /// <summary>
         /// 
@@ -654,7 +654,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of ApiResponse (List&lt;string&gt;)</returns>
-        System.Threading.Tasks.Task<ApiResponse<List<string>>> GetDistrictTeamsKeysAsyncWithHttpInfo (string districtKey, string ifModifiedSince = null);
+        System.Threading.Tasks.Task<ApiResponse<List<string>>> GetDistrictTeamsKeysAsyncWithHttpInfo (string districtKey, string ifModifiedSince = default(string));
         /// <summary>
         /// 
         /// </summary>
@@ -665,7 +665,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of List&lt;TeamSimple&gt;</returns>
-        System.Threading.Tasks.Task<List<TeamSimple>> GetDistrictTeamsSimpleAsync (string districtKey, string ifModifiedSince = null);
+        System.Threading.Tasks.Task<List<TeamSimple>> GetDistrictTeamsSimpleAsync (string districtKey, string ifModifiedSince = default(string));
 
         /// <summary>
         /// 
@@ -677,7 +677,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of ApiResponse (List&lt;TeamSimple&gt;)</returns>
-        System.Threading.Tasks.Task<ApiResponse<List<TeamSimple>>> GetDistrictTeamsSimpleAsyncWithHttpInfo (string districtKey, string ifModifiedSince = null);
+        System.Threading.Tasks.Task<ApiResponse<List<TeamSimple>>> GetDistrictTeamsSimpleAsyncWithHttpInfo (string districtKey, string ifModifiedSince = default(string));
         /// <summary>
         /// 
         /// </summary>
@@ -688,7 +688,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="eventKey">TBA Event Key, eg &#x60;2016nytr&#x60;</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of List&lt;Team&gt;</returns>
-        System.Threading.Tasks.Task<List<Team>> GetEventTeamsAsync (string eventKey, string ifModifiedSince = null);
+        System.Threading.Tasks.Task<List<Team>> GetEventTeamsAsync (string eventKey, string ifModifiedSince = default(string));
 
         /// <summary>
         /// 
@@ -700,7 +700,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="eventKey">TBA Event Key, eg &#x60;2016nytr&#x60;</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of ApiResponse (List&lt;Team&gt;)</returns>
-        System.Threading.Tasks.Task<ApiResponse<List<Team>>> GetEventTeamsAsyncWithHttpInfo (string eventKey, string ifModifiedSince = null);
+        System.Threading.Tasks.Task<ApiResponse<List<Team>>> GetEventTeamsAsyncWithHttpInfo (string eventKey, string ifModifiedSince = default(string));
         /// <summary>
         /// 
         /// </summary>
@@ -711,7 +711,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="eventKey">TBA Event Key, eg &#x60;2016nytr&#x60;</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of List&lt;string&gt;</returns>
-        System.Threading.Tasks.Task<List<string>> GetEventTeamsKeysAsync (string eventKey, string ifModifiedSince = null);
+        System.Threading.Tasks.Task<List<string>> GetEventTeamsKeysAsync (string eventKey, string ifModifiedSince = default(string));
 
         /// <summary>
         /// 
@@ -723,7 +723,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="eventKey">TBA Event Key, eg &#x60;2016nytr&#x60;</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of ApiResponse (List&lt;string&gt;)</returns>
-        System.Threading.Tasks.Task<ApiResponse<List<string>>> GetEventTeamsKeysAsyncWithHttpInfo (string eventKey, string ifModifiedSince = null);
+        System.Threading.Tasks.Task<ApiResponse<List<string>>> GetEventTeamsKeysAsyncWithHttpInfo (string eventKey, string ifModifiedSince = default(string));
         /// <summary>
         /// 
         /// </summary>
@@ -734,7 +734,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="eventKey">TBA Event Key, eg &#x60;2016nytr&#x60;</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of List&lt;TeamSimple&gt;</returns>
-        System.Threading.Tasks.Task<List<TeamSimple>> GetEventTeamsSimpleAsync (string eventKey, string ifModifiedSince = null);
+        System.Threading.Tasks.Task<List<TeamSimple>> GetEventTeamsSimpleAsync (string eventKey, string ifModifiedSince = default(string));
 
         /// <summary>
         /// 
@@ -746,7 +746,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="eventKey">TBA Event Key, eg &#x60;2016nytr&#x60;</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of ApiResponse (List&lt;TeamSimple&gt;)</returns>
-        System.Threading.Tasks.Task<ApiResponse<List<TeamSimple>>> GetEventTeamsSimpleAsyncWithHttpInfo (string eventKey, string ifModifiedSince = null);
+        System.Threading.Tasks.Task<ApiResponse<List<TeamSimple>>> GetEventTeamsSimpleAsyncWithHttpInfo (string eventKey, string ifModifiedSince = default(string));
         /// <summary>
         /// 
         /// </summary>
@@ -757,7 +757,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="eventKey">TBA Event Key, eg &#x60;2016nytr&#x60;</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of Dictionary&lt;string, TeamEventStatus&gt;</returns>
-        System.Threading.Tasks.Task<Dictionary<string, TeamEventStatus>> GetEventTeamsStatusesAsync (string eventKey, string ifModifiedSince = null);
+        System.Threading.Tasks.Task<Dictionary<string, TeamEventStatus>> GetEventTeamsStatusesAsync (string eventKey, string ifModifiedSince = default(string));
 
         /// <summary>
         /// 
@@ -769,7 +769,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="eventKey">TBA Event Key, eg &#x60;2016nytr&#x60;</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of ApiResponse (Dictionary&lt;string, TeamEventStatus&gt;)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Dictionary<string, TeamEventStatus>>> GetEventTeamsStatusesAsyncWithHttpInfo (string eventKey, string ifModifiedSince = null);
+        System.Threading.Tasks.Task<ApiResponse<Dictionary<string, TeamEventStatus>>> GetEventTeamsStatusesAsyncWithHttpInfo (string eventKey, string ifModifiedSince = default(string));
         /// <summary>
         /// 
         /// </summary>
@@ -780,7 +780,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="year">Competition Year (or Season). Must be 4 digits.</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of List&lt;Event&gt;</returns>
-        System.Threading.Tasks.Task<List<Event>> GetEventsByYearAsync (int? year, string ifModifiedSince = null);
+        System.Threading.Tasks.Task<List<Event>> GetEventsByYearAsync (int year, string ifModifiedSince = default(string));
 
         /// <summary>
         /// 
@@ -792,7 +792,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="year">Competition Year (or Season). Must be 4 digits.</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of ApiResponse (List&lt;Event&gt;)</returns>
-        System.Threading.Tasks.Task<ApiResponse<List<Event>>> GetEventsByYearAsyncWithHttpInfo (int? year, string ifModifiedSince = null);
+        System.Threading.Tasks.Task<ApiResponse<List<Event>>> GetEventsByYearAsyncWithHttpInfo (int year, string ifModifiedSince = default(string));
         /// <summary>
         /// 
         /// </summary>
@@ -803,7 +803,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="year">Competition Year (or Season). Must be 4 digits.</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of List&lt;string&gt;</returns>
-        System.Threading.Tasks.Task<List<string>> GetEventsByYearKeysAsync (int? year, string ifModifiedSince = null);
+        System.Threading.Tasks.Task<List<string>> GetEventsByYearKeysAsync (int year, string ifModifiedSince = default(string));
 
         /// <summary>
         /// 
@@ -815,7 +815,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="year">Competition Year (or Season). Must be 4 digits.</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of ApiResponse (List&lt;string&gt;)</returns>
-        System.Threading.Tasks.Task<ApiResponse<List<string>>> GetEventsByYearKeysAsyncWithHttpInfo (int? year, string ifModifiedSince = null);
+        System.Threading.Tasks.Task<ApiResponse<List<string>>> GetEventsByYearKeysAsyncWithHttpInfo (int year, string ifModifiedSince = default(string));
         /// <summary>
         /// 
         /// </summary>
@@ -826,7 +826,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="year">Competition Year (or Season). Must be 4 digits.</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of List&lt;EventSimple&gt;</returns>
-        System.Threading.Tasks.Task<List<EventSimple>> GetEventsByYearSimpleAsync (int? year, string ifModifiedSince = null);
+        System.Threading.Tasks.Task<List<EventSimple>> GetEventsByYearSimpleAsync (int year, string ifModifiedSince = default(string));
 
         /// <summary>
         /// 
@@ -838,7 +838,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="year">Competition Year (or Season). Must be 4 digits.</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of ApiResponse (List&lt;EventSimple&gt;)</returns>
-        System.Threading.Tasks.Task<ApiResponse<List<EventSimple>>> GetEventsByYearSimpleAsyncWithHttpInfo (int? year, string ifModifiedSince = null);
+        System.Threading.Tasks.Task<ApiResponse<List<EventSimple>>> GetEventsByYearSimpleAsyncWithHttpInfo (int year, string ifModifiedSince = default(string));
         /// <summary>
         /// 
         /// </summary>
@@ -850,7 +850,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="year">Competition Year (or Season). Must be 4 digits.</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of Dictionary&lt;string, TeamEventStatus&gt;</returns>
-        System.Threading.Tasks.Task<Dictionary<string, TeamEventStatus>> GetTeamEventsStatusesByYearAsync (string teamKey, int? year, string ifModifiedSince = null);
+        System.Threading.Tasks.Task<Dictionary<string, TeamEventStatus>> GetTeamEventsStatusesByYearAsync (string teamKey, int year, string ifModifiedSince = default(string));
 
         /// <summary>
         /// 
@@ -863,7 +863,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="year">Competition Year (or Season). Must be 4 digits.</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of ApiResponse (Dictionary&lt;string, TeamEventStatus&gt;)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Dictionary<string, TeamEventStatus>>> GetTeamEventsStatusesByYearAsyncWithHttpInfo (string teamKey, int? year, string ifModifiedSince = null);
+        System.Threading.Tasks.Task<ApiResponse<Dictionary<string, TeamEventStatus>>> GetTeamEventsStatusesByYearAsyncWithHttpInfo (string teamKey, int year, string ifModifiedSince = default(string));
         /// <summary>
         /// 
         /// </summary>
@@ -874,7 +874,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="pageNum">Page number of results to return, zero-indexed</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of List&lt;Team&gt;</returns>
-        System.Threading.Tasks.Task<List<Team>> GetTeamsAsync (int? pageNum, string ifModifiedSince = null);
+        System.Threading.Tasks.Task<List<Team>> GetTeamsAsync (int pageNum, string ifModifiedSince = default(string));
 
         /// <summary>
         /// 
@@ -886,7 +886,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="pageNum">Page number of results to return, zero-indexed</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of ApiResponse (List&lt;Team&gt;)</returns>
-        System.Threading.Tasks.Task<ApiResponse<List<Team>>> GetTeamsAsyncWithHttpInfo (int? pageNum, string ifModifiedSince = null);
+        System.Threading.Tasks.Task<ApiResponse<List<Team>>> GetTeamsAsyncWithHttpInfo (int pageNum, string ifModifiedSince = default(string));
         /// <summary>
         /// 
         /// </summary>
@@ -898,7 +898,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="pageNum">Page number of results to return, zero-indexed</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of List&lt;Team&gt;</returns>
-        System.Threading.Tasks.Task<List<Team>> GetTeamsByYearAsync (int? year, int? pageNum, string ifModifiedSince = null);
+        System.Threading.Tasks.Task<List<Team>> GetTeamsByYearAsync (int year, int pageNum, string ifModifiedSince = default(string));
 
         /// <summary>
         /// 
@@ -911,7 +911,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="pageNum">Page number of results to return, zero-indexed</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of ApiResponse (List&lt;Team&gt;)</returns>
-        System.Threading.Tasks.Task<ApiResponse<List<Team>>> GetTeamsByYearAsyncWithHttpInfo (int? year, int? pageNum, string ifModifiedSince = null);
+        System.Threading.Tasks.Task<ApiResponse<List<Team>>> GetTeamsByYearAsyncWithHttpInfo (int year, int pageNum, string ifModifiedSince = default(string));
         /// <summary>
         /// 
         /// </summary>
@@ -923,7 +923,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="pageNum">Page number of results to return, zero-indexed</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of List&lt;string&gt;</returns>
-        System.Threading.Tasks.Task<List<string>> GetTeamsByYearKeysAsync (int? year, int? pageNum, string ifModifiedSince = null);
+        System.Threading.Tasks.Task<List<string>> GetTeamsByYearKeysAsync (int year, int pageNum, string ifModifiedSince = default(string));
 
         /// <summary>
         /// 
@@ -936,7 +936,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="pageNum">Page number of results to return, zero-indexed</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of ApiResponse (List&lt;string&gt;)</returns>
-        System.Threading.Tasks.Task<ApiResponse<List<string>>> GetTeamsByYearKeysAsyncWithHttpInfo (int? year, int? pageNum, string ifModifiedSince = null);
+        System.Threading.Tasks.Task<ApiResponse<List<string>>> GetTeamsByYearKeysAsyncWithHttpInfo (int year, int pageNum, string ifModifiedSince = default(string));
         /// <summary>
         /// 
         /// </summary>
@@ -948,7 +948,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="pageNum">Page number of results to return, zero-indexed</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of List&lt;TeamSimple&gt;</returns>
-        System.Threading.Tasks.Task<List<TeamSimple>> GetTeamsByYearSimpleAsync (int? year, int? pageNum, string ifModifiedSince = null);
+        System.Threading.Tasks.Task<List<TeamSimple>> GetTeamsByYearSimpleAsync (int year, int pageNum, string ifModifiedSince = default(string));
 
         /// <summary>
         /// 
@@ -961,7 +961,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="pageNum">Page number of results to return, zero-indexed</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of ApiResponse (List&lt;TeamSimple&gt;)</returns>
-        System.Threading.Tasks.Task<ApiResponse<List<TeamSimple>>> GetTeamsByYearSimpleAsyncWithHttpInfo (int? year, int? pageNum, string ifModifiedSince = null);
+        System.Threading.Tasks.Task<ApiResponse<List<TeamSimple>>> GetTeamsByYearSimpleAsyncWithHttpInfo (int year, int pageNum, string ifModifiedSince = default(string));
         /// <summary>
         /// 
         /// </summary>
@@ -972,7 +972,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="pageNum">Page number of results to return, zero-indexed</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of List&lt;string&gt;</returns>
-        System.Threading.Tasks.Task<List<string>> GetTeamsKeysAsync (int? pageNum, string ifModifiedSince = null);
+        System.Threading.Tasks.Task<List<string>> GetTeamsKeysAsync (int pageNum, string ifModifiedSince = default(string));
 
         /// <summary>
         /// 
@@ -984,7 +984,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="pageNum">Page number of results to return, zero-indexed</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of ApiResponse (List&lt;string&gt;)</returns>
-        System.Threading.Tasks.Task<ApiResponse<List<string>>> GetTeamsKeysAsyncWithHttpInfo (int? pageNum, string ifModifiedSince = null);
+        System.Threading.Tasks.Task<ApiResponse<List<string>>> GetTeamsKeysAsyncWithHttpInfo (int pageNum, string ifModifiedSince = default(string));
         /// <summary>
         /// 
         /// </summary>
@@ -995,7 +995,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="pageNum">Page number of results to return, zero-indexed</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of List&lt;TeamSimple&gt;</returns>
-        System.Threading.Tasks.Task<List<TeamSimple>> GetTeamsSimpleAsync (int? pageNum, string ifModifiedSince = null);
+        System.Threading.Tasks.Task<List<TeamSimple>> GetTeamsSimpleAsync (int pageNum, string ifModifiedSince = default(string));
 
         /// <summary>
         /// 
@@ -1007,7 +1007,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="pageNum">Page number of results to return, zero-indexed</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of ApiResponse (List&lt;TeamSimple&gt;)</returns>
-        System.Threading.Tasks.Task<ApiResponse<List<TeamSimple>>> GetTeamsSimpleAsyncWithHttpInfo (int? pageNum, string ifModifiedSince = null);
+        System.Threading.Tasks.Task<ApiResponse<List<TeamSimple>>> GetTeamsSimpleAsyncWithHttpInfo (int pageNum, string ifModifiedSince = default(string));
         #endregion Asynchronous Operations
     }
 
@@ -1126,7 +1126,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>List&lt;Event&gt;</returns>
-        public List<Event> GetDistrictEvents (string districtKey, string ifModifiedSince = null)
+        public List<Event> GetDistrictEvents (string districtKey, string ifModifiedSince = default(string))
         {
              ApiResponse<List<Event>> localVarResponse = GetDistrictEventsWithHttpInfo(districtKey, ifModifiedSince);
              return localVarResponse.Data;
@@ -1139,7 +1139,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>ApiResponse of List&lt;Event&gt;</returns>
-        public ApiResponse< List<Event> > GetDistrictEventsWithHttpInfo (string districtKey, string ifModifiedSince = null)
+        public ApiResponse<List<Event>> GetDistrictEventsWithHttpInfo (string districtKey, string ifModifiedSince = default(string))
         {
             // verify the required parameter 'districtKey' is set
             if (districtKey == null)
@@ -1200,7 +1200,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of List&lt;Event&gt;</returns>
-        public async System.Threading.Tasks.Task<List<Event>> GetDistrictEventsAsync (string districtKey, string ifModifiedSince = null)
+        public async System.Threading.Tasks.Task<List<Event>> GetDistrictEventsAsync (string districtKey, string ifModifiedSince = default(string))
         {
              ApiResponse<List<Event>> localVarResponse = await GetDistrictEventsAsyncWithHttpInfo(districtKey, ifModifiedSince);
              return localVarResponse.Data;
@@ -1214,7 +1214,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of ApiResponse (List&lt;Event&gt;)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<List<Event>>> GetDistrictEventsAsyncWithHttpInfo (string districtKey, string ifModifiedSince = null)
+        public async System.Threading.Tasks.Task<ApiResponse<List<Event>>> GetDistrictEventsAsyncWithHttpInfo (string districtKey, string ifModifiedSince = default(string))
         {
             // verify the required parameter 'districtKey' is set
             if (districtKey == null)
@@ -1275,7 +1275,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>List&lt;string&gt;</returns>
-        public List<string> GetDistrictEventsKeys (string districtKey, string ifModifiedSince = null)
+        public List<string> GetDistrictEventsKeys (string districtKey, string ifModifiedSince = default(string))
         {
              ApiResponse<List<string>> localVarResponse = GetDistrictEventsKeysWithHttpInfo(districtKey, ifModifiedSince);
              return localVarResponse.Data;
@@ -1288,7 +1288,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>ApiResponse of List&lt;string&gt;</returns>
-        public ApiResponse< List<string> > GetDistrictEventsKeysWithHttpInfo (string districtKey, string ifModifiedSince = null)
+        public ApiResponse<List<string>> GetDistrictEventsKeysWithHttpInfo (string districtKey, string ifModifiedSince = default(string))
         {
             // verify the required parameter 'districtKey' is set
             if (districtKey == null)
@@ -1349,7 +1349,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of List&lt;string&gt;</returns>
-        public async System.Threading.Tasks.Task<List<string>> GetDistrictEventsKeysAsync (string districtKey, string ifModifiedSince = null)
+        public async System.Threading.Tasks.Task<List<string>> GetDistrictEventsKeysAsync (string districtKey, string ifModifiedSince = default(string))
         {
              ApiResponse<List<string>> localVarResponse = await GetDistrictEventsKeysAsyncWithHttpInfo(districtKey, ifModifiedSince);
              return localVarResponse.Data;
@@ -1363,7 +1363,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of ApiResponse (List&lt;string&gt;)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<List<string>>> GetDistrictEventsKeysAsyncWithHttpInfo (string districtKey, string ifModifiedSince = null)
+        public async System.Threading.Tasks.Task<ApiResponse<List<string>>> GetDistrictEventsKeysAsyncWithHttpInfo (string districtKey, string ifModifiedSince = default(string))
         {
             // verify the required parameter 'districtKey' is set
             if (districtKey == null)
@@ -1424,7 +1424,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>List&lt;EventSimple&gt;</returns>
-        public List<EventSimple> GetDistrictEventsSimple (string districtKey, string ifModifiedSince = null)
+        public List<EventSimple> GetDistrictEventsSimple (string districtKey, string ifModifiedSince = default(string))
         {
              ApiResponse<List<EventSimple>> localVarResponse = GetDistrictEventsSimpleWithHttpInfo(districtKey, ifModifiedSince);
              return localVarResponse.Data;
@@ -1437,7 +1437,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>ApiResponse of List&lt;EventSimple&gt;</returns>
-        public ApiResponse< List<EventSimple> > GetDistrictEventsSimpleWithHttpInfo (string districtKey, string ifModifiedSince = null)
+        public ApiResponse<List<EventSimple>> GetDistrictEventsSimpleWithHttpInfo (string districtKey, string ifModifiedSince = default(string))
         {
             // verify the required parameter 'districtKey' is set
             if (districtKey == null)
@@ -1498,7 +1498,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of List&lt;EventSimple&gt;</returns>
-        public async System.Threading.Tasks.Task<List<EventSimple>> GetDistrictEventsSimpleAsync (string districtKey, string ifModifiedSince = null)
+        public async System.Threading.Tasks.Task<List<EventSimple>> GetDistrictEventsSimpleAsync (string districtKey, string ifModifiedSince = default(string))
         {
              ApiResponse<List<EventSimple>> localVarResponse = await GetDistrictEventsSimpleAsyncWithHttpInfo(districtKey, ifModifiedSince);
              return localVarResponse.Data;
@@ -1512,7 +1512,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of ApiResponse (List&lt;EventSimple&gt;)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<List<EventSimple>>> GetDistrictEventsSimpleAsyncWithHttpInfo (string districtKey, string ifModifiedSince = null)
+        public async System.Threading.Tasks.Task<ApiResponse<List<EventSimple>>> GetDistrictEventsSimpleAsyncWithHttpInfo (string districtKey, string ifModifiedSince = default(string))
         {
             // verify the required parameter 'districtKey' is set
             if (districtKey == null)
@@ -1573,7 +1573,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>List&lt;DistrictRanking&gt;</returns>
-        public List<DistrictRanking> GetDistrictRankings (string districtKey, string ifModifiedSince = null)
+        public List<DistrictRanking> GetDistrictRankings (string districtKey, string ifModifiedSince = default(string))
         {
              ApiResponse<List<DistrictRanking>> localVarResponse = GetDistrictRankingsWithHttpInfo(districtKey, ifModifiedSince);
              return localVarResponse.Data;
@@ -1586,7 +1586,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>ApiResponse of List&lt;DistrictRanking&gt;</returns>
-        public ApiResponse< List<DistrictRanking> > GetDistrictRankingsWithHttpInfo (string districtKey, string ifModifiedSince = null)
+        public ApiResponse<List<DistrictRanking>> GetDistrictRankingsWithHttpInfo (string districtKey, string ifModifiedSince = default(string))
         {
             // verify the required parameter 'districtKey' is set
             if (districtKey == null)
@@ -1647,7 +1647,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of List&lt;DistrictRanking&gt;</returns>
-        public async System.Threading.Tasks.Task<List<DistrictRanking>> GetDistrictRankingsAsync (string districtKey, string ifModifiedSince = null)
+        public async System.Threading.Tasks.Task<List<DistrictRanking>> GetDistrictRankingsAsync (string districtKey, string ifModifiedSince = default(string))
         {
              ApiResponse<List<DistrictRanking>> localVarResponse = await GetDistrictRankingsAsyncWithHttpInfo(districtKey, ifModifiedSince);
              return localVarResponse.Data;
@@ -1661,7 +1661,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of ApiResponse (List&lt;DistrictRanking&gt;)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<List<DistrictRanking>>> GetDistrictRankingsAsyncWithHttpInfo (string districtKey, string ifModifiedSince = null)
+        public async System.Threading.Tasks.Task<ApiResponse<List<DistrictRanking>>> GetDistrictRankingsAsyncWithHttpInfo (string districtKey, string ifModifiedSince = default(string))
         {
             // verify the required parameter 'districtKey' is set
             if (districtKey == null)
@@ -1722,7 +1722,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>List&lt;Team&gt;</returns>
-        public List<Team> GetDistrictTeams (string districtKey, string ifModifiedSince = null)
+        public List<Team> GetDistrictTeams (string districtKey, string ifModifiedSince = default(string))
         {
              ApiResponse<List<Team>> localVarResponse = GetDistrictTeamsWithHttpInfo(districtKey, ifModifiedSince);
              return localVarResponse.Data;
@@ -1735,7 +1735,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>ApiResponse of List&lt;Team&gt;</returns>
-        public ApiResponse< List<Team> > GetDistrictTeamsWithHttpInfo (string districtKey, string ifModifiedSince = null)
+        public ApiResponse<List<Team>> GetDistrictTeamsWithHttpInfo (string districtKey, string ifModifiedSince = default(string))
         {
             // verify the required parameter 'districtKey' is set
             if (districtKey == null)
@@ -1796,7 +1796,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of List&lt;Team&gt;</returns>
-        public async System.Threading.Tasks.Task<List<Team>> GetDistrictTeamsAsync (string districtKey, string ifModifiedSince = null)
+        public async System.Threading.Tasks.Task<List<Team>> GetDistrictTeamsAsync (string districtKey, string ifModifiedSince = default(string))
         {
              ApiResponse<List<Team>> localVarResponse = await GetDistrictTeamsAsyncWithHttpInfo(districtKey, ifModifiedSince);
              return localVarResponse.Data;
@@ -1810,7 +1810,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of ApiResponse (List&lt;Team&gt;)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<List<Team>>> GetDistrictTeamsAsyncWithHttpInfo (string districtKey, string ifModifiedSince = null)
+        public async System.Threading.Tasks.Task<ApiResponse<List<Team>>> GetDistrictTeamsAsyncWithHttpInfo (string districtKey, string ifModifiedSince = default(string))
         {
             // verify the required parameter 'districtKey' is set
             if (districtKey == null)
@@ -1871,7 +1871,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>List&lt;string&gt;</returns>
-        public List<string> GetDistrictTeamsKeys (string districtKey, string ifModifiedSince = null)
+        public List<string> GetDistrictTeamsKeys (string districtKey, string ifModifiedSince = default(string))
         {
              ApiResponse<List<string>> localVarResponse = GetDistrictTeamsKeysWithHttpInfo(districtKey, ifModifiedSince);
              return localVarResponse.Data;
@@ -1884,7 +1884,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>ApiResponse of List&lt;string&gt;</returns>
-        public ApiResponse< List<string> > GetDistrictTeamsKeysWithHttpInfo (string districtKey, string ifModifiedSince = null)
+        public ApiResponse<List<string>> GetDistrictTeamsKeysWithHttpInfo (string districtKey, string ifModifiedSince = default(string))
         {
             // verify the required parameter 'districtKey' is set
             if (districtKey == null)
@@ -1945,7 +1945,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of List&lt;string&gt;</returns>
-        public async System.Threading.Tasks.Task<List<string>> GetDistrictTeamsKeysAsync (string districtKey, string ifModifiedSince = null)
+        public async System.Threading.Tasks.Task<List<string>> GetDistrictTeamsKeysAsync (string districtKey, string ifModifiedSince = default(string))
         {
              ApiResponse<List<string>> localVarResponse = await GetDistrictTeamsKeysAsyncWithHttpInfo(districtKey, ifModifiedSince);
              return localVarResponse.Data;
@@ -1959,7 +1959,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of ApiResponse (List&lt;string&gt;)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<List<string>>> GetDistrictTeamsKeysAsyncWithHttpInfo (string districtKey, string ifModifiedSince = null)
+        public async System.Threading.Tasks.Task<ApiResponse<List<string>>> GetDistrictTeamsKeysAsyncWithHttpInfo (string districtKey, string ifModifiedSince = default(string))
         {
             // verify the required parameter 'districtKey' is set
             if (districtKey == null)
@@ -2020,7 +2020,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>List&lt;TeamSimple&gt;</returns>
-        public List<TeamSimple> GetDistrictTeamsSimple (string districtKey, string ifModifiedSince = null)
+        public List<TeamSimple> GetDistrictTeamsSimple (string districtKey, string ifModifiedSince = default(string))
         {
              ApiResponse<List<TeamSimple>> localVarResponse = GetDistrictTeamsSimpleWithHttpInfo(districtKey, ifModifiedSince);
              return localVarResponse.Data;
@@ -2033,7 +2033,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>ApiResponse of List&lt;TeamSimple&gt;</returns>
-        public ApiResponse< List<TeamSimple> > GetDistrictTeamsSimpleWithHttpInfo (string districtKey, string ifModifiedSince = null)
+        public ApiResponse<List<TeamSimple>> GetDistrictTeamsSimpleWithHttpInfo (string districtKey, string ifModifiedSince = default(string))
         {
             // verify the required parameter 'districtKey' is set
             if (districtKey == null)
@@ -2094,7 +2094,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of List&lt;TeamSimple&gt;</returns>
-        public async System.Threading.Tasks.Task<List<TeamSimple>> GetDistrictTeamsSimpleAsync (string districtKey, string ifModifiedSince = null)
+        public async System.Threading.Tasks.Task<List<TeamSimple>> GetDistrictTeamsSimpleAsync (string districtKey, string ifModifiedSince = default(string))
         {
              ApiResponse<List<TeamSimple>> localVarResponse = await GetDistrictTeamsSimpleAsyncWithHttpInfo(districtKey, ifModifiedSince);
              return localVarResponse.Data;
@@ -2108,7 +2108,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="districtKey">TBA District Key, eg &#x60;2016fim&#x60;</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of ApiResponse (List&lt;TeamSimple&gt;)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<List<TeamSimple>>> GetDistrictTeamsSimpleAsyncWithHttpInfo (string districtKey, string ifModifiedSince = null)
+        public async System.Threading.Tasks.Task<ApiResponse<List<TeamSimple>>> GetDistrictTeamsSimpleAsyncWithHttpInfo (string districtKey, string ifModifiedSince = default(string))
         {
             // verify the required parameter 'districtKey' is set
             if (districtKey == null)
@@ -2169,7 +2169,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="eventKey">TBA Event Key, eg &#x60;2016nytr&#x60;</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>List&lt;Team&gt;</returns>
-        public List<Team> GetEventTeams (string eventKey, string ifModifiedSince = null)
+        public List<Team> GetEventTeams (string eventKey, string ifModifiedSince = default(string))
         {
              ApiResponse<List<Team>> localVarResponse = GetEventTeamsWithHttpInfo(eventKey, ifModifiedSince);
              return localVarResponse.Data;
@@ -2182,7 +2182,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="eventKey">TBA Event Key, eg &#x60;2016nytr&#x60;</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>ApiResponse of List&lt;Team&gt;</returns>
-        public ApiResponse< List<Team> > GetEventTeamsWithHttpInfo (string eventKey, string ifModifiedSince = null)
+        public ApiResponse<List<Team>> GetEventTeamsWithHttpInfo (string eventKey, string ifModifiedSince = default(string))
         {
             // verify the required parameter 'eventKey' is set
             if (eventKey == null)
@@ -2243,7 +2243,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="eventKey">TBA Event Key, eg &#x60;2016nytr&#x60;</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of List&lt;Team&gt;</returns>
-        public async System.Threading.Tasks.Task<List<Team>> GetEventTeamsAsync (string eventKey, string ifModifiedSince = null)
+        public async System.Threading.Tasks.Task<List<Team>> GetEventTeamsAsync (string eventKey, string ifModifiedSince = default(string))
         {
              ApiResponse<List<Team>> localVarResponse = await GetEventTeamsAsyncWithHttpInfo(eventKey, ifModifiedSince);
              return localVarResponse.Data;
@@ -2257,7 +2257,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="eventKey">TBA Event Key, eg &#x60;2016nytr&#x60;</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of ApiResponse (List&lt;Team&gt;)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<List<Team>>> GetEventTeamsAsyncWithHttpInfo (string eventKey, string ifModifiedSince = null)
+        public async System.Threading.Tasks.Task<ApiResponse<List<Team>>> GetEventTeamsAsyncWithHttpInfo (string eventKey, string ifModifiedSince = default(string))
         {
             // verify the required parameter 'eventKey' is set
             if (eventKey == null)
@@ -2318,7 +2318,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="eventKey">TBA Event Key, eg &#x60;2016nytr&#x60;</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>List&lt;string&gt;</returns>
-        public List<string> GetEventTeamsKeys (string eventKey, string ifModifiedSince = null)
+        public List<string> GetEventTeamsKeys (string eventKey, string ifModifiedSince = default(string))
         {
              ApiResponse<List<string>> localVarResponse = GetEventTeamsKeysWithHttpInfo(eventKey, ifModifiedSince);
              return localVarResponse.Data;
@@ -2331,7 +2331,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="eventKey">TBA Event Key, eg &#x60;2016nytr&#x60;</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>ApiResponse of List&lt;string&gt;</returns>
-        public ApiResponse< List<string> > GetEventTeamsKeysWithHttpInfo (string eventKey, string ifModifiedSince = null)
+        public ApiResponse<List<string>> GetEventTeamsKeysWithHttpInfo (string eventKey, string ifModifiedSince = default(string))
         {
             // verify the required parameter 'eventKey' is set
             if (eventKey == null)
@@ -2392,7 +2392,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="eventKey">TBA Event Key, eg &#x60;2016nytr&#x60;</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of List&lt;string&gt;</returns>
-        public async System.Threading.Tasks.Task<List<string>> GetEventTeamsKeysAsync (string eventKey, string ifModifiedSince = null)
+        public async System.Threading.Tasks.Task<List<string>> GetEventTeamsKeysAsync (string eventKey, string ifModifiedSince = default(string))
         {
              ApiResponse<List<string>> localVarResponse = await GetEventTeamsKeysAsyncWithHttpInfo(eventKey, ifModifiedSince);
              return localVarResponse.Data;
@@ -2406,7 +2406,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="eventKey">TBA Event Key, eg &#x60;2016nytr&#x60;</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of ApiResponse (List&lt;string&gt;)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<List<string>>> GetEventTeamsKeysAsyncWithHttpInfo (string eventKey, string ifModifiedSince = null)
+        public async System.Threading.Tasks.Task<ApiResponse<List<string>>> GetEventTeamsKeysAsyncWithHttpInfo (string eventKey, string ifModifiedSince = default(string))
         {
             // verify the required parameter 'eventKey' is set
             if (eventKey == null)
@@ -2467,7 +2467,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="eventKey">TBA Event Key, eg &#x60;2016nytr&#x60;</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>List&lt;TeamSimple&gt;</returns>
-        public List<TeamSimple> GetEventTeamsSimple (string eventKey, string ifModifiedSince = null)
+        public List<TeamSimple> GetEventTeamsSimple (string eventKey, string ifModifiedSince = default(string))
         {
              ApiResponse<List<TeamSimple>> localVarResponse = GetEventTeamsSimpleWithHttpInfo(eventKey, ifModifiedSince);
              return localVarResponse.Data;
@@ -2480,7 +2480,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="eventKey">TBA Event Key, eg &#x60;2016nytr&#x60;</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>ApiResponse of List&lt;TeamSimple&gt;</returns>
-        public ApiResponse< List<TeamSimple> > GetEventTeamsSimpleWithHttpInfo (string eventKey, string ifModifiedSince = null)
+        public ApiResponse<List<TeamSimple>> GetEventTeamsSimpleWithHttpInfo (string eventKey, string ifModifiedSince = default(string))
         {
             // verify the required parameter 'eventKey' is set
             if (eventKey == null)
@@ -2541,7 +2541,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="eventKey">TBA Event Key, eg &#x60;2016nytr&#x60;</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of List&lt;TeamSimple&gt;</returns>
-        public async System.Threading.Tasks.Task<List<TeamSimple>> GetEventTeamsSimpleAsync (string eventKey, string ifModifiedSince = null)
+        public async System.Threading.Tasks.Task<List<TeamSimple>> GetEventTeamsSimpleAsync (string eventKey, string ifModifiedSince = default(string))
         {
              ApiResponse<List<TeamSimple>> localVarResponse = await GetEventTeamsSimpleAsyncWithHttpInfo(eventKey, ifModifiedSince);
              return localVarResponse.Data;
@@ -2555,7 +2555,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="eventKey">TBA Event Key, eg &#x60;2016nytr&#x60;</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of ApiResponse (List&lt;TeamSimple&gt;)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<List<TeamSimple>>> GetEventTeamsSimpleAsyncWithHttpInfo (string eventKey, string ifModifiedSince = null)
+        public async System.Threading.Tasks.Task<ApiResponse<List<TeamSimple>>> GetEventTeamsSimpleAsyncWithHttpInfo (string eventKey, string ifModifiedSince = default(string))
         {
             // verify the required parameter 'eventKey' is set
             if (eventKey == null)
@@ -2616,7 +2616,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="eventKey">TBA Event Key, eg &#x60;2016nytr&#x60;</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Dictionary&lt;string, TeamEventStatus&gt;</returns>
-        public Dictionary<string, TeamEventStatus> GetEventTeamsStatuses (string eventKey, string ifModifiedSince = null)
+        public Dictionary<string, TeamEventStatus> GetEventTeamsStatuses (string eventKey, string ifModifiedSince = default(string))
         {
              ApiResponse<Dictionary<string, TeamEventStatus>> localVarResponse = GetEventTeamsStatusesWithHttpInfo(eventKey, ifModifiedSince);
              return localVarResponse.Data;
@@ -2629,7 +2629,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="eventKey">TBA Event Key, eg &#x60;2016nytr&#x60;</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>ApiResponse of Dictionary&lt;string, TeamEventStatus&gt;</returns>
-        public ApiResponse< Dictionary<string, TeamEventStatus> > GetEventTeamsStatusesWithHttpInfo (string eventKey, string ifModifiedSince = null)
+        public ApiResponse<Dictionary<string, TeamEventStatus>> GetEventTeamsStatusesWithHttpInfo (string eventKey, string ifModifiedSince = default(string))
         {
             // verify the required parameter 'eventKey' is set
             if (eventKey == null)
@@ -2690,7 +2690,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="eventKey">TBA Event Key, eg &#x60;2016nytr&#x60;</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of Dictionary&lt;string, TeamEventStatus&gt;</returns>
-        public async System.Threading.Tasks.Task<Dictionary<string, TeamEventStatus>> GetEventTeamsStatusesAsync (string eventKey, string ifModifiedSince = null)
+        public async System.Threading.Tasks.Task<Dictionary<string, TeamEventStatus>> GetEventTeamsStatusesAsync (string eventKey, string ifModifiedSince = default(string))
         {
              ApiResponse<Dictionary<string, TeamEventStatus>> localVarResponse = await GetEventTeamsStatusesAsyncWithHttpInfo(eventKey, ifModifiedSince);
              return localVarResponse.Data;
@@ -2704,7 +2704,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="eventKey">TBA Event Key, eg &#x60;2016nytr&#x60;</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of ApiResponse (Dictionary&lt;string, TeamEventStatus&gt;)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Dictionary<string, TeamEventStatus>>> GetEventTeamsStatusesAsyncWithHttpInfo (string eventKey, string ifModifiedSince = null)
+        public async System.Threading.Tasks.Task<ApiResponse<Dictionary<string, TeamEventStatus>>> GetEventTeamsStatusesAsyncWithHttpInfo (string eventKey, string ifModifiedSince = default(string))
         {
             // verify the required parameter 'eventKey' is set
             if (eventKey == null)
@@ -2765,7 +2765,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="year">Competition Year (or Season). Must be 4 digits.</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>List&lt;Event&gt;</returns>
-        public List<Event> GetEventsByYear (int? year, string ifModifiedSince = null)
+        public List<Event> GetEventsByYear (int year, string ifModifiedSince = default(string))
         {
              ApiResponse<List<Event>> localVarResponse = GetEventsByYearWithHttpInfo(year, ifModifiedSince);
              return localVarResponse.Data;
@@ -2778,7 +2778,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="year">Competition Year (or Season). Must be 4 digits.</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>ApiResponse of List&lt;Event&gt;</returns>
-        public ApiResponse< List<Event> > GetEventsByYearWithHttpInfo (int? year, string ifModifiedSince = null)
+        public ApiResponse<List<Event>> GetEventsByYearWithHttpInfo (int year, string ifModifiedSince = default(string))
         {
             // verify the required parameter 'year' is set
             if (year == null)
@@ -2839,7 +2839,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="year">Competition Year (or Season). Must be 4 digits.</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of List&lt;Event&gt;</returns>
-        public async System.Threading.Tasks.Task<List<Event>> GetEventsByYearAsync (int? year, string ifModifiedSince = null)
+        public async System.Threading.Tasks.Task<List<Event>> GetEventsByYearAsync (int year, string ifModifiedSince = default(string))
         {
              ApiResponse<List<Event>> localVarResponse = await GetEventsByYearAsyncWithHttpInfo(year, ifModifiedSince);
              return localVarResponse.Data;
@@ -2853,7 +2853,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="year">Competition Year (or Season). Must be 4 digits.</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of ApiResponse (List&lt;Event&gt;)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<List<Event>>> GetEventsByYearAsyncWithHttpInfo (int? year, string ifModifiedSince = null)
+        public async System.Threading.Tasks.Task<ApiResponse<List<Event>>> GetEventsByYearAsyncWithHttpInfo (int year, string ifModifiedSince = default(string))
         {
             // verify the required parameter 'year' is set
             if (year == null)
@@ -2914,7 +2914,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="year">Competition Year (or Season). Must be 4 digits.</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>List&lt;string&gt;</returns>
-        public List<string> GetEventsByYearKeys (int? year, string ifModifiedSince = null)
+        public List<string> GetEventsByYearKeys (int year, string ifModifiedSince = default(string))
         {
              ApiResponse<List<string>> localVarResponse = GetEventsByYearKeysWithHttpInfo(year, ifModifiedSince);
              return localVarResponse.Data;
@@ -2927,7 +2927,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="year">Competition Year (or Season). Must be 4 digits.</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>ApiResponse of List&lt;string&gt;</returns>
-        public ApiResponse< List<string> > GetEventsByYearKeysWithHttpInfo (int? year, string ifModifiedSince = null)
+        public ApiResponse<List<string>> GetEventsByYearKeysWithHttpInfo (int year, string ifModifiedSince = default(string))
         {
             // verify the required parameter 'year' is set
             if (year == null)
@@ -2988,7 +2988,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="year">Competition Year (or Season). Must be 4 digits.</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of List&lt;string&gt;</returns>
-        public async System.Threading.Tasks.Task<List<string>> GetEventsByYearKeysAsync (int? year, string ifModifiedSince = null)
+        public async System.Threading.Tasks.Task<List<string>> GetEventsByYearKeysAsync (int year, string ifModifiedSince = default(string))
         {
              ApiResponse<List<string>> localVarResponse = await GetEventsByYearKeysAsyncWithHttpInfo(year, ifModifiedSince);
              return localVarResponse.Data;
@@ -3002,7 +3002,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="year">Competition Year (or Season). Must be 4 digits.</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of ApiResponse (List&lt;string&gt;)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<List<string>>> GetEventsByYearKeysAsyncWithHttpInfo (int? year, string ifModifiedSince = null)
+        public async System.Threading.Tasks.Task<ApiResponse<List<string>>> GetEventsByYearKeysAsyncWithHttpInfo (int year, string ifModifiedSince = default(string))
         {
             // verify the required parameter 'year' is set
             if (year == null)
@@ -3063,7 +3063,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="year">Competition Year (or Season). Must be 4 digits.</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>List&lt;EventSimple&gt;</returns>
-        public List<EventSimple> GetEventsByYearSimple (int? year, string ifModifiedSince = null)
+        public List<EventSimple> GetEventsByYearSimple (int year, string ifModifiedSince = default(string))
         {
              ApiResponse<List<EventSimple>> localVarResponse = GetEventsByYearSimpleWithHttpInfo(year, ifModifiedSince);
              return localVarResponse.Data;
@@ -3076,7 +3076,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="year">Competition Year (or Season). Must be 4 digits.</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>ApiResponse of List&lt;EventSimple&gt;</returns>
-        public ApiResponse< List<EventSimple> > GetEventsByYearSimpleWithHttpInfo (int? year, string ifModifiedSince = null)
+        public ApiResponse<List<EventSimple>> GetEventsByYearSimpleWithHttpInfo (int year, string ifModifiedSince = default(string))
         {
             // verify the required parameter 'year' is set
             if (year == null)
@@ -3137,7 +3137,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="year">Competition Year (or Season). Must be 4 digits.</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of List&lt;EventSimple&gt;</returns>
-        public async System.Threading.Tasks.Task<List<EventSimple>> GetEventsByYearSimpleAsync (int? year, string ifModifiedSince = null)
+        public async System.Threading.Tasks.Task<List<EventSimple>> GetEventsByYearSimpleAsync (int year, string ifModifiedSince = default(string))
         {
              ApiResponse<List<EventSimple>> localVarResponse = await GetEventsByYearSimpleAsyncWithHttpInfo(year, ifModifiedSince);
              return localVarResponse.Data;
@@ -3151,7 +3151,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="year">Competition Year (or Season). Must be 4 digits.</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of ApiResponse (List&lt;EventSimple&gt;)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<List<EventSimple>>> GetEventsByYearSimpleAsyncWithHttpInfo (int? year, string ifModifiedSince = null)
+        public async System.Threading.Tasks.Task<ApiResponse<List<EventSimple>>> GetEventsByYearSimpleAsyncWithHttpInfo (int year, string ifModifiedSince = default(string))
         {
             // verify the required parameter 'year' is set
             if (year == null)
@@ -3213,7 +3213,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="year">Competition Year (or Season). Must be 4 digits.</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Dictionary&lt;string, TeamEventStatus&gt;</returns>
-        public Dictionary<string, TeamEventStatus> GetTeamEventsStatusesByYear (string teamKey, int? year, string ifModifiedSince = null)
+        public Dictionary<string, TeamEventStatus> GetTeamEventsStatusesByYear (string teamKey, int year, string ifModifiedSince = default(string))
         {
              ApiResponse<Dictionary<string, TeamEventStatus>> localVarResponse = GetTeamEventsStatusesByYearWithHttpInfo(teamKey, year, ifModifiedSince);
              return localVarResponse.Data;
@@ -3227,7 +3227,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="year">Competition Year (or Season). Must be 4 digits.</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>ApiResponse of Dictionary&lt;string, TeamEventStatus&gt;</returns>
-        public ApiResponse< Dictionary<string, TeamEventStatus> > GetTeamEventsStatusesByYearWithHttpInfo (string teamKey, int? year, string ifModifiedSince = null)
+        public ApiResponse<Dictionary<string, TeamEventStatus>> GetTeamEventsStatusesByYearWithHttpInfo (string teamKey, int year, string ifModifiedSince = default(string))
         {
             // verify the required parameter 'teamKey' is set
             if (teamKey == null)
@@ -3293,7 +3293,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="year">Competition Year (or Season). Must be 4 digits.</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of Dictionary&lt;string, TeamEventStatus&gt;</returns>
-        public async System.Threading.Tasks.Task<Dictionary<string, TeamEventStatus>> GetTeamEventsStatusesByYearAsync (string teamKey, int? year, string ifModifiedSince = null)
+        public async System.Threading.Tasks.Task<Dictionary<string, TeamEventStatus>> GetTeamEventsStatusesByYearAsync (string teamKey, int year, string ifModifiedSince = default(string))
         {
              ApiResponse<Dictionary<string, TeamEventStatus>> localVarResponse = await GetTeamEventsStatusesByYearAsyncWithHttpInfo(teamKey, year, ifModifiedSince);
              return localVarResponse.Data;
@@ -3308,7 +3308,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="year">Competition Year (or Season). Must be 4 digits.</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of ApiResponse (Dictionary&lt;string, TeamEventStatus&gt;)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Dictionary<string, TeamEventStatus>>> GetTeamEventsStatusesByYearAsyncWithHttpInfo (string teamKey, int? year, string ifModifiedSince = null)
+        public async System.Threading.Tasks.Task<ApiResponse<Dictionary<string, TeamEventStatus>>> GetTeamEventsStatusesByYearAsyncWithHttpInfo (string teamKey, int year, string ifModifiedSince = default(string))
         {
             // verify the required parameter 'teamKey' is set
             if (teamKey == null)
@@ -3373,7 +3373,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="pageNum">Page number of results to return, zero-indexed</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>List&lt;Team&gt;</returns>
-        public List<Team> GetTeams (int? pageNum, string ifModifiedSince = null)
+        public List<Team> GetTeams (int pageNum, string ifModifiedSince = default(string))
         {
              ApiResponse<List<Team>> localVarResponse = GetTeamsWithHttpInfo(pageNum, ifModifiedSince);
              return localVarResponse.Data;
@@ -3386,7 +3386,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="pageNum">Page number of results to return, zero-indexed</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>ApiResponse of List&lt;Team&gt;</returns>
-        public ApiResponse< List<Team> > GetTeamsWithHttpInfo (int? pageNum, string ifModifiedSince = null)
+        public ApiResponse<List<Team>> GetTeamsWithHttpInfo (int pageNum, string ifModifiedSince = default(string))
         {
             // verify the required parameter 'pageNum' is set
             if (pageNum == null)
@@ -3447,7 +3447,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="pageNum">Page number of results to return, zero-indexed</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of List&lt;Team&gt;</returns>
-        public async System.Threading.Tasks.Task<List<Team>> GetTeamsAsync (int? pageNum, string ifModifiedSince = null)
+        public async System.Threading.Tasks.Task<List<Team>> GetTeamsAsync (int pageNum, string ifModifiedSince = default(string))
         {
              ApiResponse<List<Team>> localVarResponse = await GetTeamsAsyncWithHttpInfo(pageNum, ifModifiedSince);
              return localVarResponse.Data;
@@ -3461,7 +3461,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="pageNum">Page number of results to return, zero-indexed</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of ApiResponse (List&lt;Team&gt;)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<List<Team>>> GetTeamsAsyncWithHttpInfo (int? pageNum, string ifModifiedSince = null)
+        public async System.Threading.Tasks.Task<ApiResponse<List<Team>>> GetTeamsAsyncWithHttpInfo (int pageNum, string ifModifiedSince = default(string))
         {
             // verify the required parameter 'pageNum' is set
             if (pageNum == null)
@@ -3523,7 +3523,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="pageNum">Page number of results to return, zero-indexed</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>List&lt;Team&gt;</returns>
-        public List<Team> GetTeamsByYear (int? year, int? pageNum, string ifModifiedSince = null)
+        public List<Team> GetTeamsByYear (int year, int pageNum, string ifModifiedSince = default(string))
         {
              ApiResponse<List<Team>> localVarResponse = GetTeamsByYearWithHttpInfo(year, pageNum, ifModifiedSince);
              return localVarResponse.Data;
@@ -3537,7 +3537,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="pageNum">Page number of results to return, zero-indexed</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>ApiResponse of List&lt;Team&gt;</returns>
-        public ApiResponse< List<Team> > GetTeamsByYearWithHttpInfo (int? year, int? pageNum, string ifModifiedSince = null)
+        public ApiResponse<List<Team>> GetTeamsByYearWithHttpInfo (int year, int pageNum, string ifModifiedSince = default(string))
         {
             // verify the required parameter 'year' is set
             if (year == null)
@@ -3603,7 +3603,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="pageNum">Page number of results to return, zero-indexed</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of List&lt;Team&gt;</returns>
-        public async System.Threading.Tasks.Task<List<Team>> GetTeamsByYearAsync (int? year, int? pageNum, string ifModifiedSince = null)
+        public async System.Threading.Tasks.Task<List<Team>> GetTeamsByYearAsync (int year, int pageNum, string ifModifiedSince = default(string))
         {
              ApiResponse<List<Team>> localVarResponse = await GetTeamsByYearAsyncWithHttpInfo(year, pageNum, ifModifiedSince);
              return localVarResponse.Data;
@@ -3618,7 +3618,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="pageNum">Page number of results to return, zero-indexed</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of ApiResponse (List&lt;Team&gt;)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<List<Team>>> GetTeamsByYearAsyncWithHttpInfo (int? year, int? pageNum, string ifModifiedSince = null)
+        public async System.Threading.Tasks.Task<ApiResponse<List<Team>>> GetTeamsByYearAsyncWithHttpInfo (int year, int pageNum, string ifModifiedSince = default(string))
         {
             // verify the required parameter 'year' is set
             if (year == null)
@@ -3684,7 +3684,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="pageNum">Page number of results to return, zero-indexed</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>List&lt;string&gt;</returns>
-        public List<string> GetTeamsByYearKeys (int? year, int? pageNum, string ifModifiedSince = null)
+        public List<string> GetTeamsByYearKeys (int year, int pageNum, string ifModifiedSince = default(string))
         {
              ApiResponse<List<string>> localVarResponse = GetTeamsByYearKeysWithHttpInfo(year, pageNum, ifModifiedSince);
              return localVarResponse.Data;
@@ -3698,7 +3698,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="pageNum">Page number of results to return, zero-indexed</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>ApiResponse of List&lt;string&gt;</returns>
-        public ApiResponse< List<string> > GetTeamsByYearKeysWithHttpInfo (int? year, int? pageNum, string ifModifiedSince = null)
+        public ApiResponse<List<string>> GetTeamsByYearKeysWithHttpInfo (int year, int pageNum, string ifModifiedSince = default(string))
         {
             // verify the required parameter 'year' is set
             if (year == null)
@@ -3764,7 +3764,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="pageNum">Page number of results to return, zero-indexed</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of List&lt;string&gt;</returns>
-        public async System.Threading.Tasks.Task<List<string>> GetTeamsByYearKeysAsync (int? year, int? pageNum, string ifModifiedSince = null)
+        public async System.Threading.Tasks.Task<List<string>> GetTeamsByYearKeysAsync (int year, int pageNum, string ifModifiedSince = default(string))
         {
              ApiResponse<List<string>> localVarResponse = await GetTeamsByYearKeysAsyncWithHttpInfo(year, pageNum, ifModifiedSince);
              return localVarResponse.Data;
@@ -3779,7 +3779,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="pageNum">Page number of results to return, zero-indexed</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of ApiResponse (List&lt;string&gt;)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<List<string>>> GetTeamsByYearKeysAsyncWithHttpInfo (int? year, int? pageNum, string ifModifiedSince = null)
+        public async System.Threading.Tasks.Task<ApiResponse<List<string>>> GetTeamsByYearKeysAsyncWithHttpInfo (int year, int pageNum, string ifModifiedSince = default(string))
         {
             // verify the required parameter 'year' is set
             if (year == null)
@@ -3845,7 +3845,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="pageNum">Page number of results to return, zero-indexed</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>List&lt;TeamSimple&gt;</returns>
-        public List<TeamSimple> GetTeamsByYearSimple (int? year, int? pageNum, string ifModifiedSince = null)
+        public List<TeamSimple> GetTeamsByYearSimple (int year, int pageNum, string ifModifiedSince = default(string))
         {
              ApiResponse<List<TeamSimple>> localVarResponse = GetTeamsByYearSimpleWithHttpInfo(year, pageNum, ifModifiedSince);
              return localVarResponse.Data;
@@ -3859,7 +3859,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="pageNum">Page number of results to return, zero-indexed</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>ApiResponse of List&lt;TeamSimple&gt;</returns>
-        public ApiResponse< List<TeamSimple> > GetTeamsByYearSimpleWithHttpInfo (int? year, int? pageNum, string ifModifiedSince = null)
+        public ApiResponse<List<TeamSimple>> GetTeamsByYearSimpleWithHttpInfo (int year, int pageNum, string ifModifiedSince = default(string))
         {
             // verify the required parameter 'year' is set
             if (year == null)
@@ -3925,7 +3925,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="pageNum">Page number of results to return, zero-indexed</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of List&lt;TeamSimple&gt;</returns>
-        public async System.Threading.Tasks.Task<List<TeamSimple>> GetTeamsByYearSimpleAsync (int? year, int? pageNum, string ifModifiedSince = null)
+        public async System.Threading.Tasks.Task<List<TeamSimple>> GetTeamsByYearSimpleAsync (int year, int pageNum, string ifModifiedSince = default(string))
         {
              ApiResponse<List<TeamSimple>> localVarResponse = await GetTeamsByYearSimpleAsyncWithHttpInfo(year, pageNum, ifModifiedSince);
              return localVarResponse.Data;
@@ -3940,7 +3940,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="pageNum">Page number of results to return, zero-indexed</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of ApiResponse (List&lt;TeamSimple&gt;)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<List<TeamSimple>>> GetTeamsByYearSimpleAsyncWithHttpInfo (int? year, int? pageNum, string ifModifiedSince = null)
+        public async System.Threading.Tasks.Task<ApiResponse<List<TeamSimple>>> GetTeamsByYearSimpleAsyncWithHttpInfo (int year, int pageNum, string ifModifiedSince = default(string))
         {
             // verify the required parameter 'year' is set
             if (year == null)
@@ -4005,7 +4005,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="pageNum">Page number of results to return, zero-indexed</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>List&lt;string&gt;</returns>
-        public List<string> GetTeamsKeys (int? pageNum, string ifModifiedSince = null)
+        public List<string> GetTeamsKeys (int pageNum, string ifModifiedSince = default(string))
         {
              ApiResponse<List<string>> localVarResponse = GetTeamsKeysWithHttpInfo(pageNum, ifModifiedSince);
              return localVarResponse.Data;
@@ -4018,7 +4018,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="pageNum">Page number of results to return, zero-indexed</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>ApiResponse of List&lt;string&gt;</returns>
-        public ApiResponse< List<string> > GetTeamsKeysWithHttpInfo (int? pageNum, string ifModifiedSince = null)
+        public ApiResponse<List<string>> GetTeamsKeysWithHttpInfo (int pageNum, string ifModifiedSince = default(string))
         {
             // verify the required parameter 'pageNum' is set
             if (pageNum == null)
@@ -4079,7 +4079,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="pageNum">Page number of results to return, zero-indexed</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of List&lt;string&gt;</returns>
-        public async System.Threading.Tasks.Task<List<string>> GetTeamsKeysAsync (int? pageNum, string ifModifiedSince = null)
+        public async System.Threading.Tasks.Task<List<string>> GetTeamsKeysAsync (int pageNum, string ifModifiedSince = default(string))
         {
              ApiResponse<List<string>> localVarResponse = await GetTeamsKeysAsyncWithHttpInfo(pageNum, ifModifiedSince);
              return localVarResponse.Data;
@@ -4093,7 +4093,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="pageNum">Page number of results to return, zero-indexed</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of ApiResponse (List&lt;string&gt;)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<List<string>>> GetTeamsKeysAsyncWithHttpInfo (int? pageNum, string ifModifiedSince = null)
+        public async System.Threading.Tasks.Task<ApiResponse<List<string>>> GetTeamsKeysAsyncWithHttpInfo (int pageNum, string ifModifiedSince = default(string))
         {
             // verify the required parameter 'pageNum' is set
             if (pageNum == null)
@@ -4154,7 +4154,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="pageNum">Page number of results to return, zero-indexed</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>List&lt;TeamSimple&gt;</returns>
-        public List<TeamSimple> GetTeamsSimple (int? pageNum, string ifModifiedSince = null)
+        public List<TeamSimple> GetTeamsSimple (int pageNum, string ifModifiedSince = default(string))
         {
              ApiResponse<List<TeamSimple>> localVarResponse = GetTeamsSimpleWithHttpInfo(pageNum, ifModifiedSince);
              return localVarResponse.Data;
@@ -4167,7 +4167,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="pageNum">Page number of results to return, zero-indexed</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>ApiResponse of List&lt;TeamSimple&gt;</returns>
-        public ApiResponse< List<TeamSimple> > GetTeamsSimpleWithHttpInfo (int? pageNum, string ifModifiedSince = null)
+        public ApiResponse<List<TeamSimple>> GetTeamsSimpleWithHttpInfo (int pageNum, string ifModifiedSince = default(string))
         {
             // verify the required parameter 'pageNum' is set
             if (pageNum == null)
@@ -4228,7 +4228,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="pageNum">Page number of results to return, zero-indexed</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of List&lt;TeamSimple&gt;</returns>
-        public async System.Threading.Tasks.Task<List<TeamSimple>> GetTeamsSimpleAsync (int? pageNum, string ifModifiedSince = null)
+        public async System.Threading.Tasks.Task<List<TeamSimple>> GetTeamsSimpleAsync (int pageNum, string ifModifiedSince = default(string))
         {
              ApiResponse<List<TeamSimple>> localVarResponse = await GetTeamsSimpleAsyncWithHttpInfo(pageNum, ifModifiedSince);
              return localVarResponse.Data;
@@ -4242,7 +4242,7 @@ namespace com.tweirtx.TBAAPIv3client.Api
         /// <param name="pageNum">Page number of results to return, zero-indexed</param>
         /// <param name="ifModifiedSince">Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. (optional)</param>
         /// <returns>Task of ApiResponse (List&lt;TeamSimple&gt;)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<List<TeamSimple>>> GetTeamsSimpleAsyncWithHttpInfo (int? pageNum, string ifModifiedSince = null)
+        public async System.Threading.Tasks.Task<ApiResponse<List<TeamSimple>>> GetTeamsSimpleAsyncWithHttpInfo (int pageNum, string ifModifiedSince = default(string))
         {
             // verify the required parameter 'pageNum' is set
             if (pageNum == null)

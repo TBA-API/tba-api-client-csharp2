@@ -43,7 +43,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// <param name="eventKey">The event_key of the event the award was won at. (required).</param>
         /// <param name="recipientList">A list of recipients of the award at the event. May have either a team_key or an awardee, both, or neither (in the case the award wasn&#39;t awarded at the event). (required).</param>
         /// <param name="year">The year this award was won. (required).</param>
-        public Award(string name = default(string), int? awardType = default(int?), string eventKey = default(string), List<AwardRecipient> recipientList = default(List<AwardRecipient>), int? year = default(int?))
+        public Award(string name = default(string), int awardType = default(int), string eventKey = default(string), List<AwardRecipient> recipientList = default(List<AwardRecipient>), int year = default(int))
         {
             // to ensure "name" is required (not null)
             if (name == null)
@@ -109,7 +109,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// </summary>
         /// <value>Type of award given. See https://github.com/the-blue-alliance/the-blue-alliance/blob/master/consts/award_type.py#L6</value>
         [DataMember(Name="award_type", EmitDefaultValue=false)]
-        public int? AwardType { get; set; }
+        public int AwardType { get; set; }
 
         /// <summary>
         /// The event_key of the event the award was won at.
@@ -130,7 +130,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// </summary>
         /// <value>The year this award was won.</value>
         [DataMember(Name="year", EmitDefaultValue=false)]
-        public int? Year { get; set; }
+        public int Year { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

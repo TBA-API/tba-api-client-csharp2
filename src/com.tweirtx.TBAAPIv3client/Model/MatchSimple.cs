@@ -120,7 +120,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// <param name="time">UNIX timestamp (seconds since 1-Jan-1970 00:00:00) of the scheduled match time, as taken from the published schedule..</param>
         /// <param name="predictedTime">UNIX timestamp (seconds since 1-Jan-1970 00:00:00) of the TBA predicted match start time..</param>
         /// <param name="actualTime">UNIX timestamp (seconds since 1-Jan-1970 00:00:00) of actual match start time..</param>
-        public MatchSimple(string key = default(string), CompLevelEnum compLevel = default(CompLevelEnum), int? setNumber = default(int?), int? matchNumber = default(int?), MatchSimpleAlliances alliances = default(MatchSimpleAlliances), WinningAllianceEnum? winningAlliance = default(WinningAllianceEnum?), string eventKey = default(string), long? time = default(long?), long? predictedTime = default(long?), long? actualTime = default(long?))
+        public MatchSimple(string key = default(string), CompLevelEnum compLevel = default(CompLevelEnum), int setNumber = default(int), int matchNumber = default(int), MatchSimpleAlliances alliances = default(MatchSimpleAlliances), WinningAllianceEnum? winningAlliance = default(WinningAllianceEnum?), string eventKey = default(string), long time = default(long), long predictedTime = default(long), long actualTime = default(long))
         {
             // to ensure "key" is required (not null)
             if (key == null)
@@ -192,14 +192,14 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// </summary>
         /// <value>The set number in a series of matches where more than one match is required in the match series.</value>
         [DataMember(Name="set_number", EmitDefaultValue=false)]
-        public int? SetNumber { get; set; }
+        public int SetNumber { get; set; }
 
         /// <summary>
         /// The match number of the match in the competition level.
         /// </summary>
         /// <value>The match number of the match in the competition level.</value>
         [DataMember(Name="match_number", EmitDefaultValue=false)]
-        public int? MatchNumber { get; set; }
+        public int MatchNumber { get; set; }
 
         /// <summary>
         /// Gets or Sets Alliances
@@ -220,21 +220,21 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// </summary>
         /// <value>UNIX timestamp (seconds since 1-Jan-1970 00:00:00) of the scheduled match time, as taken from the published schedule.</value>
         [DataMember(Name="time", EmitDefaultValue=false)]
-        public long? Time { get; set; }
+        public long Time { get; set; }
 
         /// <summary>
         /// UNIX timestamp (seconds since 1-Jan-1970 00:00:00) of the TBA predicted match start time.
         /// </summary>
         /// <value>UNIX timestamp (seconds since 1-Jan-1970 00:00:00) of the TBA predicted match start time.</value>
         [DataMember(Name="predicted_time", EmitDefaultValue=false)]
-        public long? PredictedTime { get; set; }
+        public long PredictedTime { get; set; }
 
         /// <summary>
         /// UNIX timestamp (seconds since 1-Jan-1970 00:00:00) of actual match start time.
         /// </summary>
         /// <value>UNIX timestamp (seconds since 1-Jan-1970 00:00:00) of actual match start time.</value>
         [DataMember(Name="actual_time", EmitDefaultValue=false)]
-        public long? ActualTime { get; set; }
+        public long ActualTime { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

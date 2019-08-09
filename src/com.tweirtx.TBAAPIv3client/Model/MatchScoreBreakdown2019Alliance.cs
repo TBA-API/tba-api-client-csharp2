@@ -84,7 +84,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// <param name="topRightRocketFar">topRightRocketFar.</param>
         /// <param name="topRightRocketNear">topRightRocketNear.</param>
         /// <param name="totalPoints">totalPoints.</param>
-        public MatchScoreBreakdown2019Alliance(int? adjustPoints = default(int?), int? autoPoints = default(int?), string bay1 = default(string), string bay2 = default(string), string bay3 = default(string), string bay4 = default(string), string bay5 = default(string), string bay6 = default(string), string bay7 = default(string), string bay8 = default(string), int? cargoPoints = default(int?), bool? completeRocketRankingPoint = default(bool?), bool? completedRocketFar = default(bool?), bool? completedRocketNear = default(bool?), string endgameRobot1 = default(string), string endgameRobot2 = default(string), string endgameRobot3 = default(string), int? foulCount = default(int?), int? foulPoints = default(int?), int? habClimbPoints = default(int?), bool? habDockingRankingPoint = default(bool?), string habLineRobot1 = default(string), string habLineRobot2 = default(string), string habLineRobot3 = default(string), int? hatchPanelPoints = default(int?), string lowLeftRocketFar = default(string), string lowLeftRocketNear = default(string), string lowRightRocketFar = default(string), string lowRightRocketNear = default(string), string midLeftRocketFar = default(string), string midLeftRocketNear = default(string), string midRightRocketFar = default(string), string midRightRocketNear = default(string), string preMatchBay1 = default(string), string preMatchBay2 = default(string), string preMatchBay3 = default(string), string preMatchBay6 = default(string), string preMatchBay7 = default(string), string preMatchBay8 = default(string), string preMatchLevelRobot1 = default(string), string preMatchLevelRobot2 = default(string), string preMatchLevelRobot3 = default(string), int? rp = default(int?), int? sandStormBonusPoints = default(int?), int? techFoulCount = default(int?), int? teleopPoints = default(int?), string topLeftRocketFar = default(string), string topLeftRocketNear = default(string), string topRightRocketFar = default(string), string topRightRocketNear = default(string), int? totalPoints = default(int?))
+        public MatchScoreBreakdown2019Alliance(int adjustPoints = default(int), int autoPoints = default(int), string bay1 = default(string), string bay2 = default(string), string bay3 = default(string), string bay4 = default(string), string bay5 = default(string), string bay6 = default(string), string bay7 = default(string), string bay8 = default(string), int cargoPoints = default(int), bool completeRocketRankingPoint = default(bool), bool completedRocketFar = default(bool), bool completedRocketNear = default(bool), string endgameRobot1 = default(string), string endgameRobot2 = default(string), string endgameRobot3 = default(string), int foulCount = default(int), int foulPoints = default(int), int habClimbPoints = default(int), bool habDockingRankingPoint = default(bool), string habLineRobot1 = default(string), string habLineRobot2 = default(string), string habLineRobot3 = default(string), int hatchPanelPoints = default(int), string lowLeftRocketFar = default(string), string lowLeftRocketNear = default(string), string lowRightRocketFar = default(string), string lowRightRocketNear = default(string), string midLeftRocketFar = default(string), string midLeftRocketNear = default(string), string midRightRocketFar = default(string), string midRightRocketNear = default(string), string preMatchBay1 = default(string), string preMatchBay2 = default(string), string preMatchBay3 = default(string), string preMatchBay6 = default(string), string preMatchBay7 = default(string), string preMatchBay8 = default(string), string preMatchLevelRobot1 = default(string), string preMatchLevelRobot2 = default(string), string preMatchLevelRobot3 = default(string), int rp = default(int), int sandStormBonusPoints = default(int), int techFoulCount = default(int), int teleopPoints = default(int), string topLeftRocketFar = default(string), string topLeftRocketNear = default(string), string topRightRocketFar = default(string), string topRightRocketNear = default(string), int totalPoints = default(int))
         {
             this.AdjustPoints = adjustPoints;
             this.AutoPoints = autoPoints;
@@ -143,13 +143,13 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// Gets or Sets AdjustPoints
         /// </summary>
         [DataMember(Name="adjustPoints", EmitDefaultValue=false)]
-        public int? AdjustPoints { get; set; }
+        public int AdjustPoints { get; set; }
 
         /// <summary>
         /// Gets or Sets AutoPoints
         /// </summary>
         [DataMember(Name="autoPoints", EmitDefaultValue=false)]
-        public int? AutoPoints { get; set; }
+        public int AutoPoints { get; set; }
 
         /// <summary>
         /// Gets or Sets Bay1
@@ -203,25 +203,25 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// Gets or Sets CargoPoints
         /// </summary>
         [DataMember(Name="cargoPoints", EmitDefaultValue=false)]
-        public int? CargoPoints { get; set; }
+        public int CargoPoints { get; set; }
 
         /// <summary>
         /// Gets or Sets CompleteRocketRankingPoint
         /// </summary>
         [DataMember(Name="completeRocketRankingPoint", EmitDefaultValue=false)]
-        public bool? CompleteRocketRankingPoint { get; set; }
+        public bool CompleteRocketRankingPoint { get; set; }
 
         /// <summary>
         /// Gets or Sets CompletedRocketFar
         /// </summary>
         [DataMember(Name="completedRocketFar", EmitDefaultValue=false)]
-        public bool? CompletedRocketFar { get; set; }
+        public bool CompletedRocketFar { get; set; }
 
         /// <summary>
         /// Gets or Sets CompletedRocketNear
         /// </summary>
         [DataMember(Name="completedRocketNear", EmitDefaultValue=false)]
-        public bool? CompletedRocketNear { get; set; }
+        public bool CompletedRocketNear { get; set; }
 
         /// <summary>
         /// Gets or Sets EndgameRobot1
@@ -245,25 +245,25 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// Gets or Sets FoulCount
         /// </summary>
         [DataMember(Name="foulCount", EmitDefaultValue=false)]
-        public int? FoulCount { get; set; }
+        public int FoulCount { get; set; }
 
         /// <summary>
         /// Gets or Sets FoulPoints
         /// </summary>
         [DataMember(Name="foulPoints", EmitDefaultValue=false)]
-        public int? FoulPoints { get; set; }
+        public int FoulPoints { get; set; }
 
         /// <summary>
         /// Gets or Sets HabClimbPoints
         /// </summary>
         [DataMember(Name="habClimbPoints", EmitDefaultValue=false)]
-        public int? HabClimbPoints { get; set; }
+        public int HabClimbPoints { get; set; }
 
         /// <summary>
         /// Gets or Sets HabDockingRankingPoint
         /// </summary>
         [DataMember(Name="habDockingRankingPoint", EmitDefaultValue=false)]
-        public bool? HabDockingRankingPoint { get; set; }
+        public bool HabDockingRankingPoint { get; set; }
 
         /// <summary>
         /// Gets or Sets HabLineRobot1
@@ -287,7 +287,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// Gets or Sets HatchPanelPoints
         /// </summary>
         [DataMember(Name="hatchPanelPoints", EmitDefaultValue=false)]
-        public int? HatchPanelPoints { get; set; }
+        public int HatchPanelPoints { get; set; }
 
         /// <summary>
         /// Gets or Sets LowLeftRocketFar
@@ -395,25 +395,25 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// Gets or Sets Rp
         /// </summary>
         [DataMember(Name="rp", EmitDefaultValue=false)]
-        public int? Rp { get; set; }
+        public int Rp { get; set; }
 
         /// <summary>
         /// Gets or Sets SandStormBonusPoints
         /// </summary>
         [DataMember(Name="sandStormBonusPoints", EmitDefaultValue=false)]
-        public int? SandStormBonusPoints { get; set; }
+        public int SandStormBonusPoints { get; set; }
 
         /// <summary>
         /// Gets or Sets TechFoulCount
         /// </summary>
         [DataMember(Name="techFoulCount", EmitDefaultValue=false)]
-        public int? TechFoulCount { get; set; }
+        public int TechFoulCount { get; set; }
 
         /// <summary>
         /// Gets or Sets TeleopPoints
         /// </summary>
         [DataMember(Name="teleopPoints", EmitDefaultValue=false)]
-        public int? TeleopPoints { get; set; }
+        public int TeleopPoints { get; set; }
 
         /// <summary>
         /// Gets or Sets TopLeftRocketFar
@@ -443,7 +443,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// Gets or Sets TotalPoints
         /// </summary>
         [DataMember(Name="totalPoints", EmitDefaultValue=false)]
-        public int? TotalPoints { get; set; }
+        public int TotalPoints { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

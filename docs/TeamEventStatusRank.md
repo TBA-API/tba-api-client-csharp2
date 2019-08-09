@@ -5,7 +5,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**NumTeams** | **int?** | Number of teams ranked. | [optional] 
+**NumTeams** | **int** | Number of teams ranked. | [optional] 
 **Ranking** | [**TeamEventStatusRankRanking**](TeamEventStatusRankRanking.md) |  | [optional] 
 **SortOrderInfo** | [**List&lt;TeamEventStatusRankSortOrderInfo&gt;**](TeamEventStatusRankSortOrderInfo.md) | Ordered list of names corresponding to the elements of the &#x60;sort_orders&#x60; array. | [optional] 
 **Status** | **string** |  | [optional] 

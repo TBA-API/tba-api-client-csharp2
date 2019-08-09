@@ -42,7 +42,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// <param name="teamKeys">teamKeys (required).</param>
         /// <param name="surrogateTeamKeys">TBA team keys (eg &#x60;frc254&#x60;) of any teams playing as a surrogate..</param>
         /// <param name="dqTeamKeys">TBA team keys (eg &#x60;frc254&#x60;) of any disqualified teams..</param>
-        public MatchAlliance(int? score = default(int?), List<string> teamKeys = default(List<string>), List<string> surrogateTeamKeys = default(List<string>), List<string> dqTeamKeys = default(List<string>))
+        public MatchAlliance(int score = default(int), List<string> teamKeys = default(List<string>), List<string> surrogateTeamKeys = default(List<string>), List<string> dqTeamKeys = default(List<string>))
         {
             // to ensure "score" is required (not null)
             if (score == null)
@@ -73,7 +73,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// </summary>
         /// <value>Score for this alliance. Will be null or -1 for an unplayed match.</value>
         [DataMember(Name="score", EmitDefaultValue=false)]
-        public int? Score { get; set; }
+        public int Score { get; set; }
 
         /// <summary>
         /// Gets or Sets TeamKeys

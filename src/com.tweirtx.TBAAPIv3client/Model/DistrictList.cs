@@ -42,7 +42,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// <param name="displayName">The long name for the district. (required).</param>
         /// <param name="key">Key for this district, e.g. &#x60;2016ne&#x60;. (required).</param>
         /// <param name="year">Year this district participated. (required).</param>
-        public DistrictList(string abbreviation = default(string), string displayName = default(string), string key = default(string), int? year = default(int?))
+        public DistrictList(string abbreviation = default(string), string displayName = default(string), string key = default(string), int year = default(int))
         {
             // to ensure "abbreviation" is required (not null)
             if (abbreviation == null)
@@ -112,7 +112,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// </summary>
         /// <value>Year this district participated.</value>
         [DataMember(Name="year", EmitDefaultValue=false)]
-        public int? Year { get; set; }
+        public int Year { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

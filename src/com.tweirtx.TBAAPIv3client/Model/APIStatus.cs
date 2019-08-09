@@ -44,7 +44,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// <param name="downEvents">An array of strings containing event keys of any active events that are no longer updating. (required).</param>
         /// <param name="ios">ios (required).</param>
         /// <param name="android">android (required).</param>
-        public APIStatus(int? currentSeason = default(int?), int? maxSeason = default(int?), bool? isDatafeedDown = default(bool?), List<string> downEvents = default(List<string>), APIStatusAppVersion ios = default(APIStatusAppVersion), APIStatusAppVersion android = default(APIStatusAppVersion))
+        public APIStatus(int currentSeason = default(int), int maxSeason = default(int), bool isDatafeedDown = default(bool), List<string> downEvents = default(List<string>), APIStatusAppVersion ios = default(APIStatusAppVersion), APIStatusAppVersion android = default(APIStatusAppVersion))
         {
             // to ensure "currentSeason" is required (not null)
             if (currentSeason == null)
@@ -113,21 +113,21 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// </summary>
         /// <value>Year of the current FRC season.</value>
         [DataMember(Name="current_season", EmitDefaultValue=false)]
-        public int? CurrentSeason { get; set; }
+        public int CurrentSeason { get; set; }
 
         /// <summary>
         /// Maximum FRC season year for valid queries.
         /// </summary>
         /// <value>Maximum FRC season year for valid queries.</value>
         [DataMember(Name="max_season", EmitDefaultValue=false)]
-        public int? MaxSeason { get; set; }
+        public int MaxSeason { get; set; }
 
         /// <summary>
         /// True if the entire FMS API provided by FIRST is down.
         /// </summary>
         /// <value>True if the entire FMS API provided by FIRST is down.</value>
         [DataMember(Name="is_datafeed_down", EmitDefaultValue=false)]
-        public bool? IsDatafeedDown { get; set; }
+        public bool IsDatafeedDown { get; set; }
 
         /// <summary>
         /// An array of strings containing event keys of any active events that are no longer updating.

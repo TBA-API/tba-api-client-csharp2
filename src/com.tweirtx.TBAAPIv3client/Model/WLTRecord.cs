@@ -41,7 +41,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// <param name="losses">Number of losses. (required).</param>
         /// <param name="wins">Number of wins. (required).</param>
         /// <param name="ties">Number of ties. (required).</param>
-        public WLTRecord(int? losses = default(int?), int? wins = default(int?), int? ties = default(int?))
+        public WLTRecord(int losses = default(int), int wins = default(int), int ties = default(int))
         {
             // to ensure "losses" is required (not null)
             if (losses == null)
@@ -80,21 +80,21 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// </summary>
         /// <value>Number of losses.</value>
         [DataMember(Name="losses", EmitDefaultValue=false)]
-        public int? Losses { get; set; }
+        public int Losses { get; set; }
 
         /// <summary>
         /// Number of wins.
         /// </summary>
         /// <value>Number of wins.</value>
         [DataMember(Name="wins", EmitDefaultValue=false)]
-        public int? Wins { get; set; }
+        public int Wins { get; set; }
 
         /// <summary>
         /// Number of ties.
         /// </summary>
         /// <value>Number of ties.</value>
         [DataMember(Name="ties", EmitDefaultValue=false)]
-        public int? Ties { get; set; }
+        public int Ties { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

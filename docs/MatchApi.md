@@ -858,7 +858,7 @@ Name | Type | Description  | Notes
 
 ## GetTeamMatchesByYear
 
-> List&lt;Match&gt; GetTeamMatchesByYear (string teamKey, int? year, string ifModifiedSince = null)
+> List&lt;Match&gt; GetTeamMatchesByYear (string teamKey, int year, string ifModifiedSince = null)
 
 
 
@@ -887,7 +887,7 @@ namespace Example
 
             var apiInstance = new MatchApi(Configuration.Default);
             var teamKey = teamKey_example;  // string | TBA Team Key, eg `frc254`
-            var year = 56;  // int? | Competition Year (or Season). Must be 4 digits.
+            var year = 56;  // int | Competition Year (or Season). Must be 4 digits.
             var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
             try
@@ -912,7 +912,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **teamKey** | **string**| TBA Team Key, eg &#x60;frc254&#x60; | 
- **year** | **int?**| Competition Year (or Season). Must be 4 digits. | 
+ **year** | **int**| Competition Year (or Season). Must be 4 digits. | 
  **ifModifiedSince** | **string**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
 
 ### Return type
@@ -943,7 +943,7 @@ Name | Type | Description  | Notes
 
 ## GetTeamMatchesByYearKeys
 
-> List&lt;string&gt; GetTeamMatchesByYearKeys (string teamKey, int? year, string ifModifiedSince = null)
+> List&lt;string&gt; GetTeamMatchesByYearKeys (string teamKey, int year, string ifModifiedSince = null)
 
 
 
@@ -972,7 +972,7 @@ namespace Example
 
             var apiInstance = new MatchApi(Configuration.Default);
             var teamKey = teamKey_example;  // string | TBA Team Key, eg `frc254`
-            var year = 56;  // int? | Competition Year (or Season). Must be 4 digits.
+            var year = 56;  // int | Competition Year (or Season). Must be 4 digits.
             var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
             try
@@ -997,7 +997,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **teamKey** | **string**| TBA Team Key, eg &#x60;frc254&#x60; | 
- **year** | **int?**| Competition Year (or Season). Must be 4 digits. | 
+ **year** | **int**| Competition Year (or Season). Must be 4 digits. | 
  **ifModifiedSince** | **string**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
 
 ### Return type
@@ -1028,7 +1028,7 @@ Name | Type | Description  | Notes
 
 ## GetTeamMatchesByYearSimple
 
-> List&lt;MatchSimple&gt; GetTeamMatchesByYearSimple (string teamKey, int? year, string ifModifiedSince = null)
+> List&lt;MatchSimple&gt; GetTeamMatchesByYearSimple (string teamKey, int year, string ifModifiedSince = null)
 
 
 
@@ -1057,7 +1057,7 @@ namespace Example
 
             var apiInstance = new MatchApi(Configuration.Default);
             var teamKey = teamKey_example;  // string | TBA Team Key, eg `frc254`
-            var year = 56;  // int? | Competition Year (or Season). Must be 4 digits.
+            var year = 56;  // int | Competition Year (or Season). Must be 4 digits.
             var ifModifiedSince = ifModifiedSince_example;  // string | Value of the `Last-Modified` header in the most recently cached response by the client. (optional) 
 
             try
@@ -1082,7 +1082,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **teamKey** | **string**| TBA Team Key, eg &#x60;frc254&#x60; | 
- **year** | **int?**| Competition Year (or Season). Must be 4 digits. | 
+ **year** | **int**| Competition Year (or Season). Must be 4 digits. | 
  **ifModifiedSince** | **string**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
 
 ### Return type

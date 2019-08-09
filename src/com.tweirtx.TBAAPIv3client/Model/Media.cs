@@ -138,7 +138,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// <param name="preferred">True if the media is of high quality..</param>
         /// <param name="directUrl">Direct URL to the media..</param>
         /// <param name="viewUrl">The URL that leads to the full web page for the media, if one exists..</param>
-        public Media(string key = default(string), TypeEnum type = default(TypeEnum), string foreignKey = default(string), Object details = default(Object), bool? preferred = default(bool?), string directUrl = default(string), string viewUrl = default(string))
+        public Media(string key = default(string), TypeEnum type = default(TypeEnum), string foreignKey = default(string), Object details = default(Object), bool preferred = default(bool), string directUrl = default(string), string viewUrl = default(string))
         {
             // to ensure "key" is required (not null)
             if (key == null)
@@ -194,7 +194,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// </summary>
         /// <value>True if the media is of high quality.</value>
         [DataMember(Name="preferred", EmitDefaultValue=false)]
-        public bool? Preferred { get; set; }
+        public bool Preferred { get; set; }
 
         /// <summary>
         /// Direct URL to the media.

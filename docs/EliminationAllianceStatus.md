@@ -5,7 +5,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**PlayoffAverage** | **double?** |  | [optional] 
+**PlayoffAverage** | **double** |  | [optional] 
 **Level** | **string** |  | [optional] 
 **Record** | [**WLTRecord**](WLTRecord.md) |  | [optional] 
 **CurrentLevelRecord** | [**WLTRecord**](WLTRecord.md) |  | [optional] 

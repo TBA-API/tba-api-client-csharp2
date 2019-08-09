@@ -116,7 +116,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// <param name="record">record.</param>
         /// <param name="status">Current competition status for the playoffs..</param>
         /// <param name="playoffAverage">The average match score during playoffs. Year specific. May be null if not relevant for a given year..</param>
-        public TeamEventStatusPlayoff(LevelEnum? level = default(LevelEnum?), WLTRecord currentLevelRecord = default(WLTRecord), WLTRecord record = default(WLTRecord), StatusEnum? status = default(StatusEnum?), int? playoffAverage = default(int?))
+        public TeamEventStatusPlayoff(LevelEnum? level = default(LevelEnum?), WLTRecord currentLevelRecord = default(WLTRecord), WLTRecord record = default(WLTRecord), StatusEnum? status = default(StatusEnum?), int playoffAverage = default(int))
         {
             this.Level = level;
             this.CurrentLevelRecord = currentLevelRecord;
@@ -144,7 +144,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// </summary>
         /// <value>The average match score during playoffs. Year specific. May be null if not relevant for a given year.</value>
         [DataMember(Name="playoff_average", EmitDefaultValue=false)]
-        public int? PlayoffAverage { get; set; }
+        public int PlayoffAverage { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

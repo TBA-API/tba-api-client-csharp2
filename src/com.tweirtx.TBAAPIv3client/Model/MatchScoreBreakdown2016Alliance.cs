@@ -164,7 +164,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// <param name="position3crossings">position3crossings.</param>
         /// <param name="position4crossings">position4crossings.</param>
         /// <param name="position5crossings">position5crossings.</param>
-        public MatchScoreBreakdown2016Alliance(int? autoPoints = default(int?), int? teleopPoints = default(int?), int? breachPoints = default(int?), int? foulPoints = default(int?), int? capturePoints = default(int?), int? adjustPoints = default(int?), int? totalPoints = default(int?), Robot1AutoEnum? robot1Auto = default(Robot1AutoEnum?), Robot2AutoEnum? robot2Auto = default(Robot2AutoEnum?), Robot3AutoEnum? robot3Auto = default(Robot3AutoEnum?), int? autoReachPoints = default(int?), int? autoCrossingPoints = default(int?), int? autoBouldersLow = default(int?), int? autoBouldersHigh = default(int?), int? autoBoulderPoints = default(int?), int? teleopCrossingPoints = default(int?), int? teleopBouldersLow = default(int?), int? teleopBouldersHigh = default(int?), int? teleopBoulderPoints = default(int?), bool? teleopDefensesBreached = default(bool?), int? teleopChallengePoints = default(int?), int? teleopScalePoints = default(int?), int? teleopTowerCaptured = default(int?), string towerFaceA = default(string), string towerFaceB = default(string), string towerFaceC = default(string), int? towerEndStrength = default(int?), int? techFoulCount = default(int?), int? foulCount = default(int?), string position2 = default(string), string position3 = default(string), string position4 = default(string), string position5 = default(string), int? position1crossings = default(int?), int? position2crossings = default(int?), int? position3crossings = default(int?), int? position4crossings = default(int?), int? position5crossings = default(int?))
+        public MatchScoreBreakdown2016Alliance(int autoPoints = default(int), int teleopPoints = default(int), int breachPoints = default(int), int foulPoints = default(int), int capturePoints = default(int), int adjustPoints = default(int), int totalPoints = default(int), Robot1AutoEnum? robot1Auto = default(Robot1AutoEnum?), Robot2AutoEnum? robot2Auto = default(Robot2AutoEnum?), Robot3AutoEnum? robot3Auto = default(Robot3AutoEnum?), int autoReachPoints = default(int), int autoCrossingPoints = default(int), int autoBouldersLow = default(int), int autoBouldersHigh = default(int), int autoBoulderPoints = default(int), int teleopCrossingPoints = default(int), int teleopBouldersLow = default(int), int teleopBouldersHigh = default(int), int teleopBoulderPoints = default(int), bool teleopDefensesBreached = default(bool), int teleopChallengePoints = default(int), int teleopScalePoints = default(int), int teleopTowerCaptured = default(int), string towerFaceA = default(string), string towerFaceB = default(string), string towerFaceC = default(string), int towerEndStrength = default(int), int techFoulCount = default(int), int foulCount = default(int), string position2 = default(string), string position3 = default(string), string position4 = default(string), string position5 = default(string), int position1crossings = default(int), int position2crossings = default(int), int position3crossings = default(int), int position4crossings = default(int), int position5crossings = default(int))
         {
             this.AutoPoints = autoPoints;
             this.TeleopPoints = teleopPoints;
@@ -210,43 +210,43 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// Gets or Sets AutoPoints
         /// </summary>
         [DataMember(Name="autoPoints", EmitDefaultValue=false)]
-        public int? AutoPoints { get; set; }
+        public int AutoPoints { get; set; }
 
         /// <summary>
         /// Gets or Sets TeleopPoints
         /// </summary>
         [DataMember(Name="teleopPoints", EmitDefaultValue=false)]
-        public int? TeleopPoints { get; set; }
+        public int TeleopPoints { get; set; }
 
         /// <summary>
         /// Gets or Sets BreachPoints
         /// </summary>
         [DataMember(Name="breachPoints", EmitDefaultValue=false)]
-        public int? BreachPoints { get; set; }
+        public int BreachPoints { get; set; }
 
         /// <summary>
         /// Gets or Sets FoulPoints
         /// </summary>
         [DataMember(Name="foulPoints", EmitDefaultValue=false)]
-        public int? FoulPoints { get; set; }
+        public int FoulPoints { get; set; }
 
         /// <summary>
         /// Gets or Sets CapturePoints
         /// </summary>
         [DataMember(Name="capturePoints", EmitDefaultValue=false)]
-        public int? CapturePoints { get; set; }
+        public int CapturePoints { get; set; }
 
         /// <summary>
         /// Gets or Sets AdjustPoints
         /// </summary>
         [DataMember(Name="adjustPoints", EmitDefaultValue=false)]
-        public int? AdjustPoints { get; set; }
+        public int AdjustPoints { get; set; }
 
         /// <summary>
         /// Gets or Sets TotalPoints
         /// </summary>
         [DataMember(Name="totalPoints", EmitDefaultValue=false)]
-        public int? TotalPoints { get; set; }
+        public int TotalPoints { get; set; }
 
 
 
@@ -255,79 +255,79 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// Gets or Sets AutoReachPoints
         /// </summary>
         [DataMember(Name="autoReachPoints", EmitDefaultValue=false)]
-        public int? AutoReachPoints { get; set; }
+        public int AutoReachPoints { get; set; }
 
         /// <summary>
         /// Gets or Sets AutoCrossingPoints
         /// </summary>
         [DataMember(Name="autoCrossingPoints", EmitDefaultValue=false)]
-        public int? AutoCrossingPoints { get; set; }
+        public int AutoCrossingPoints { get; set; }
 
         /// <summary>
         /// Gets or Sets AutoBouldersLow
         /// </summary>
         [DataMember(Name="autoBouldersLow", EmitDefaultValue=false)]
-        public int? AutoBouldersLow { get; set; }
+        public int AutoBouldersLow { get; set; }
 
         /// <summary>
         /// Gets or Sets AutoBouldersHigh
         /// </summary>
         [DataMember(Name="autoBouldersHigh", EmitDefaultValue=false)]
-        public int? AutoBouldersHigh { get; set; }
+        public int AutoBouldersHigh { get; set; }
 
         /// <summary>
         /// Gets or Sets AutoBoulderPoints
         /// </summary>
         [DataMember(Name="autoBoulderPoints", EmitDefaultValue=false)]
-        public int? AutoBoulderPoints { get; set; }
+        public int AutoBoulderPoints { get; set; }
 
         /// <summary>
         /// Gets or Sets TeleopCrossingPoints
         /// </summary>
         [DataMember(Name="teleopCrossingPoints", EmitDefaultValue=false)]
-        public int? TeleopCrossingPoints { get; set; }
+        public int TeleopCrossingPoints { get; set; }
 
         /// <summary>
         /// Gets or Sets TeleopBouldersLow
         /// </summary>
         [DataMember(Name="teleopBouldersLow", EmitDefaultValue=false)]
-        public int? TeleopBouldersLow { get; set; }
+        public int TeleopBouldersLow { get; set; }
 
         /// <summary>
         /// Gets or Sets TeleopBouldersHigh
         /// </summary>
         [DataMember(Name="teleopBouldersHigh", EmitDefaultValue=false)]
-        public int? TeleopBouldersHigh { get; set; }
+        public int TeleopBouldersHigh { get; set; }
 
         /// <summary>
         /// Gets or Sets TeleopBoulderPoints
         /// </summary>
         [DataMember(Name="teleopBoulderPoints", EmitDefaultValue=false)]
-        public int? TeleopBoulderPoints { get; set; }
+        public int TeleopBoulderPoints { get; set; }
 
         /// <summary>
         /// Gets or Sets TeleopDefensesBreached
         /// </summary>
         [DataMember(Name="teleopDefensesBreached", EmitDefaultValue=false)]
-        public bool? TeleopDefensesBreached { get; set; }
+        public bool TeleopDefensesBreached { get; set; }
 
         /// <summary>
         /// Gets or Sets TeleopChallengePoints
         /// </summary>
         [DataMember(Name="teleopChallengePoints", EmitDefaultValue=false)]
-        public int? TeleopChallengePoints { get; set; }
+        public int TeleopChallengePoints { get; set; }
 
         /// <summary>
         /// Gets or Sets TeleopScalePoints
         /// </summary>
         [DataMember(Name="teleopScalePoints", EmitDefaultValue=false)]
-        public int? TeleopScalePoints { get; set; }
+        public int TeleopScalePoints { get; set; }
 
         /// <summary>
         /// Gets or Sets TeleopTowerCaptured
         /// </summary>
         [DataMember(Name="teleopTowerCaptured", EmitDefaultValue=false)]
-        public int? TeleopTowerCaptured { get; set; }
+        public int TeleopTowerCaptured { get; set; }
 
         /// <summary>
         /// Gets or Sets TowerFaceA
@@ -351,19 +351,19 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// Gets or Sets TowerEndStrength
         /// </summary>
         [DataMember(Name="towerEndStrength", EmitDefaultValue=false)]
-        public int? TowerEndStrength { get; set; }
+        public int TowerEndStrength { get; set; }
 
         /// <summary>
         /// Gets or Sets TechFoulCount
         /// </summary>
         [DataMember(Name="techFoulCount", EmitDefaultValue=false)]
-        public int? TechFoulCount { get; set; }
+        public int TechFoulCount { get; set; }
 
         /// <summary>
         /// Gets or Sets FoulCount
         /// </summary>
         [DataMember(Name="foulCount", EmitDefaultValue=false)]
-        public int? FoulCount { get; set; }
+        public int FoulCount { get; set; }
 
         /// <summary>
         /// Gets or Sets Position2
@@ -393,31 +393,31 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// Gets or Sets Position1crossings
         /// </summary>
         [DataMember(Name="position1crossings", EmitDefaultValue=false)]
-        public int? Position1crossings { get; set; }
+        public int Position1crossings { get; set; }
 
         /// <summary>
         /// Gets or Sets Position2crossings
         /// </summary>
         [DataMember(Name="position2crossings", EmitDefaultValue=false)]
-        public int? Position2crossings { get; set; }
+        public int Position2crossings { get; set; }
 
         /// <summary>
         /// Gets or Sets Position3crossings
         /// </summary>
         [DataMember(Name="position3crossings", EmitDefaultValue=false)]
-        public int? Position3crossings { get; set; }
+        public int Position3crossings { get; set; }
 
         /// <summary>
         /// Gets or Sets Position4crossings
         /// </summary>
         [DataMember(Name="position4crossings", EmitDefaultValue=false)]
-        public int? Position4crossings { get; set; }
+        public int Position4crossings { get; set; }
 
         /// <summary>
         /// Gets or Sets Position5crossings
         /// </summary>
         [DataMember(Name="position5crossings", EmitDefaultValue=false)]
-        public int? Position5crossings { get; set; }
+        public int Position5crossings { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

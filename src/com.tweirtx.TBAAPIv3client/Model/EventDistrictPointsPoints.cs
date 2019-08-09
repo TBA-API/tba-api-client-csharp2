@@ -43,7 +43,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// <param name="elimPoints">Points awarded for elimination match performance. (required).</param>
         /// <param name="awardPoints">Points awarded for event awards. (required).</param>
         /// <param name="qualPoints">Points awarded for qualification match performance. (required).</param>
-        public EventDistrictPointsPoints(int? total = default(int?), int? alliancePoints = default(int?), int? elimPoints = default(int?), int? awardPoints = default(int?), int? qualPoints = default(int?))
+        public EventDistrictPointsPoints(int total = default(int), int alliancePoints = default(int), int elimPoints = default(int), int awardPoints = default(int), int qualPoints = default(int))
         {
             // to ensure "total" is required (not null)
             if (total == null)
@@ -102,35 +102,35 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// </summary>
         /// <value>Total points awarded at this event.</value>
         [DataMember(Name="total", EmitDefaultValue=false)]
-        public int? Total { get; set; }
+        public int Total { get; set; }
 
         /// <summary>
         /// Points awarded for alliance selection
         /// </summary>
         /// <value>Points awarded for alliance selection</value>
         [DataMember(Name="alliance_points", EmitDefaultValue=false)]
-        public int? AlliancePoints { get; set; }
+        public int AlliancePoints { get; set; }
 
         /// <summary>
         /// Points awarded for elimination match performance.
         /// </summary>
         /// <value>Points awarded for elimination match performance.</value>
         [DataMember(Name="elim_points", EmitDefaultValue=false)]
-        public int? ElimPoints { get; set; }
+        public int ElimPoints { get; set; }
 
         /// <summary>
         /// Points awarded for event awards.
         /// </summary>
         /// <value>Points awarded for event awards.</value>
         [DataMember(Name="award_points", EmitDefaultValue=false)]
-        public int? AwardPoints { get; set; }
+        public int AwardPoints { get; set; }
 
         /// <summary>
         /// Points awarded for qualification match performance.
         /// </summary>
         /// <value>Points awarded for qualification match performance.</value>
         [DataMember(Name="qual_points", EmitDefaultValue=false)]
-        public int? QualPoints { get; set; }
+        public int QualPoints { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object
