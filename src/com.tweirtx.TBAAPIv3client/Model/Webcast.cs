@@ -127,8 +127,9 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// </summary>
         /// <param name="type">Type of webcast, typically descriptive of the streaming provider. (required).</param>
         /// <param name="channel">Type specific channel information. May be the YouTube stream, or Twitch channel name. In the case of iframe types, contains HTML to embed the stream in an HTML iframe. (required).</param>
+        /// <param name="date">The date for the webcast in &#x60;yyyy-mm-dd&#x60; format. May be null..</param>
         /// <param name="file">File identification as may be required for some types. May be null..</param>
-        public Webcast(TypeEnum type = default(TypeEnum), string channel = default(string), string file = default(string))
+        public Webcast(TypeEnum type = default(TypeEnum), string channel = default(string), string date = default(string), string file = default(string))
         {
             // to ensure "type" is required (not null)
             if (type == null)
@@ -150,6 +151,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
                 this.Channel = channel;
             }
             
+            this.Date = date;
             this.File = file;
         }
         
@@ -160,6 +162,13 @@ namespace com.tweirtx.TBAAPIv3client.Model
         /// <value>Type specific channel information. May be the YouTube stream, or Twitch channel name. In the case of iframe types, contains HTML to embed the stream in an HTML iframe.</value>
         [DataMember(Name="channel", EmitDefaultValue=false)]
         public string Channel { get; set; }
+
+        /// <summary>
+        /// The date for the webcast in &#x60;yyyy-mm-dd&#x60; format. May be null.
+        /// </summary>
+        /// <value>The date for the webcast in &#x60;yyyy-mm-dd&#x60; format. May be null.</value>
+        [DataMember(Name="date", EmitDefaultValue=false)]
+        public string Date { get; set; }
 
         /// <summary>
         /// File identification as may be required for some types. May be null.
@@ -178,6 +187,7 @@ namespace com.tweirtx.TBAAPIv3client.Model
             sb.Append("class Webcast {\n");
             sb.Append("  Type: ").Append(Type).Append("\n");
             sb.Append("  Channel: ").Append(Channel).Append("\n");
+            sb.Append("  Date: ").Append(Date).Append("\n");
             sb.Append("  File: ").Append(File).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
@@ -224,6 +234,11 @@ namespace com.tweirtx.TBAAPIv3client.Model
                     this.Channel.Equals(input.Channel))
                 ) && 
                 (
+                    this.Date == input.Date ||
+                    (this.Date != null &&
+                    this.Date.Equals(input.Date))
+                ) && 
+                (
                     this.File == input.File ||
                     (this.File != null &&
                     this.File.Equals(input.File))
@@ -243,6 +258,8 @@ namespace com.tweirtx.TBAAPIv3client.Model
                     hashCode = hashCode * 59 + this.Type.GetHashCode();
                 if (this.Channel != null)
                     hashCode = hashCode * 59 + this.Channel.GetHashCode();
+                if (this.Date != null)
+                    hashCode = hashCode * 59 + this.Date.GetHashCode();
                 if (this.File != null)
                     hashCode = hashCode * 59 + this.File.GetHashCode();
                 return hashCode;
