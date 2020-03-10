@@ -1,5 +1,5 @@
 
-# com.tweirtx.TBAAPIv3client.Model.DistrictRanking
+# com.thebluealliance.TBAAPI.v3client.Model.DistrictRanking
 
 ## Properties
 

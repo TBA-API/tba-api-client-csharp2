@@ -1,5 +1,5 @@
 
-# com.tweirtx.TBAAPIv3client.Model.AwardRecipient
+# com.thebluealliance.TBAAPI.v3client.Model.AwardRecipient
 
 ## Properties
 

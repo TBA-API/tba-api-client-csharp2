@@ -1,4 +1,4 @@
-# com.tweirtx.TBAAPIv3client - the C# library for the The Blue Alliance API v3
+# com.thebluealliance.TBAAPI.v3client - the C# library for the The Blue Alliance API v3
 
 # Overview 
 
@@ -49,9 +49,9 @@ Run the following command to generate the DLL
 Then include the DLL (under the `bin` folder) in the C# project, and use the namespaces:
 
 ```csharp
-using com.tweirtx.TBAAPIv3client.Api;
-using com.tweirtx.TBAAPIv3client.Client;
-using com.tweirtx.TBAAPIv3client.Model;
+using com.thebluealliance.TBAAPI.v3client.Api;
+using com.thebluealliance.TBAAPI.v3client.Client;
+using com.thebluealliance.TBAAPI.v3client.Model;
 
 ```
 
@@ -63,7 +63,7 @@ A `.nuspec` is included with the project. You can follow the Nuget quickstart to
 This `.nuspec` uses placeholders from the `.csproj`, so build the `.csproj` directly:
 
 ```
-nuget pack -Build -OutputDirectory out com.tweirtx.TBAAPIv3client.csproj
+nuget pack -Build -OutputDirectory out com.thebluealliance.TBAAPI.v3client.csproj
 ```
 
 Then, publish to a [local feed](https://docs.microsoft.com/en-us/nuget/hosting-packages/local-feeds) or [other host](https://docs.microsoft.com/en-us/nuget/hosting-packages/overview) and consume the new package via Nuget as usual.
@@ -74,9 +74,9 @@ Then, publish to a [local feed](https://docs.microsoft.com/en-us/nuget/hosting-p
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using com.tweirtx.TBAAPIv3client.Api;
-using com.tweirtx.TBAAPIv3client.Client;
-using com.tweirtx.TBAAPIv3client.Model;
+using com.thebluealliance.TBAAPI.v3client.Api;
+using com.thebluealliance.TBAAPI.v3client.Client;
+using com.thebluealliance.TBAAPI.v3client.Model;
 
 namespace Example
 {

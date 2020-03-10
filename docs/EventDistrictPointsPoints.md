@@ -1,5 +1,5 @@
 
-# com.tweirtx.TBAAPIv3client.Model.EventDistrictPointsPoints
+# com.thebluealliance.TBAAPI.v3client.Model.EventDistrictPointsPoints
 
 ## Properties
 

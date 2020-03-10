@@ -1,5 +1,5 @@
 
-# com.tweirtx.TBAAPIv3client.Model.Media
+# com.thebluealliance.TBAAPI.v3client.Model.Media
 
 ## Properties
 

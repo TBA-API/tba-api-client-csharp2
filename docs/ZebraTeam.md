@@ -1,5 +1,5 @@
 
-# com.tweirtx.TBAAPIv3client.Model.ZebraTeam
+# com.thebluealliance.TBAAPI.v3client.Model.ZebraTeam
 
 ## Properties
 

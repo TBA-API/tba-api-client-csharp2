@@ -1,5 +1,5 @@
 
-# com.tweirtx.TBAAPIv3client.Model.EventRankingSortOrderInfo
+# com.thebluealliance.TBAAPI.v3client.Model.EventRankingSortOrderInfo
 
 ## Properties
 

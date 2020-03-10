@@ -1,5 +1,5 @@
 
-# com.tweirtx.TBAAPIv3client.Model.Team
+# com.thebluealliance.TBAAPI.v3client.Model.Team
 
 ## Properties
 

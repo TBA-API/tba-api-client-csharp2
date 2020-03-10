@@ -1,5 +1,5 @@
 
-# com.tweirtx.TBAAPIv3client.Model.EliminationAlliance
+# com.thebluealliance.TBAAPI.v3client.Model.EliminationAlliance
 
 ## Properties
 

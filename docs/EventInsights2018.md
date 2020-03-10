@@ -1,5 +1,5 @@
 
-# com.tweirtx.TBAAPIv3client.Model.EventInsights2018
+# com.thebluealliance.TBAAPI.v3client.Model.EventInsights2018
 
 ## Properties
 

@@ -1,5 +1,5 @@
 
-# com.tweirtx.TBAAPIv3client.Model.EventSimple
+# com.thebluealliance.TBAAPI.v3client.Model.EventSimple
 
 ## Properties
 

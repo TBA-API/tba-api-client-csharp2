@@ -1,5 +1,5 @@
 
-# com.tweirtx.TBAAPIv3client.Model.WLTRecord
+# com.thebluealliance.TBAAPI.v3client.Model.WLTRecord
 
 ## Properties
 

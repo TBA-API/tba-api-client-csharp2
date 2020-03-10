@@ -1,5 +1,5 @@
 
-# com.tweirtx.TBAAPIv3client.Model.TeamEventStatusPlayoff
+# com.thebluealliance.TBAAPI.v3client.Model.TeamEventStatusPlayoff
 
 ## Properties
 

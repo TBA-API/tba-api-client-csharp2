@@ -1,5 +1,5 @@
 
-# com.tweirtx.TBAAPIv3client.Model.Match
+# com.thebluealliance.TBAAPI.v3client.Model.Match
 
 ## Properties
 

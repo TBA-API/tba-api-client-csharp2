@@ -1,5 +1,5 @@
 
-# com.tweirtx.TBAAPIv3client.Model.Webcast
+# com.thebluealliance.TBAAPI.v3client.Model.Webcast
 
 ## Properties
 

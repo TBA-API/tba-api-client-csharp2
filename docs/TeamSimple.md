@@ -1,5 +1,5 @@
 
-# com.tweirtx.TBAAPIv3client.Model.TeamSimple
+# com.thebluealliance.TBAAPI.v3client.Model.TeamSimple
 
 ## Properties
 

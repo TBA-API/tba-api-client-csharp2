@@ -1,5 +1,5 @@
 
-# com.tweirtx.TBAAPIv3client.Model.MatchScoreBreakdown2020Alliance
+# com.thebluealliance.TBAAPI.v3client.Model.MatchScoreBreakdown2020Alliance
 
 ## Properties
 

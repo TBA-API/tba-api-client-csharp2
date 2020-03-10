@@ -1,5 +1,5 @@
 
-# com.tweirtx.TBAAPIv3client.Model.EventDistrictPointsTiebreakers
+# com.thebluealliance.TBAAPI.v3client.Model.EventDistrictPointsTiebreakers
 
 ## Properties
 

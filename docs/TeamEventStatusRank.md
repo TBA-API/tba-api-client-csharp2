@@ -1,5 +1,5 @@
 
-# com.tweirtx.TBAAPIv3client.Model.TeamEventStatusRank
+# com.thebluealliance.TBAAPI.v3client.Model.TeamEventStatusRank
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# com.tweirtx.TBAAPIv3client.Api.ListApi
+# com.thebluealliance.TBAAPI.v3client.Api.ListApi
 
 All URIs are relative to *https://www.thebluealliance.com/api/v3*
 
@@ -41,9 +41,9 @@ Gets a list of events in the given district.
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using com.tweirtx.TBAAPIv3client.Api;
-using com.tweirtx.TBAAPIv3client.Client;
-using com.tweirtx.TBAAPIv3client.Model;
+using com.thebluealliance.TBAAPI.v3client.Api;
+using com.thebluealliance.TBAAPI.v3client.Client;
+using com.thebluealliance.TBAAPI.v3client.Model;
 
 namespace Example
 {
@@ -124,9 +124,9 @@ Gets a list of event keys for events in the given district.
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using com.tweirtx.TBAAPIv3client.Api;
-using com.tweirtx.TBAAPIv3client.Client;
-using com.tweirtx.TBAAPIv3client.Model;
+using com.thebluealliance.TBAAPI.v3client.Api;
+using com.thebluealliance.TBAAPI.v3client.Client;
+using com.thebluealliance.TBAAPI.v3client.Model;
 
 namespace Example
 {
@@ -207,9 +207,9 @@ Gets a short-form list of events in the given district.
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using com.tweirtx.TBAAPIv3client.Api;
-using com.tweirtx.TBAAPIv3client.Client;
-using com.tweirtx.TBAAPIv3client.Model;
+using com.thebluealliance.TBAAPI.v3client.Api;
+using com.thebluealliance.TBAAPI.v3client.Client;
+using com.thebluealliance.TBAAPI.v3client.Model;
 
 namespace Example
 {
@@ -290,9 +290,9 @@ Gets a list of team district rankings for the given district.
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using com.tweirtx.TBAAPIv3client.Api;
-using com.tweirtx.TBAAPIv3client.Client;
-using com.tweirtx.TBAAPIv3client.Model;
+using com.thebluealliance.TBAAPI.v3client.Api;
+using com.thebluealliance.TBAAPI.v3client.Client;
+using com.thebluealliance.TBAAPI.v3client.Model;
 
 namespace Example
 {
@@ -373,9 +373,9 @@ Gets a list of `Team` objects that competed in events in the given district.
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using com.tweirtx.TBAAPIv3client.Api;
-using com.tweirtx.TBAAPIv3client.Client;
-using com.tweirtx.TBAAPIv3client.Model;
+using com.thebluealliance.TBAAPI.v3client.Api;
+using com.thebluealliance.TBAAPI.v3client.Client;
+using com.thebluealliance.TBAAPI.v3client.Model;
 
 namespace Example
 {
@@ -456,9 +456,9 @@ Gets a list of `Team` objects that competed in events in the given district.
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using com.tweirtx.TBAAPIv3client.Api;
-using com.tweirtx.TBAAPIv3client.Client;
-using com.tweirtx.TBAAPIv3client.Model;
+using com.thebluealliance.TBAAPI.v3client.Api;
+using com.thebluealliance.TBAAPI.v3client.Client;
+using com.thebluealliance.TBAAPI.v3client.Model;
 
 namespace Example
 {
@@ -539,9 +539,9 @@ Gets a short-form list of `Team` objects that competed in events in the given di
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using com.tweirtx.TBAAPIv3client.Api;
-using com.tweirtx.TBAAPIv3client.Client;
-using com.tweirtx.TBAAPIv3client.Model;
+using com.thebluealliance.TBAAPI.v3client.Api;
+using com.thebluealliance.TBAAPI.v3client.Client;
+using com.thebluealliance.TBAAPI.v3client.Model;
 
 namespace Example
 {
@@ -622,9 +622,9 @@ Gets a list of `Team` objects that competed in the given event.
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using com.tweirtx.TBAAPIv3client.Api;
-using com.tweirtx.TBAAPIv3client.Client;
-using com.tweirtx.TBAAPIv3client.Model;
+using com.thebluealliance.TBAAPI.v3client.Api;
+using com.thebluealliance.TBAAPI.v3client.Client;
+using com.thebluealliance.TBAAPI.v3client.Model;
 
 namespace Example
 {
@@ -705,9 +705,9 @@ Gets a list of `Team` keys that competed in the given event.
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using com.tweirtx.TBAAPIv3client.Api;
-using com.tweirtx.TBAAPIv3client.Client;
-using com.tweirtx.TBAAPIv3client.Model;
+using com.thebluealliance.TBAAPI.v3client.Api;
+using com.thebluealliance.TBAAPI.v3client.Client;
+using com.thebluealliance.TBAAPI.v3client.Model;
 
 namespace Example
 {
@@ -788,9 +788,9 @@ Gets a short-form list of `Team` objects that competed in the given event.
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using com.tweirtx.TBAAPIv3client.Api;
-using com.tweirtx.TBAAPIv3client.Client;
-using com.tweirtx.TBAAPIv3client.Model;
+using com.thebluealliance.TBAAPI.v3client.Api;
+using com.thebluealliance.TBAAPI.v3client.Client;
+using com.thebluealliance.TBAAPI.v3client.Model;
 
 namespace Example
 {
@@ -871,9 +871,9 @@ Gets a key-value list of the event statuses for teams competing at the given eve
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using com.tweirtx.TBAAPIv3client.Api;
-using com.tweirtx.TBAAPIv3client.Client;
-using com.tweirtx.TBAAPIv3client.Model;
+using com.thebluealliance.TBAAPI.v3client.Api;
+using com.thebluealliance.TBAAPI.v3client.Client;
+using com.thebluealliance.TBAAPI.v3client.Model;
 
 namespace Example
 {
@@ -954,9 +954,9 @@ Gets a list of events in the given year.
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using com.tweirtx.TBAAPIv3client.Api;
-using com.tweirtx.TBAAPIv3client.Client;
-using com.tweirtx.TBAAPIv3client.Model;
+using com.thebluealliance.TBAAPI.v3client.Api;
+using com.thebluealliance.TBAAPI.v3client.Client;
+using com.thebluealliance.TBAAPI.v3client.Model;
 
 namespace Example
 {
@@ -1037,9 +1037,9 @@ Gets a list of event keys in the given year.
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using com.tweirtx.TBAAPIv3client.Api;
-using com.tweirtx.TBAAPIv3client.Client;
-using com.tweirtx.TBAAPIv3client.Model;
+using com.thebluealliance.TBAAPI.v3client.Api;
+using com.thebluealliance.TBAAPI.v3client.Client;
+using com.thebluealliance.TBAAPI.v3client.Model;
 
 namespace Example
 {
@@ -1120,9 +1120,9 @@ Gets a short-form list of events in the given year.
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using com.tweirtx.TBAAPIv3client.Api;
-using com.tweirtx.TBAAPIv3client.Client;
-using com.tweirtx.TBAAPIv3client.Model;
+using com.thebluealliance.TBAAPI.v3client.Api;
+using com.thebluealliance.TBAAPI.v3client.Client;
+using com.thebluealliance.TBAAPI.v3client.Model;
 
 namespace Example
 {
@@ -1203,9 +1203,9 @@ Gets a key-value list of the event statuses for events this team has competed at
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using com.tweirtx.TBAAPIv3client.Api;
-using com.tweirtx.TBAAPIv3client.Client;
-using com.tweirtx.TBAAPIv3client.Model;
+using com.thebluealliance.TBAAPI.v3client.Api;
+using com.thebluealliance.TBAAPI.v3client.Client;
+using com.thebluealliance.TBAAPI.v3client.Model;
 
 namespace Example
 {
@@ -1288,9 +1288,9 @@ Gets a list of `Team` objects, paginated in groups of 500.
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using com.tweirtx.TBAAPIv3client.Api;
-using com.tweirtx.TBAAPIv3client.Client;
-using com.tweirtx.TBAAPIv3client.Model;
+using com.thebluealliance.TBAAPI.v3client.Api;
+using com.thebluealliance.TBAAPI.v3client.Client;
+using com.thebluealliance.TBAAPI.v3client.Model;
 
 namespace Example
 {
@@ -1371,9 +1371,9 @@ Gets a list of `Team` objects that competed in the given year, paginated in grou
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using com.tweirtx.TBAAPIv3client.Api;
-using com.tweirtx.TBAAPIv3client.Client;
-using com.tweirtx.TBAAPIv3client.Model;
+using com.thebluealliance.TBAAPI.v3client.Api;
+using com.thebluealliance.TBAAPI.v3client.Client;
+using com.thebluealliance.TBAAPI.v3client.Model;
 
 namespace Example
 {
@@ -1456,9 +1456,9 @@ Gets a list Team Keys that competed in the given year, paginated in groups of 50
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using com.tweirtx.TBAAPIv3client.Api;
-using com.tweirtx.TBAAPIv3client.Client;
-using com.tweirtx.TBAAPIv3client.Model;
+using com.thebluealliance.TBAAPI.v3client.Api;
+using com.thebluealliance.TBAAPI.v3client.Client;
+using com.thebluealliance.TBAAPI.v3client.Model;
 
 namespace Example
 {
@@ -1541,9 +1541,9 @@ Gets a list of short form `Team_Simple` objects that competed in the given year,
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using com.tweirtx.TBAAPIv3client.Api;
-using com.tweirtx.TBAAPIv3client.Client;
-using com.tweirtx.TBAAPIv3client.Model;
+using com.thebluealliance.TBAAPI.v3client.Api;
+using com.thebluealliance.TBAAPI.v3client.Client;
+using com.thebluealliance.TBAAPI.v3client.Model;
 
 namespace Example
 {
@@ -1626,9 +1626,9 @@ Gets a list of Team keys, paginated in groups of 500. (Note, each page will not 
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using com.tweirtx.TBAAPIv3client.Api;
-using com.tweirtx.TBAAPIv3client.Client;
-using com.tweirtx.TBAAPIv3client.Model;
+using com.thebluealliance.TBAAPI.v3client.Api;
+using com.thebluealliance.TBAAPI.v3client.Client;
+using com.thebluealliance.TBAAPI.v3client.Model;
 
 namespace Example
 {
@@ -1709,9 +1709,9 @@ Gets a list of short form `Team_Simple` objects, paginated in groups of 500.
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using com.tweirtx.TBAAPIv3client.Api;
-using com.tweirtx.TBAAPIv3client.Client;
-using com.tweirtx.TBAAPIv3client.Model;
+using com.thebluealliance.TBAAPI.v3client.Api;
+using com.thebluealliance.TBAAPI.v3client.Client;
+using com.thebluealliance.TBAAPI.v3client.Model;
 
 namespace Example
 {

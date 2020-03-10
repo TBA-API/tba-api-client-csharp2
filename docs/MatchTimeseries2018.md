@@ -1,5 +1,5 @@
 
-# com.tweirtx.TBAAPIv3client.Model.MatchTimeseries2018
+# com.thebluealliance.TBAAPI.v3client.Model.MatchTimeseries2018
 
 ## Properties
 

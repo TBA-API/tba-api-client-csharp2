@@ -1,5 +1,5 @@
 
-# com.tweirtx.TBAAPIv3client.Model.APIStatusAppVersion
+# com.thebluealliance.TBAAPI.v3client.Model.APIStatusAppVersion
 
 ## Properties
 
