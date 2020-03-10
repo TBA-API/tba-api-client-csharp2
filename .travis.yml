@@ -4,6 +4,6 @@
 language: csharp
 mono:
   - latest
-solution: com.thebluealliance.TBAAPI.v3client.sln
+solution: net.thefletcher.tbaapi.v3client.sln
 script:
   - /bin/sh ./mono_nunit_test.sh

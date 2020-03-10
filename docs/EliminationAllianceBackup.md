@@ -1,5 +1,5 @@
 
-# com.thebluealliance.TBAAPI.v3client.Model.EliminationAllianceBackup
+# net.thefletcher.tbaapi.v3client.Model.EliminationAllianceBackup
 
 ## Properties
 

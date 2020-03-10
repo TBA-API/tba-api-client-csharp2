@@ -1,5 +1,5 @@
 
-# com.thebluealliance.TBAAPI.v3client.Model.DistrictRanking
+# net.thefletcher.tbaapi.v3client.Model.DistrictRanking
 
 ## Properties
 

@@ -1,5 +1,5 @@
 
-# com.thebluealliance.TBAAPI.v3client.Model.EventInsights2017
+# net.thefletcher.tbaapi.v3client.Model.EventInsights2017
 
 ## Properties
 

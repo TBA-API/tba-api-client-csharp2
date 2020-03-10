@@ -1,4 +1,4 @@
-# com.thebluealliance.TBAAPI.v3client.Api.DistrictApi
+# net.thefletcher.tbaapi.v3client.Api.DistrictApi
 
 All URIs are relative to *https://www.thebluealliance.com/api/v3*
 
@@ -30,9 +30,9 @@ Gets a list of events in the given district.
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using com.thebluealliance.TBAAPI.v3client.Api;
-using com.thebluealliance.TBAAPI.v3client.Client;
-using com.thebluealliance.TBAAPI.v3client.Model;
+using net.thefletcher.tbaapi.v3client.Api;
+using net.thefletcher.tbaapi.v3client.Client;
+using net.thefletcher.tbaapi.v3client.Model;
 
 namespace Example
 {
@@ -113,9 +113,9 @@ Gets a list of event keys for events in the given district.
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using com.thebluealliance.TBAAPI.v3client.Api;
-using com.thebluealliance.TBAAPI.v3client.Client;
-using com.thebluealliance.TBAAPI.v3client.Model;
+using net.thefletcher.tbaapi.v3client.Api;
+using net.thefletcher.tbaapi.v3client.Client;
+using net.thefletcher.tbaapi.v3client.Model;
 
 namespace Example
 {
@@ -196,9 +196,9 @@ Gets a short-form list of events in the given district.
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using com.thebluealliance.TBAAPI.v3client.Api;
-using com.thebluealliance.TBAAPI.v3client.Client;
-using com.thebluealliance.TBAAPI.v3client.Model;
+using net.thefletcher.tbaapi.v3client.Api;
+using net.thefletcher.tbaapi.v3client.Client;
+using net.thefletcher.tbaapi.v3client.Model;
 
 namespace Example
 {
@@ -279,9 +279,9 @@ Gets a list of team district rankings for the given district.
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using com.thebluealliance.TBAAPI.v3client.Api;
-using com.thebluealliance.TBAAPI.v3client.Client;
-using com.thebluealliance.TBAAPI.v3client.Model;
+using net.thefletcher.tbaapi.v3client.Api;
+using net.thefletcher.tbaapi.v3client.Client;
+using net.thefletcher.tbaapi.v3client.Model;
 
 namespace Example
 {
@@ -362,9 +362,9 @@ Gets a list of `Team` objects that competed in events in the given district.
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using com.thebluealliance.TBAAPI.v3client.Api;
-using com.thebluealliance.TBAAPI.v3client.Client;
-using com.thebluealliance.TBAAPI.v3client.Model;
+using net.thefletcher.tbaapi.v3client.Api;
+using net.thefletcher.tbaapi.v3client.Client;
+using net.thefletcher.tbaapi.v3client.Model;
 
 namespace Example
 {
@@ -445,9 +445,9 @@ Gets a list of `Team` objects that competed in events in the given district.
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using com.thebluealliance.TBAAPI.v3client.Api;
-using com.thebluealliance.TBAAPI.v3client.Client;
-using com.thebluealliance.TBAAPI.v3client.Model;
+using net.thefletcher.tbaapi.v3client.Api;
+using net.thefletcher.tbaapi.v3client.Client;
+using net.thefletcher.tbaapi.v3client.Model;
 
 namespace Example
 {
@@ -528,9 +528,9 @@ Gets a short-form list of `Team` objects that competed in events in the given di
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using com.thebluealliance.TBAAPI.v3client.Api;
-using com.thebluealliance.TBAAPI.v3client.Client;
-using com.thebluealliance.TBAAPI.v3client.Model;
+using net.thefletcher.tbaapi.v3client.Api;
+using net.thefletcher.tbaapi.v3client.Client;
+using net.thefletcher.tbaapi.v3client.Model;
 
 namespace Example
 {
@@ -611,9 +611,9 @@ Gets a list of districts and their corresponding district key, for the given yea
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using com.thebluealliance.TBAAPI.v3client.Api;
-using com.thebluealliance.TBAAPI.v3client.Client;
-using com.thebluealliance.TBAAPI.v3client.Model;
+using net.thefletcher.tbaapi.v3client.Api;
+using net.thefletcher.tbaapi.v3client.Client;
+using net.thefletcher.tbaapi.v3client.Model;
 
 namespace Example
 {
@@ -694,9 +694,9 @@ Gets a list of team rankings for the Event.
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using com.thebluealliance.TBAAPI.v3client.Api;
-using com.thebluealliance.TBAAPI.v3client.Client;
-using com.thebluealliance.TBAAPI.v3client.Model;
+using net.thefletcher.tbaapi.v3client.Api;
+using net.thefletcher.tbaapi.v3client.Client;
+using net.thefletcher.tbaapi.v3client.Model;
 
 namespace Example
 {
@@ -777,9 +777,9 @@ Gets an array of districts representing each year the team was in a district. Wi
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using com.thebluealliance.TBAAPI.v3client.Api;
-using com.thebluealliance.TBAAPI.v3client.Client;
-using com.thebluealliance.TBAAPI.v3client.Model;
+using net.thefletcher.tbaapi.v3client.Api;
+using net.thefletcher.tbaapi.v3client.Client;
+using net.thefletcher.tbaapi.v3client.Model;
 
 namespace Example
 {

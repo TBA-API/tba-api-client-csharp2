@@ -1,5 +1,5 @@
 
-# com.thebluealliance.TBAAPI.v3client.Model.EventRankingExtraStatsInfo
+# net.thefletcher.tbaapi.v3client.Model.EventRankingExtraStatsInfo
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# com.thebluealliance.TBAAPI.v3client.Api.TBAApi
+# net.thefletcher.tbaapi.v3client.Api.TBAApi
 
 All URIs are relative to *https://www.thebluealliance.com/api/v3*
 
@@ -21,9 +21,9 @@ Returns API status, and TBA status information.
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using com.thebluealliance.TBAAPI.v3client.Api;
-using com.thebluealliance.TBAAPI.v3client.Client;
-using com.thebluealliance.TBAAPI.v3client.Model;
+using net.thefletcher.tbaapi.v3client.Api;
+using net.thefletcher.tbaapi.v3client.Client;
+using net.thefletcher.tbaapi.v3client.Model;
 
 namespace Example
 {

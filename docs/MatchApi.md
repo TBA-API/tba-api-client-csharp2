@@ -1,4 +1,4 @@
-# com.thebluealliance.TBAAPI.v3client.Api.MatchApi
+# net.thefletcher.tbaapi.v3client.Api.MatchApi
 
 All URIs are relative to *https://www.thebluealliance.com/api/v3*
 
@@ -34,9 +34,9 @@ Gets an array of Match Keys for the given event key that have timeseries data. R
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using com.thebluealliance.TBAAPI.v3client.Api;
-using com.thebluealliance.TBAAPI.v3client.Client;
-using com.thebluealliance.TBAAPI.v3client.Model;
+using net.thefletcher.tbaapi.v3client.Api;
+using net.thefletcher.tbaapi.v3client.Client;
+using net.thefletcher.tbaapi.v3client.Model;
 
 namespace Example
 {
@@ -117,9 +117,9 @@ Gets a list of matches for the given event.
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using com.thebluealliance.TBAAPI.v3client.Api;
-using com.thebluealliance.TBAAPI.v3client.Client;
-using com.thebluealliance.TBAAPI.v3client.Model;
+using net.thefletcher.tbaapi.v3client.Api;
+using net.thefletcher.tbaapi.v3client.Client;
+using net.thefletcher.tbaapi.v3client.Model;
 
 namespace Example
 {
@@ -200,9 +200,9 @@ Gets a list of match keys for the given event.
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using com.thebluealliance.TBAAPI.v3client.Api;
-using com.thebluealliance.TBAAPI.v3client.Client;
-using com.thebluealliance.TBAAPI.v3client.Model;
+using net.thefletcher.tbaapi.v3client.Api;
+using net.thefletcher.tbaapi.v3client.Client;
+using net.thefletcher.tbaapi.v3client.Model;
 
 namespace Example
 {
@@ -283,9 +283,9 @@ Gets a short-form list of matches for the given event.
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using com.thebluealliance.TBAAPI.v3client.Api;
-using com.thebluealliance.TBAAPI.v3client.Client;
-using com.thebluealliance.TBAAPI.v3client.Model;
+using net.thefletcher.tbaapi.v3client.Api;
+using net.thefletcher.tbaapi.v3client.Client;
+using net.thefletcher.tbaapi.v3client.Model;
 
 namespace Example
 {
@@ -366,9 +366,9 @@ Gets a `Match` object for the given match key.
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using com.thebluealliance.TBAAPI.v3client.Api;
-using com.thebluealliance.TBAAPI.v3client.Client;
-using com.thebluealliance.TBAAPI.v3client.Model;
+using net.thefletcher.tbaapi.v3client.Api;
+using net.thefletcher.tbaapi.v3client.Client;
+using net.thefletcher.tbaapi.v3client.Model;
 
 namespace Example
 {
@@ -449,9 +449,9 @@ Gets a short-form `Match` object for the given match key.
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using com.thebluealliance.TBAAPI.v3client.Api;
-using com.thebluealliance.TBAAPI.v3client.Client;
-using com.thebluealliance.TBAAPI.v3client.Model;
+using net.thefletcher.tbaapi.v3client.Api;
+using net.thefletcher.tbaapi.v3client.Client;
+using net.thefletcher.tbaapi.v3client.Model;
 
 namespace Example
 {
@@ -532,9 +532,9 @@ Gets an array of game-specific Match Timeseries objects for the given match key 
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using com.thebluealliance.TBAAPI.v3client.Api;
-using com.thebluealliance.TBAAPI.v3client.Client;
-using com.thebluealliance.TBAAPI.v3client.Model;
+using net.thefletcher.tbaapi.v3client.Api;
+using net.thefletcher.tbaapi.v3client.Client;
+using net.thefletcher.tbaapi.v3client.Model;
 
 namespace Example
 {
@@ -615,9 +615,9 @@ Gets Zebra MotionWorks data for a Match for the given match key.
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using com.thebluealliance.TBAAPI.v3client.Api;
-using com.thebluealliance.TBAAPI.v3client.Client;
-using com.thebluealliance.TBAAPI.v3client.Model;
+using net.thefletcher.tbaapi.v3client.Api;
+using net.thefletcher.tbaapi.v3client.Client;
+using net.thefletcher.tbaapi.v3client.Model;
 
 namespace Example
 {
@@ -698,9 +698,9 @@ Gets a list of matches for the given team and event.
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using com.thebluealliance.TBAAPI.v3client.Api;
-using com.thebluealliance.TBAAPI.v3client.Client;
-using com.thebluealliance.TBAAPI.v3client.Model;
+using net.thefletcher.tbaapi.v3client.Api;
+using net.thefletcher.tbaapi.v3client.Client;
+using net.thefletcher.tbaapi.v3client.Model;
 
 namespace Example
 {
@@ -783,9 +783,9 @@ Gets a list of match keys for matches for the given team and event.
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using com.thebluealliance.TBAAPI.v3client.Api;
-using com.thebluealliance.TBAAPI.v3client.Client;
-using com.thebluealliance.TBAAPI.v3client.Model;
+using net.thefletcher.tbaapi.v3client.Api;
+using net.thefletcher.tbaapi.v3client.Client;
+using net.thefletcher.tbaapi.v3client.Model;
 
 namespace Example
 {
@@ -868,9 +868,9 @@ Gets a short-form list of matches for the given team and event.
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using com.thebluealliance.TBAAPI.v3client.Api;
-using com.thebluealliance.TBAAPI.v3client.Client;
-using com.thebluealliance.TBAAPI.v3client.Model;
+using net.thefletcher.tbaapi.v3client.Api;
+using net.thefletcher.tbaapi.v3client.Client;
+using net.thefletcher.tbaapi.v3client.Model;
 
 namespace Example
 {
@@ -953,9 +953,9 @@ Gets a list of matches for the given team and year.
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using com.thebluealliance.TBAAPI.v3client.Api;
-using com.thebluealliance.TBAAPI.v3client.Client;
-using com.thebluealliance.TBAAPI.v3client.Model;
+using net.thefletcher.tbaapi.v3client.Api;
+using net.thefletcher.tbaapi.v3client.Client;
+using net.thefletcher.tbaapi.v3client.Model;
 
 namespace Example
 {
@@ -1038,9 +1038,9 @@ Gets a list of match keys for matches for the given team and year.
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using com.thebluealliance.TBAAPI.v3client.Api;
-using com.thebluealliance.TBAAPI.v3client.Client;
-using com.thebluealliance.TBAAPI.v3client.Model;
+using net.thefletcher.tbaapi.v3client.Api;
+using net.thefletcher.tbaapi.v3client.Client;
+using net.thefletcher.tbaapi.v3client.Model;
 
 namespace Example
 {
@@ -1123,9 +1123,9 @@ Gets a short-form list of matches for the given team and year.
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using com.thebluealliance.TBAAPI.v3client.Api;
-using com.thebluealliance.TBAAPI.v3client.Client;
-using com.thebluealliance.TBAAPI.v3client.Model;
+using net.thefletcher.tbaapi.v3client.Api;
+using net.thefletcher.tbaapi.v3client.Client;
+using net.thefletcher.tbaapi.v3client.Model;
 
 namespace Example
 {

@@ -1,5 +1,5 @@
 
-# com.thebluealliance.TBAAPI.v3client.Model.MatchScoreBreakdown2015Alliance
+# net.thefletcher.tbaapi.v3client.Model.MatchScoreBreakdown2015Alliance
 
 ## Properties
 

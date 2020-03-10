@@ -1,5 +1,5 @@
 
-# com.thebluealliance.TBAAPI.v3client.Model.ZebraTeam
+# net.thefletcher.tbaapi.v3client.Model.ZebraTeam
 
 ## Properties
 

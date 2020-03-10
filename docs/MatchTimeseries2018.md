@@ -1,5 +1,5 @@
 
-# com.thebluealliance.TBAAPI.v3client.Model.MatchTimeseries2018
+# net.thefletcher.tbaapi.v3client.Model.MatchTimeseries2018
 
 ## Properties
 

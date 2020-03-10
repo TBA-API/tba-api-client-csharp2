@@ -1,5 +1,5 @@
 
-# com.thebluealliance.TBAAPI.v3client.Model.EventOPRs
+# net.thefletcher.tbaapi.v3client.Model.EventOPRs
 
 ## Properties
 
